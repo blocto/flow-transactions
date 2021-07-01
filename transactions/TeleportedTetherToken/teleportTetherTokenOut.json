@@ -1,0 +1,11 @@
+{
+    "arguments": [
+        "amount",
+        "target"
+    ],
+    "messages": {
+        "en": "Teleport {amount} tUSDT to {target} on Ethereum",
+        "zh_CN": "将 {amount} tUSDT 跨链传送至以太坊上的 {target}",
+        "zh_TW": "將 {amount} tUSDT 跨鏈傳送至以太坊上的 {target}"
+    }
+}

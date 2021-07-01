@@ -1,0 +1,11 @@
+{
+    "arguments": [
+        "amount",
+        "to"
+    ],
+    "messages": {
+        "en": "Send {amount} FLOW to {to}",
+        "zh_CN": "发送 {amount} FLOW 代币至 {to}",
+        "zh_TW": "發送 {amount} FLOW 代幣至 {to}"
+    }
+}

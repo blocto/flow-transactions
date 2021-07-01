@@ -1,0 +1,18 @@
+{
+    "0xFUNGIBLE_TOKEN_ADDRESS": {
+        "mainnet": "0xf233dcee88fe0abe",
+        "testnet": "0x9a0766d93b6608b7"
+    },
+    "0xFLOW_TOKEN_ADDRESS": {
+        "mainnet": "0x1654653399040a61",
+        "testnet": "0x7e60df042a9c0868"
+    },
+    "0xTELEPORTED_USDT_ADDRESS": {
+        "mainnet": "0xcfdd90d4a00f7b5b",
+        "testnet": "0xab26e0a07d770ec1"
+    },
+    "0xTELEPORT_ADMIN_ADDRESS": {
+        "mainnet": "0x55ad22f01ef568a1",
+        "testnet": "0xf086a545ce3c552d"
+    }
+}
