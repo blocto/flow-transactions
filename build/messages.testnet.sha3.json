@@ -1,0 +1,35 @@
+{
+    "e6e9785a44755be4a11711e70c2fafd3bb081a9ac5e86cfae9c9686ac9b6d8d2": {
+        "arguments": [
+            "amount",
+            "to"
+        ],
+        "messages": {
+            "en": "Send {amount} FLOW to {to}",
+            "zh_CN": "发送 {amount} FLOW 代币至 {to}",
+            "zh_TW": "發送 {amount} FLOW 代幣至 {to}"
+        }
+    },
+    "32a493f6e3c79514ec818a0028ee98c92e87409f617e238e6a94e9c22b271ff4": {
+        "arguments": [
+            "amount",
+            "to"
+        ],
+        "messages": {
+            "en": "Send {amount} tUSDT to {to}",
+            "zh_CN": "发送 {amount} tUSDT 代币至 {to}",
+            "zh_TW": "發送 {amount} tUSDT 代幣至 {to}"
+        }
+    },
+    "663847617c6ad301b5d8323f4f75c9dc003a7560fbde0f0e95d6f02e98903dd5": {
+        "arguments": [
+            "amount",
+            "target"
+        ],
+        "messages": {
+            "en": "Teleport {amount} tUSDT to {target} on Ethereum",
+            "zh_CN": "将 {amount} tUSDT 跨链传送至以太坊上的 {target}",
+            "zh_TW": "將 {amount} tUSDT 跨鏈傳送至以太坊上的 {target}"
+        }
+    }
+}
