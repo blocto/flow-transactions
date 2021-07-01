@@ -1,0 +1,21 @@
+{
+  "name": "flow-transactions",
+  "version": "0.0.1",
+  "description": "Audited Flow transactions.",
+  "license": "MIT",
+  "author": "portto <dev@portto.io>",
+  "homepage": "https://blocto.portto.io",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/portto/flow-transactions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/portto/flow-transactions/issues"
+  },
+  "dependencies": {
+    "sha3": "^2.1.3"
+  },
+  "scripts": {
+    "test": "echo 'hello world'"
+  }
+}
