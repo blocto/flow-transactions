@@ -1,5 +1,5 @@
 {
-  "name": "flow-transactions",
+  "name": "@blocto/flow-transactions",
   "version": "0.0.1",
   "description": "Audited Flow transactions.",
   "license": "MIT",
@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/portto/flow-transactions/issues"
   },
-  "dependencies": {
+  "devDependencies": {
     "sha2": "^1.0.2",
     "sha3": "^2.1.3"
   },
