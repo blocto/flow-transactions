@@ -31,5 +31,27 @@
             "zh_CN": "将 {amount} tUSDT 跨链传送至以太坊上的 {target}",
             "zh_TW": "將 {amount} tUSDT 跨鏈傳送至以太坊上的 {target}"
         }
+    },
+    "eb6d08f6dfd89ac770107b34052007035ac46cd5be077a6324112e48854d5d00": {
+        "arguments": [
+            "amountIn",
+            "minAmountOut"
+        ],
+        "messages": {
+            "en": "Swap {amountIn} FUSD for at least {minAmountOut} FLOW",
+            "zh_CN": "将 {amountIn} FUSD 兑换成至少 {minAmountOut} FLOW",
+            "zh_TW": "將 {amountIn} FUSD 兌換成至少 {minAmountOut} FLOW"
+        }
+    },
+    "7fa044ee5c4a4f839ace683f1474d0459f62ba2bb396828d63b2f35104c9aa4e": {
+        "arguments": [
+            "maxAmountIn",
+            "amountOut"
+        ],
+        "messages": {
+            "en": "Swap at most {maxAmountIn} FUSD for {amountOut} FLOW",
+            "zh_CN": "将至多 {maxAmountIn} FUSD 兑换成 {amountOut} FLOW",
+            "zh_TW": "將至多 {maxAmountIn} FUSD 兌換成 {amountOut} FLOW"
+        }
     }
 }
