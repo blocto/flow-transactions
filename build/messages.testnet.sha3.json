@@ -41,6 +41,9 @@
             "en": "Swap {amountIn} FUSD for at least {minAmountOut} FLOW",
             "zh_CN": "将 {amountIn} FUSD 兑换成至少 {minAmountOut} FLOW",
             "zh_TW": "將 {amountIn} FUSD 兌換成至少 {minAmountOut} FLOW"
+        },
+        "balances": {
+            "amountIn": "FUSD"
         }
     },
     "fca2edf0e7bc8ff11373994b7d59bdb438c6827e397a502c95be52d722dea6b8": {
@@ -52,6 +55,9 @@
             "en": "Swap at most {maxAmountIn} FUSD for {amountOut} FLOW",
             "zh_CN": "将至多 {maxAmountIn} FUSD 兑换成 {amountOut} FLOW",
             "zh_TW": "將至多 {maxAmountIn} FUSD 兌換成 {amountOut} FLOW"
+        },
+        "balances": {
+            "maxAmountIn": "FUSD"
         }
     }
 }

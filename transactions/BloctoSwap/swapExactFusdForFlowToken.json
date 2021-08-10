@@ -7,5 +7,8 @@
         "en": "Swap {amountIn} FUSD for at least {minAmountOut} FLOW",
         "zh_CN": "将 {amountIn} FUSD 兑换成至少 {minAmountOut} FLOW",
         "zh_TW": "將 {amountIn} FUSD 兌換成至少 {minAmountOut} FLOW"
+    },
+    "balances": {
+        "amountIn": "FUSD"
     }
 }
