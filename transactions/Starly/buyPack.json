@@ -1,0 +1,17 @@
+{
+    "arguments": [
+        "collectionID",
+        "packIDs",
+        "price",
+        "beneficiaryAddress",
+        "beneficiaryCutPercent",
+        "creatorAddress",
+        "creatorCutPercent"
+    ],
+    "messages": {
+        "en": "Approve transaction if you want to make purchase. Total price: {price}"
+    },
+    "balances": {
+        "price": "FUSD"
+    }
+}

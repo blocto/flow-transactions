@@ -1,0 +1,16 @@
+{
+    "arguments": [
+        "itemID",
+        "price",
+        "beneficiaryAddress",
+        "beneficiaryCutPercent",
+        "creatorAddress",
+        "creatorCutPercent"
+    ],
+    "messages": {
+        "en": "Approve transaction if you want to place card for sale. Price: {price}"
+    },
+    "balances": {
+        "price": "FUSD"
+    }
+}

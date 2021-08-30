@@ -1,0 +1,9 @@
+{
+    "arguments": [
+        "itemID",
+        "marketCollectionAddress"
+    ],
+    "messages": {
+        "en": "Approve transaction if you want to make purchase"
+    }
+}
