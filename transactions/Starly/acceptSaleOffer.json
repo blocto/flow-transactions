@@ -4,6 +4,6 @@
         "marketCollectionAddress"
     ],
     "messages": {
-        "en": "Approve transaction if you want to make purchase"
+        "en": "Purchase StarlyCard #{itemID} from {marketCollectionAddress}"
     }
 }

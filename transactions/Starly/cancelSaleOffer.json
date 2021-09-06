@@ -3,6 +3,6 @@
         "itemID"
     ],
     "messages": {
-        "en": "Approve transaction if you want to remove card from sale."
+        "en": "Remove StarlyCard #{itemID} from sale"
     }
 }

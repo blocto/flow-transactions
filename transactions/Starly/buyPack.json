@@ -9,7 +9,7 @@
         "creatorCutPercent"
     ],
     "messages": {
-        "en": "Approve transaction if you want to make purchase. Total price: {price}"
+        "en": "Purchase Starly packs (#{packIDs}) for {price} FUSD"
     },
     "balances": {
         "price": "FUSD"
