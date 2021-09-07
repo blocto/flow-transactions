@@ -1,7 +1,7 @@
 import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
 import FUSD from 0xFUSD_ADDRESS
-import StarlyCard from 0xSTARLY_CARD_ADDRESS
 import StarlyCardMarket from 0xSTARLY_CARD_MARKET_ADDRESS
+import StarlyPack from 0xSTARLY_PACK_ADDRESS
 
 transaction(
     collectionID: String,
