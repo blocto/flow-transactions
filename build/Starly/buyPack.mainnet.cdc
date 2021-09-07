@@ -1,7 +1,7 @@
 import FungibleToken from 0xf233dcee88fe0abe
 import FUSD from 0x3c5959b568896393
-import StarlyCard from 0x5b82f21c0edf76e3
 import StarlyCardMarket from 0x5b82f21c0edf76e3
+import StarlyPack from 0x5b82f21c0edf76e3
 
 transaction(
     collectionID: String,
