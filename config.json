@@ -3,6 +3,10 @@
         "mainnet": "0xf233dcee88fe0abe",
         "testnet": "0x9a0766d93b6608b7"
     },
+    "0xNON_FUNGIBLE_TOKEN_ADDRESS": {
+        "mainnet": "0x1d7e57aa55817448",
+        "testnet": "0x631e88ae7f1d7c20"
+    },
     "0xFLOW_TOKEN_ADDRESS": {
         "mainnet": "0x1654653399040a61",
         "testnet": "0x7e60df042a9c0868"
@@ -26,5 +30,17 @@
     "0xFLOW_USDT_SWAP_ADDRESS": {
         "mainnet": "0xc6c77b9f5c7a378f",
         "testnet": "0xd9854329b7edf136"
+    },
+    "0xSTARLY_CARD_ADDRESS": {
+        "mainnet": "0x5b82f21c0edf76e3",
+        "testnet": "0x697d72a988a77070"
+    },
+    "0xSTARLY_CARD_MARKET_ADDRESS": {
+        "mainnet": "0x5b82f21c0edf76e3",
+        "testnet": "0x697d72a988a77070"
+    },
+    "0xSTARLY_PACK_ADDRESS": {
+        "mainnet": "0x5b82f21c0edf76e3",
+        "testnet": "0x697d72a988a77070"
     }
 }

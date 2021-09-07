@@ -1,0 +1,8 @@
+{
+    "arguments": [
+        "itemID"
+    ],
+    "messages": {
+        "en": "Remove StarlyCard #{itemID} from sale"
+    }
+}

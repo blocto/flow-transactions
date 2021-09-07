@@ -1,0 +1,17 @@
+{
+    "arguments": [
+        "collectionID",
+        "packIDs",
+        "price",
+        "beneficiaryAddress",
+        "beneficiaryCutPercent",
+        "creatorAddress",
+        "creatorCutPercent"
+    ],
+    "messages": {
+        "en": "Purchase Starly packs (#{packIDs}) for {price} FUSD"
+    },
+    "balances": {
+        "price": "FUSD"
+    }
+}

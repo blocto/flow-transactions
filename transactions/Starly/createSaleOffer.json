@@ -1,0 +1,16 @@
+{
+    "arguments": [
+        "itemID",
+        "price",
+        "beneficiaryAddress",
+        "beneficiaryCutPercent",
+        "creatorAddress",
+        "creatorCutPercent"
+    ],
+    "messages": {
+        "en": "Place StarlyCard #{itemID} for sale for {price} FUSD"
+    },
+    "balances": {
+        "price": "FUSD"
+    }
+}

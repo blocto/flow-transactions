@@ -1,0 +1,9 @@
+{
+    "arguments": [
+        "itemID",
+        "marketCollectionAddress"
+    ],
+    "messages": {
+        "en": "Purchase StarlyCard #{itemID} from {marketCollectionAddress}"
+    }
+}
