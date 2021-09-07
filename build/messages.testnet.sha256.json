@@ -59,5 +59,60 @@
         "balances": {
             "maxAmountIn": "FUSD"
         }
+    },
+    "1c14de0ee7bc3589cf7546797690ccb5f90291f13494cb8cbd375f88617dda4d": {
+        "arguments": [
+            "itemID",
+            "marketCollectionAddress"
+        ],
+        "messages": {
+            "en": "Purchase StarlyCard #{itemID} from {marketCollectionAddress}"
+        }
+    },
+    "d6187379af32b3c2b7d64197473aef88fcdc6b69c70079f6c726e35c98392707": {
+        "arguments": [
+            "collectionID",
+            "packIDs",
+            "price",
+            "beneficiaryAddress",
+            "beneficiaryCutPercent",
+            "creatorAddress",
+            "creatorCutPercent"
+        ],
+        "messages": {
+            "en": "Purchase Starly packs (#{packIDs}) for {price} FUSD"
+        },
+        "balances": {
+            "price": "FUSD"
+        }
+    },
+    "aa207817633feda8828e170e82d50126a0a794cb5b48b06a02a7a62026017031": {
+        "arguments": [
+            "itemID"
+        ],
+        "messages": {
+            "en": "Remove StarlyCard #{itemID} from sale"
+        }
+    },
+    "3c9ec91c4d377ebc1cda575daa96b7d6cdcf1f612ea55f8cb7fc78d2fe00eb5f": {
+        "arguments": [
+            "itemID",
+            "price",
+            "beneficiaryAddress",
+            "beneficiaryCutPercent",
+            "creatorAddress",
+            "creatorCutPercent"
+        ],
+        "messages": {
+            "en": "Place StarlyCard #{itemID} for sale for {price} FUSD"
+        },
+        "balances": {
+            "price": "FUSD"
+        }
+    },
+    "a8d479bb80304dfcce353949f9cd223d0e5a38490ff4b421011c6b1a93dd0dab": {
+        "messages": {
+            "en": "Initialize your account in order to buy and sell NFTs"
+        }
     }
 }
