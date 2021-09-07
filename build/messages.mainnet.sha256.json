@@ -60,7 +60,7 @@
             "maxAmountIn": "FUSD"
         }
     },
-    "ae13894340ee6397f5460dce34caba7f3b64a418055b022ec18dc6909fbfcb1c": {
+    "20684a2af3d3423912328df0545b34146abd2b72f090923269551caa6e9f9795": {
         "arguments": [
             "itemID",
             "marketCollectionAddress"
@@ -69,7 +69,7 @@
             "en": "Purchase StarlyCard #{itemID} from {marketCollectionAddress}"
         }
     },
-    "d393eb706dc50373235d9480fda330b9a2c9370431b596a30e013d3756a68163": {
+    "4d5f54a3330a3b2d09921070464935815c2e6f5746cf256ae48fdb2d0d138c85": {
         "arguments": [
             "collectionID",
             "packIDs",
@@ -86,7 +86,7 @@
             "price": "FUSD"
         }
     },
-    "4f51e191241faf22e889a36a6144881726413053e880ed28c673561736400b74": {
+    "6bf5b496aba4c5bd60fc21a2904bb559d34e1c5a9f88408667e6e234864287d7": {
         "arguments": [
             "itemID"
         ],
@@ -94,7 +94,7 @@
             "en": "Remove StarlyCard #{itemID} from sale"
         }
     },
-    "034909c042ab359c0c2932588b2753af0f5808f26b8b9676313653b326b409ed": {
+    "d4cdebd9e3ce1c102ca17ac282ead88925489488578e2b20d1cfc6aad40f2bfe": {
         "arguments": [
             "itemID",
             "price",
@@ -110,7 +110,7 @@
             "price": "FUSD"
         }
     },
-    "a609b43acc7f643a312a7e1dce78abded0d23fb5f3586069c9e574fa68fc7517": {
+    "511143dab4623dabdf11cbe6c9d7415478409b18992f35fb19e7c2459387875e": {
         "messages": {
             "en": "Initialize your account in order to buy and sell NFTs"
         }
