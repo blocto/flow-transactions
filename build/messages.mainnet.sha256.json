@@ -91,7 +91,7 @@
             "itemID"
         ],
         "messages": {
-            "en": "Remove StarlyCard #{itemID} from sale"
+            "en": "Purchase Starly pack(s) for {price} FUSD"
         }
     },
     "d4cdebd9e3ce1c102ca17ac282ead88925489488578e2b20d1cfc6aad40f2bfe": {

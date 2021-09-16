@@ -80,7 +80,7 @@
             "creatorCutPercent"
         ],
         "messages": {
-            "en": "Purchase Starly packs (#{packIDs}) for {price} FUSD"
+            "en": "Purchase Starly pack(s) for {price} FUSD"
         },
         "balances": {
             "price": "FUSD"
