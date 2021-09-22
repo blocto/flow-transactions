@@ -105,9 +105,6 @@
         ],
         "messages": {
             "en": "Place StarlyCard #{itemID} for sale for {price} FUSD"
-        },
-        "balances": {
-            "price": "FUSD"
         }
     },
     "d4bab6e847492ba7d3a34a3ca78b25b503966e176d63ef85d9072563b81bd6b9": {
