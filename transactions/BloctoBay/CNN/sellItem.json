@@ -1,0 +1,11 @@
+{
+    "arguments": [
+        "saleItemID",
+        "saleItemPrice"
+    ],
+    "messages": {
+        "en": "List NFT with {saleItemPrice} FLOW",
+        "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
+        "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+}
