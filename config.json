@@ -42,5 +42,36 @@
     "0xSTARLY_PACK_ADDRESS": {
         "mainnet": "0x5b82f21c0edf76e3",
         "testnet": "0x697d72a988a77070"
+    },
+    "0xNFTStorefront_ADDRESS": {
+        "mainnet": "0x5b82f21c0edf76e3",
+        "testnet": "0x697d72a988a77070"
+    },
+    "0xBLOCTO_BAY_MARKETPLACE_ADDRESS": {
+        "mainnet": "0xdc5127882cacf8d9",
+        "testnet": "0xe1aa310cfe7750c4"
+    },
+    "0xCNN_NFT_ADDRESS": {
+        "mainnet": "0x329feb3ab062d289"
+    },
+    "0xDARK_COUNTRY_ADDRESS": {
+        "mainnet": "0xc8c340cebd11f690",
+        "testnet": "0xe2759c7e9a894ff1"
+    },
+    "0xEVOLUTION_ADDRESS": {
+        "mainnet": "0xf4264ac8f3256818"
+    },
+    "0xMOTO_GP_CARD_ADDRESS": {
+        "mainnet": "0xa49cc0ee46c54bfb"
+    },
+    "0xMOTO_GP_PACK_ADDRESS": {
+        "mainnet": "0xa49cc0ee46c54bfb"
+    },
+    "0xVERSUS_ART_ADDRESS": {
+        "mainnet": "0xd796ff17107bbff6",
+        "testnet": "0x99ca04281098b33d"
+    },
+    "0xXTINGLES_COLLECTIBLE_ADDRESS": {
+        "mainnet": "0xf5b0eb433389ac3f"
     }
 }

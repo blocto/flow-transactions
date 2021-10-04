@@ -1,0 +1,10 @@
+{
+    "arguments": [
+        "listingResourceID"
+    ],
+    "messages": {
+        "en": "Unlist NFT",
+        "zh_CN": "下架 NFT",
+        "zh_TW": "下架 NFT"
+    }
+}
