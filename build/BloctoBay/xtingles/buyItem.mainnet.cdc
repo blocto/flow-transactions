@@ -1,6 +1,6 @@
 import FungibleToken from 0xf233dcee88fe0abe
 import NonFungibleToken from 0x1d7e57aa55817448
-import NFTStorefront from 0x5b82f21c0edf76e3
+import NFTStorefront from 0x4eb8a10cb9f87357
 import Marketplace from 0xdc5127882cacf8d9
 import FlowToken from 0x1654653399040a61
 import Collectible from 0xf5b0eb433389ac3f

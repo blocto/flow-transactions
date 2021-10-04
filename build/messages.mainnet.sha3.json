@@ -112,7 +112,7 @@
             "en": "Initialize your account in order to buy and sell NFTs"
         }
     },
-    "2f0c41bafcab71bdfc28c46de1dab952be08b97ca31de3d5220907887c5fb3ce": {
+    "adc256a90ee284e8a5799e26b3096b2089ac59f51a5c8a07931483af02a2eea2": {
         "arguments": [
             "listingResourceID",
             "storefrontAddress",
@@ -127,7 +127,7 @@
             "buyPrice": "FLOW"
         }
     },
-    "14ceb91017cf36e8f97559583a7616ba6f4c2af964f6afaec22c4f95ad8d6429": {
+    "b24e27089667b88adf4558c1ed5b8a1c3e2e5e703972728e732c7bc10be1815e": {
         "arguments": [
             "saleItemID",
             "saleItemPrice"
@@ -138,7 +138,7 @@
             "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
         }
     },
-    "4472129a17a0f53c3f52e87d98a23607a868b652a7fa28d69aa868487e75e4b4": {
+    "4218619e8a91951c564836145951cc81bdf5dcff2c7f8ecaeba0e90528727b7a": {
         "arguments": [
             "listingResourceID",
             "storefrontAddress",
@@ -153,7 +153,7 @@
             "buyPrice": "FLOW"
         }
     },
-    "87b10deec2b0d0f3a8c0385f9f9d31b81377d249b6fc4d2d88993e84e41caa86": {
+    "e0042a4b17832691c4296b561a05ab462d5470e864f277cb7afedd703a26c505": {
         "arguments": [
             "saleItemID",
             "saleItemPrice"
@@ -164,7 +164,7 @@
             "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
         }
     },
-    "5bd1ee82ff87988ae18a20000df1e49e71d52a0114f88fff7462ba0c0f299d9c": {
+    "8142f2f63c1208bfaced91409fcbaf1241b2ea1c10377d5556437d4c6e8ace8d": {
         "arguments": [
             "listingResourceID",
             "storefrontAddress",
@@ -179,7 +179,7 @@
             "buyPrice": "FLOW"
         }
     },
-    "d0fd6505a870087f674d5f3bc6d88179727501a1b36c2709b0c91f242bcd4fa5": {
+    "1d9ddbdeec46c4fdb27422c1b5435daadc72b771046c683af9b361e989c35917": {
         "arguments": [
             "saleItemID",
             "saleItemPrice"
@@ -190,7 +190,7 @@
             "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
         }
     },
-    "8f95adcbb6a5e32bf2168c6fc96b8a397e97815313defe4d499fe4a95e611707": {
+    "03c6e096398497f03cac0b6677a6b6fa3fc71220f18f32847a13b77321aeecf0": {
         "arguments": [
             "listingResourceID",
             "storefrontAddress",
@@ -205,7 +205,7 @@
             "buyPrice": "FLOW"
         }
     },
-    "c50b326abb7e2cb9f02551093d43244b089a49596ce49a4b50e1d92979a69cc0": {
+    "56a193d698e0d5d728bb3e51f49b376e1f68ed633ebe540fd2816f445ef0c022": {
         "arguments": [
             "saleItemID",
             "saleItemPrice"
@@ -216,7 +216,7 @@
             "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
         }
     },
-    "d4fb8a7468563295956ea88f2a1416eeab19605ef57ec80a3deea6736c7838a2": {
+    "e36d10a64a95971d365d31328c5738062863a26304c8eb9307521c6e31885a3b": {
         "arguments": [
             "listingResourceID",
             "storefrontAddress",
@@ -231,7 +231,7 @@
             "buyPrice": "FLOW"
         }
     },
-    "63877128b45e385f19d256c5950108f82af9548274d76f4569d0722b9a982e62": {
+    "9ac8968c035b67ee2a8d221d16f60c322e36dd71746f7faf746e315e7c9a1945": {
         "arguments": [
             "saleItemID",
             "saleItemPrice"
@@ -242,7 +242,7 @@
             "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
         }
     },
-    "44306391fe15d9bcbb937249466fa2944d7ae8869a777c7fe4c5b3e003429f32": {
+    "abccb64450fab8464a190b93126a80dbfa7c72750c2d84f639b4e684e664376d": {
         "arguments": [
             "listingResourceID",
             "storefrontAddress",
@@ -257,7 +257,7 @@
             "buyPrice": "FLOW"
         }
     },
-    "21b38bd0e2789e6add17137c5ff67ac05f40ba40af1aefa3f171ebdee8df8dac": {
+    "73562c51e9741b171a2cb7d4d1ab6efa526c2395c315ce2cf68c2fdde55a8b0c": {
         "arguments": [
             "saleItemID",
             "saleItemPrice"
@@ -268,7 +268,7 @@
             "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
         }
     },
-    "066faaee8aa344b4a13b40ea3ebb4136b065e2a269f87966bf643db105fb5151": {
+    "fc4328fc3ee9d43d1e0d16e68cdee12467517956258245e683c27c2d967f7acc": {
         "arguments": [
             "listingResourceID",
             "storefrontAddress",
@@ -283,7 +283,7 @@
             "buyPrice": "FLOW"
         }
     },
-    "176575ec9c47db95a6e4186cb8e61d2e1f02801d616dbedca9f6622c41c70027": {
+    "65029bb4144855422b8e6730d10c7c4075d4467c6a141b4a4c8d68ac7ab8ddb0": {
         "arguments": [
             "saleItemID",
             "saleItemPrice"
