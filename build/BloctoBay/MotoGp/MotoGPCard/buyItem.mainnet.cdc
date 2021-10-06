@@ -5,7 +5,13 @@ import Marketplace from 0xdc5127882cacf8d9
 import FlowToken from 0x1654653399040a61
 import MotoGPCard from 0xa49cc0ee46c54bfb
 
-prepare(signer: AuthAccount) {
+transaction(listingResourceID: UInt64, storefrontAddress: Address, buyPrice: UFix64) {
+    let paymentVault: @FungibleToken.Vault
+    let MotoGPCardCollection: &MotoGPCard.Collection{NonFungibleToken.Receiver}
+    let storefront: &NFTStorefront.Storefront{NFTStorefront.StorefrontPublic}
+    let listing: &NFTStorefront.Listing{NFTStorefront.ListingPublic}
+
+    prepare(signer: AuthAccount) {
         // Create a collection to store the purchase if none present
         if signer.borrow<&MotoGPCard.Collection>(from: /storage/motogpCardCollection) == nil {
             signer.save(<- MotoGPCard.createEmptyCollection(), to: /storage/motogpCardCollection)
