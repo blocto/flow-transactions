@@ -5,7 +5,9 @@
         "amount"
     ],
     "messages": {
-        "en": "Buy VersusArt {tokenId} for {amount}"
+        "en": "Buy VersusArt {tokenId} for {amount}",
+        "zh_CN": "以 {amount} FLOW 购买 Versus #{tokenId} 艺术品",
+        "zh_TW": "以 {amount} FLOW 購買 Versus #{tokenId} 藝術品"
     },
     "balances": {
         "amount": "FLOW"

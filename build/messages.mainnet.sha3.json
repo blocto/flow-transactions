@@ -312,7 +312,9 @@
             "bidAmount"
         ],
         "messages": {
-            "en": "Bid {bidAmount} Flow on versus drop {dropId}"
+            "en": "Bid {bidAmount} FLOW on versus drop {dropId}",
+            "zh_CN": "以 {bidAmount} FLOW 竞标 Versus 销售代号 {dropId}",
+            "zh_TW": "以 {bidAmount} FLOW 競標 Versus 銷售代號 {dropId}"
         },
         "balances": {
             "bidAmount": "FLOW"
@@ -325,7 +327,9 @@
             "amount"
         ],
         "messages": {
-            "en": "Buy VersusArt {tokenId} for {amount}"
+            "en": "Buy VersusArt {tokenId} for {amount}",
+            "zh_CN": "以 {amount} FLOW 购买 Versus #{tokenId} 艺术品",
+            "zh_TW": "以 {amount} FLOW 購買 Versus #{tokenId} 藝術品"
         },
         "balances": {
             "amount": "FLOW"
