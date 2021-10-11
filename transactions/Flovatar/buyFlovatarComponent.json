@@ -1,0 +1,13 @@
+{
+    "arguments": [
+        "saleAddress",
+        "tokenId",
+        "amount"
+    ],
+    "messages": {
+        "en": "Buy a Flovatar Component for {amount} FUSD from {saleAddress}"
+    },
+    "balances": {
+        "bidAmount": "FUSD"
+    }
+}
