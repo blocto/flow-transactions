@@ -1,6 +1,6 @@
 import FungibleToken from 0xFungibleToken
 import NonFungibleToken from 0xNonFungibleToken
-import Art, Auction, Versus from 0xCONTRACT
+import Art, Auction, Versus from 0xVersus
 /*
     Transaction to make a bid in a marketplace for the given dropId and auctionId
  */
