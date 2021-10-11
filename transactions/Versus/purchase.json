@@ -1,0 +1,13 @@
+{
+    "arguments": [
+        "marketplace",
+        "tokenId",
+        "amount"
+    ],
+    "messages": {
+        "en": "Buy VersusArt {tokenId} for {amount}"
+    },
+    "balances": {
+        "amount": "FLOW"
+    }
+}
