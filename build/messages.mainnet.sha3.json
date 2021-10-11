@@ -303,5 +303,32 @@
             "zh_CN": "下架 NFT",
             "zh_TW": "下架 NFT"
         }
+    },
+    "7adaa15f38e0cc2682ded7b534bba38c06dfda387179274bbf2fc0a0591cf5a7": {
+        "arguments": [
+            "marketplace",
+            "dropId",
+            "auctionId",
+            "bidAmount"
+        ],
+        "messages": {
+            "en": "Bid {bidAmount} Flow on versus drop {dropId}"
+        },
+        "balances": {
+            "bidAmount": "FLOW"
+        }
+    },
+    "99f64424e76423a0ca5f996f39bce856a775fa9fb5dbbd14530d89ce7c86c5d5": {
+        "arguments": [
+            "marketplace",
+            "tokenId",
+            "amount"
+        ],
+        "messages": {
+            "en": "Buy VersusArt {tokenId} for {amount}"
+        },
+        "balances": {
+            "amount": "FLOW"
+        }
     }
 }

@@ -111,5 +111,32 @@
         "messages": {
             "en": "Initialize your account in order to buy and sell NFTs"
         }
+    },
+    "8d13c31143b2e00f1a27fc3b68dc20519c71fc9b6b9fcfe8eaf3b67f5d233d1f": {
+        "arguments": [
+            "marketplace",
+            "dropId",
+            "auctionId",
+            "bidAmount"
+        ],
+        "messages": {
+            "en": "Bid {bidAmount} Flow on versus drop {dropId}"
+        },
+        "balances": {
+            "bidAmount": "FLOW"
+        }
+    },
+    "e9c02d331ae6f25376148265b1f4137a60281c8352de62993eda6e5f9c80fce1": {
+        "arguments": [
+            "marketplace",
+            "tokenId",
+            "amount"
+        ],
+        "messages": {
+            "en": "Buy VersusArt {tokenId} for {amount}"
+        },
+        "balances": {
+            "amount": "FLOW"
+        }
     }
 }
