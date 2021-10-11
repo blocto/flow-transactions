@@ -1,6 +1,6 @@
-import FungibleToken from 0xFungibleToken
-import NonFungibleToken from 0xNonFungibleToken
-import Content, Art, Auction, Versus, Marketplace from 0xVersus
+import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
+import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
+import Content, Art, Auction, Versus, Marketplace from 0xVERSUS_ADDRESS
 
 transaction(marketplace: Address, tokenId: UInt64, amount: UFix64) {
   // reference to the buyer's NFT collection where they
