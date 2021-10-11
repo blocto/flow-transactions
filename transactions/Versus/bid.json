@@ -1,0 +1,14 @@
+{
+    "arguments": [
+        "marketplace",
+        "dropId",
+        "auctionId",
+        "bidAmount"
+    ],
+    "messages": {
+        "en": "Bid {bidAmount} Flow on versus drop {dropId}"
+    },
+    "balances": {
+        "bidAmount": "FLOW"
+    }
+}
