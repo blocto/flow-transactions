@@ -8,7 +8,7 @@ transaction(amount: UFix64) {
         self.sentVault <- vaultRef.withdraw(amount: amount)
     }
     execute {
-        let recipient = getAccount(0x7f9a6b61ba0de5ee)
+        let recipient = getAccount(0xETERNAL_PAYMENT_ADDRESS)
         let receiverRef = recipient.getCapability(/public/flowTokenReceiver)
             .borrow<&{FungibleToken.Receiver}>()
             ?? panic("Could not borrow receiver reference to the recipient's Vault")

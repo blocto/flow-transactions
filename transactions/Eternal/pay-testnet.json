@@ -1,6 +1,0 @@
-{
-  "arguments": ["amount"],
-  "messages": {
-    "en": "Sending {amount} FLOW to Eternal.gg (testnet)"
-  }
-}
