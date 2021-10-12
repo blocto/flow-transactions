@@ -304,7 +304,7 @@
             "zh_TW": "下架 NFT"
         }
     },
-    "7adaa15f38e0cc2682ded7b534bba38c06dfda387179274bbf2fc0a0591cf5a7": {
+    "69486ef0d278425de20e2a95a1119d3c3ef56bcf1e09bc6e10d4beb85ef3abbb": {
         "arguments": [
             "marketplace",
             "dropId",
@@ -320,7 +320,7 @@
             "bidAmount": "FLOW"
         }
     },
-    "99f64424e76423a0ca5f996f39bce856a775fa9fb5dbbd14530d89ce7c86c5d5": {
+    "107a78b77138feef23251d058d71ce1e33ac8a68f86b830829b08dd466d7922d": {
         "arguments": [
             "marketplace",
             "tokenId",

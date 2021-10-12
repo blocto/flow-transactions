@@ -112,7 +112,7 @@
             "en": "Initialize your account in order to buy and sell NFTs"
         }
     },
-    "8d13c31143b2e00f1a27fc3b68dc20519c71fc9b6b9fcfe8eaf3b67f5d233d1f": {
+    "ff126a96f6ebaf8be7fa9a26e267be1ad9a5e1e344824eb5a54170061334e082": {
         "arguments": [
             "marketplace",
             "dropId",
@@ -128,7 +128,7 @@
             "bidAmount": "FLOW"
         }
     },
-    "e9c02d331ae6f25376148265b1f4137a60281c8352de62993eda6e5f9c80fce1": {
+    "a0173201ab5b63423aa3b1c2f1501cac990989e4c3e980b9043ed96e869e6c67": {
         "arguments": [
             "marketplace",
             "tokenId",
