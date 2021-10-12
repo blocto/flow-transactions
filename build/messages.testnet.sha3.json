@@ -142,5 +142,16 @@
         "balances": {
             "amount": "FLOW"
         }
+    },
+    "bd4ca63cba16a63bc94f7ac4270b29f78e3046599d8a48d5818306637eb53246": {
+        "arguments": [
+            "amount"
+        ],
+        "messages": {
+            "en": "Sending {amount} FLOW to Eternal.gg"
+        },
+        "balances": {
+            "amount": "FLOW"
+        }
     }
 }
