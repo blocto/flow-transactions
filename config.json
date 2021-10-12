@@ -79,6 +79,7 @@
         "testnet": "0x7f9a6b61ba0de5ee"
     },
     "0xFLOVATAR_ADDRESS": {
+        "mainnet": "0x0",
         "testnet": "0x4d23ef75f1c37187"
     }
 }

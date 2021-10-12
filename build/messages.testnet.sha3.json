@@ -153,5 +153,45 @@
         "balances": {
             "amount": "FLOW"
         }
+    },
+    "44d5ab68196830f127836204207c1c38b4c99b90be2e57d1e6501b93821b323c": {
+        "arguments": [
+            "saleAddress",
+            "tokenId",
+            "amount"
+        ],
+        "messages": {
+            "en": "Buy a Flovatar for {amount} FUSD from {saleAddress}"
+        },
+        "balances": {
+            "amount": "FUSD"
+        }
+    },
+    "b55f8159bcb2b2c5043fd044c09ab07bb8e577306262ede2c93faecdf2c800f6": {
+        "arguments": [
+            "saleAddress",
+            "tokenId",
+            "amount"
+        ],
+        "messages": {
+            "en": "Buy a Flovatar Component for {amount} FUSD from {saleAddress}"
+        },
+        "balances": {
+            "amount": "FUSD"
+        }
+    },
+    "5c47b941694436c7268ff515c127149e1a7c5153fdbe01ed4715b613aa367d21": {
+        "arguments": [
+            "saleAddress",
+            "tokenId",
+            "amount",
+            "signature"
+        ],
+        "messages": {
+            "en": "Buy a Flovatar Pack for {amount} FUSD"
+        },
+        "balances": {
+            "amount": "FUSD"
+        }
     }
 }
