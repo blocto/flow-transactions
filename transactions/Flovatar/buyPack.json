@@ -9,6 +9,6 @@
         "en": "Buy a Flovatar Pack for {amount} FUSD"
     },
     "balances": {
-        "bidAmount": "FUSD"
+        "amount": "FUSD"
     }
 }

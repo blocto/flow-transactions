@@ -8,6 +8,6 @@
         "en": "Buy a Flovatar for {amount} FUSD from {saleAddress}"
     },
     "balances": {
-        "bidAmount": "FUSD"
+        "amount": "FUSD"
     }
 }
