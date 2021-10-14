@@ -52,27 +52,32 @@
         "testnet": "0xe1aa310cfe7750c4"
     },
     "0xCNN_NFT_ADDRESS": {
-        "mainnet": "0x329feb3ab062d289"
+        "mainnet": "0x329feb3ab062d289",
+        "testnet": "0x0"
     },
     "0xDARK_COUNTRY_ADDRESS": {
         "mainnet": "0xc8c340cebd11f690",
         "testnet": "0xe2759c7e9a894ff1"
     },
     "0xEVOLUTION_ADDRESS": {
-        "mainnet": "0xf4264ac8f3256818"
+        "mainnet": "0xf4264ac8f3256818",
+        "testnet": "0x0"
     },
     "0xMOTO_GP_CARD_ADDRESS": {
-        "mainnet": "0xa49cc0ee46c54bfb"
+        "mainnet": "0xa49cc0ee46c54bfb",
+        "testnet": "0x0"
     },
     "0xMOTO_GP_PACK_ADDRESS": {
-        "mainnet": "0xa49cc0ee46c54bfb"
+        "mainnet": "0xa49cc0ee46c54bfb",
+        "testnet": "0x0"
     },
     "0xVERSUS_ADDRESS": {
         "mainnet": "0xd796ff17107bbff6",
         "testnet": "0x99ca04281098b33d"
     },
     "0xXTINGLES_COLLECTIBLE_ADDRESS": {
-        "mainnet": "0xf5b0eb433389ac3f"
+        "mainnet": "0xf5b0eb433389ac3f",
+        "testnet": "0x0"
     },
     "0xETERNAL_PAYMENT_ADDRESS": {
         "mainnet": "0x1f56a1e665826a52",
@@ -83,13 +88,16 @@
         "testnet": "0x4d23ef75f1c37187"
     },
     "0xRaceDay_NFT_ADDRESS": {
-        "mainnet": "0x329feb3ab062d289"
+        "mainnet": "0x329feb3ab062d289",
+        "testnet": "0x0"
     },
     "0xStarlyCard_ADDRESS": {
-        "mainnet": "0x5b82f21c0edf76e3"
+        "mainnet": "0x5b82f21c0edf76e3",
+        "testnet": "0x0"
     },
     "0xChainmonstersRewards_ADDRESS": {
-        "mainnet": "0x93615d25d14fa337"
+        "mainnet": "0x93615d25d14fa337",
+        "testnet": "0x0"
     },
     "0xTopShot_ADDRESS": {
         "mainnet": "0x0b2a3299cc857e29",
