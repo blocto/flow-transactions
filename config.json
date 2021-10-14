@@ -11,6 +11,10 @@
         "mainnet": "0x1654653399040a61",
         "testnet": "0x7e60df042a9c0868"
     },
+    "0xFLOW_STORAGE_FEES_ADDRESS": {
+        "mainnet": "0xe467b9dd11fa00df",
+        "testnet": "0x8c5303eaa26202d6"
+    },
     "0xTELEPORTED_USDT_ADDRESS": {
         "mainnet": "0xcfdd90d4a00f7b5b",
         "testnet": "0xab26e0a07d770ec1"
@@ -72,7 +76,8 @@
         "testnet": "0x99ca04281098b33d"
     },
     "0xXTINGLES_COLLECTIBLE_ADDRESS": {
-        "mainnet": "0xf5b0eb433389ac3f"
+        "mainnet": "0xf5b0eb433389ac3f",
+        "testnet": "0x85080f371da20cc1"
     },
     "0xETERNAL_PAYMENT_ADDRESS": {
         "mainnet": "0x1f56a1e665826a52",
@@ -98,5 +103,90 @@
     "0xJAMBB_VOUCHERS_ADDRESS": {
         "mainnet": "0x444f5ea22c6ea12c",
         "testnet": "0xe94a6e229293f196"
+    },
+    "0xBEAM_ADDRESS": {
+        "mainnet": "0x86b4a0010a71cfc3",
+        "testnet": "0x6085ae87e78e1433"
+    },
+    "0xBLOCKLETE_GAMES_ADDRESS": {
+        "mainnet": "0x329feb3ab062d289"
+    },
+    "0xCAA_PASS_ADDRESS": {
+        "mainnet": "0x98c9c2e548b84d31",
+        "testnet": "0xa8b1239250f8d342"
+    },
+    "0xCHAINMONSTERS_REWARDS_ADDRESS": {
+        "mainnet": "0x93615d25d14fa337",
+        "testnet": "0x75783e3c937304a8"
+    },
+    "0xCRAVE_ADDRESS": {
+        "mainnet": "0x6d008a788fc27265",
+        "testnet": "0x6085ae87e78e1433"
+    },
+    "0xCRICKET_MOMENTS_ADDRESS": {
+        "mainnet": "0xed398881d9bf40fb",
+        "testnet": "0xb45e7992680a0f7f"
+    },
+    "0xEVERBLOOM_ADDRESS": {
+        "mainnet": "0xe703f7fee6400754",
+        "testnet": "0xf30d2f642de8c895"
+    },
+    "0xFANTASTEC_ADDRESS": {
+        "mainnet": "0x2e1ee1e7a96826ce",
+        "testnet": "0x7b4fab78fbddc57e"
+    },
+    "0xGAIA_ADDRESS": {
+        "mainnet": "0x8b148183c28ff88f",
+        "testnet": "0xc523a8bbf10fc4a3"
+    },
+    "0xKLKTN_ADDRESS": {
+        "mainnet": "0xabd6e80be7e9682c",
+        "testnet": "0x336895dbe44c4b44"
+    },
+    "0xKOTD_ADDRESS": {
+        "mainnet": "0x23dddd854fcc8c6f",
+        "testnet": "0x6085ae87e78e1433"
+    },
+    "0xMATRIX_WORLD_FLOWFEST_NFT_ADDRESS": {
+        "mainnet": "0x2d2750f240198f91",
+        "testnet": "0xe2f1b000e0203c1d"
+    },
+    "0xMUSIC_BLOCK_ADDRESS": {
+        "mainnet": "0x5634aefcb76e7d8c",
+        "testnet": "0xeb3241ad7d7881db"
+    },
+    "0xMYNFT_ADDRESS": {
+        "mainnet": "0xf6fcbef550d97aa5",
+        "testnet": "0x1eced429f2012ef0"
+    },
+    "0xNYATHEES_OVO_ADDRESS": {
+        "mainnet": "0x75e0b6de94eb05d0",
+        "testnet": "0xacf3dfa413e00f9f"
+    },
+    "0xRACEDAY_NFT_ADDRESS": {
+        "mainnet": "0x329feb3ab062d289"
+    },
+    "0xRAREROOMS_NFT_ADDRESS": {
+        "mainnet": "0x329feb3ab062d289"
+    },
+    "0xRCRDSHP_ADDRESS": {
+        "mainnet": "0x6c3ff40b90b928ab",
+        "testnet": "0x95d41a94b49a1ed1"
+    },
+    "0xETERNAL_SHARD_ADDRESS": {
+        "mainnet": "0x82b54037a8f180cf",
+        "testnet": "0x7ff5f9ac593c3ee0"
+    },
+    "0xSPORTS_ICON_COLLECTIBLE_ADDRESS": {
+        "mainnet": "0x8de96244f54db422",
+        "testnet": "0xc2824327396d3a39"
+    },
+    "0xTHEFABRICANT_MYSTERYBOX_FF1_ADDRESS": {
+        "mainnet": "0xa0cbe021821c0965",
+        "testnet": "0xbc9d692e2617a96e"
+    },
+    "0xTUNE_GO_ADDRESS": {
+        "mainnet": "0x0d9bc5af3fc0c2e3",
+        "testnet": "0x2b0150231c047a8c"
     }
 }
