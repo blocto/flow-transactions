@@ -81,5 +81,18 @@
     "0xFLOVATAR_ADDRESS": {
         "mainnet": "0x0",
         "testnet": "0x4d23ef75f1c37187"
+    },
+    "0xRaceDay_NFT_ADDRESS": {
+        "mainnet": "0x329feb3ab062d289"
+    },
+    "0xStarlyCard_ADDRESS": {
+        "mainnet": "0x5b82f21c0edf76e3"
+    },
+    "0xChainmonstersRewards_ADDRESS": {
+        "mainnet": "0x93615d25d14fa337"
+    },
+    "0xTopShot_ADDRESS": {
+        "mainnet": "0x0b2a3299cc857e29",
+        "testnet": "0x877931736ee77cff"
     }
 }

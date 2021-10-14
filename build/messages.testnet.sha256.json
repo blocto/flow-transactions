@@ -38,6 +38,46 @@
       "maxAmountIn": "FUSD"
     }
   },
+  "cff3d7016e5fdbd38e59abad8f099bf89b4c16df2411e5714c80a0c5ca4babb7": {
+    "arguments": [
+      "saleAddress",
+      "tokenId",
+      "amount"
+    ],
+    "messages": {
+      "en": "Buy a Flovatar for {amount} FUSD from {saleAddress}"
+    },
+    "balances": {
+      "amount": "FUSD"
+    }
+  },
+  "6c6acffcbee31153d6cc9393c0701542748b6e4a32fd81b0a7e64e981da464ad": {
+    "arguments": [
+      "saleAddress",
+      "tokenId",
+      "amount"
+    ],
+    "messages": {
+      "en": "Buy a Flovatar Component for {amount} FUSD from {saleAddress}"
+    },
+    "balances": {
+      "amount": "FUSD"
+    }
+  },
+  "c75dc4f44312f9cfe9e1c3e6e2037c22a501c2f926469c3fc16e8a47b8fcd9d0": {
+    "arguments": [
+      "saleAddress",
+      "tokenId",
+      "amount",
+      "signature"
+    ],
+    "messages": {
+      "en": "Buy a Flovatar Pack for {amount} FUSD"
+    },
+    "balances": {
+      "amount": "FUSD"
+    }
+  },
   "bc98e021ac6ea147b89513f6def373029675afebc7e553dd60f5653bbae64e33": {
     "arguments": [
       "amount",
@@ -47,28 +87,6 @@
       "en": "Send {amount} FLOW to {to}",
       "zh_CN": "发送 {amount} FLOW 代币至 {to}",
       "zh_TW": "發送 {amount} FLOW 代幣至 {to}"
-    }
-  },
-  "5a1eb53cac5ad89a53d0d786d826607db5fed89ca19b7a2c26d037cabb6c5502": {
-    "arguments": [
-      "amount",
-      "to"
-    ],
-    "messages": {
-      "en": "Send {amount} tUSDT to {to}",
-      "zh_CN": "发送 {amount} tUSDT 代币至 {to}",
-      "zh_TW": "發送 {amount} tUSDT 代幣至 {to}"
-    }
-  },
-  "7546a3b06dd679f2212f812ccf5822054860a8bcc7d1a9667ee3d965a78641c9": {
-    "arguments": [
-      "amount",
-      "target"
-    ],
-    "messages": {
-      "en": "Teleport {amount} tUSDT to {target} on Ethereum",
-      "zh_CN": "将 {amount} tUSDT 跨链传送至以太坊上的 {target}",
-      "zh_TW": "將 {amount} tUSDT 跨鏈傳送至以太坊上的 {target}"
     }
   },
   "49cdfaaa51ab720b4f2b27e512a8e1c9d4621375690401fb23f288c3e702ec04": {
@@ -154,44 +172,26 @@
       "en": "Initialize your account in order to buy and sell NFTs"
     }
   },
-  "cff3d7016e5fdbd38e59abad8f099bf89b4c16df2411e5714c80a0c5ca4babb7": {
+  "5a1eb53cac5ad89a53d0d786d826607db5fed89ca19b7a2c26d037cabb6c5502": {
     "arguments": [
-      "saleAddress",
-      "tokenId",
-      "amount"
-    ],
-    "messages": {
-      "en": "Buy a Flovatar for {amount} FUSD from {saleAddress}"
-    },
-    "balances": {
-      "amount": "FUSD"
-    }
-  },
-  "6c6acffcbee31153d6cc9393c0701542748b6e4a32fd81b0a7e64e981da464ad": {
-    "arguments": [
-      "saleAddress",
-      "tokenId",
-      "amount"
-    ],
-    "messages": {
-      "en": "Buy a Flovatar Component for {amount} FUSD from {saleAddress}"
-    },
-    "balances": {
-      "amount": "FUSD"
-    }
-  },
-  "c75dc4f44312f9cfe9e1c3e6e2037c22a501c2f926469c3fc16e8a47b8fcd9d0": {
-    "arguments": [
-      "saleAddress",
-      "tokenId",
       "amount",
-      "signature"
+      "to"
     ],
     "messages": {
-      "en": "Buy a Flovatar Pack for {amount} FUSD"
-    },
-    "balances": {
-      "amount": "FUSD"
+      "en": "Send {amount} tUSDT to {to}",
+      "zh_CN": "发送 {amount} tUSDT 代币至 {to}",
+      "zh_TW": "發送 {amount} tUSDT 代幣至 {to}"
+    }
+  },
+  "7546a3b06dd679f2212f812ccf5822054860a8bcc7d1a9667ee3d965a78641c9": {
+    "arguments": [
+      "amount",
+      "target"
+    ],
+    "messages": {
+      "en": "Teleport {amount} tUSDT to {target} on Ethereum",
+      "zh_CN": "将 {amount} tUSDT 跨链传送至以太坊上的 {target}",
+      "zh_TW": "將 {amount} tUSDT 跨鏈傳送至以太坊上的 {target}"
     }
   },
   "e13e01bf29ff457fa6f976470899e6da6a154bb8ed1443c3f7722652b2be5a44": {
