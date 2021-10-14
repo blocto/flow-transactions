@@ -1,13 +1,21 @@
 const fs = require('fs');
 const { sha3, sha256 } = require('./utils/hash');
 
-const transaction = fs
-  .readFileSync(process.argv[2])
-  .toString();
+const {
+  listFiles
+} = require('./utils/file')
 
-const scriptSha3 = sha3(transaction);
-const scriptSha256 = sha256(transaction);
+const dir = './build'
+listFiles(dir, 'cdc', (err, list) => {
+  list.forEach((path) => {
+    const transaction = fs
+      .readFileSync(path)
+      .toString();
 
-const result = `sha3   ${scriptSha3}\nsha256 ${scriptSha256}`;
+    const scriptSha3 = sha3(transaction);
+    const scriptSha256 = sha256(transaction);
 
-fs.writeFileSync(process.argv[2].replace('.cdc', '.hash'), result);
+    fs.writeFileSync(path.replace('.cdc', '.sha3'), scriptSha3);
+    fs.writeFileSync(path.replace('.cdc', '.sha256'), scriptSha256);
+  });
+});

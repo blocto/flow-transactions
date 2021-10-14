@@ -11,7 +11,11 @@ const replaceContractAddresses = (script, env = ENV) => {
   let processedScript = script;
 
   Object.keys(config).forEach(key => {
-    processedScript = processedScript.replace(key, config[key][env]);
+    const replacedKey = config[key][env]
+    if (!replacedKey) {
+      throw new Error("undefined address")
+    }
+    processedScript = processedScript.replace(key, replacedKey);
   });
 
   return processedScript
