@@ -1,16 +1,16 @@
 const fs = require('fs');
 
-const listFiles = function(dir, ext, done) {
+const listFiles = (dir, ext, done) => {
   let results = [];
-  fs.readdir(dir, function(err, list) {
+  fs.readdir(dir, (err, list) => {
     if (err) return done(err);
     let pending = list.length;
     if (!pending) return done(null, results);
     list.forEach(function(file) {
       file = dir + '/' + file;
-      fs.stat(file, function(err, stat) {
+      fs.stat(file, (err, stat) => {
         if (stat && stat.isDirectory()) {
-          listFiles(file, ext, function(err, res) {
+          listFiles(file, ext, (err, res) => {
             results = results.concat(res);
             if (!--pending) done(null, results);
           });
