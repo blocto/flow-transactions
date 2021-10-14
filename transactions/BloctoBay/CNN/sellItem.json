@@ -4,8 +4,8 @@
         "saleItemPrice"
     ],
     "messages": {
-        "en": "List NFT at {saleItemPrice} FLOW",
-        "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
-        "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+        "en": "List CNN NFT at {saleItemPrice} FLOW",
+        "zh_CN": "以 {saleItemPrice} FLOW 上架 CNN NFT",
+        "zh_TW": "以 {saleItemPrice} FLOW 上架 CNN NFT"
     }
 }
