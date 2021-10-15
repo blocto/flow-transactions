@@ -258,6 +258,11 @@
       "en": "Sending {amount} FLOW to Eternal.gg"
     }
   },
+  "94affb6a342b1cabd75780f1d1019850430a572f03671f213dd18af9c8b12a47": {
+    "messages": {
+      "en": "Initialize your account for Mystery Pack NFTs"
+    }
+  },
   "9ac8968c035b67ee2a8d221d16f60c322e36dd71746f7faf746e315e7c9a1945": {
     "arguments": [
       "saleItemID",
@@ -267,6 +272,11 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "a17ce9a30bc59550be0b28d90b50f08a5a866121bc44f9e86b52c9cb8ce55d2d": {
+    "messages": {
+      "en": "Initialize your account for Mystery Pack NFTs"
     }
   },
   "abccb64450fab8464a190b93126a80dbfa7c72750c2d84f639b4e684e664376d": {

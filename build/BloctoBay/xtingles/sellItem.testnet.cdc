@@ -3,7 +3,7 @@ import NonFungibleToken from 0x631e88ae7f1d7c20
 import NFTStorefront from 0x94b06cfca1d8a476
 import Marketplace from 0xe1aa310cfe7750c4
 import FlowToken from 0x7e60df042a9c0868
-import Collectible from 0x0
+import Collectible from 0x85080f371da20cc1
 
 transaction(saleItemID: UInt64, saleItemPrice: UFix64) {
     let flowTokenReceiver: Capability<&FlowToken.Vault{FungibleToken.Receiver}>
