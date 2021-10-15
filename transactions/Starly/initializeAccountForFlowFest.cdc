@@ -27,6 +27,7 @@ import SportsIconCollectible from 0xSPORTS_ICON_COLLECTIBLE_ADDRESS
 import StarlyCard from 0xSTARLY_CARD_ADDRESS
 import StarlyCardMarket from 0xSTARLY_CARD_MARKET_ADDRESS
 import TheFabricantMysteryBox_FF1 from 0xTHEFABRICANT_MYSTERYBOX_FF1_ADDRESS
+import TopShot from 0xTopShot_ADDRESS
 import TuneGO from 0xTUNE_GO_ADDRESS
 import Vouchers from 0xJAMBB_VOUCHERS_ADDRESS
 
@@ -181,6 +182,12 @@ pub fun hasStarlyCardMarket(_ address: Address): Bool {
 pub fun hasTheFabricant(_ address: Address): Bool {
     return getAccount(address)
         .getCapability<&{TheFabricantMysteryBox_FF1.FabricantCollectionPublic}>(TheFabricantMysteryBox_FF1.CollectionPublicPath)
+        .check()
+}
+
+pub fun hasTopShot(_ address: Address): Bool {
+    return getAccount(address)
+        .getCapability<&{TopShot.MomentCollectionPublic}>(/public/MomentCollection)
         .check()
 }
 
@@ -348,6 +355,12 @@ transaction {
                  acct.save(<-TheFabricantMysteryBox_FF1.createEmptyCollection(), to: TheFabricantMysteryBox_FF1.CollectionStoragePath)
              }
              acct.link<&{TheFabricantMysteryBox_FF1.FabricantCollectionPublic}>(TheFabricantMysteryBox_FF1.CollectionPublicPath, target: TheFabricantMysteryBox_FF1.CollectionStoragePath)
+        }
+        if !hasTopShot(acct.address) {
+             if acct.borrow<&TopShot.Collection>(from: /storage/MomentCollection) == nil {
+                 acct.save(<-TopShot.createEmptyCollection(), to: /storage/MomentCollection)
+             }
+             acct.link<&{TopShot.MomentCollectionPublic}>(/public/MomentCollection, target: /storage/MomentCollection)
         }
         if !hasTuneGO(acct.address) {
              if acct.borrow<&TuneGO.Collection>(from: TuneGO.CollectionStoragePath) == nil {
