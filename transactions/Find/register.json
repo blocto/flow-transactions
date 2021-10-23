@@ -1,10 +1,10 @@
 {
     "arguments": [
-        "name", 
-				"amount"
+        "name",
+        "amount"
     ],
     "messages": {
-        "en": "Register the name {name} in FIND for  {amount} FUSD"
+        "en": "Register the name {name} in FIND for {amount} FUSD"
     },
     "balances": {
         "amount": "FUSD"

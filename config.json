@@ -200,6 +200,7 @@
         "testnet": "0x2b0150231c047a8c"
     },
     "0xFIND_ADDRESS" : {
-       "testnet" : "85f0d6217184009b"
+       "testnet" : "0x85f0d6217184009b",
+       "mainnet" : "0x0"
     }
 }
