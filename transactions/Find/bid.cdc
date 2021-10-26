@@ -1,6 +1,6 @@
+import FIND from 0xFIND_ADDRESS
 import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
 import FUSD from 0xFUSD_ADDRESS
-import FIND from 0xFIND_ADDRESS
 
 transaction(name: String, amount: UFix64) {
 	prepare(account: AuthAccount) {
@@ -25,10 +25,10 @@ transaction(name: String, amount: UFix64) {
 			account.link<&FIND.BidCollection{FIND.BidCollectionPublic}>( FIND.BidPublicPath, target: FIND.BidStoragePath)
 		}
 
-
 		let vault <- vaultRef.withdraw(amount: amount) as! @FUSD.Vault
 		let bids = account.borrow<&FIND.BidCollection>(from: FIND.BidStoragePath)!
 		bids.bid(name: name, vault: <- vault)
 
 	}
 }
+

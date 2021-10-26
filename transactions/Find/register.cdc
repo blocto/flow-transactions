@@ -67,3 +67,4 @@ transaction(name: String, amount: UFix64) {
 
 	}
 }
+
