@@ -3,7 +3,7 @@ import NonFungibleToken from 0x631e88ae7f1d7c20
 import NFTStorefront from 0x94b06cfca1d8a476
 import Marketplace from 0xe1aa310cfe7750c4
 import FlowToken from 0x7e60df042a9c0868
-import StarlyCard from 0x0
+import StarlyCard from 0x697d72a988a77070
 
 transaction(listingResourceID: UInt64, storefrontAddress: Address, buyPrice: UFix64) {
     let paymentVault: @FungibleToken.Vault
