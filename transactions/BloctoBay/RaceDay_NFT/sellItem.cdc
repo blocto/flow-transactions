@@ -3,7 +3,7 @@ import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
 import NFTStorefront from 0xNFTStorefront_ADDRESS
 import Marketplace from 0xBLOCTO_BAY_MARKETPLACE_ADDRESS
 import FlowToken from 0xFLOW_TOKEN_ADDRESS
-import RaceDay_NFT from 0xRaceDay_NFT_ADDRESS
+import RaceDay_NFT from 0xRACEDAY_NFT_ADDRESS
 
 transaction(saleItemID: UInt64, saleItemPrice: UFix64) {
     let flowTokenReceiver: Capability<&FlowToken.Vault{FungibleToken.Receiver}>

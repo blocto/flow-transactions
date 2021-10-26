@@ -91,12 +91,8 @@
         "mainnet": "0x0",
         "testnet": "0x4d23ef75f1c37187"
     },
-    "0xRaceDay_NFT_ADDRESS": {
+    "0xRACEDAY_NFT_ADDRESS": {
         "mainnet": "0x329feb3ab062d289",
-        "testnet": "0x0"
-    },
-    "0xStarlyCard_ADDRESS": {
-        "mainnet": "0x5b82f21c0edf76e3",
         "testnet": "0x0"
     },
     "0xChainmonstersRewards_ADDRESS": {
@@ -171,10 +167,6 @@
         "mainnet": "0x75e0b6de94eb05d0",
         "testnet": "0xacf3dfa413e00f9f"
     },
-    "0xRACEDAY_NFT_ADDRESS": {
-        "mainnet": "0x329feb3ab062d289",
-        "testnet": "0x0"
-    },
     "0xRAREROOMS_NFT_ADDRESS": {
         "mainnet": "0x329feb3ab062d289",
         "testnet": "0x0"
@@ -199,8 +191,8 @@
         "mainnet": "0x0d9bc5af3fc0c2e3",
         "testnet": "0x2b0150231c047a8c"
     },
-    "0xFIND_ADDRESS" : {
-       "testnet" : "0x85f0d6217184009b",
-       "mainnet" : "0x0"
+    "0xFIND_ADDRESS": {
+        "testnet": "0x85f0d6217184009b",
+        "mainnet": "0x0"
     }
 }

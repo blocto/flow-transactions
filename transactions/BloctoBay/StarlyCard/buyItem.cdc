@@ -3,7 +3,7 @@ import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
 import NFTStorefront from 0xNFTStorefront_ADDRESS
 import Marketplace from 0xBLOCTO_BAY_MARKETPLACE_ADDRESS
 import FlowToken from 0xFLOW_TOKEN_ADDRESS
-import StarlyCard from 0xStarlyCard_ADDRESS
+import StarlyCard from 0xSTARLY_CARD_ADDRESS
 
 transaction(listingResourceID: UInt64, storefrontAddress: Address, buyPrice: UFix64) {
     let paymentVault: @FungibleToken.Vault
