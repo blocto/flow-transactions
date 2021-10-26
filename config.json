@@ -31,10 +31,6 @@
         "mainnet": "0xed398881d9bf40fb",
         "testnet": "0xb45e7992680a0f7f"
     },
-    "0xChainmonstersRewards_ADDRESS": {
-        "mainnet": "0x93615d25d14fa337",
-        "testnet": "0x0"
-    },
     "0xDARK_COUNTRY_ADDRESS": {
         "mainnet": "0xc8c340cebd11f690",
         "testnet": "0xe2759c7e9a894ff1"
@@ -127,7 +123,7 @@
         "mainnet": "0xf6fcbef550d97aa5",
         "testnet": "0x1eced429f2012ef0"
     },
-    "0xNFTStorefront_ADDRESS": {
+    "0xNFT_STOREFRONT_ADDRESS": {
         "mainnet": "0x4eb8a10cb9f87357",
         "testnet": "0x94b06cfca1d8a476"
     },
@@ -183,7 +179,7 @@
         "mainnet": "0x0d9bc5af3fc0c2e3",
         "testnet": "0x2b0150231c047a8c"
     },
-    "0xTopShot_ADDRESS": {
+    "0xTOPSHOT_ADDRESS": {
         "mainnet": "0x0b2a3299cc857e29",
         "testnet": "0x877931736ee77cff"
     },

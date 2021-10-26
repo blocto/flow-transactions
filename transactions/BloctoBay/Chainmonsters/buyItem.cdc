@@ -1,9 +1,9 @@
 import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
 import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
-import NFTStorefront from 0xNFTStorefront_ADDRESS
+import NFTStorefront from 0xNFT_STOREFRONT_ADDRESS
 import Marketplace from 0xBLOCTO_BAY_MARKETPLACE_ADDRESS
 import FlowToken from 0xFLOW_TOKEN_ADDRESS
-import ChainmonstersRewards from 0xChainmonstersRewards_ADDRESS
+import ChainmonstersRewards from 0xCHAINMONSTERS_REWARDS_ADDRESS
 
 transaction(listingResourceID: UInt64, storefrontAddress: Address, buyPrice: UFix64) {
     let paymentVault: @FungibleToken.Vault

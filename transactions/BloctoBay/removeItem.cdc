@@ -1,4 +1,4 @@
-import NFTStorefront from 0xNFTStorefront_ADDRESS
+import NFTStorefront from 0xNFT_STOREFRONT_ADDRESS
 import Marketplace from 0xBLOCTO_BAY_MARKETPLACE_ADDRESS
 
 transaction(listingResourceID: UInt64) {

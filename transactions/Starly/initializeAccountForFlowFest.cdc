@@ -27,7 +27,7 @@ import SportsIconCollectible from 0xSPORTS_ICON_COLLECTIBLE_ADDRESS
 import StarlyCard from 0xSTARLY_CARD_ADDRESS
 import StarlyCardMarket from 0xSTARLY_CARD_MARKET_ADDRESS
 import TheFabricantMysteryBox_FF1 from 0xTHEFABRICANT_MYSTERYBOX_FF1_ADDRESS
-import TopShot from 0xTopShot_ADDRESS
+import TopShot from 0xTOPSHOT_ADDRESS
 import TuneGO from 0xTUNE_GO_ADDRESS
 import Vouchers from 0xJAMBB_VOUCHERS_ADDRESS
 
