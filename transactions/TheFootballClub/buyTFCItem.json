@@ -1,0 +1,9 @@
+{
+  "arguments": ["listingResourceID", "storefrontAddress", "buyPrice"],
+  "messages": {
+    "en": "Buy NFT with {buyPrice} FUSD from {storefrontAddress}"
+  },
+  "balances": {
+    "buyPrice": "FUSD"
+  }
+}
