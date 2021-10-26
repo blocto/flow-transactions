@@ -171,6 +171,10 @@
         "mainnet": "0x55ad22f01ef568a1",
         "testnet": "0xf086a545ce3c552d"
     },
+    "0xTFC_ITEMS_ADDRESS": {
+        "testnet": "0x91a6217c3b70cae8",
+        "mainnet": "0x81e95660ab5308e1"
+    },
     "0xTHEFABRICANT_MYSTERYBOX_FF1_ADDRESS": {
         "mainnet": "0xa0cbe021821c0965",
         "testnet": "0xbc9d692e2617a96e"
