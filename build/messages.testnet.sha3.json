@@ -147,6 +147,18 @@
       "en": "Buy a Flovatar Pack for {amount} FUSD"
     }
   },
+  "6a266db3bf5074db7b492138cf7f8b7cbdd4478635bdf2d55aa1703f720b41a6": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Register the name {name} in FIND for {amount} FUSD"
+    }
+  },
   "7d32fe3030a816254bf7edb446d1f8f1b92655c642af92f49e0d2825efef68c0": {
     "arguments": [
       "listingResourceID",
@@ -207,6 +219,18 @@
       "en": "Delist NFT",
       "zh_CN": "下架 NFT",
       "zh_TW": "下架 NFT"
+    }
+  },
+  "9d5662d42ce9475d1f9e8e12ce12fe9ce2e744d7c23cc20d64dbffe7177f6cbf": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Bid on a name {name} in FIND for {amount} FUSD"
     }
   },
   "a0173201ab5b63423aa3b1c2f1501cac990989e4c3e980b9043ed96e869e6c67": {

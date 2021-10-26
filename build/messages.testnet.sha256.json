@@ -40,6 +40,18 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "2d66180e75d20799c5b230cafd753e0baee13143313f62e195578f71e65b8174": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Bid on a name {name} in FIND for {amount} FUSD"
+    }
+  },
   "3db7d449bf38dc691b0389da4f8bea26ddb866a5ad9c0c5601ab83073169bec5": {
     "arguments": [
       "listingResourceID",
@@ -516,6 +528,18 @@
     ],
     "messages": {
       "en": "Place StarlyCard #{itemID} for sale for {price} FUSD"
+    }
+  },
+  "f03510a3d155d7357dcaa59208f4254d8c2cbce7a6f9155a82810f9b4b8bde61": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Register the name {name} in FIND for {amount} FUSD"
     }
   },
   "f5c76cdf770875c1e17597a842ae9ebd1b62b4223f6bff170bf29223d602f7cc": {

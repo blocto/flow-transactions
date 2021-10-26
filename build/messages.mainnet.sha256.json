@@ -228,6 +228,18 @@
       "en": "Initialize your account in order to buy and sell NFTs"
     }
   },
+  "5509bec80033fc221230490ff23f5bb0df214300efcb744a15f725bf8f3e33af": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Bid on a name {name} in FIND for {amount} FUSD"
+    }
+  },
   "61566c573eda04d0249471c0c7e62ef1ebb59b3742f710f785650ab68566a5fb": {
     "arguments": [
       "amount",
@@ -245,6 +257,18 @@
     ],
     "messages": {
       "en": "Remove StarlyCard #{itemID} from sale"
+    }
+  },
+  "75737df041b19bf5beb7850901a778f9218e87514d64f2fbfcd91fd8edf0e3f9": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Register the name {name} in FIND for {amount} FUSD"
     }
   },
   "79dccbfbdee0b8cb6aa9e4307ee21b84062c7e6ce482397c1e0b3dd9f7659dd8": {
