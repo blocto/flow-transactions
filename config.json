@@ -198,5 +198,9 @@
     "0xTUNE_GO_ADDRESS": {
         "mainnet": "0x0d9bc5af3fc0c2e3",
         "testnet": "0x2b0150231c047a8c"
+    },
+    "0xFIND_ADDRESS" : {
+       "testnet" : "0x85f0d6217184009b",
+       "mainnet" : "0x0"
     }
 }
