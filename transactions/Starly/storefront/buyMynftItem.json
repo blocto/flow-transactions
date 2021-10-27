@@ -1,0 +1,13 @@
+{
+    "arguments": [
+        "listingResourceID",
+        "storefrontAddress",
+        "buyPrice"
+    ],
+    "messages": {
+        "en": "Purchase Mynft (Racing Time, Mugen ARt, Voxel Knight) NFT for {buyPrice} FLOW from {storefrontAddress}"
+    },
+    "balances": {
+        "buyPrice": "FLOW"
+    }
+}

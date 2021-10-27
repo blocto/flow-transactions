@@ -1,0 +1,13 @@
+{
+    "arguments": [
+        "listingResourceID",
+        "storefrontAddress",
+        "buyPrice"
+    ],
+    "messages": {
+        "en": "Purchase Everbloom NFT for {buyPrice} FLOW from {storefrontAddress}"
+    },
+    "balances": {
+        "buyPrice": "FLOW"
+    }
+}

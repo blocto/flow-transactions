@@ -1,0 +1,13 @@
+{
+    "arguments": [
+        "listingResourceID",
+        "storefrontAddress",
+        "buyPrice"
+    ],
+    "messages": {
+        "en": "Purchase King of The Dot NFT for {buyPrice} FLOW from {storefrontAddress}"
+    },
+    "balances": {
+        "buyPrice": "FLOW"
+    }
+}

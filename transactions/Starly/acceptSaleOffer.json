@@ -4,6 +4,6 @@
         "marketCollectionAddress"
     ],
     "messages": {
-        "en": "Purchase StarlyCard #{itemID} from {marketCollectionAddress}"
+        "en": "Purchase Starly NFT #{itemID} from {marketCollectionAddress}"
     }
 }

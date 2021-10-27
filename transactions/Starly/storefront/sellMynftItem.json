@@ -1,0 +1,9 @@
+{
+    "arguments": [
+        "saleItemID",
+        "saleItemPrice"
+    ],
+    "messages": {
+        "en": "List Mynft (Racing Time, Mugen ARt, Voxel Knight) NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+}

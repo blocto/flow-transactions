@@ -1,0 +1,9 @@
+{
+    "arguments": [
+        "saleItemID",
+        "saleItemPrice"
+    ],
+    "messages": {
+        "en": "List RaceDay NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+}
