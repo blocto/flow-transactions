@@ -73,6 +73,11 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "2cb79bf0bcb370fb9b5395505b763e4c10dcac7dfb82188aca38a63e40d9e384": {
+    "messages": {
+      "en": "Initialize your account to buy, sell and receive NFTs"
+    }
+  },
   "4218619e8a91951c564836145951cc81bdf5dcff2c7f8ecaeba0e90528727b7a": {
     "arguments": [
       "listingResourceID",
@@ -109,6 +114,19 @@
     ],
     "messages": {
       "en": "Purchase StarlyCard #{itemID} from {marketCollectionAddress}"
+    }
+  },
+  "4968c04a50b78bd78bcec7d29a7fc2fe429052a150d0da5f9016383a93be8ca9": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FUSD"
+    },
+    "messages": {
+      "en": "Buy NFT with {buyPrice} FUSD from {storefrontAddress}"
     }
   },
   "52d27a258d0fe2d31524b4f5eda34b82e1614b6ff2daf34224cb5a178fde1e7d": {
@@ -247,6 +265,18 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "9193f9596adacd05a827a3fa8d626e7df01f791ca1f280d15d7b94d37d493bc6": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Bid on a name {name} in FIND for {amount} FUSD"
+    }
+  },
   "9336f858a98017cf9c9e49e713ee40ee35da92ced01376b7d9df4713b7dd8831": {
     "arguments": [
       "amount"
@@ -320,6 +350,15 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "ae4fc9fc62dc4e1f2340e99971f1c723e92e307f3d8f6f115cb50d704a8a3d28": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "Place NFT item #{saleItemID} for sale for {saleItemPrice} FUSD"
+    }
+  },
   "b24e27089667b88adf4558c1ed5b8a1c3e2e5e703972728e732c7bc10be1815e": {
     "arguments": [
       "saleItemID",
@@ -340,18 +379,6 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
-    }
-  },
-  "c7eb402569c913a190ad6fccfd6c17f4914f25ebca359c5cfddb74dda4e7c8c7": {
-    "arguments": [
-      "name",
-      "amount"
-    ],
-    "balances": {
-      "amount": "FUSD"
-    },
-    "messages": {
-      "en": "Bid on a name {name} in FIND for {amount} FUSD"
     }
   },
   "cf6bdc075749934720ccf0d26133a18eb9fe2af315bd50b34d536ebe9f240c90": {
@@ -525,6 +552,14 @@
     },
     "messages": {
       "en": "Buy a Flovatar for {amount} FUSD from {saleAddress}"
+    }
+  },
+  "fa99c52cef248d384fafaa3e079d143ee499235f0650cec8d68003172fbde4a2": {
+    "arguments": [
+      "listingResourceID"
+    ],
+    "messages": {
+      "en": "Remove NFT item sale listing"
     }
   },
   "fc4328fc3ee9d43d1e0d16e68cdee12467517956258245e683c27c2d967f7acc": {
