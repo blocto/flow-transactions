@@ -1,0 +1,6 @@
+{
+  "arguments": ["listingResourceID"],
+  "messages": {
+    "en": "Remove NFT item sale listing"
+  }
+}
