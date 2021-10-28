@@ -11,6 +11,10 @@
     "mainnet": "0xdc5127882cacf8d9",
     "testnet": "0xe1aa310cfe7750c4"
   },
+  "0xCAA_ART_ADDRESS": {
+    "mainnet": "0x98c9c2e548b84d31",
+    "testnet": "0xa8b1239250f8d342"
+  },
   "0xCAA_PASS_ADDRESS": {
     "mainnet": "0x98c9c2e548b84d31",
     "testnet": "0xa8b1239250f8d342"
