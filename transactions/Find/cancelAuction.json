@@ -1,0 +1,8 @@
+{
+    "arguments": [
+        "name"
+    ],
+    "messages": {
+        "en": "Cancel and delist on ongoing auction for  {name}"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "arguments": [
+        "name"
+    ],
+    "messages": {
+        "en": "Remove the listing of the name {name}"
+    }
+}

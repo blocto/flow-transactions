@@ -1,0 +1,13 @@
+{
+    "arguments": [
+        "name",
+				"description",
+				"avatar",
+				"tags",
+				"allowStoringFollowers",
+				"links"
+    ],
+    "messages": {
+        "en": "Edit the profile of {name}"
+    }
+}

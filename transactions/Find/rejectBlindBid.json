@@ -1,0 +1,8 @@
+{
+    "arguments": [
+        "name"
+    ],
+    "messages": {
+        "en": "Reject the blind bid on name {name}"
+    }
+}

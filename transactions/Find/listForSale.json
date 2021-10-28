@@ -1,0 +1,10 @@
+{
+    "arguments": [
+        "name",
+				"directSellPrice"
+    ],
+    "messages": {
+        "en": "List name {name} for direct sale at {directSalePrice} FUSD"
+    }
+}
+
