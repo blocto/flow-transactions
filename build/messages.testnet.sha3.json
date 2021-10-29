@@ -7,6 +7,19 @@
       "en": "Remove NFT item sale listing"
     }
   },
+  "0705af48e8c0a30b4517988689dbdc3fab1c9b614182b4d32f47596898eceda5": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Faze NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
   "0b12549eba040af411d5bd3265c4c12c21b4e03da2fc8e684d396a7442ebe543": {
     "arguments": [
       "amount"
@@ -16,6 +29,19 @@
     },
     "messages": {
       "en": "Sending {amount} FLOW to Eternal.gg"
+    }
+  },
+  "0b7b21ccba598c6b3beb005d381b43ec3f3fa1c8a49077406d165da07f43c799": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Everbloom NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
   "0ba8e000de21e90c01450ea0222b75c864dbb2ad57e65d77a1ef4f0e468ba911": {
@@ -29,6 +55,28 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "0de7bb2bbd91a9b6da1089c2a97a7192a2158f8bdcedf6c7212bd532757a85cc": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List King of The Dot NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "0dedf709c70b7d08f53b36fc75704448cdcfedf77297e9c189bf20962131c7bc": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase THiNG.FUND NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
   "0f2b9b981e319988a7b3ee5130cac2bdcd7961af302039ed04a3ea11d3557385": {
     "arguments": [
       "saleItemID",
@@ -38,6 +86,37 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "10cb22027cadc1b42ddb3c59f5302d0ecdb4bca61c181c6089aa8eb6c50d7843": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Starly NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "12b170f4bc28e7a78558abfb1ca2e39eb802e29fb754cf08ce04edf0ba338e40": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List Melos Studio NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "1323bc8262290f13ad582e14694dbcc42333b54f0a1b93e80a1b3e4db41ef8b7": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List White Matrix NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
   "17ce844ae43d9e5e719fea5e8e42cb928578d6e29483317c8e1e98398b4c939c": {
@@ -53,6 +132,28 @@
       "en": "Buy NFT with {buyPrice} FUSD from {storefrontAddress}"
     }
   },
+  "186becec7ded324809c769cd9b46a596c9ee680e4b391f521f72b8756983ecdb": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase White Matrix NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "1afd1ba65b80d5a80ac9917fbab318121a3bd3434c08daac6ff11c45e36b2b14": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List Starly NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
   "2002088721ba2922ef52eaa4c10854a6a109709720ed81306411c6080583804c": {
     "arguments": [
       "listingResourceID",
@@ -66,6 +167,24 @@
       "en": "Buy NFT with {buyPrice} FLOW from {storefrontAddress}",
       "zh_CN": "使用 {buyPrice} FLOW 向 {storefrontAddress} 购买 NFT",
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
+    }
+  },
+  "21ecea0990681bde6584ab72cea590d809cb69a8afc8159a5a0e93e12bf6f8a1": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List SportsIcon NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "24f9ddec981ba090959f971badc86d87e153140e990cb5c89445216d03161aea": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List RareRooms NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
   "273c3ab976d810788f0b02e941ea55f9b1a1087bcbd0ea3b9480e79bd055b802": {
@@ -94,6 +213,50 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 DarkCountry NFT"
     }
   },
+  "2bf9ef02511111eb31b7541afc7a48f341c65279f1457479c5c0c144b32571c0": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Chainmonsters Rewards NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "2cb4c44dbdf0803d640ebde20cdc858777e39276c2e3efa9d6e83fb0e2b93d94": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List TopShot NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "2ccb80e2a210eb45e5704a555ba809d2a5b2c6c1720415b3021acf762172cf5d": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Crave Critics NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "2dc7cdd47c4126aeca54b1cd7fdd457bcac428e2468ab704c987131535ef18b7": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List Tune Go NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
   "32a493f6e3c79514ec818a0028ee98c92e87409f617e238e6a94e9c22b271ff4": {
     "arguments": [
       "amount",
@@ -105,13 +268,35 @@
       "zh_TW": "發送 {amount} tUSDT 代幣至 {to}"
     }
   },
+  "33aa3f4383dc27ccec4dbb3c422cf4e2c213dd8ec69c988df8d8354aec2e2973": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase RCRDSHP NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
   "3560f31e4686fdf301f27601bd7a5f50a300d050de010bf04d781ddf4e23b58c": {
     "arguments": [
       "itemID",
       "marketCollectionAddress"
     ],
     "messages": {
-      "en": "Purchase StarlyCard #{itemID} from {marketCollectionAddress}"
+      "en": "Purchase Starly NFT #{itemID} from {marketCollectionAddress}"
+    }
+  },
+  "391385819980069be755ccf9170be75ec7d6b320f58b4851425a4395f275537f": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List RCRDSHP NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
   "3ed3e66f15d77c775ca658ef6b8c5e0f222d845b33ff008c0d36f006fc5d01b7": {
@@ -125,6 +310,28 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 DarkCountry NFT"
     }
   },
+  "3fb7eb1dfc2c7f346b1532bb9e54f36eed0ea5d68d8561cc9cb6d6e7c53ad388": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase TopShot NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "41a2809b51912ea8ebb6b054d2c053e55b7f1297e29e3401393b990960f9661f": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List Blocklete Games NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
   "44d5ab68196830f127836204207c1c38b4c99b90be2e57d1e6501b93821b323c": {
     "arguments": [
       "saleAddress",
@@ -136,6 +343,32 @@
     },
     "messages": {
       "en": "Buy a Flovatar for {amount} FUSD from {saleAddress}"
+    }
+  },
+  "45332fc4a2a155182aedee0b819f6b1ad0f5ae4a38d775455945ff0c1841e894": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase RareRooms NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "468a8abac0df2550c56d205cad7f9cdb128068bf24418c59c8c73bb7aa02cb8e": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase KLKTN NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
   "47e9e0917b894e1be62e3a000d71820bd7bef599c414b4d19d45782992f43e42": {
@@ -177,6 +410,19 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "51ec51ae11c343f7c6016dbd14251b243493527603106946491497062340d2df": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Mynft (Racing Time, Mugen ARt, Voxel Knight) NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
   "5344941e435e44961496407ea55a8b49fdda62534f25afa4a567403d53796671": {
@@ -221,6 +467,15 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "5836bc170f821aa7aa15f56cfa443652bf1ddb2e1de58fc6989705675b8570f5": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List Everbloom NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
   "5a80f3373a4c37517060c4186c3eb7e58b5c1e449871039cfd64adda0b0529dd": {
     "arguments": [
       "saleItemID",
@@ -230,6 +485,19 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "5ab116d03f1a56f4ed62e8829497293edfab614f1e398829df1df42d613c8a90": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Eternal Shard NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
   "5c47b941694436c7268ff515c127149e1a7c5153fdbe01ed4715b613aa367d21": {
@@ -261,6 +529,23 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "60aa76b7bce776305e7459a1146a38d29f83ad93755533eb26daa35876fa51df": {
+    "arguments": [
+      "listingResourceID"
+    ],
+    "messages": {
+      "en": "Remove NFT listing from sale"
+    }
+  },
+  "664dbb961a0ccc259f6bef072432f120113653b76b9d189fc7c1329ca1753f65": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List The Fabricant NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
   "6a266db3bf5074db7b492138cf7f8b7cbdd4478635bdf2d55aa1703f720b41a6": {
     "arguments": [
       "name",
@@ -271,6 +556,28 @@
     },
     "messages": {
       "en": "Register the name {name} in FIND for {amount} FUSD"
+    }
+  },
+  "6b7428ca0deb8e9cbc2ff5bfbec132de9829246e67ed108095b141c96d3f237b": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase King of The Dot NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "6c319259477de9d9672772631d261047078dd0ebf4bb07aabb3b61ce2651a38c": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List Faze NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
   "73e81c725d149fc3a833717bc4d596f04073908d6ee999cfb4badbda448e4eaa": {
@@ -288,6 +595,23 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "7490fa8c04c1277deac81f52f75954a439c4cca01019178695ed2b5707b2218a": {
+    "arguments": [
+      "collectionID",
+      "packIDs",
+      "price",
+      "beneficiaryAddress",
+      "beneficiaryCutPercent",
+      "creatorAddress",
+      "creatorCutPercent"
+    ],
+    "balances": {
+      "price": "FUSD"
+    },
+    "messages": {
+      "en": "Purchase Starly pack(s) for {price} FUSD"
+    }
+  },
   "79ef3c2586245ed4c218e8ffa61dbfab308e144a6726ac236050bdecd709efb3": {
     "arguments": [
       "listingResourceID",
@@ -303,6 +627,19 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "7cff2cb97181d6e465839416fee4134317afca0806759583b5c4789f7375c5a5": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase xtingles NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
   "7d32fe3030a816254bf7edb446d1f8f1b92655c642af92f49e0d2825efef68c0": {
     "arguments": [
       "listingResourceID",
@@ -316,6 +653,15 @@
       "en": "Buy NFT with {buyPrice} FLOW from {storefrontAddress}",
       "zh_CN": "使用 {buyPrice} FLOW 向 {storefrontAddress} 购买 NFT",
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
+    }
+  },
+  "7db9cc2273f0401efdf14532b815907b76665fc8916c80d69f1e3ec3c4a20d9a": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List THiNG.FUND NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
   "7eaf36eb89dc8cdd9181960718cc00f25ea0286c1415d8f19603c8189f769c86": {
@@ -340,6 +686,15 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "86a5c15ddbfdeef394a830f368596e8e170ad1a925fff655403f81f11977b596": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List RaceDay NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
   "87f03728ccc2619ff7243828172c729e934b5bce350cb747f0d144d112a65825": {
     "arguments": [
       "saleItemID",
@@ -351,6 +706,28 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "87fc38d283e8259f7c911c98e6d928d35437af760764f226e382375273ebe048": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List xtingles NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "8d3163270230b26ee2d1cbea470cdf8d40d2a6a3165e300c226e6533211e1fd3": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Blocklete Games NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
   "8e4932f1d9db835156861f0a493de5c2190335a0e82641c20e2242de5778ed10": {
     "arguments": [
       "saleItemID",
@@ -360,6 +737,19 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "8f6b398e8510d51c2839e67fc8d34e94be080bcfc12e95f862822e3c7ad68759": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase SportsIcon NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
   "8f9a4fd19e5bf067de035f8d0464f6fa212235f7a5f4e9df2288bcc419b33231": {
@@ -394,6 +784,28 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "99838671928029091dbc90dccbd7a04f85cdc399871910fca671fcb0f5b8df75": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List Chainmonsters Rewards NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "9eade4fb34f5b7f8b088b29945c239066f6ae673aef8e157a65b30e78f5512ab": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Tune Go NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
   "a0173201ab5b63423aa3b1c2f1501cac990989e4c3e980b9043ed96e869e6c67": {
     "arguments": [
       "marketplace",
@@ -407,6 +819,19 @@
       "en": "Buy VersusArt {tokenId} for {amount}",
       "zh_CN": "以 {amount} FLOW 购买 Versus #{tokenId} 艺术品",
       "zh_TW": "以 {amount} FLOW 購買 Versus #{tokenId} 藝術品"
+    }
+  },
+  "a42e7c8c81df96231df5e4bb4cced49047b9b4becd1d6ec7ad553f09a9d1509f": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase RaceDay NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
   "a4cf511bdec7ef731e7cde9732a48c65267d91ff7685e3b03b544e2e02c9edce": {
@@ -446,6 +871,32 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NBA Top Shot NFT"
     }
   },
+  "a861821ecf4789184e5513aa08e7491c29fb41c6a94080fbd7ec7a6c91053640": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase OVO NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "a9aa95bb1a548db63a39059d02a5c80ec99147fad116d8802ee5515c6f2204e4": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Melos Studio NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
   "a9b077527fe3aca4f9858d46969bbd887dce70a6b9b62c180cf65743eba1597a": {
     "arguments": [
       "listingResourceID",
@@ -476,6 +927,32 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "aabb1341ca8020e621139f71eaa0c7a10e7220a1377164a55b5fc4abc99229ed": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase BALLERZ NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "ad5f42ebe5dd81e6c0c0445032e2797bbed00542f8a2e151c1191f0244e9b9b5": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Fantastec SWAP NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
   "ae4fc9fc62dc4e1f2340e99971f1c723e92e307f3d8f6f115cb50d704a8a3d28": {
     "arguments": [
       "saleItemID",
@@ -483,6 +960,15 @@
     ],
     "messages": {
       "en": "Place NFT item #{saleItemID} for sale for {saleItemPrice} FUSD"
+    }
+  },
+  "b090ac1d5b2d4738b0427884ba96d6f689b88fafb9405d188b05cdefc2f257cc": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "Place Jambb Voucher NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
   "b2295e735d18349e45dd85f9f45cc44751c4ca909dce7b89a895a89f6f999b10": {
@@ -544,7 +1030,7 @@
   },
   "b5936e92fefb6f8c396d2b3c4713d730bf13522d8d6cf4e9f3d5a3d5958e41d5": {
     "messages": {
-      "en": "Initialize your account in order to buy and sell NFTs"
+      "en": "Initialize your account in order to buy and sell Starly NFTs"
     }
   },
   "b7f616a8bb37d51bf1e600caf42cbf68c6ef526c4a110a95879119a8683b4120": {
@@ -577,6 +1063,37 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "b94247b1caa75b7cf77e3e7cace62f215bb33c8545f70befa38811bc915bb38f": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase The Fabricant NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "b98e28a7015a17dfbf6ad1ce115096a06425b342290b0d309488947155daae3c": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List Fantastec SWAP NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "ba55505a2df97e6f9294df740ddad9aab2849d9a8578b8c661d35fa1b5bfaf79": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List BALLERZ NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
   "bc1ad4bedbfe2965219dbdb3188a66db088fc88ece6b36d5ab8ac4ebf2468d0f": {
     "arguments": [
       "listingResourceID",
@@ -590,6 +1107,15 @@
       "en": "Buy CNN NFT with {buyPrice} FLOW from {storefrontAddress}",
       "zh_CN": "使用 {buyPrice} FLOW 向 {storefrontAddress} 购买 CNN NFT",
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 CNN NFT"
+    }
+  },
+  "bcb5fb396311290c3ab3d30852a19c05a93fadd1441229ad87525e1ad4920b46": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List Eternal Shard NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
   "bf7689b0bda84649202cf5550b8108696f636cd177dd2b977852e7c6d9ba4c18": {
@@ -641,12 +1167,39 @@
       "creatorCutPercent"
     ],
     "messages": {
-      "en": "Place StarlyCard #{itemID} for sale for {price} FUSD"
+      "en": "Place Starly NFT #{itemID} for sale for {price} FUSD"
     }
   },
   "c7d575f260a71d7b8f6e24ae3ff36aaa28537a3e52e91138417bca516befe797": {
     "messages": {
       "en": "Initialize your account to buy, sell and receive NFTs"
+    }
+  },
+  "d319404ff85681772c1cf9dc7081787d7d202ab5a09e2733d2add4b55d2be246": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List Mynft (Racing Time, Mugen ARt, Voxel Knight) NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "d61008ccea2794728cf2805eb8c1bd6d41d1791ccffb68d71bed848c05b95b58": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List Fright Club NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "d677e1d146b59edb55b365566ae3281ed4cdd509b28b64d154dbf954723facb2": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List KLKTN NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
   "da9031444f01373fb9d8024c87295142324056a6cd53f45ec67c6847dd363456": {
@@ -658,6 +1211,19 @@
       "en": "List CNN NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 CNN NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 CNN NFT"
+    }
+  },
+  "db6db1990f37d4af8e4fd9c35b00a7c0e4bc995803d4b07f102a81a65730499f": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Fright Club NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
   "dcdb0ced0e026fc769b5add79a7bb9b990a8261f0dffb72e8402ec5e3b6d39bb": {
@@ -729,6 +1295,15 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "f7f433e4220a92cef1b5ec5930995e17d091f6daa617a8cb4e13b836426c02a9": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List Crave Critics NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
   "fca2edf0e7bc8ff11373994b7d59bdb438c6827e397a502c95be52d722dea6b8": {
     "arguments": [
       "maxAmountIn",
@@ -748,7 +1323,7 @@
       "itemID"
     ],
     "messages": {
-      "en": "Remove StarlyCard #{itemID} from sale"
+      "en": "Remove Starly NFT #{itemID} from sale"
     }
   },
   "ff126a96f6ebaf8be7fa9a26e267be1ad9a5e1e344824eb5a54170061334e082": {
@@ -765,6 +1340,28 @@
       "en": "Bid {bidAmount} FLOW on versus drop {dropId}",
       "zh_CN": "以 {bidAmount} FLOW 竞标 Versus 销售代号 {dropId}",
       "zh_TW": "以 {bidAmount} FLOW 競標 Versus 銷售代號 {dropId}"
+    }
+  },
+  "ff6012ac9e9f14d194c9eb7e7f32ba71477e0fce6fc6083cfdcc84392e5219eb": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List OVO NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "ffd481bd621a47fd76ba70b809857b0649711a7201ac11bb686aa3330589e378": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Jambb Voucher NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   }
 }
