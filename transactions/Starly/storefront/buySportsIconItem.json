@@ -1,0 +1,13 @@
+{
+    "arguments": [
+        "listingResourceID",
+        "storefrontAddress",
+        "buyPrice"
+    ],
+    "messages": {
+        "en": "Purchase SportsIcon NFT for {buyPrice} FLOW from {storefrontAddress}"
+    },
+    "balances": {
+        "buyPrice": "FLOW"
+    }
+}

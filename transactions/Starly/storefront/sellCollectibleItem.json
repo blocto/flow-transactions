@@ -1,0 +1,9 @@
+{
+    "arguments": [
+        "saleItemID",
+        "saleItemPrice"
+    ],
+    "messages": {
+        "en": "List xtingles NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+}
