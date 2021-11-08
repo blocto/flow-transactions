@@ -1,7 +1,8 @@
 {
     "arguments": [
         "saleItemID",
-        "saleItemPrice"
+        "saleItemPrice",
+        "saleCutPercents"
     ],
     "messages": {
         "en": "List Fright Club NFT #{saleItemID} for sale for {saleItemPrice} FLOW"

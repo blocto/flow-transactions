@@ -138,7 +138,8 @@
   "22966cb2999b8e08c2d3fef275e7c671d2caa8bd382c722c65373ba0d4675f72": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List Blocklete Games NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -160,7 +161,8 @@
   "267f9e60656f2baf9b5a2e1163d2c9827bdee08b07e89d5fd745a56b01bb547f": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List Melos Studio NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -199,7 +201,8 @@
   "2e6c9b8808d861481a372f42d158999def0a9a2def6851a83f0bfb461fa032a8": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List Chainmonsters Rewards NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -208,7 +211,8 @@
   "314f400ae626c7964c07c814040f03b7da2bb1a2ee40be37814b2cb54888c8b8": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List xtingles NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -241,7 +245,8 @@
   "3790f787e8d08c35e464f043d0e01e5a37e9d9fff48a620048da907de78bb57a": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List The Fabricant NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -250,7 +255,8 @@
   "389023c274f6300797fb25e0038774a447467a2694b421d7918e243dc6a59570": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List RaceDay NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -305,7 +311,8 @@
   "4741b7094fc2952966051a22ea2e06e6da1d19f59d72f9925afc51777c1646d9": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List TopShot NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -314,7 +321,8 @@
   "4908ac7a60a9bd77219d48e6b2d28598678819d0a45c7905504b9b1e89697c15": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List Mynft (Racing Time, Mugen ARt, Voxel Knight) NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -350,7 +358,8 @@
   "4acfa5eb28e15bb8f94d2e74ac942dcdaa087aeb5311640469056f8d636d3925": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List RareRooms NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -376,7 +385,8 @@
   "4f2fafb43e9ad6872f87459b0b5ec522547c639bbaa035fa8d1d5217b4749d03": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List Everbloom NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -396,7 +406,8 @@
   "54868e29c680c64569d6880e9f18aa8af8522c6b5ba08535f14c4d09f4d9a7df": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List SportsIcon NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -551,7 +562,8 @@
   "6ba48929d06444dc731e0e64d3f0aab86e3abab5fad950d164dc41c6acd5ee54": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List OVO NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -560,7 +572,8 @@
   "6bed81cd498dfd1ab1b3166bbc0069c6fdc13e8fe90948fa6ca4d3d46441300d": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "Place Jambb Voucher NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -582,7 +595,8 @@
   "6e41a6f244eee015adcf93f69855548e6d2884db2dbc2bc66d1b3addb5fc80dc": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List Faze NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -644,7 +658,8 @@
   "7a73451d4269c90e43c72323c3591ef00a328acc1c56ecde16adb7c2e463da66": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List BALLERZ NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -668,7 +683,8 @@
   "7e197eea8d5ae7a7723bd94f18465e3090c9514605e7afbc03a94314bd58a775": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List King of The Dot NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -690,7 +706,8 @@
   "7f0b540d820f10848d3637411e792e031bc4c02248fe3b4ee6ec3bf255ac203c": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List White Matrix NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -699,7 +716,8 @@
   "7f0eacc76d7f7ec6ecb96c8b9e6f80af600c23fc1af95b49c557f78122ffe6d9": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List Fright Club NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -722,7 +740,8 @@
   "82d6c3a790a2419c6c7fdd7880b55d38f424f7de4a2414d78e42e4923524912a": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List RCRDSHP NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -847,7 +866,8 @@
   "99069c191046d893627ce25549beead25105201248cf3e4f30aa55628ff1d61e": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List KLKTN NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -867,7 +887,8 @@
   "9e349f6aae5b56f7a48191fc876c930a3052a4e7e3a9747e00e9096e7e0488f4": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List THiNG.FUND NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -1025,7 +1046,8 @@
   "c89af467c8597fd44416cf979bd9ea8e3d11a035dd0ba329c6a5d276e79e697b": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List Crave Critics NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -1082,7 +1104,8 @@
   "d6d68734db7c9f61f8352b262bfe21c4b9d5ea5f8ea1199a5267d46fd542ea20": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List Eternal Shard NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -1115,7 +1138,8 @@
   "de4c9740f62f8ba12a4acd4f536ec234c95012017b8a1b93640663b33cad4807": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List Fantastec SWAP NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -1160,7 +1184,8 @@
   "e3009f612e47130fb6d2cda5fe1fe868be606b6abd70708c49791b79b422e5a4": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List Tune Go NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
@@ -1358,7 +1383,8 @@
   "fa1740087b66c4b7233263e14878c1a7c629facea3bcbe84136776c8f66b7547": {
     "arguments": [
       "saleItemID",
-      "saleItemPrice"
+      "saleItemPrice",
+      "saleCutPercents"
     ],
     "messages": {
       "en": "List Starly NFT #{saleItemID} for sale for {saleItemPrice} FLOW"

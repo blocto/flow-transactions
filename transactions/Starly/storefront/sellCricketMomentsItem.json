@@ -1,7 +1,8 @@
 {
     "arguments": [
         "saleItemID",
-        "saleItemPrice"
+        "saleItemPrice",
+        "saleCutPercents"
     ],
     "messages": {
         "en": "List Faze NFT #{saleItemID} for sale for {saleItemPrice} FLOW"

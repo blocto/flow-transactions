@@ -1,7 +1,8 @@
 {
     "arguments": [
         "saleItemID",
-        "saleItemPrice"
+        "saleItemPrice",
+        "saleCutPercents"
     ],
     "messages": {
         "en": "List Blocklete Games NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
