@@ -6,7 +6,8 @@
         "beneficiaryAddress",
         "beneficiaryCutPercent",
         "creatorAddress",
-        "creatorCutPercent"
+        "creatorCutPercent",
+        "additionalSaleCutsPercents"
     ],
     "messages": {
         "en": "Purchase Starly pack(s) for {price} FUSD"
