@@ -795,7 +795,8 @@
       "beneficiaryAddress",
       "beneficiaryCutPercent",
       "creatorAddress",
-      "creatorCutPercent"
+      "creatorCutPercent",
+      "additionalSaleCutsPercents"
     ],
     "balances": {
       "price": "FUSD"
