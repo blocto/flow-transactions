@@ -1,0 +1,9 @@
+{
+    "arguments": [
+        "flovatarId",
+        "accessory"
+    ],
+    "messages": {
+        "en": "Set Flobit Accessory {accessory} for Flovatar {flovatarId}"
+    }
+}

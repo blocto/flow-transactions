@@ -1,0 +1,8 @@
+{
+    "arguments": [
+        "flovatarId"
+    ],
+    "messages": {
+        "en": "Remove the sale offer from the Marketplace for Flovatar {flovatarId}"
+    }
+}

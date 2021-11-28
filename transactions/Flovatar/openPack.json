@@ -1,0 +1,8 @@
+{
+    "arguments": [
+        "packId"
+    ],
+    "messages": {
+        "en": "Open Pack {packId}"
+    }
+}

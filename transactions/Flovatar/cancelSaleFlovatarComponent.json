@@ -1,0 +1,8 @@
+{
+    "arguments": [
+        "componentId"
+    ],
+    "messages": {
+        "en": "Remove the sale offer from the Marketplace for Flobit component {componentId}"
+    }
+}

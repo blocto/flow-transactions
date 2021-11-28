@@ -1,0 +1,12 @@
+{
+    "arguments": [
+        "flovatarId",
+        "price"
+    ],
+    "messages": {
+        "en": "Update the sale offer price on the Marketplace for Flovatar {flovatarId} to {price} FLOW"
+    },
+    "balances": {
+        "price": "FLOW"
+    }
+}

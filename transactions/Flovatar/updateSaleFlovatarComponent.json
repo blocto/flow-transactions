@@ -1,0 +1,12 @@
+{
+    "arguments": [
+        "componentId",
+        "price"
+    ],
+    "messages": {
+        "en": "Update the sale offer price on the Marketplace for Flobit component {componentId} to {price} FLOW"
+    },
+    "balances": {
+        "price": "FLOW"
+    }
+}
