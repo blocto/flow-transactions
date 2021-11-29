@@ -1,0 +1,22 @@
+{
+    "arguments": [
+        "spark",
+        "body",
+        "hair",
+        "facialHair",
+        "eyes",
+        "nose",
+        "mouth",
+        "clothing",
+        "accessory",
+        "hat",
+        "eyeglasses",
+        "background",
+        "rareBoost",
+        "epicBoost",
+        "legendaryBoost"
+    ],
+    "messages": {
+        "en": "Generate a new Flovatar with the selected combination by burning a Spark and the necessary Rarity Boosters"
+    }
+}

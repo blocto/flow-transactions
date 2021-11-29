@@ -6,9 +6,9 @@
         "signature"
     ],
     "messages": {
-        "en": "Buy a Flovatar Pack for {amount} FUSD"
+        "en": "Buy a Flovatar Pack for {amount} FLOW"
     },
     "balances": {
-        "amount": "FUSD"
+        "amount": "FLOW"
     }
 }

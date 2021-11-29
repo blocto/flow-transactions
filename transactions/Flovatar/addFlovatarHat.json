@@ -1,0 +1,9 @@
+{
+    "arguments": [
+        "flovatarId",
+        "hat"
+    ],
+    "messages": {
+        "en": "Set Flobit Hat {hat} for Flovatar {flovatarId}"
+    }
+}

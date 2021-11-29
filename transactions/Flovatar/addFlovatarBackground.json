@@ -1,0 +1,9 @@
+{
+    "arguments": [
+        "flovatarId",
+        "background"
+    ],
+    "messages": {
+        "en": "Set Flobit Background {background} for Flovatar {flovatarId}"
+    }
+}

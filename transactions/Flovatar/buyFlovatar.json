@@ -5,9 +5,9 @@
         "amount"
     ],
     "messages": {
-        "en": "Buy a Flovatar for {amount} FUSD from {saleAddress}"
+        "en": "Buy Flovatar {tokenId} for {amount} FLOW from {saleAddress}"
     },
     "balances": {
-        "amount": "FUSD"
+        "amount": "FLOW"
     }
 }

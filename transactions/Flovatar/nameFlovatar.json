@@ -1,0 +1,9 @@
+{
+    "arguments": [
+        "flovatarId",
+        "name"
+    ],
+    "messages": {
+        "en": "Give the Flovatar {flovatarId} the name {name}"
+    }
+}
