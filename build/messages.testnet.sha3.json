@@ -1,4 +1,13 @@
 {
+  "02de91742a3e66ae81e62599794dda553803da89aa627943bcbf42d6328059d9": {
+    "arguments": [
+      "flovatarId",
+      "hat"
+    ],
+    "messages": {
+      "en": "Set Flobit Hat {hat} for Flovatar {flovatarId}"
+    }
+  },
   "05c5e6952ae0fc2b64aebb772f7ed3ef91ce3b71e9739c7b991c18a7f9e3c749": {
     "arguments": [
       "listingResourceID"
@@ -102,6 +111,20 @@
       "en": "Purchase Starly NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "11f8df9a826828782e95fd26ca7292efc56c3c206599a8a188cee416f5735bdb": {
+    "arguments": [
+      "saleAddress",
+      "tokenId",
+      "amount",
+      "signature"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Buy a Flovatar Pack for {amount} FLOW"
+    }
+  },
   "12b170f4bc28e7a78558abfb1ca2e39eb802e29fb754cf08ce04edf0ba338e40": {
     "arguments": [
       "saleItemID",
@@ -120,6 +143,11 @@
     ],
     "messages": {
       "en": "List White Matrix NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "175aedfe9a3c42c7a5849b127bd6b01079b63e9800531fc1352991dd1c02a7aa": {
+    "messages": {
+      "en": "Please initialize your Account to be able to interact with the Flovatar smart contract"
     }
   },
   "17ce844ae43d9e5e719fea5e8e42cb928578d6e29483317c8e1e98398b4c939c": {
@@ -265,6 +293,18 @@
       "en": "List Tune Go NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "2dd32401e70fd38a23e510f450f18e10b2b1d36e87c80ac96ddf8596c44cc070": {
+    "arguments": [
+      "componentId",
+      "price"
+    ],
+    "balances": {
+      "price": "FLOW"
+    },
+    "messages": {
+      "en": "Put Flobit component {componentId} on sale in the Marketplace for {price} FLOW"
+    }
+  },
   "32a493f6e3c79514ec818a0028ee98c92e87409f617e238e6a94e9c22b271ff4": {
     "arguments": [
       "amount",
@@ -319,6 +359,19 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 DarkCountry NFT"
     }
   },
+  "3ed6eac13c4a00ae03c6edc916c4fa3fe13070c2ac05f327d48573cd77b727f0": {
+    "arguments": [
+      "saleAddress",
+      "tokenId",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Buy Flobit Component {tokenId} for {amount} FLOW from {saleAddress}"
+    }
+  },
   "3fb7eb1dfc2c7f346b1532bb9e54f36eed0ea5d68d8561cc9cb6d6e7c53ad388": {
     "arguments": [
       "listingResourceID",
@@ -340,19 +393,6 @@
     ],
     "messages": {
       "en": "List Blocklete Games NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
-    }
-  },
-  "44d5ab68196830f127836204207c1c38b4c99b90be2e57d1e6501b93821b323c": {
-    "arguments": [
-      "saleAddress",
-      "tokenId",
-      "amount"
-    ],
-    "balances": {
-      "amount": "FUSD"
-    },
-    "messages": {
-      "en": "Buy a Flovatar for {amount} FUSD from {saleAddress}"
     }
   },
   "45332fc4a2a155182aedee0b819f6b1ad0f5ae4a38d775455945ff0c1841e894": {
@@ -511,20 +551,6 @@
       "en": "Purchase Eternal Shard NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "5c47b941694436c7268ff515c127149e1a7c5153fdbe01ed4715b613aa367d21": {
-    "arguments": [
-      "saleAddress",
-      "tokenId",
-      "amount",
-      "signature"
-    ],
-    "balances": {
-      "amount": "FUSD"
-    },
-    "messages": {
-      "en": "Buy a Flovatar Pack for {amount} FUSD"
-    }
-  },
   "603df287809211fc9be5e20b6a2359b1da5635d660650ea2b2adfc6590fb7673": {
     "arguments": [
       "listingResourceID",
@@ -641,6 +667,14 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "7acb464c9d8420522fc2a7740a695b3c312b64d2797df8ae786146a4aacad275": {
+    "arguments": [
+      "packId"
+    ],
+    "messages": {
+      "en": "Open Pack {packId}"
+    }
+  },
   "7cff2cb97181d6e465839416fee4134317afca0806759583b5c4789f7375c5a5": {
     "arguments": [
       "listingResourceID",
@@ -699,6 +733,15 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "80b402711331d185b9048076ef49408f8c242b90f52162aaa308b2d25fd39705": {
+    "arguments": [
+      "flovatarId",
+      "accessory"
+    ],
+    "messages": {
+      "en": "Set Flobit Accessory {accessory} for Flovatar {flovatarId}"
     }
   },
   "86a5c15ddbfdeef394a830f368596e8e170ad1a925fff655403f81f11977b596": {
@@ -811,6 +854,15 @@
       "en": "List Chainmonsters Rewards NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "9ac4208cca8d3650c19f7936482046e4879048b01ab85bd606a940b313d6394c": {
+    "arguments": [
+      "flovatarId",
+      "name"
+    ],
+    "messages": {
+      "en": "Give the Flovatar {flovatarId} the name {name}"
+    }
+  },
   "9eade4fb34f5b7f8b088b29945c239066f6ae673aef8e157a65b30e78f5512ab": {
     "arguments": [
       "listingResourceID",
@@ -822,6 +874,18 @@
     },
     "messages": {
       "en": "Purchase Tune Go NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "9f4f8130aff73ab3d94eec819992163afac116553bd129da9bb53043f44b91b7": {
+    "arguments": [
+      "flovatarId",
+      "price"
+    ],
+    "balances": {
+      "price": "FLOW"
+    },
+    "messages": {
+      "en": "Update the sale offer price on the Marketplace for Flovatar {flovatarId} to {price} FLOW"
     }
   },
   "a0173201ab5b63423aa3b1c2f1501cac990989e4c3e980b9043ed96e869e6c67": {
@@ -971,15 +1035,6 @@
       "en": "Purchase Fantastec SWAP NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "ae4fc9fc62dc4e1f2340e99971f1c723e92e307f3d8f6f115cb50d704a8a3d28": {
-    "arguments": [
-      "saleItemID",
-      "saleItemPrice"
-    ],
-    "messages": {
-      "en": "Place NFT item #{saleItemID} for sale for {saleItemPrice} FUSD"
-    }
-  },
   "b090ac1d5b2d4738b0427884ba96d6f689b88fafb9405d188b05cdefc2f257cc": {
     "arguments": [
       "saleItemID",
@@ -988,6 +1043,18 @@
     ],
     "messages": {
       "en": "Place Jambb Voucher NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "b1e11a98ac7f438bd628a5ee9fc71620990d2897c0773e9cea9da76a62114a8e": {
+    "arguments": [
+      "flovatarId",
+      "price"
+    ],
+    "balances": {
+      "price": "FLOW"
+    },
+    "messages": {
+      "en": "Put Flovatar {flovatarId} on sale in the Marketplace for {price} FLOW"
     }
   },
   "b2295e735d18349e45dd85f9f45cc44751c4ca909dce7b89a895a89f6f999b10": {
@@ -1034,17 +1101,16 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
-  "b55f8159bcb2b2c5043fd044c09ab07bb8e577306262ede2c93faecdf2c800f6": {
+  "b55ae5a5a28d1073fa525af6096738dd978069dd635e18396215d2b2d8a64c39": {
     "arguments": [
-      "saleAddress",
-      "tokenId",
-      "amount"
+      "componentId",
+      "price"
     ],
     "balances": {
-      "amount": "FUSD"
+      "price": "FLOW"
     },
     "messages": {
-      "en": "Buy a Flovatar Component for {amount} FUSD from {saleAddress}"
+      "en": "Update the sale offer price on the Marketplace for Flobit component {componentId} to {price} FLOW"
     }
   },
   "b5936e92fefb6f8c396d2b3c4713d730bf13522d8d6cf4e9f3d5a3d5958e41d5": {
@@ -1197,6 +1263,37 @@
       "en": "Initialize your account to buy, sell and receive NFTs"
     }
   },
+  "cf42497cd3a489059532d34fb27a2a7e2f718dfdd4d9d7f8c85a421dbeb80ea1": {
+    "arguments": [
+      "spark",
+      "body",
+      "hair",
+      "facialHair",
+      "eyes",
+      "nose",
+      "mouth",
+      "clothing",
+      "accessory",
+      "hat",
+      "eyeglasses",
+      "background",
+      "rareBoost",
+      "epicBoost",
+      "legendaryBoost"
+    ],
+    "messages": {
+      "en": "Generate a new Flovatar with the selected combination by burning a Spark and the necessary Rarity Boosters"
+    }
+  },
+  "cfb9e40d91ba31309201e93f6c46dd296f1b7a851332d403e884987e77c009f5": {
+    "arguments": [
+      "flovatarId",
+      "eyeglasses"
+    ],
+    "messages": {
+      "en": "Set Flobit Eyeglasses {eyeglasses} for Flovatar {flovatarId}"
+    }
+  },
   "d319404ff85681772c1cf9dc7081787d7d202ab5a09e2733d2add4b55d2be246": {
     "arguments": [
       "saleItemID",
@@ -1266,6 +1363,28 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NBA Top Shot NFT"
     }
   },
+  "ddd5e2da94aecb32c914430b53da0c5212cf50e675da35735920dfcb60ef64d9": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "Place NFT item #{saleItemID} for sale for {saleItemPrice} FUSD"
+    }
+  },
+  "ddebc1dbf505f93c26152e43c5b8fac39f7028d030c254cdbf9ffbf12f58da5f": {
+    "arguments": [
+      "saleAddress",
+      "tokenId",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Buy Flovatar {tokenId} for {amount} FLOW from {saleAddress}"
+    }
+  },
   "e34d2e878f9520aebf9ffbc3c501def08be24a0b87254b09768933c1e8c8707a": {
     "arguments": [
       "name",
@@ -1292,6 +1411,23 @@
   "f024eb05ab8e35bd85e96f8069113ce57fe71ba09e682b405f91a44cdb14ed36": {
     "messages": {
       "en": "Initialize your account for Mystery Pack NFTs"
+    }
+  },
+  "f07e2ad3b30990def678acbfb8d77a8a11fd0a89e418f487f68f1e8c7deaf9b0": {
+    "arguments": [
+      "flovatarId"
+    ],
+    "messages": {
+      "en": "Remove the sale offer from the Marketplace for Flovatar {flovatarId}"
+    }
+  },
+  "f0f670be09e23ad9c25b445d11ef96e958b659574564839fa2fc6f210b5b406e": {
+    "arguments": [
+      "flovatarId",
+      "background"
+    ],
+    "messages": {
+      "en": "Set Flobit Background {background} for Flovatar {flovatarId}"
     }
   },
   "f1bac6712d8b09bed8aaa66584f9a421c07c88bff6838d912e02c684d484430f": {
@@ -1350,6 +1486,14 @@
     ],
     "messages": {
       "en": "Remove Starly NFT #{itemID} from sale"
+    }
+  },
+  "fec009c265676ff4e802afb2f387cd4751084f279b147b60740deb74178823ff": {
+    "arguments": [
+      "componentId"
+    ],
+    "messages": {
+      "en": "Remove the sale offer from the Marketplace for Flobit component {componentId}"
     }
   },
   "ff126a96f6ebaf8be7fa9a26e267be1ad9a5e1e344824eb5a54170061334e082": {

@@ -17,6 +17,7 @@
     "sha3": "^2.1.3"
   },
   "scripts": {
-    "test": "echo 'hello world'"
+    "build": "node ./internal/processAll",
+    "prepublish": "build"
   }
 }

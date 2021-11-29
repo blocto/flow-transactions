@@ -1,8 +1,8 @@
-import FungibleToken from "../contracts/FungibleToken.cdc"
-import NonFungibleToken from "../contracts/NonFungibleToken.cdc"
-import FUSD from "./FUSD.cdc"
-import TFCItems from "../contracts/TFCItems.cdc"
-import NFTStorefront from "../contracts/NFTStorefront.cdc"
+import FUSD from 0xe223d8a629e49c68
+import NonFungibleToken from 0x631e88ae7f1d7c20
+import TFCItems from 0x91a6217c3b70cae8
+import NFTStorefront from 0x94b06cfca1d8a476
+import FungibleToken from 0x9a0766d93b6608b7
 
 /*
     This transaction is used to sell a TFCItem for FUSD

@@ -12,6 +12,18 @@
       "en": "Purchase TopShot NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "00cf662d9cb1266d6add9707e1b85aaa54e0babcc7585663f2137b21d316cf4e": {
+    "arguments": [
+      "flovatarId",
+      "price"
+    ],
+    "balances": {
+      "price": "FLOW"
+    },
+    "messages": {
+      "en": "Put Flovatar {flovatarId} on sale in the Marketplace for {price} FLOW"
+    }
+  },
   "020c077b695be6157f85caaa5c149f23724421fdc829028a368dd5750558ada2": {
     "arguments": [
       "saleItemID",
@@ -93,6 +105,27 @@
       "en": "Remove NFT listing from sale"
     }
   },
+  "0f8879f814e28abe0e38101d1865a0b05cf8fa59baa362b12c541409caff7e11": {
+    "arguments": [
+      "flovatarId",
+      "background"
+    ],
+    "messages": {
+      "en": "Set Flobit Background {background} for Flovatar {flovatarId}"
+    }
+  },
+  "10c59597c17d42f388fc6ca3dd60d6d40258a2724ae476c89555e1ad2876712f": {
+    "arguments": [
+      "componentId",
+      "price"
+    ],
+    "balances": {
+      "price": "FLOW"
+    },
+    "messages": {
+      "en": "Update the sale offer price on the Marketplace for Flobit component {componentId} to {price} FLOW"
+    }
+  },
   "11a6012a877f39aeaac929e3de48aac23c04c037b0016527362ff60f7c7485d8": {
     "messages": {
       "en": "Initialize your account for Mystery Pack NFTs"
@@ -136,6 +169,15 @@
       "en": "Swap at most {maxAmountIn} FUSD for {amountOut} FLOW",
       "zh_CN": "将至多 {maxAmountIn} FUSD 兑换成 {amountOut} FLOW",
       "zh_TW": "將至多 {maxAmountIn} FUSD 兌換成 {amountOut} FLOW"
+    }
+  },
+  "1ac1ba13f36019778edabf7a07c506c960f7d152cfa2c0768cda3949b29ba9d9": {
+    "arguments": [
+      "flovatarId",
+      "eyeglasses"
+    ],
+    "messages": {
+      "en": "Set Flobit Eyeglasses {eyeglasses} for Flovatar {flovatarId}"
     }
   },
   "1b0a8074ebe0efad17a89508566e2289a66cbe7f6a21c1a021c6ff10fab16774": {
@@ -392,6 +434,15 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "3e700f41d78ea866cbd6cf90e75bc55f3aba32c57f1b4daf4665de754f74074a": {
+    "arguments": [
+      "flovatarId",
+      "accessory"
+    ],
+    "messages": {
+      "en": "Set Flobit Accessory {accessory} for Flovatar {flovatarId}"
+    }
+  },
   "408e4cf58b4a0f39e811d1ac9b76ab94676328bc37fe4d46809446f5ba485837": {
     "arguments": [
       "listingResourceID",
@@ -405,18 +456,9 @@
       "en": "Purchase Chainmonsters Rewards NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "40d43b809cc52950036f971c4b3963e836977bbcfbe9d6d30f077ed87ec8bc35": {
-    "arguments": [
-      "saleAddress",
-      "tokenId",
-      "amount",
-      "signature"
-    ],
-    "balances": {
-      "amount": "FUSD"
-    },
+  "446ed7cd13bd1ca42d9c35fe9d193e483fc89be6ccd68f05869857ac29154587": {
     "messages": {
-      "en": "Buy a Flovatar Pack for {amount} FUSD"
+      "en": "Please initialize your Account to be able to interact with the Flovatar smart contract"
     }
   },
   "44ad3f6c109c076e216ce00248fa39ee6528c581b3ebf4bdbe801931b0ca7ca9": {
@@ -508,6 +550,20 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "5464a4548e576c53bcea13d7e689ed9afc3450f2922ab0bb47b9db0bf76f5a39": {
+    "arguments": [
+      "saleAddress",
+      "tokenId",
+      "amount",
+      "signature"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Buy a Flovatar Pack for {amount} FLOW"
+    }
+  },
   "54783ce5dfa5f350424e10d98ced7ec0854e346577575111c29b7736592907a4": {
     "arguments": [
       "listingResourceID",
@@ -521,6 +577,14 @@
       "en": "Purchase SportsIcon NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "5a4240b4db4c9bf42c179c4a7061997a70267590817746c5fd636054e6f75025": {
+    "arguments": [
+      "componentId"
+    ],
+    "messages": {
+      "en": "Remove the sale offer from the Marketplace for Flobit component {componentId}"
+    }
+  },
   "5f5f31884e148eab814b103400771ee0844d17a002c6ad9c7bc797dc8afba578": {
     "arguments": [
       "saleItemID",
@@ -529,6 +593,19 @@
     ],
     "messages": {
       "en": "List Mynft (Racing Time, Mugen ARt, Voxel Knight) NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "603d67da141a3a0709731f28d804da75bb4fe87c90622a11d9ff1f8f474085ca": {
+    "arguments": [
+      "saleAddress",
+      "tokenId",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Buy Flobit Component {tokenId} for {amount} FLOW from {saleAddress}"
     }
   },
   "61566c573eda04d0249471c0c7e62ef1ebb59b3742f710f785650ab68566a5fb": {
@@ -540,6 +617,14 @@
       "en": "Teleport {amount} tUSDT to {target} on Ethereum",
       "zh_CN": "将 {amount} tUSDT 跨链传送至以太坊上的 {target}",
       "zh_TW": "將 {amount} tUSDT 跨鏈傳送至以太坊上的 {target}"
+    }
+  },
+  "626396b8b6ea8157db8276f81cf1973e496cf1f2b45110a3c22b99cdbbd032b7": {
+    "arguments": [
+      "packId"
+    ],
+    "messages": {
+      "en": "Open Pack {packId}"
     }
   },
   "67de692d34386ede0d0e7b783de449ce86a6fdf02086338a29328a6b436035f2": {
@@ -589,6 +674,15 @@
     ],
     "messages": {
       "en": "List The Fabricant NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "6dcd5d4ecfb135de2d8989814fc38cb16dedb5c82e7fa245dd686f815be4a061": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "Place NFT item #{saleItemID} for sale for {saleItemPrice} FUSD"
     }
   },
   "7442d1e24f77bebab9490edbf9583743edb51cef57597b58bf60603a3e236f45": {
@@ -844,6 +938,14 @@
       "en": "Purchase Fright Club NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "942265b98b75fc42c69e0a55efbb6662dc870bb6b2e85625c0494245ce881002": {
+    "arguments": [
+      "flovatarId"
+    ],
+    "messages": {
+      "en": "Remove the sale offer from the Marketplace for Flovatar {flovatarId}"
+    }
+  },
   "95990201872ae16ce8cd230bd49ca0b8199cc900eb15bf72261e13b618f2a3f9": {
     "arguments": [
       "saleItemID",
@@ -997,6 +1099,28 @@
       "en": "List Chainmonsters Rewards NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "a7c4be01c359824380ade4327aca80466e3fcfdcbe9f253d1743f358ec7e9ce6": {
+    "arguments": [
+      "flovatarId",
+      "name"
+    ],
+    "messages": {
+      "en": "Give the Flovatar {flovatarId} the name {name}"
+    }
+  },
+  "a8049e7bc4ead22746d184e0f7672788124cc46f94a0e94d32f3197606405ed0": {
+    "arguments": [
+      "saleAddress",
+      "tokenId",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Buy Flovatar {tokenId} for {amount} FLOW from {saleAddress}"
+    }
+  },
   "ab91d3b210f4cc6b5fd6b4df0be2fa4727e3003fffaeb50dfe5b88689db42fc0": {
     "arguments": [
       "saleItemID",
@@ -1099,17 +1223,13 @@
       "en": "Purchase KLKTN NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "c8b60d9db8a1683a980dcbc8e44d03cd4e1ab732d7b9bb4dac153071676a74d4": {
+  "c6102d85beef2cd305013b5aaa805faff6c31cf227e279d886cc1ff0b348af4b": {
     "arguments": [
-      "saleAddress",
-      "tokenId",
-      "amount"
+      "flovatarId",
+      "hat"
     ],
-    "balances": {
-      "amount": "FUSD"
-    },
     "messages": {
-      "en": "Buy a Flovatar Component for {amount} FUSD from {saleAddress}"
+      "en": "Set Flobit Hat {hat} for Flovatar {flovatarId}"
     }
   },
   "c9604e32bc219d8253f2f299f9a2a208320c974716b259e81e054517163f7af0": {
@@ -1123,15 +1243,6 @@
     },
     "messages": {
       "en": "Purchase The Fabricant NFT for {buyPrice} FLOW from {storefrontAddress}"
-    }
-  },
-  "cadb7a831eff51341ba91f8dde5218efb13ac52470a92b1eae552baaee76179d": {
-    "arguments": [
-      "saleItemID",
-      "saleItemPrice"
-    ],
-    "messages": {
-      "en": "Place NFT item #{saleItemID} for sale for {saleItemPrice} FUSD"
     }
   },
   "cd2b185a389d0fa695d426f6e5fd4b4c3fcc3829cacd74da7702ed6c9105a012": {
@@ -1153,6 +1264,18 @@
       "en": "List CNN NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 CNN NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 CNN NFT"
+    }
+  },
+  "d17969210da57e19651b19a9647960c5cae04ae0744cea7a9671d5d86a96e521": {
+    "arguments": [
+      "flovatarId",
+      "price"
+    ],
+    "balances": {
+      "price": "FLOW"
+    },
+    "messages": {
+      "en": "Update the sale offer price on the Marketplace for Flovatar {flovatarId} to {price} FLOW"
     }
   },
   "d1867efb2a8c49d653f6e57ba3e531ca634095c1fc8d780c37f85d5166e82e11": {
@@ -1204,6 +1327,28 @@
     ],
     "messages": {
       "en": "Place Starly NFT #{itemID} for sale for {price} FUSD"
+    }
+  },
+  "d6cfd4842774c0618f209cfc6d5d17217464ed685fc9506ba16e890a6b1340ed": {
+    "arguments": [
+      "spark",
+      "body",
+      "hair",
+      "facialHair",
+      "eyes",
+      "nose",
+      "mouth",
+      "clothing",
+      "accessory",
+      "hat",
+      "eyeglasses",
+      "background",
+      "rareBoost",
+      "epicBoost",
+      "legendaryBoost"
+    ],
+    "messages": {
+      "en": "Generate a new Flovatar with the selected combination by burning a Spark and the necessary Rarity Boosters"
     }
   },
   "d84d1203e82a6e29b9846a0519dc37d50cdcc0906bcc558be78a5dc295c1afb8": {
@@ -1328,19 +1473,6 @@
       "en": "Purchase Faze NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "f0bd98fcae87048db1e199c45dec12b4cf85143c3125fd390282e53f67f174b6": {
-    "arguments": [
-      "saleAddress",
-      "tokenId",
-      "amount"
-    ],
-    "balances": {
-      "amount": "FUSD"
-    },
-    "messages": {
-      "en": "Buy a Flovatar for {amount} FUSD from {saleAddress}"
-    }
-  },
   "f0d520b5a4e140435286bb54b662b2723233b96cb45d3e390bd4572962d759db": {
     "arguments": [
       "listingResourceID",
@@ -1365,6 +1497,18 @@
     },
     "messages": {
       "en": "Buy NFT with {buyPrice} FUSD from {storefrontAddress}"
+    }
+  },
+  "f61c8f03b845500aa0baee2d659fae8719cb898e427f137263e2d974fe37dc3f": {
+    "arguments": [
+      "componentId",
+      "price"
+    ],
+    "balances": {
+      "price": "FLOW"
+    },
+    "messages": {
+      "en": "Put Flobit component {componentId} on sale in the Marketplace for {price} FLOW"
     }
   },
   "fc1790386ac6f14eb6199a2be0998af3d2a76b0e248dec537a361244fd227d2d": {
