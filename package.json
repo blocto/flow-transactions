@@ -18,6 +18,6 @@
   },
   "scripts": {
     "build": "node ./internal/processAll",
-    "prepublish": "build"
+    "prepublish": "npm run build"
   }
 }
