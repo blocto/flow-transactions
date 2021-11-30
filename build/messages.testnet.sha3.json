@@ -574,6 +574,24 @@
       "en": "Remove NFT listing from sale"
     }
   },
+  "6444075d1d6490d76d11865287ec65ca9471db0dadf4095a44ed834b86f574c0": {
+    "arguments": [
+      "collectionID",
+      "packIDs",
+      "price",
+      "beneficiaryAddress",
+      "beneficiaryCutPercent",
+      "creatorAddress",
+      "creatorCutPercent",
+      "additionalSaleCutsPercents"
+    ],
+    "balances": {
+      "price": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Starly pack(s) for {price} FLOW"
+    }
+  },
   "664dbb961a0ccc259f6bef072432f120113653b76b9d189fc7c1329ca1753f65": {
     "arguments": [
       "saleItemID",
@@ -711,6 +729,19 @@
     ],
     "messages": {
       "en": "List THiNG.FUND NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "7e168af5c69328935a3deaa63e4803ccf7baa2fd2896795dd79d9025c44dd21b": {
+    "arguments": [
+      "itemID",
+      "price",
+      "beneficiaryAddress",
+      "beneficiaryCutPercent",
+      "creatorAddress",
+      "creatorCutPercent"
+    ],
+    "messages": {
+      "en": "Place Starly NFT #{itemID} for sale for {price} FLOW"
     }
   },
   "7eaf36eb89dc8cdd9181960718cc00f25ea0286c1415d8f19603c8189f769c86": {
@@ -901,6 +932,15 @@
       "en": "Buy VersusArt {tokenId} for {amount}",
       "zh_CN": "以 {amount} FLOW 购买 Versus #{tokenId} 艺术品",
       "zh_TW": "以 {amount} FLOW 購買 Versus #{tokenId} 藝術品"
+    }
+  },
+  "a3874fbf40d7472ef34344f6bdf8478dbb6638f4788b7357a3a61174d40233f4": {
+    "arguments": [
+      "itemID",
+      "marketCollectionAddress"
+    ],
+    "messages": {
+      "en": "Purchase Starly NFT #{itemID} from {marketCollectionAddress}"
     }
   },
   "a42e7c8c81df96231df5e4bb4cced49047b9b4becd1d6ec7ad553f09a9d1509f": {

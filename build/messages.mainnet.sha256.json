@@ -585,6 +585,19 @@
       "en": "Remove the sale offer from the Marketplace for Flobit component {componentId}"
     }
   },
+  "5d454a95d294dd9fb0243b6f3a1d881016e40bd9bf2f4d5ece11974ee421bbd8": {
+    "arguments": [
+      "itemID",
+      "price",
+      "beneficiaryAddress",
+      "beneficiaryCutPercent",
+      "creatorAddress",
+      "creatorCutPercent"
+    ],
+    "messages": {
+      "en": "Place Starly NFT #{itemID} for sale for {price} FLOW"
+    }
+  },
   "5f5f31884e148eab814b103400771ee0844d17a002c6ad9c7bc797dc8afba578": {
     "arguments": [
       "saleItemID",
@@ -1121,6 +1134,15 @@
       "en": "Buy Flovatar {tokenId} for {amount} FLOW from {saleAddress}"
     }
   },
+  "aa09ceee00cec24aaef390e4a59cd7493c0f703e541647bd66b13f0b38f332f1": {
+    "arguments": [
+      "itemID",
+      "marketCollectionAddress"
+    ],
+    "messages": {
+      "en": "Purchase Starly NFT #{itemID} from {marketCollectionAddress}"
+    }
+  },
   "ab91d3b210f4cc6b5fd6b4df0be2fa4727e3003fffaeb50dfe5b88689db42fc0": {
     "arguments": [
       "saleItemID",
@@ -1533,6 +1555,24 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "fe3efc6c91b2a341720027dc0353dd25d020c9b07e97d982b79e7a8c4e5fe541": {
+    "arguments": [
+      "collectionID",
+      "packIDs",
+      "price",
+      "beneficiaryAddress",
+      "beneficiaryCutPercent",
+      "creatorAddress",
+      "creatorCutPercent",
+      "additionalSaleCutsPercents"
+    ],
+    "balances": {
+      "price": "FLOW"
+    },
+    "messages": {
+      "en": "Purchase Starly pack(s) for {price} FLOW"
     }
   }
 }
