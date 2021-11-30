@@ -1,0 +1,18 @@
+{
+    "arguments": [
+        "flowAmount",
+        "payees",
+        "payeesShares",
+        "recipient",
+        "editionID",
+        "metadata",
+        "components",
+        "claimEditions",
+        "claimMetadatas"
+    ],
+    "messages": {
+        "en": "Buy new nft mint for {flowAmount} FLOW and store in {recipient}",
+        "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在 {recipient}",
+        "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在 {recipient}"
+    }
+}
