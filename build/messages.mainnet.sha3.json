@@ -70,6 +70,20 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "0d314af2f8d13de1b986ddc6dc58117fc6ee295e7bbf61c2da0405daf7994706": {
+    "arguments": [
+      "flowAmount",
+      "payees",
+      "payeesShares",
+      "recipient",
+      "nft_id"
+    ],
+    "messages": {
+      "en": "Buy nft {nft_id} for {flowAmount} FLOW and store in {recipient}",
+      "zh_CN": "为 {flowAmount} FLOW 购买 nft {nft_id} 并存储在 {recipient}",
+      "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在 {recipient}"
+    }
+  },
   "107a78b77138feef23251d058d71ce1e33ac8a68f86b830829b08dd466d7922d": {
     "arguments": [
       "marketplace",
@@ -969,6 +983,24 @@
       "en": "Purchase Starly pack(s) for {price} FUSD"
     }
   },
+  "9b3ce5e458a4e4d68e6c2b6530ad5afd3f3cd30508ea1ec8d14db26b5595db2b": {
+    "arguments": [
+      "flowAmount",
+      "payees",
+      "payeesShares",
+      "recipientKeys",
+      "editionID",
+      "metadata",
+      "components",
+      "claimEditions",
+      "claimMetadatas"
+    ],
+    "messages": {
+      "en": "Buy new nft mint for {flowAmount} FLOW and store in a new account",
+      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在新帐户中",
+      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在新帳戶中"
+    }
+  },
   "9c77f66d0785c00f3973262662394a2ad3e0cd4ef03d92c8fc03ae0c86da8fc5": {
     "arguments": [
       "flovatarId"
@@ -1154,6 +1186,20 @@
       "en": "List Faze NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "b848a258d4bd96c12534dab19dee929640bc71725b1b3e0c22637aa94946ef1b": {
+    "arguments": [
+      "flowAmount",
+      "payees",
+      "payeesShares",
+      "recipientKeys",
+      "nft_id"
+    ],
+    "messages": {
+      "en": "Buy nft {nft_id} for {flowAmount} FLOW and store in a new account",
+      "zh_CN": "为 {flowAmount} FLOW 购买 nft {nft_id} 并存储在新帐户中",
+      "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在新帳戶中"
+    }
+  },
   "b8adab04e138cb027bfcc1f0b4d9c4c02e9be3a0d0aa4e5a6bf97ca37ccf3d8e": {
     "arguments": [
       "listingResourceID",
@@ -1188,6 +1234,24 @@
     ],
     "messages": {
       "en": "List RareRooms NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "c0b361c6edd767f754a9408a0e3ddd67865fd275e539fb0848768a05628a8f86": {
+    "arguments": [
+      "flowAmount",
+      "payees",
+      "payeesShares",
+      "recipient",
+      "editionID",
+      "metadata",
+      "components",
+      "claimEditions",
+      "claimMetadatas"
+    ],
+    "messages": {
+      "en": "Buy new nft mint for {flowAmount} FLOW and store in {recipient}",
+      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在 {recipient}",
+      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在 {recipient}"
     }
   },
   "c286a2a6c749fa0c28e6e13d25b71dbee54e746ecc7e1d6acb95da82b023522e": {
