@@ -1,7 +1,7 @@
-import FungibleToken from 0xFUNGIBLETOKEN
-import FlowToken from 0xFLOWTOKEN
-import NonFungibleToken from 0xNONFUNGIBLETOKEN
-import EnemyMetal from 0xENEMYMETAL
+import FungibleToken from 0x9a0766d93b6608b7
+import FlowToken from 0x7e60df042a9c0868
+import NonFungibleToken from 0x631e88ae7f1d7c20
+import EnemyMetal from 0x0
 
 // This transaction is for buying a NFT mint using flow tokens
 transaction(flowAmount: UFix64, payees: [Address], payeesShares: [UFix64], recipient: Address, editionID: UInt64, metadata: String, components: [UInt64], claimEditions: [UInt64], claimMetadatas: [String]) {

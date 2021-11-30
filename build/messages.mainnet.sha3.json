@@ -70,7 +70,7 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
-  "0d314af2f8d13de1b986ddc6dc58117fc6ee295e7bbf61c2da0405daf7994706": {
+  "0d54d5faa482572513696bbca2ce88823cd3c170b7206efe0c7dae05a9529aa1": {
     "arguments": [
       "flowAmount",
       "payees",
@@ -317,6 +317,24 @@
     ],
     "messages": {
       "en": "List Starly NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "3081cce624f392870fbc44e074118b77f97cdf85434a14086ef8e99e4f7fb54a": {
+    "arguments": [
+      "flowAmount",
+      "payees",
+      "payeesShares",
+      "recipientKeys",
+      "editionID",
+      "metadata",
+      "components",
+      "claimEditions",
+      "claimMetadatas"
+    ],
+    "messages": {
+      "en": "Buy new nft mint for {flowAmount} FLOW and store in a new account",
+      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在新帐户中",
+      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在新帳戶中"
     }
   },
   "3212d0797294b7b4a0c92a2f16aa3e56224ab4ed2498653714e0d9b2e38e9ab3": {
@@ -872,6 +890,24 @@
       "en": "List Tune Go NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "881d87ff4b0267a42872244bd24fdf81c99bc0d5a87d93a453d52835f838cf4f": {
+    "arguments": [
+      "flowAmount",
+      "payees",
+      "payeesShares",
+      "recipient",
+      "editionID",
+      "metadata",
+      "components",
+      "claimEditions",
+      "claimMetadatas"
+    ],
+    "messages": {
+      "en": "Buy new nft mint for {flowAmount} FLOW and store in {recipient}",
+      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在 {recipient}",
+      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在 {recipient}"
+    }
+  },
   "8873e648d7e48a6b311bfc7c82d243e70904bca56b9184317de82b58d0028ddb": {
     "arguments": [
       "listingResourceID",
@@ -983,24 +1019,6 @@
       "en": "Purchase Starly pack(s) for {price} FUSD"
     }
   },
-  "9b3ce5e458a4e4d68e6c2b6530ad5afd3f3cd30508ea1ec8d14db26b5595db2b": {
-    "arguments": [
-      "flowAmount",
-      "payees",
-      "payeesShares",
-      "recipientKeys",
-      "editionID",
-      "metadata",
-      "components",
-      "claimEditions",
-      "claimMetadatas"
-    ],
-    "messages": {
-      "en": "Buy new nft mint for {flowAmount} FLOW and store in a new account",
-      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在新帐户中",
-      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在新帳戶中"
-    }
-  },
   "9c77f66d0785c00f3973262662394a2ad3e0cd4ef03d92c8fc03ae0c86da8fc5": {
     "arguments": [
       "flovatarId"
@@ -1049,6 +1067,20 @@
   "a17ce9a30bc59550be0b28d90b50f08a5a866121bc44f9e86b52c9cb8ce55d2d": {
     "messages": {
       "en": "Initialize your account for Mystery Pack NFTs"
+    }
+  },
+  "a1eb6e0bbd40ece86e2050e3d1a36002af6be646e1ff3223f297a14809833ba3": {
+    "arguments": [
+      "flowAmount",
+      "payees",
+      "payeesShares",
+      "recipientKeys",
+      "nft_id"
+    ],
+    "messages": {
+      "en": "Buy nft {nft_id} for {flowAmount} FLOW and store in a new account",
+      "zh_CN": "为 {flowAmount} FLOW 购买 nft {nft_id} 并存储在新帐户中",
+      "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在新帳戶中"
     }
   },
   "a27242d5b68305224c9460b3de3086aa0023a82c987979c173994d95fb817dc3": {
@@ -1186,20 +1218,6 @@
       "en": "List Faze NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
-  "b848a258d4bd96c12534dab19dee929640bc71725b1b3e0c22637aa94946ef1b": {
-    "arguments": [
-      "flowAmount",
-      "payees",
-      "payeesShares",
-      "recipientKeys",
-      "nft_id"
-    ],
-    "messages": {
-      "en": "Buy nft {nft_id} for {flowAmount} FLOW and store in a new account",
-      "zh_CN": "为 {flowAmount} FLOW 购买 nft {nft_id} 并存储在新帐户中",
-      "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在新帳戶中"
-    }
-  },
   "b8adab04e138cb027bfcc1f0b4d9c4c02e9be3a0d0aa4e5a6bf97ca37ccf3d8e": {
     "arguments": [
       "listingResourceID",
@@ -1234,24 +1252,6 @@
     ],
     "messages": {
       "en": "List RareRooms NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
-    }
-  },
-  "c0b361c6edd767f754a9408a0e3ddd67865fd275e539fb0848768a05628a8f86": {
-    "arguments": [
-      "flowAmount",
-      "payees",
-      "payeesShares",
-      "recipient",
-      "editionID",
-      "metadata",
-      "components",
-      "claimEditions",
-      "claimMetadatas"
-    ],
-    "messages": {
-      "en": "Buy new nft mint for {flowAmount} FLOW and store in {recipient}",
-      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在 {recipient}",
-      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在 {recipient}"
     }
   },
   "c286a2a6c749fa0c28e6e13d25b71dbee54e746ecc7e1d6acb95da82b023522e": {

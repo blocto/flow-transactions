@@ -39,6 +39,10 @@
     "mainnet": "0xc8c340cebd11f690",
     "testnet": "0xe2759c7e9a894ff1"
   },
+  "0xENEMY_METAL_ADDRESS": {
+    "mainnet": "0xa38d9dda1d06fdea",
+    "testnet": "0x0"
+  },
   "0xETERNAL_PAYMENT_ADDRESS": {
     "mainnet": "0x1f56a1e665826a52",
     "testnet": "0x7f9a6b61ba0de5ee"

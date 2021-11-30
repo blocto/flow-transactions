@@ -1,7 +1,7 @@
-import FungibleToken from 0xFUNGIBLETOKEN
-import FlowToken from 0xFLOWTOKEN
-import NonFungibleToken from 0xNONFUNGIBLETOKEN
-import EnemyMetal from 0xENEMYMETAL
+import FungibleToken from 0xf233dcee88fe0abe
+import FlowToken from 0x1654653399040a61
+import NonFungibleToken from 0x1d7e57aa55817448
+import EnemyMetal from 0xa38d9dda1d06fdea
 
 // This transaction is for buying a NFT using flow tokens to a recipient account
 transaction(flowAmount: UFix64, payees: [Address], payeesShares: [UFix64], recipient: Address, nft_id: UInt64) {

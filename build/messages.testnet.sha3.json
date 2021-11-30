@@ -8,6 +8,42 @@
       "en": "Set Flobit Hat {hat} for Flovatar {flovatarId}"
     }
   },
+  "03931d5c585a723c704979591f5761a455831d35231bd150bdeff06db456c7d3": {
+    "arguments": [
+      "flowAmount",
+      "payees",
+      "payeesShares",
+      "recipientKeys",
+      "editionID",
+      "metadata",
+      "components",
+      "claimEditions",
+      "claimMetadatas"
+    ],
+    "messages": {
+      "en": "Buy new nft mint for {flowAmount} FLOW and store in a new account",
+      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在新帐户中",
+      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在新帳戶中"
+    }
+  },
+  "0544d64344f0e129ce57b6fae22860a5a41a1528fc0c2a925f3b30e5870b5f5d": {
+    "arguments": [
+      "flowAmount",
+      "payees",
+      "payeesShares",
+      "recipient",
+      "editionID",
+      "metadata",
+      "components",
+      "claimEditions",
+      "claimMetadatas"
+    ],
+    "messages": {
+      "en": "Buy new nft mint for {flowAmount} FLOW and store in {recipient}",
+      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在 {recipient}",
+      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在 {recipient}"
+    }
+  },
   "05c5e6952ae0fc2b64aebb772f7ed3ef91ce3b71e9739c7b991c18a7f9e3c749": {
     "arguments": [
       "listingResourceID"
@@ -62,20 +98,6 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
-    }
-  },
-  "0d314af2f8d13de1b986ddc6dc58117fc6ee295e7bbf61c2da0405daf7994706": {
-    "arguments": [
-      "flowAmount",
-      "payees",
-      "payeesShares",
-      "recipient",
-      "nft_id"
-    ],
-    "messages": {
-      "en": "Buy nft {nft_id} for {flowAmount} FLOW and store in {recipient}",
-      "zh_CN": "为 {flowAmount} FLOW 购买 nft {nft_id} 并存储在 {recipient}",
-      "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在 {recipient}"
     }
   },
   "0de7bb2bbd91a9b6da1089c2a97a7192a2158f8bdcedf6c7212bd532757a85cc": {
@@ -899,6 +921,20 @@
       "en": "List Chainmonsters Rewards NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "9a20f339243a3b73c6d00f1a321289c0285fada7390d6ef4ce48512e3032c3b7": {
+    "arguments": [
+      "flowAmount",
+      "payees",
+      "payeesShares",
+      "recipientKeys",
+      "nft_id"
+    ],
+    "messages": {
+      "en": "Buy nft {nft_id} for {flowAmount} FLOW and store in a new account",
+      "zh_CN": "为 {flowAmount} FLOW 购买 nft {nft_id} 并存储在新帐户中",
+      "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在新帳戶中"
+    }
+  },
   "9ac4208cca8d3650c19f7936482046e4879048b01ab85bd606a940b313d6394c": {
     "arguments": [
       "flovatarId",
@@ -906,24 +942,6 @@
     ],
     "messages": {
       "en": "Give the Flovatar {flovatarId} the name {name}"
-    }
-  },
-  "9b3ce5e458a4e4d68e6c2b6530ad5afd3f3cd30508ea1ec8d14db26b5595db2b": {
-    "arguments": [
-      "flowAmount",
-      "payees",
-      "payeesShares",
-      "recipientKeys",
-      "editionID",
-      "metadata",
-      "components",
-      "claimEditions",
-      "claimMetadatas"
-    ],
-    "messages": {
-      "en": "Buy new nft mint for {flowAmount} FLOW and store in a new account",
-      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在新帐户中",
-      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在新帳戶中"
     }
   },
   "9eade4fb34f5b7f8b088b29945c239066f6ae673aef8e157a65b30e78f5512ab": {
@@ -1220,20 +1238,6 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
-  "b848a258d4bd96c12534dab19dee929640bc71725b1b3e0c22637aa94946ef1b": {
-    "arguments": [
-      "flowAmount",
-      "payees",
-      "payeesShares",
-      "recipientKeys",
-      "nft_id"
-    ],
-    "messages": {
-      "en": "Buy nft {nft_id} for {flowAmount} FLOW and store in a new account",
-      "zh_CN": "为 {flowAmount} FLOW 购买 nft {nft_id} 并存储在新帐户中",
-      "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在新帳戶中"
-    }
-  },
   "b94247b1caa75b7cf77e3e7cace62f215bb33c8545f70befa38811bc915bb38f": {
     "arguments": [
       "listingResourceID",
@@ -1307,24 +1311,6 @@
     },
     "messages": {
       "en": "Purchase Starly pack(s) for {price} FUSD"
-    }
-  },
-  "c0b361c6edd767f754a9408a0e3ddd67865fd275e539fb0848768a05628a8f86": {
-    "arguments": [
-      "flowAmount",
-      "payees",
-      "payeesShares",
-      "recipient",
-      "editionID",
-      "metadata",
-      "components",
-      "claimEditions",
-      "claimMetadatas"
-    ],
-    "messages": {
-      "en": "Buy new nft mint for {flowAmount} FLOW and store in {recipient}",
-      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在 {recipient}",
-      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在 {recipient}"
     }
   },
   "c25c1db317400fe766fce95d668014dba7f8bb5be88bd5c82facb215bfff05f5": {
@@ -1487,6 +1473,20 @@
     },
     "messages": {
       "en": "Buy Flovatar {tokenId} for {amount} FLOW from {saleAddress}"
+    }
+  },
+  "df57c0d2f280f2bf66caaca991c18cee89f5a715bc48eec4f345316fdb5a47fa": {
+    "arguments": [
+      "flowAmount",
+      "payees",
+      "payeesShares",
+      "recipient",
+      "nft_id"
+    ],
+    "messages": {
+      "en": "Buy nft {nft_id} for {flowAmount} FLOW and store in {recipient}",
+      "zh_CN": "为 {flowAmount} FLOW 购买 nft {nft_id} 并存储在 {recipient}",
+      "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在 {recipient}"
     }
   },
   "e34d2e878f9520aebf9ffbc3c501def08be24a0b87254b09768933c1e8c8707a": {
