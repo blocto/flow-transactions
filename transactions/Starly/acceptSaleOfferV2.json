@@ -1,0 +1,9 @@
+{
+    "arguments": [
+        "itemID",
+        "marketCollectionAddress"
+    ],
+    "messages": {
+        "en": "Purchase Starly NFT #{itemID} from {marketCollectionAddress}"
+    }
+}
