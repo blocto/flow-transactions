@@ -99,6 +99,14 @@
     "mainnet": "0x8b148183c28ff88f",
     "testnet": "0xc523a8bbf10fc4a3"
   },
+  "0xJAMBB_COLLECTIBLES_ADDRESS": {
+    "mainnet": "0x444f5ea22c6ea12c",
+    "testnet": "0x0"
+  },
+  "0xJAMBB_MOMENTS_ADDRESS": {
+    "mainnet": "0xd4ad4740ee426334",
+    "testnet": "0x0"
+  },
   "0xJAMBB_VOUCHERS_ADDRESS": {
     "mainnet": "0x444f5ea22c6ea12c",
     "testnet": "0xe94a6e229293f196"
