@@ -1,7 +1,7 @@
 import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
 import FUSD from 0xFUSD_ADDRESS
 import FlowToken from 0xFLOW_TOKEN_ADDRESS
-import Profile from 0xVERSUS_ADDRESS
+import Profile from 0xFIND_ADDRESS
 import FIND from 0xFIND_ADDRESS
 import Artifact from 0xFIND_ADDRESS_ADDRESS
 import TypedMetadata from 0xFIND_ADDRESS_ADDRESS
@@ -51,7 +51,7 @@ transaction(name: String, amount: UFix64) {
 			acct.unlink(Profile.publicPath)
 			destroy <- acct.load<@AnyResource>(from:Profile.storagePath)
 
-			let profile <-Profile.createUser(name:name, description: "", allowStoringFollowers:true, tags:["find"])
+			let profile <-Profile.createUser(name:name, createdAt: "find")
 
 			let fusdWallet=Profile.Wallet( name:"FUSD", receiver:fusdReceiver, balance:acct.getCapability<&{FungibleToken.Balance}>(/public/fusdBalance), accept: Type<@FUSD.Vault>(), names: ["fusd", "stablecoin"])
 
@@ -71,6 +71,7 @@ transaction(name: String, amount: UFix64) {
 
 			acct.save(<-profile, to: Profile.storagePath)
 			acct.link<&Profile.User{Profile.Public}>(Profile.publicPath, target: Profile.storagePath)
+			acct.link<&{FungibleToken.Receiver}>(Profile.publicReceiverPath, target: Profile.storagePath)
 		}
 
 		let price=FIND.calculateCost(name)

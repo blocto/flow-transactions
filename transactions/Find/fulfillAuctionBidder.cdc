@@ -1,7 +1,7 @@
 import FIND from 0xFIND_ADDRESS
 import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
 import FUSD from 0xFUSD_ADDRESS
-import Profile from 0xVERSUS_ADDRESS
+import Profile from 0xFIND_ADDRESS
 
 transaction(owner: Address, name: String) {
 	prepare(acct: AuthAccount) {
@@ -39,7 +39,7 @@ transaction(owner: Address, name: String) {
 			acct.unlink(Profile.publicPath)
 			destroy <- acct.load<@AnyResource>(from:Profile.storagePath)
 
-			let profile <-Profile.createUser(name:name, description: "", allowStoringFollowers:true, tags:["find"])
+			let profile <-Profile.createUser(name:name, createdAt: "find")
 
 			let fusdWallet=Profile.Wallet( name:"FUSD", receiver:fusdReceiver, balance:acct.getCapability<&{FungibleToken.Balance}>(/public/fusdBalance), accept: Type<@FUSD.Vault>(), names: ["fusd", "stablecoin"])
 
@@ -49,10 +49,11 @@ transaction(owner: Address, name: String) {
 
 			acct.save(<-profile, to: Profile.storagePath)
 			acct.link<&Profile.User{Profile.Public}>(Profile.publicPath, target: Profile.storagePath)
+			acct.link<&{FungibleToken.Receiver}>(Profile.publicReceiverPath, target: Profile.storagePath)
 		}
 
 		let leaseCollectionOwner = getAccount(owner).getCapability<&FIND.LeaseCollection{FIND.LeaseCollectionPublic}>(FIND.LeasePublicPath)
-		leaseCollectionOwner.borrow()!.fullfillAuction(name)
+		leaseCollectionOwner.borrow()!.fulfillAuction(name)
 
 	}
 }

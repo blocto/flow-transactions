@@ -2,9 +2,7 @@ import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
 import FUSD from 0xFUSD_ADDRESS
 import FlowToken from 0xFLOW_TOKEN_ADDRESS
 import FIND from 0xFIND_ADDRESS
-import Profile from 0xVERSUS_ADDRESS
-import Artifact from 0xFIND_ADDRESS_ADDRESS
-import TypedMetadata from 0xFIND_ADDRESS_ADDRESS
+import Profile from 0xFIND_ADDRESS
 
 
 //really not sure on how to input links here.)
@@ -22,7 +20,7 @@ transaction(name: String) {
 			return 
 		}
 
-		let profile <-Profile.createUser(name:name, description: "", allowStoringFollowers:true, tags:["find"])
+		let profile <-Profile.createUser(name:name, createdAt: "find")
 
 		//Add exising FUSD or create a new one and add it
 		let fusdReceiver = acct.getCapability<&{FungibleToken.Receiver}>(/public/fusdReceiver)
@@ -44,14 +42,14 @@ transaction(name: String) {
 		profile.addWallet(fusdWallet)
 
 
-			let flowWallet=Profile.Wallet(
-				name:"Flow", 
-				receiver:acct.getCapability<&{FungibleToken.Receiver}>(/public/flowTokenReceiver),
-				balance:acct.getCapability<&{FungibleToken.Balance}>(/public/flowTokenBalance),
-				accept: Type<@FlowToken.Vault>(),
-				names: ["flow"]
-			)
-			profile.addWallet(flowWallet)
+		let flowWallet=Profile.Wallet(
+			name:"Flow", 
+			receiver:acct.getCapability<&{FungibleToken.Receiver}>(/public/flowTokenReceiver),
+			balance:acct.getCapability<&{FungibleToken.Balance}>(/public/flowTokenBalance),
+			accept: Type<@FlowToken.Vault>(),
+			names: ["flow"]
+		)
+		profile.addWallet(flowWallet)
 		let leaseCollection = acct.getCapability<&FIND.LeaseCollection{FIND.LeaseCollectionPublic}>(FIND.LeasePublicPath)
 		if !leaseCollection.check() {
 			acct.unlink(FIND.LeasePublicPath)
@@ -70,21 +68,10 @@ transaction(name: String) {
 		}
 		profile.addCollection(Profile.ResourceCollection( "FINDBids", bidCollection, Type<&FIND.BidCollection{FIND.BidCollectionPublic}>(), ["find", "bids"]))
 
-		let artifactCollection = acct.getCapability<&{TypedMetadata.ViewResolverCollection}>(Artifact.ArtifactPublicPath)
-		if !artifactCollection.check() {
-			acct.unlink(Artifact.ArtifactPublicPath)
-			destroy <- acct.load<@AnyResource>(from:Artifact.ArtifactStoragePath)
-
-			acct.save(<- Artifact.createEmptyCollection(), to: Artifact.ArtifactStoragePath)
-			acct.link<&{TypedMetadata.ViewResolverCollection}>( Artifact.ArtifactPublicPath, target: Artifact.ArtifactStoragePath)
-		}
-		profile.addCollection(Profile.ResourceCollection(name: "artifacts", collection: artifactCollection, type: Type<&{TypedMetadata.ViewResolverCollection}>(), tags: ["artifact", "nft"]))
-
 		acct.save(<-profile, to: Profile.storagePath)
 		acct.link<&Profile.User{Profile.Public}>(Profile.publicPath, target: Profile.storagePath)
+		acct.link<&{FungibleToken.Receiver}>(Profile.publicReceiverPath, target: Profile.storagePath)
 
-		let p =acct.borrow<&Profile.User>(from:Profile.storagePath)!
-		p.verify("test")
 	}
 }
 

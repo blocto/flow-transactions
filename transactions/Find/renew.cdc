@@ -1,6 +1,6 @@
 import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
 import FUSD from 0xFUSD_ADDRESS
-import Profile from 0xVERSUS_ADDRESS
+import Profile from 0xFIND_ADDRESS
 import FIND from 0xFIND_ADDRESS
 
 transaction(name: String, amount: UFix64) {
