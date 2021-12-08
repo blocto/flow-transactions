@@ -1,5 +1,6 @@
 import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
 import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
+import FlowStorageFees from 0xFLOW_STORAGE_FEES_ADDRESS
 import FUSD from 0xFUSD_ADDRESS
 import FlowToken from 0xFLOW_TOKEN_ADDRESS
 import StarlyCard from 0xSTARLY_CARD_ADDRESS
@@ -13,12 +14,6 @@ transaction(
     creatorAddress: Address,
     creatorCutPercent: UFix64) {
 
-    let starlyCardCollection: Capability<&StarlyCard.Collection{NonFungibleToken.Provider, StarlyCard.StarlyCardCollectionPublic}>
-    let marketCollection: &StarlyCardMarket.Collection
-    let sellerFUSDVault: Capability<&FUSD.Vault{FungibleToken.Receiver}>
-    let beneficiaryFUSDVault: Capability<&FUSD.Vault{FungibleToken.Receiver}>
-    let creatorFUSDVault: Capability<&FUSD.Vault{FungibleToken.Receiver}>
-
     prepare(signer: AuthAccount, admin: AuthAccount) {
         // we need a provider capability, but one is not provided by default so we create one.
         let StarlyCardCollectionProviderPrivatePath = /private/starlyCardCollectionProvider
@@ -26,44 +21,42 @@ transaction(
             signer.link<&StarlyCard.Collection{NonFungibleToken.Provider, StarlyCard.StarlyCardCollectionPublic}>(StarlyCardCollectionProviderPrivatePath, target: StarlyCard.CollectionStoragePath)
         }
 
-        self.starlyCardCollection = signer.getCapability<&StarlyCard.Collection{NonFungibleToken.Provider, StarlyCard.StarlyCardCollectionPublic}>(StarlyCardCollectionProviderPrivatePath)!
-        assert(self.starlyCardCollection.borrow() != nil, message: "Missing or mis-typed StarlyCardCollection provider")
+        let starlyCardCollection = signer.getCapability<&StarlyCard.Collection{NonFungibleToken.Provider, StarlyCard.StarlyCardCollectionPublic}>(StarlyCardCollectionProviderPrivatePath)!
+        assert(starlyCardCollection.borrow() != nil, message: "Missing or mis-typed StarlyCardCollection provider")
 
-        self.marketCollection = signer.borrow<&StarlyCardMarket.Collection>(from: StarlyCardMarket.CollectionStoragePath)
+        let marketCollection = signer.borrow<&StarlyCardMarket.Collection>(from: StarlyCardMarket.CollectionStoragePath)
             ?? panic("Missing or mis-typed StarlyCardMarket Collection")
 
-        self.sellerFUSDVault = signer.getCapability<&FUSD.Vault{FungibleToken.Receiver}>(/public/fusdReceiver)!
-        assert(self.sellerFUSDVault.borrow() != nil, message: "Missing or mis-typed seller FUSD receiver")
+        let sellerFUSDVault = signer.getCapability<&FUSD.Vault{FungibleToken.Receiver}>(/public/fusdReceiver)!
+        assert(sellerFUSDVault.borrow() != nil, message: "Missing or mis-typed seller FUSD receiver")
 
         let beneficiary = getAccount(beneficiaryAddress);
-        self.beneficiaryFUSDVault = beneficiary.getCapability<&FUSD.Vault{FungibleToken.Receiver}>(/public/fusdReceiver)!
-        assert(self.beneficiaryFUSDVault.borrow() != nil, message: "Missing or mis-typed FUSD receiver (beneficiary)")
+        let beneficiaryFUSDVault = beneficiary.getCapability<&FUSD.Vault{FungibleToken.Receiver}>(/public/fusdReceiver)!
+        assert(beneficiaryFUSDVault.borrow() != nil, message: "Missing or mis-typed FUSD receiver (beneficiary)")
 
         let creator = getAccount(creatorAddress)
-        self.creatorFUSDVault = creator.getCapability<&FUSD.Vault{FungibleToken.Receiver}>(/public/fusdReceiver)!
-        assert(self.creatorFUSDVault.borrow() != nil, message: "Missing or mis-typed FUSD receiver (creator)")
+        let creatorFUSDVault = creator.getCapability<&FUSD.Vault{FungibleToken.Receiver}>(/public/fusdReceiver)!
+        assert(creatorFUSDVault.borrow() != nil, message: "Missing or mis-typed FUSD receiver (creator)")
 
         assert(beneficiaryCutPercent + creatorCutPercent < 1.0, message: "Sum of beneficiaryCutPercent and creatorCutPercent should be below 1.0")
-    }
 
-    execute {
         let sellerCutPercent = 1.0 - beneficiaryCutPercent - creatorCutPercent;
         let offer <- StarlyCardMarket.createSaleOffer (
             itemID: itemID,
-            starlyID: self.starlyCardCollection.borrow()!.borrowStarlyCard(id: itemID)!.starlyID,
+            starlyID: starlyCardCollection.borrow()!.borrowStarlyCard(id: itemID)!.starlyID,
             price: price,
-            sellerItemProvider: self.starlyCardCollection,
+            sellerItemProvider: starlyCardCollection,
             sellerSaleCutReceiver: StarlyCardMarket.SaleCutReceiver(
-                receiver: self.sellerFUSDVault,
+                receiver: sellerFUSDVault,
                 percent: sellerCutPercent),
             beneficiarySaleCutReceiver: StarlyCardMarket.SaleCutReceiver(
-                receiver: self.beneficiaryFUSDVault,
+                receiver: beneficiaryFUSDVault,
                 percent: beneficiaryCutPercent),
             creatorSaleCutReceiver: StarlyCardMarket.SaleCutReceiver(
-                receiver: self.creatorFUSDVault,
+                receiver: creatorFUSDVault,
                 percent: creatorCutPercent),
             additionalSaleCutReceivers: [])
-        self.marketCollection.insert(offer: <-offer)
+        marketCollection.insert(offer: <-offer)
 
         fun returnFlowFromStorage(_ storage: UInt64): UFix64 {
             let f = UFix64(storage % 100000000 as UInt64) * 0.00000001 as UFix64 + UFix64(storage / 100000000 as UInt64)
