@@ -1,15 +1,13 @@
+import FIND from 0xFIND_ADDRESS
 import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
 import FUSD from 0xFUSD_ADDRESS
-import FlowToken from 0xFLOW_TOKEN_ADDRESS
 import Profile from 0xFIND_ADDRESS
-import FIND from 0xFIND_ADDRESS
-import Artifact from 0xFIND_ADDRESS_ADDRESS
-import TypedMetadata from 0xFIND_ADDRESS_ADDRESS
 
-transaction(name: String, amount: UFix64) {
+transaction(owner: Address, name: String) {
 	prepare(acct: AuthAccount) {
 
-		//Add exising FUSD or create a new one and add it
+
+	//Add exising FUSD or create a new one and add it
 		let fusdReceiver = acct.getCapability<&{FungibleToken.Receiver}>(/public/fusdReceiver)
 		if !fusdReceiver.check() {
 			let fusd <- FUSD.createEmptyVault()
@@ -25,16 +23,6 @@ transaction(name: String, amount: UFix64) {
 
 			acct.save(<- FIND.createEmptyLeaseCollection(), to: FIND.LeaseStoragePath)
 			acct.link<&FIND.LeaseCollection{FIND.LeaseCollectionPublic}>( FIND.LeasePublicPath, target: FIND.LeaseStoragePath)
-
-		}
-
-		let artifactCollection = acct.getCapability<&{TypedMetadata.ViewResolverCollection}>(Artifact.ArtifactPublicPath)
-		if !artifactCollection.check() {
-			acct.unlink(Artifact.ArtifactPublicPath)
-			destroy <- acct.load<@AnyResource>(from:Artifact.ArtifactStoragePath)
-
-			acct.save(<- Artifact.createEmptyCollection(), to: Artifact.ArtifactStoragePath)
-			acct.link<&{TypedMetadata.ViewResolverCollection}>( Artifact.ArtifactPublicPath, target: Artifact.ArtifactStoragePath)
 		}
 
 		let bidCollection = acct.getCapability<&FIND.BidCollection{FIND.BidCollectionPublic}>(FIND.BidPublicPath)
@@ -55,17 +43,7 @@ transaction(name: String, amount: UFix64) {
 
 			let fusdWallet=Profile.Wallet( name:"FUSD", receiver:fusdReceiver, balance:acct.getCapability<&{FungibleToken.Balance}>(/public/fusdBalance), accept: Type<@FUSD.Vault>(), names: ["fusd", "stablecoin"])
 
-			let flowWallet=Profile.Wallet(
-				name:"Flow", 
-				receiver:acct.getCapability<&{FungibleToken.Receiver}>(/public/flowTokenReceiver),
-				balance:acct.getCapability<&{FungibleToken.Balance}>(/public/flowTokenBalance),
-				accept: Type<@FlowToken.Vault>(),
-				names: ["flow"]
-			)
-	
-			profile.addWallet(flowWallet)
 			profile.addWallet(fusdWallet)
-			profile.addCollection(Profile.ResourceCollection(name: "artifacts", collection: artifactCollection, type: Type<&{TypedMetadata.ViewResolverCollection}>(), tags: ["artifact", "nft"]))
 			profile.addCollection(Profile.ResourceCollection("FINDLeases",leaseCollection, Type<&FIND.LeaseCollection{FIND.LeaseCollectionPublic}>(), ["find", "leases"]))
 			profile.addCollection(Profile.ResourceCollection("FINDBids", bidCollection, Type<&FIND.BidCollection{FIND.BidCollectionPublic}>(), ["find", "bids"]))
 
@@ -74,19 +52,8 @@ transaction(name: String, amount: UFix64) {
 			acct.link<&{FungibleToken.Receiver}>(Profile.publicReceiverPath, target: Profile.storagePath)
 		}
 
-		let price=FIND.calculateCost(name)
-		if price != amount {
-			panic("Calculated cost does not match expected cost")
-		}
-		log("The cost for registering this name is ".concat(price.toString()))
-
-		let vaultRef = acct.borrow<&FUSD.Vault>(from: /storage/fusdVault) ?? panic("Could not borrow reference to the fusdVault!")
-
-		let payVault <- vaultRef.withdraw(amount: price) as! @FUSD.Vault
-
-		let leases=acct.borrow<&FIND.LeaseCollection>(from: FIND.LeaseStoragePath)!
-		leases.register(name: name, vault: <- payVault)
-
+		let leaseCollectionOwner = getAccount(owner).getCapability<&FIND.LeaseCollection{FIND.LeaseCollectionPublic}>(FIND.LeasePublicPath)
+		leaseCollectionOwner.borrow()!.fulfillAuction(name)
 
 	}
 }

@@ -1,0 +1,12 @@
+{
+    "arguments": [
+        "name",
+				"auctionstartPrice",
+				"auctionReservePrice",
+				"auctionDuration",
+				"auctionExtensionOnLateBid"
+    ],
+    "messages": {
+        "en": "List name {name} for auction with startPrice {auctionStartPrice} and reserve price {auctionReservePrice}"
+    }
+}

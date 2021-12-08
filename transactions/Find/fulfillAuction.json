@@ -1,0 +1,9 @@
+{
+    "arguments": [
+			  "owner",
+        "name"
+    ],
+    "messages": {
+        "en": "Fullfill the auction name {name}"
+    }
+}

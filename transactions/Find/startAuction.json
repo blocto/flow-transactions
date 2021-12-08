@@ -1,0 +1,8 @@
+{
+    "arguments": [
+        "name"
+    ],
+    "messages": {
+        "en": "Manually start an auction on {name}"
+    }
+}

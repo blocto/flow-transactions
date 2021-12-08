@@ -1,0 +1,12 @@
+{
+    "arguments": [
+        "name",
+        "amount"
+    ],
+    "messages": {
+        "en": "Increase your bid on name {name} in FIND with {amount} FUSD"
+    },
+    "balances": {
+        "amount": "FUSD"
+    }
+}
