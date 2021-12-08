@@ -1,11 +1,11 @@
-import FIND from 0x85f0d6217184009b
+import FIND from 0x37a05b1ecacc80f7
 import FungibleToken from 0x9a0766d93b6608b7
 import FUSD from 0xe223d8a629e49c68
 
 transaction(name: String, amount: UFix64) {
 	prepare(account: AuthAccount) {
 
-		let vaultRef = account.borrow<&FUSD.Vault>(from: /storage/fusdVault) ?? panic("Could not borrow reference to the owner's Vault!")
+		let vaultRef = account.borrow<&FUSD.Vault>(from: /storage/fusdVault) ?? panic("Could not borrow reference to the fusdVault!")
 		 
 		let fusdReceiver = account.getCapability<&{FungibleToken.Receiver}>(/public/fusdReceiver)
 
