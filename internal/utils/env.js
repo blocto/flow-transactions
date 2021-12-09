@@ -15,7 +15,8 @@ const replaceContractAddresses = (script, env = ENV) => {
     if (!replacedKey) {
       throw new Error("undefined address")
     }
-    processedScript = processedScript.replace(key, replacedKey).trim();
+    const keyRegex = new RegExp(key, 'g');
+    processedScript = processedScript.replace(keyRegex, replacedKey).trim();
   });
 
   return processedScript

@@ -2,9 +2,9 @@ import FungibleToken from 0xf233dcee88fe0abe
 import FUSD from 0x3c5959b568896393
 import FlowToken from 0x1654653399040a61
 import Profile from 0x0
-import FIND from 0xFIND_ADDRESS
-import Artifact from 0xFIND_ADDRESS_ADDRESS
-import TypedMetadata from 0xFIND_ADDRESS_ADDRESS
+import FIND from 0x0
+import Artifact from 0x0_ADDRESS
+import TypedMetadata from 0x0_ADDRESS
 
 transaction(name: String, amount: UFix64) {
 	prepare(acct: AuthAccount) {

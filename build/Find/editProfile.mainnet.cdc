@@ -2,7 +2,7 @@ import FungibleToken from 0xf233dcee88fe0abe
 import FUSD from 0x3c5959b568896393
 import FlowToken from 0x1654653399040a61
 import FIND from 0x0
-import Profile from 0xFIND_ADDRESS
+import Profile from 0x0
 
 
 transaction(name:String, description: String, avatar: String, tags:[String], allowStoringFollowers: Bool, links: [{String: String}]) {
