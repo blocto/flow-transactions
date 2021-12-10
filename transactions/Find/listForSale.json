@@ -4,7 +4,7 @@
 				"directSellPrice"
     ],
     "messages": {
-        "en": "List name {name} for direct sale at {directSalePrice} FUSD"
+        "en": "List name {name} for direct sale at {directSellPrice} FUSD"
     }
 }
 
