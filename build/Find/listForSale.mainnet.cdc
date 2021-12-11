@@ -1,4 +1,4 @@
-import FIND from 0x0
+import FIND from 0x097bafa4e0b48eef
 
 transaction(name: String, directSellPrice:UFix64) {
 	prepare(acct: AuthAccount) {

@@ -1,4 +1,4 @@
-import FIND from 0x0
+import FIND from 0x097bafa4e0b48eef
 
 transaction(name: String, auctionStartPrice: UFix64, auctionReservePrice: UFix64, auctionDuration: UFix64, auctionExtensionOnLateBid: UFix64) {
 	prepare(acct: AuthAccount) {

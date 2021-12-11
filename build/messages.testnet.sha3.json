@@ -608,6 +608,18 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "4d5e2da7b228ac15c1d3393fbb52ee8f67058777603caca08b918cf9135c3774": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Register the name {name} in FIND for {amount} FUSD"
+    }
+  },
   "4deffab817955f98760ec089a648261b176a490d7f6b536080b7600772877428": {
     "arguments": [
       "name"
@@ -619,7 +631,7 @@
   "4eed0162c2eada3880a26ccdcef4648f14f6f66cf683c625a9253095219413e5": {
     "arguments": [
       "name",
-      "auctionstartPrice",
+      "auctionStartPrice",
       "auctionReservePrice",
       "auctionDuration",
       "auctionExtensionOnLateBid"
@@ -694,7 +706,7 @@
       "directSellPrice"
     ],
     "messages": {
-      "en": "List name {name} for direct sale at {directSalePrice} FUSD"
+      "en": "List name {name} for direct sale at {directSellPrice} FUSD"
     }
   },
   "60aa76b7bce776305e7459a1146a38d29f83ad93755533eb26daa35876fa51df": {
@@ -887,7 +899,7 @@
       "name"
     ],
     "messages": {
-      "en": "Fullfill the auction on {name}"
+      "en": "Fulfill the auction on {name}"
     }
   },
   "755810360a17b17c6ab30c9d22274069c9a46c9499bae4b0cf962e7a81debbde": {
@@ -1462,24 +1474,12 @@
       "name"
     ],
     "messages": {
-      "en": "Fullfill the auction name {name}"
+      "en": "Fulfill the auction name {name}"
     }
   },
   "c7d575f260a71d7b8f6e24ae3ff36aaa28537a3e52e91138417bca516befe797": {
     "messages": {
       "en": "Initialize your account to buy, sell and receive NFTs"
-    }
-  },
-  "cb417cb5a7954e7731e07a88719068a06619514e060a2007db14e010db492a7f": {
-    "arguments": [
-      "name",
-      "amount"
-    ],
-    "balances": {
-      "amount": "FUSD"
-    },
-    "messages": {
-      "en": "Register the name {name} in FIND for {amount} FUSD"
     }
   },
   "cc7b2f34c7c833d4633946b629610b73622efc8cc76479fd68a8919da87a8982": {
@@ -1502,7 +1502,7 @@
       "name"
     ],
     "messages": {
-      "en": "Reject the blind bid on name {name}"
+      "en": "Reject the offer received on {name}"
     }
   },
   "cf42497cd3a489059532d34fb27a2a7e2f718dfdd4d9d7f8c85a421dbeb80ea1": {
@@ -1699,7 +1699,7 @@
       "name"
     ],
     "messages": {
-      "en": "Fullfill the auction on {name}"
+      "en": "Fulfill the auction on {name}"
     }
   },
   "f5b130bb39ba511639ee7ce0c1a18f4a92311980aeffa490da11bbe2b5081f0a": {

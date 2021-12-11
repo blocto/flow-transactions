@@ -1,10 +1,8 @@
 import FungibleToken from 0xf233dcee88fe0abe
 import FUSD from 0x3c5959b568896393
 import FlowToken from 0x1654653399040a61
-import Profile from 0x0
-import FIND from 0x0
-import Artifact from 0x0_ADDRESS
-import TypedMetadata from 0x0_ADDRESS
+import Profile from 0x097bafa4e0b48eef
+import FIND from 0x097bafa4e0b48eef
 
 transaction(name: String, amount: UFix64) {
 	prepare(acct: AuthAccount) {
@@ -26,15 +24,6 @@ transaction(name: String, amount: UFix64) {
 			acct.save(<- FIND.createEmptyLeaseCollection(), to: FIND.LeaseStoragePath)
 			acct.link<&FIND.LeaseCollection{FIND.LeaseCollectionPublic}>( FIND.LeasePublicPath, target: FIND.LeaseStoragePath)
 
-		}
-
-		let artifactCollection = acct.getCapability<&{TypedMetadata.ViewResolverCollection}>(Artifact.ArtifactPublicPath)
-		if !artifactCollection.check() {
-			acct.unlink(Artifact.ArtifactPublicPath)
-			destroy <- acct.load<@AnyResource>(from:Artifact.ArtifactStoragePath)
-
-			acct.save(<- Artifact.createEmptyCollection(), to: Artifact.ArtifactStoragePath)
-			acct.link<&{TypedMetadata.ViewResolverCollection}>( Artifact.ArtifactPublicPath, target: Artifact.ArtifactStoragePath)
 		}
 
 		let bidCollection = acct.getCapability<&FIND.BidCollection{FIND.BidCollectionPublic}>(FIND.BidPublicPath)
@@ -65,7 +54,6 @@ transaction(name: String, amount: UFix64) {
 	
 			profile.addWallet(flowWallet)
 			profile.addWallet(fusdWallet)
-			profile.addCollection(Profile.ResourceCollection(name: "artifacts", collection: artifactCollection, type: Type<&{TypedMetadata.ViewResolverCollection}>(), tags: ["artifact", "nft"]))
 			profile.addCollection(Profile.ResourceCollection("FINDLeases",leaseCollection, Type<&FIND.LeaseCollection{FIND.LeaseCollectionPublic}>(), ["find", "leases"]))
 			profile.addCollection(Profile.ResourceCollection("FINDBids", bidCollection, Type<&FIND.BidCollection{FIND.BidCollectionPublic}>(), ["find", "bids"]))
 
@@ -86,7 +74,6 @@ transaction(name: String, amount: UFix64) {
 
 		let leases=acct.borrow<&FIND.LeaseCollection>(from: FIND.LeaseStoragePath)!
 		leases.register(name: name, vault: <- payVault)
-
 
 	}
 }

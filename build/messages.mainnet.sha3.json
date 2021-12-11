@@ -81,18 +81,6 @@
       "en": "List RaceDay NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
-  "08cbd18f15e0bb0810f80262c768df1b965e4538921dd7a534f1ad05c625a5af": {
-    "arguments": [
-      "name",
-      "amount"
-    ],
-    "balances": {
-      "amount": "FUSD"
-    },
-    "messages": {
-      "en": "Increase your bid on name {name} in FIND with {amount} FUSD"
-    }
-  },
   "09640f6b83cd1314b53bd03daff86c4cc2ec0286d0e4f83dd425c5ce832324dd": {
     "arguments": [
       "listingResourceID",
@@ -120,15 +108,6 @@
       "en": "Buy nft {nft_id} for {flowAmount} FLOW and store in {recipient}",
       "zh_CN": "为 {flowAmount} FLOW 购买 nft {nft_id} 并存储在 {recipient}",
       "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在 {recipient}"
-    }
-  },
-  "0fddbff5e3b604c6776a8226d33bf012831966307b164767ef8da30409fd00f7": {
-    "arguments": [
-      "name",
-      "directSellPrice"
-    ],
-    "messages": {
-      "en": "List name {name} for direct sale at {directSalePrice} FUSD"
     }
   },
   "107a78b77138feef23251d058d71ce1e33ac8a68f86b830829b08dd466d7922d": {
@@ -207,18 +186,6 @@
     ],
     "messages": {
       "en": "List Fright Club NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
-    }
-  },
-  "150863b6fe7d62ad0e110d147b736fa3b0a8dab3bd0b7c9ecc3c75d2051b22cb": {
-    "arguments": [
-      "name",
-      "amount"
-    ],
-    "balances": {
-      "amount": "FUSD"
-    },
-    "messages": {
-      "en": "Renew the lease of name {name} in FIND for {amount} FUSD"
     }
   },
   "15dfa12bbd0695f38c8d03b22654f6e49a2fd7a27fa0cd8497d352d760c6e4ce": {
@@ -310,6 +277,14 @@
       "en": "Set Flobit Eyeglasses {eyeglasses} for Flovatar {flovatarId}"
     }
   },
+  "245d5a0b5ee7666da2aee31eec7a15d9c6bd12f78841a9b3eff840aed0c19226": {
+    "arguments": [
+      "name"
+    ],
+    "messages": {
+      "en": "Remove the listing of the name {name}"
+    }
+  },
   "268502407c93672d399af1d2a72217313c485ddabc77382d6cebb0a21b0d882d": {
     "arguments": [
       "listingResourceID",
@@ -321,6 +296,14 @@
     },
     "messages": {
       "en": "Purchase Mynft (Racing Time, Mugen ARt, Voxel Knight) NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "26e0857fdcd770e0cef1d084cb63aeaf4c04e8dbf34c89f0cf2913412c51ebc9": {
+    "arguments": [
+      "name"
+    ],
+    "messages": {
+      "en": "Create a profile with the name {name}"
     }
   },
   "2b77a684efd7a901fc9d09df900179d3e20b54d5f1626eb205f6b0111dd23708": {
@@ -404,6 +387,14 @@
     ],
     "messages": {
       "en": "List Starly NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "307aaaf4b57cb879f24b67eefe5a65bed3cd2a7f7a6cad6d3859b4e137a40d0e": {
+    "arguments": [
+      "name"
+    ],
+    "messages": {
+      "en": "Fulfill the auction on {name}"
     }
   },
   "3081cce624f392870fbc44e074118b77f97cdf85434a14086ef8e99e4f7fb54a": {
@@ -496,6 +487,14 @@
     ],
     "messages": {
       "en": "Generate a new Flovatar with the selected combination by burning a Spark and the necessary Rarity Boosters"
+    }
+  },
+  "359baefc1e83c2e99cf7a8e79eb7fabbb602bd198aa674b3933bc526045b68ed": {
+    "arguments": [
+      "name"
+    ],
+    "messages": {
+      "en": "Fulfill the auction on {name}"
     }
   },
   "36e69ba56fdc5da339f7a85746cdd6be36d7401359dccda3e98502b4d1f53518": {
@@ -708,14 +707,6 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NBA Top Shot NFT"
     }
   },
-  "5485b93fe05f11f2a7a07a4d88e82f0811aba316ebd7a2a4f296246dea0a544e": {
-    "arguments": [
-      "name"
-    ],
-    "messages": {
-      "en": "Fullfill the auction on {name}"
-    }
-  },
   "58643073de8fc88b0b64bdbf46f31b0eb0ebd832f9aa8f93c75ca560d2149456": {
     "arguments": [
       "itemID",
@@ -729,12 +720,16 @@
       "en": "Place Starly NFT #{itemID} for sale for {price} FLOW"
     }
   },
-  "586af0c4c4433f5b462c6c28f62b72dc6a5038ac2d8e29b15fc3bc0412b3adc3": {
+  "58e53bc89069d59dc157190001021892a44405e9e4a6aad5cc7d89f0f1f82d6e": {
     "arguments": [
-      "name"
+      "name",
+      "auctionStartPrice",
+      "auctionReservePrice",
+      "auctionDuration",
+      "auctionExtensionOnLateBid"
     ],
     "messages": {
-      "en": "Reject the blind bid on name {name}"
+      "en": "List name {name} for auction with startPrice {auctionStartPrice} and reserve price {auctionReservePrice}"
     }
   },
   "5ac09fc79b2c8e6af7f406b75c87209a3a4d1001bf794995489e029e23749647": {
@@ -745,6 +740,19 @@
     ],
     "messages": {
       "en": "List Fantastec SWAP NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "5b6e9810d075f6a8f1a175c863bb3441fdeac87c39c246b5f3784a57fcd40db2": {
+    "arguments": [
+      "name",
+      "description",
+      "avatar",
+      "tags",
+      "allowStoringFollowers",
+      "links"
+    ],
+    "messages": {
+      "en": "Edit the profile of {name}"
     }
   },
   "5d42d33d58857bb39100425900195e296810784febc841a7783b26b9e1d1a32c": {
@@ -808,6 +816,18 @@
       "en": "Delist NFT",
       "zh_CN": "下架 NFT",
       "zh_TW": "下架 NFT"
+    }
+  },
+  "64398f127f508066202fb0c02c848d3ae0365022e45fed344896fc32c44581b8": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Renew the lease of name {name} in FIND for {amount} FUSD"
     }
   },
   "665adb8eb572c907542f0eaf66322bb607bd9f2bdfe389cd32db1463e89f871c": {
@@ -955,7 +975,7 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
-  "74b9ac4e6a05def3e05704a8c4e6c70ee1d06cdf89819b0eafb1c7753d072d63": {
+  "75862762022315c3e01fba5551b7b4c64ce16030508c8c23aa65dc32ef935606": {
     "arguments": [
       "name",
       "amount"
@@ -964,7 +984,7 @@
       "amount": "FUSD"
     },
     "messages": {
-      "en": "Bid on a name {name} in FIND for {amount} FUSD"
+      "en": "Register the name {name} in FIND for {amount} FUSD"
     }
   },
   "799d1b9d83d1efd2653cfca6a1212a7624543771b1c6222e8be584648a0bfd54": {
@@ -1025,12 +1045,12 @@
       "en": "Remove the sale offer from the Marketplace for Flobit component {componentId}"
     }
   },
-  "836c680d07300e14bd1ed568949fe9a2fd112524c302282f62f6cafeb9feff1b": {
+  "81f903b8be5fc708d1bd6325e195f29dad1b61a9a0a9c24f8cf5b5399d329dbf": {
     "arguments": [
       "name"
     ],
     "messages": {
-      "en": "Manually start an auction on {name}"
+      "en": "Reject the offer received on {name}"
     }
   },
   "837f57df88a32f3424fce961d7eb75b75101347cc081b8c7cc61bb119c091add": {
@@ -1079,16 +1099,13 @@
       "en": "Set Flobit Background {background} for Flovatar {flovatarId}"
     }
   },
-  "86b78e3df2826644bff8522098b1b91d91496caa3d5221fb7a17af2bf783f8dd": {
+  "87134166e2d7cc2124d0ac2a7bcf4e70c46370ef1a2c7a29bc3ee0e41d8e96f2": {
     "arguments": [
       "name",
-      "amount"
+      "directSellPrice"
     ],
-    "balances": {
-      "amount": "FUSD"
-    },
     "messages": {
-      "en": "Register the name {name} in FIND for {amount} FUSD"
+      "en": "List name {name} for direct sale at {directSellPrice} FUSD"
     }
   },
   "87849337bcc71fff10b071e26aa45f9854a8f9667df1de2347ddb1783787b627": {
@@ -1152,14 +1169,6 @@
       "en": "Please initialize your Account to be able to interact with the Flovatar smart contract"
     }
   },
-  "9087f703c54e3d8bee44fc2c86b709695e9b3b42ce631f8d8ca4693c0b85194d": {
-    "arguments": [
-      "name"
-    ],
-    "messages": {
-      "en": "Cancel your bid on {name}"
-    }
-  },
   "9286416ea718ad16d27a23d06cd139ea6288573bbe05f3f8433d7d5dc360b36f": {
     "arguments": [
       "flovatarId",
@@ -1194,19 +1203,6 @@
       "en": "Initialize your account for Mystery Pack NFTs"
     }
   },
-  "953d300b6830485de6c306e56e2006d3ef94bc6a3af99a6d5d5f457ebf238913": {
-    "arguments": [
-      "name",
-      "description",
-      "avatar",
-      "tags",
-      "allowStoringFollowers",
-      "links"
-    ],
-    "messages": {
-      "en": "Edit the profile of {name}"
-    }
-  },
   "9b2e2f7910a302954f0dafb08127b62fdf43ac54e2fcfef4ca21d6a3a5d98b62": {
     "arguments": [
       "collectionID",
@@ -1238,14 +1234,6 @@
       "en": "Initialize your account for Mystery Pack NFTs"
     }
   },
-  "a19d29045e687f8b7c95ee48ac8d6b8d7ea4611d0d32d2706ca2eeb21974f4a0": {
-    "arguments": [
-      "name"
-    ],
-    "messages": {
-      "en": "Remove the listing of the name {name}"
-    }
-  },
   "a1eb6e0bbd40ece86e2050e3d1a36002af6be646e1ff3223f297a14809833ba3": {
     "arguments": [
       "flowAmount",
@@ -1268,6 +1256,15 @@
     ],
     "messages": {
       "en": "List White Matrix NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "a681b7c601a7cd8ebaa2fd96103d82ed1ba04aafe728e3576bd6e8922cc6cddc": {
+    "arguments": [
+      "owner",
+      "name"
+    ],
+    "messages": {
+      "en": "Fulfill the auction name {name}"
     }
   },
   "a843ba410791bb5ff29ee6e1a83080f11b1bc556b347cce0a29c29a22ea3906a": {
@@ -1333,6 +1330,18 @@
       "en": "Purchase RaceDay NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "b64202e268c42f2360c32b0cd24e6058a09fb9f345a7389b3f623752637c03cb": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Increase your bid on name {name} in FIND with {amount} FUSD"
+    }
+  },
   "b72c3260774eb32119f75081559d363eec8b97414ab32b41c471c5ab0cf77216": {
     "arguments": [
       "saleItemID",
@@ -1356,13 +1365,12 @@
       "en": "Purchase RCRDSHP NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "bd244902205dcf6541f9130791867d9f26849a21962d80b31956c54b996ade1a": {
+  "bd8c1e741cd92cfa3fc65212ca8f73a80c42ff8aee3c553f881def744ec0a9a9": {
     "arguments": [
-      "owner",
       "name"
     ],
     "messages": {
-      "en": "Fullfill the auction name {name}"
+      "en": "Manually start an auction on {name}"
     }
   },
   "be092ee75f7a627416968bf31cf69f3c0e97cc1e598ddb60784afdfe1dd9db8d": {
@@ -1418,18 +1426,6 @@
       "en": "List Everbloom NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
-  "c354eab0f90909d78afb6ad010f29038b7f1a69e567b086a2c9698e63c187e3b": {
-    "arguments": [
-      "name",
-      "auctionstartPrice",
-      "auctionReservePrice",
-      "auctionDuration",
-      "auctionExtensionOnLateBid"
-    ],
-    "messages": {
-      "en": "List name {name} for auction with startPrice {auctionStartPrice} and reserve price {auctionReservePrice}"
-    }
-  },
   "ca9a7160fb92001f8835d884bfd16a5d17389a667be19f5934cd57df873ba732": {
     "arguments": [
       "saleItemID",
@@ -1476,7 +1472,15 @@
       "en": "Set Flobit Hat {hat} for Flovatar {flovatarId}"
     }
   },
-  "d1b7538f03cce2345a92bb34cf1d0ae16245a2f3908c9556512d3dc7090926ac": {
+  "d260f617b0d47ee60ad921a8c3f034b4dc4e1ae4ffecd8d4fcfa5f47855c105a": {
+    "arguments": [
+      "packId"
+    ],
+    "messages": {
+      "en": "Open Pack {packId}"
+    }
+  },
+  "d27ca150d77efd3445dfc2c23d4f44baeaaff90e06cb89285e1a86402a84919e": {
     "arguments": [
       "name",
       "amount"
@@ -1486,14 +1490,6 @@
     },
     "messages": {
       "en": "Bid on a name {name} in FIND for {amount} FUSD"
-    }
-  },
-  "d260f617b0d47ee60ad921a8c3f034b4dc4e1ae4ffecd8d4fcfa5f47855c105a": {
-    "arguments": [
-      "packId"
-    ],
-    "messages": {
-      "en": "Open Pack {packId}"
     }
   },
   "d44d5b088303ae944ee41ba9d1a862daaceaba4237567e69895991879bbffaf6": {
@@ -1541,14 +1537,6 @@
     ],
     "messages": {
       "en": "List BALLERZ NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
-    }
-  },
-  "d8ce023e453978df7c3aeb935351043e5ebbb3dc206f1b68a5481505d7ec10e9": {
-    "arguments": [
-      "name"
-    ],
-    "messages": {
-      "en": "Fullfill the auction on {name}"
     }
   },
   "da740f2cf3d4c1eef774e8544ca7f35a095dc3239040ba463a9f41821dbc7098": {
@@ -1647,6 +1635,14 @@
       "en": "List KLKTN NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "e8dad5409b0b7d938de396f38074f5f8d48c7996a54976db9ea2a800989931fc": {
+    "arguments": [
+      "name"
+    ],
+    "messages": {
+      "en": "Cancel your bid on {name}"
+    }
+  },
   "e93a95d8961653438e2e35a608e076b61468d618081010f60eec5d8f98a1b3a7": {
     "arguments": [
       "saleItemID",
@@ -1679,6 +1675,14 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "eda920d19febe1e4123189ad5feebde639fa5dc16cd789a222bbfbc411e3562c": {
+    "arguments": [
+      "name"
+    ],
+    "messages": {
+      "en": "Cancel and delist on ongoing auction for  {name}"
     }
   },
   "ee151e979b99b5b096bfba83431e7a37d9c2e759ef6fddb53370d43c815298fd": {
@@ -1753,14 +1757,6 @@
       "en": "Purchase Crave Critics NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "f596a211cef66cbcd4064197108f5bb8a528544d4bfd96ca91892fdc70c2ff9e": {
-    "arguments": [
-      "name"
-    ],
-    "messages": {
-      "en": "Create a profile with the name {name}"
-    }
-  },
   "f783df60be366b50c40c1593ed9aad5b7bdf049cd3e1cade17bde067dd1d8721": {
     "arguments": [
       "saleItemID",
@@ -1770,6 +1766,18 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "f865765434a8b810671ca0d4b9485de41ebf00416a1a629e3a1acaee1f31956d": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Bid on a name {name} in FIND for {amount} FUSD"
     }
   },
   "f9decbbe727edfd446efc2a69e3bca7f67925e1b05f34a38648d347ee1b7005e": {
@@ -1789,14 +1797,6 @@
     ],
     "messages": {
       "en": "Remove NFT item sale listing"
-    }
-  },
-  "fb5047a5814ddd9c7c664a4f658944f3dd2cff9ed813dcdd4de5a9e25f3b9e2d": {
-    "arguments": [
-      "name"
-    ],
-    "messages": {
-      "en": "Cancel and delist on ongoing auction for  {name}"
     }
   },
   "fcbb1795143dca80f23ca8d09aeaa90d56b99c6f2938f22817977785138b6bb9": {

@@ -485,6 +485,18 @@
       "en": "List RareRooms NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "4b300302c259ab2e459a4ce4510cfc4a606322550f38e533a990a67d76a884da": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Register the name {name} in FIND for {amount} FUSD"
+    }
+  },
   "4b48523b22245c0e91fffc7d4147ccabb0ef57582374de3c47ef0ed6b85eb5e7": {
     "arguments": [
       "flovatarId",
@@ -652,7 +664,7 @@
   "6bff6f87fc4b780ceb6fb93e5a84beb2cd5ffe68470965350ecdffde3900e3f0": {
     "arguments": [
       "name",
-      "auctionstartPrice",
+      "auctionStartPrice",
       "auctionReservePrice",
       "auctionDuration",
       "auctionExtensionOnLateBid"
@@ -669,18 +681,6 @@
     ],
     "messages": {
       "en": "List Faze NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
-    }
-  },
-  "7009e9cc800d25f5851b660ae581704526ce937946b0569177522abcecaaff4f": {
-    "arguments": [
-      "name",
-      "amount"
-    ],
-    "balances": {
-      "amount": "FUSD"
-    },
-    "messages": {
-      "en": "Register the name {name} in FIND for {amount} FUSD"
     }
   },
   "71386be725b24bf4c5c3fdfb2e9cc5a16d80d28331b39d10e18bdabd1a5ca15c": {
@@ -1039,7 +1039,7 @@
       "directSellPrice"
     ],
     "messages": {
-      "en": "List name {name} for direct sale at {directSalePrice} FUSD"
+      "en": "List name {name} for direct sale at {directSellPrice} FUSD"
     }
   },
   "a02dd331efbe432a0dace166e722e813b872487a1bdcdc65b8513079fc36a1c3": {
@@ -1047,7 +1047,7 @@
       "name"
     ],
     "messages": {
-      "en": "Reject the blind bid on name {name}"
+      "en": "Reject the offer received on {name}"
     }
   },
   "a115c672b26d660b479b0be613998e664b822eba2e5cdf403d303c5f3816534f": {
@@ -1232,7 +1232,7 @@
       "name"
     ],
     "messages": {
-      "en": "Fullfill the auction name {name}"
+      "en": "Fulfill the auction name {name}"
     }
   },
   "c2641769af2afa6af50c8bdd6cb7094c3705fd45d6241b40ee91171c22412ac3": {
@@ -1353,7 +1353,7 @@
       "name"
     ],
     "messages": {
-      "en": "Fullfill the auction on {name}"
+      "en": "Fulfill the auction on {name}"
     }
   },
   "d4692a7f6adad333609fc5ec6406ce6a807bdbf0c2d884ec6d069cb32e5fba18": {
@@ -1499,7 +1499,7 @@
       "name"
     ],
     "messages": {
-      "en": "Fullfill the auction on {name}"
+      "en": "Fulfill the auction on {name}"
     }
   },
   "e236bb408c693952b829a8ee97a57ee3b6da9ca46bfc058682c172e088874b40": {
