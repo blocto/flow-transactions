@@ -1,7 +1,7 @@
 {
     "arguments": [
         "name",
-				"auctionstartPrice",
+				"auctionStartPrice",
 				"auctionReservePrice",
 				"auctionDuration",
 				"auctionExtensionOnLateBid"
