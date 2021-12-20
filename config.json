@@ -83,6 +83,10 @@
     "mainnet": "0xc6c77b9f5c7a378f",
     "testnet": "0xd9854329b7edf136"
   },
+  "0xFLOWNS_ADDRESS": {
+    "mainnet": "0x233eb012d34b0070",
+    "testnet": "0x0"
+  },
   "0xFUNGIBLE_TOKEN_ADDRESS": {
     "mainnet": "0xf233dcee88fe0abe",
     "testnet": "0x9a0766d93b6608b7"
@@ -119,6 +123,10 @@
     "mainnet": "0x23dddd854fcc8c6f",
     "testnet": "0x6085ae87e78e1433"
   },
+  "0xMATRIX_WORLD_VOUHCER_ADDRESS": {
+    "mainnet": "0x0d77ec47bbad8ef6",
+    "testnet": "0x0"
+  },
   "0xMATRIX_WORLD_FLOWFEST_NFT_ADDRESS": {
     "mainnet": "0x2d2750f240198f91",
     "testnet": "0xe2f1b000e0203c1d"
@@ -129,6 +137,10 @@
   },
   "0xMOTO_GP_PACK_ADDRESS": {
     "mainnet": "0xa49cc0ee46c54bfb",
+    "testnet": "0x0"
+  },
+  "0xMUGEN_ADDRESS": {
+    "mainnet": "0x2cd46d41da4ce262",
     "testnet": "0x0"
   },
   "0xMUSIC_BLOCK_ADDRESS": {
@@ -163,6 +175,10 @@
     "mainnet": "0x6c3ff40b90b928ab",
     "testnet": "0x95d41a94b49a1ed1"
   },
+  "0xRARIBLE_ADDRESS": {
+    "mainnet": "0x01ab36aaf654a13e",
+    "testnet": "0x0"
+  },
   "0xSPORTS_ICON_COLLECTIBLE_ADDRESS": {
     "mainnet": "0x8de96244f54db422",
     "testnet": "0xc2824327396d3a39"
@@ -194,6 +210,10 @@
   "0xTHEFABRICANT_MYSTERYBOX_FF1_ADDRESS": {
     "mainnet": "0xa0cbe021821c0965",
     "testnet": "0xbc9d692e2617a96e"
+  },
+  "0xTICAL_UNIVERSE_ADDRESS": {
+    "mainnet": "0xfef48806337aabf1",
+    "testnet": ""
   },
   "0xTUNE_GO_ADDRESS": {
     "mainnet": "0x0d9bc5af3fc0c2e3",
