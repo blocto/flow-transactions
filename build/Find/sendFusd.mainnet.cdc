@@ -1,5 +1,5 @@
 import FUSD from 0x3c5959b568896393
-import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN
+import NonFungibleToken from 0x1d7e57aa55817448
 import FIND from 0x097bafa4e0b48eef
 import CharityNFT from 0x097bafa4e0b48eef
 
