@@ -21,6 +21,18 @@
       "en": "Put Flovatar {flovatarId} on sale in the Marketplace for {price} FLOW"
     }
   },
+  "01a9725900c7d61c66ccaba932fbe7b8dbdfc7d23262195ccd98676aa3b24c8a": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Send {amount} FUSD to {name}.find"
+    }
+  },
   "020c077b695be6157f85caaa5c149f23724421fdc829028a368dd5750558ada2": {
     "arguments": [
       "saleItemID",
@@ -224,6 +236,18 @@
       "en": "Swap at most {maxAmountIn} FUSD for {amountOut} FLOW",
       "zh_CN": "将至多 {maxAmountIn} FUSD 兑换成 {amountOut} FLOW",
       "zh_TW": "將至多 {maxAmountIn} FUSD 兌換成 {amountOut} FLOW"
+    }
+  },
+  "18dba424634dc9082e928075df06b12d956d0ef7b4e1d87a0ebf85c43a084a59": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "Flow"
+    },
+    "messages": {
+      "en": "Send {amount} Flow to {name}.find"
     }
   },
   "1ac1ba13f36019778edabf7a07c506c960f7d152cfa2c0768cda3949b29ba9d9": {
@@ -664,6 +688,11 @@
     },
     "messages": {
       "en": "Purchase SportsIcon NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "55f3c7e0a880ff45e783013e060881b77de3d56de0cd0273f7a54f1ecffa82b7": {
+    "messages": {
+      "en": "Initialize your account to buy, sell and receive NFTs"
     }
   },
   "58210058fc74aab0e0d021086b736938564d57e62a9fa7b8023faf193fca8542": {
@@ -1787,11 +1816,6 @@
     ],
     "messages": {
       "en": "Fulfill the auction name {name}"
-    }
-  },
-  "e6b57175dd2aac18e621653219ad86128fc80d4b2d9c81dd3b610bbde7c5b599": {
-    "messages": {
-      "en": "Initialize your account to buy, sell and receive NFTs"
     }
   },
   "e8793c72da4b800c2f7f2215d3d3a58601d54585f8b33631da205243cdb992ed": {

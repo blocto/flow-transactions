@@ -358,11 +358,6 @@
       "en": "Purchase King of The Dot NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "2cb79bf0bcb370fb9b5395505b763e4c10dcac7dfb82188aca38a63e40d9e384": {
-    "messages": {
-      "en": "Initialize your account to buy, sell and receive NFTs"
-    }
-  },
   "2e5b1c979980e0d95162479e3851cd8585d4c255e9012268c293ecfd73f53fb9": {
     "arguments": [
       "saleItemID",
@@ -382,6 +377,18 @@
     ],
     "messages": {
       "en": "List SportsIcon NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "2f0c7f95c7d1ab063c7ddc893fcb6d6bdafd7f7df019d1ada28b70c465ff782e": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Send {amount} FUSD to {name}.find"
     }
   },
   "2f5f476a6a502d9be1e72eec8fb574cae1f807ff5ed058348754492b18debe84": {
@@ -1205,6 +1212,11 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "8d69c2102f619ff4285ae278bf9572f7a4674dceeca50f0752daa9c7c196deec": {
+    "messages": {
+      "en": "Initialize your account to buy, sell and receive NFTs"
+    }
+  },
   "8f6cd804d667ec1ff1c124ddf76ff514cefff3293c3087ccce48bde9d2bdf8f0": {
     "messages": {
       "en": "Please initialize your Account to be able to interact with the Flovatar smart contract"
@@ -1443,6 +1455,18 @@
     ],
     "messages": {
       "en": "List Faze NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "b8389dde85a841dd4c465a11c3df000ef8a99590b15f2bed37a69b3153aaba66": {
+    "arguments": [
+      "name",
+      "amount"
+    ],
+    "balances": {
+      "amount": "Flow"
+    },
+    "messages": {
+      "en": "Send {amount} Flow to {name}.find"
     }
   },
   "b8adab04e138cb027bfcc1f0b4d9c4c02e9be3a0d0aa4e5a6bf97ca37ccf3d8e": {
