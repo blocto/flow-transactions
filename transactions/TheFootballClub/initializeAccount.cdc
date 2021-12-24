@@ -3,7 +3,7 @@ import TFCItems from 0xTFC_ITEMS_ADDRESS
 import NFTStorefront from 0xNFT_STOREFRONT_ADDRESS
 
 /*
-    Check if an acocunt has a TFCItems Collection capability
+    Check if an account has a TFCItems Collection capability
  */
 pub fun hasItems(_ address: Address): Bool {
     return getAccount(address)
@@ -11,7 +11,7 @@ pub fun hasItems(_ address: Address): Bool {
     .check()
 }
 /*
-    Check if an acocunt has a storefront capability
+    Check if an account has a storefront capability
  */
 pub fun hasStorefont(_ address: Address): Bool {
     return getAccount(address)
