@@ -1,4 +1,4 @@
-import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN
+import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
 import FlowToken from 0xFLOW_TOKEN_ADDRESS
 import FIND from 0xFIND_ADDRESS
 import CharityNFT from 0xFIND_ADDRESS

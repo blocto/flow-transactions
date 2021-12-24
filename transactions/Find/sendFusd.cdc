@@ -1,5 +1,5 @@
 import FUSD from 0xFUSD_ADDRESS
-import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN
+import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
 import FIND from 0xFIND_ADDRESS
 import CharityNFT from 0xFIND_ADDRESS
 
