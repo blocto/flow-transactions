@@ -1,14 +1,13 @@
 {
-    "arguments": [
-        "name",
-        "amount",
-				"message"
-
-    ],
-    "messages": {
-        "en": "Send {amount} Flow to {name}.find"
-    },
-    "balances": {
-        "amount": "Flow"
-    }
+	"arguments": [
+		"name",
+		"amount",
+		"message"
+	],
+	"messages": {
+		"en": "Send {amount} Flow to {name}.find"
+	},
+	"balances": {
+		"amount": "Flow"
+	}
 }
