@@ -1,0 +1,13 @@
+{
+    "arguments": [
+        "name",
+        "amount",
+				"message"
+    ],
+    "messages": {
+        "en": "Send {amount} FUSD to {name}.find"
+    },
+    "balances": {
+        "amount": "FUSD"
+    }
+}
