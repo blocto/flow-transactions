@@ -1,10 +1,10 @@
-import NonFungibleToken from 0x1d7e57aa55817448
-import FlowToken from 0x1654653399040a61
-import FungibleToken from 0xf233dcee88fe0abe
-import FUSD from 0x3c5959b568896393
-import Profile from 0x097bafa4e0b48eef
-import FIND from 0x097bafa4e0b48eef
-import CharityNFT from 0x097bafa4e0b48eef
+import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN
+import FlowToken from 0xFLOW_TOKEN_ADDRESS
+import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
+import FUSD from 0xFUSD_ADDRESS
+import Profile from 0xFIND_ADDRESS
+import FIND from 0xFIND_ADDRESS
+import CharityNFT from 0xFIND_ADDRESS
 
 transaction(name: String, amount: UFix64, message:String) {
 
