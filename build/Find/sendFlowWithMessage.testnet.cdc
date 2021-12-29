@@ -1,10 +1,10 @@
-import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
-import FlowToken from 0xFLOW_TOKEN_ADDRESS
-import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
-import FUSD from 0xFUSD_ADDRESS
-import Profile from 0xFIND_ADDRESS
-import FIND from 0xFIND_ADDRESS
-import CharityNFT from 0xFIND_ADDRESS
+import NonFungibleToken from 0x631e88ae7f1d7c20
+import FlowToken from 0x7e60df042a9c0868
+import FungibleToken from 0x9a0766d93b6608b7
+import FUSD from 0xe223d8a629e49c68
+import Profile from 0x37a05b1ecacc80f7
+import FIND from 0x37a05b1ecacc80f7
+import CharityNFT from 0x37a05b1ecacc80f7
 
 transaction(name: String, amount: UFix64, message:String) {
 
@@ -75,11 +75,12 @@ transaction(name: String, amount: UFix64, message:String) {
 
 		let profile =account.borrow<&Profile.User>(from:Profile.storagePath)!
 
+
 		let strLength = amount.toString().length
 		let amountString = amount.toString().slice(from: 0, upTo: strLength-6)
-		profile.verify(profile.getName().concat(" sent ").concat(amountString).concat(" FUSD with message:").concat(message))
+		profile.verify(profile.getName().concat(" sent ").concat(amountString).concat(" Flow with message:").concat(message))
 
-		let vaultRef = account.borrow<&FUSD.Vault>(from: /storage/fusdVault) ?? panic("Could not borrow reference to the fusdVault!")
+		let vaultRef = account.borrow<&FlowToken.Vault>(from: /storage/flowTokenVault) ?? panic("Could not borrow reference to the fusdVault!")
 		FIND.deposit(to: name, from: <- vaultRef.withdraw(amount: amount))
 
 	}

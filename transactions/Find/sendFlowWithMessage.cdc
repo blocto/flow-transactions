@@ -1,4 +1,4 @@
-import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN
+import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
 import FlowToken from 0xFLOW_TOKEN_ADDRESS
 import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
 import FUSD from 0xFUSD_ADDRESS

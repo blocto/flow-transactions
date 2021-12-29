@@ -1057,6 +1057,19 @@
       "en": "Place Jambb Voucher NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "7d006f71dbed94434f17e146e98fde09997c5e5839e0f3a0031d9fd8f52fb0c0": {
+    "arguments": [
+      "name",
+      "amount",
+      "message"
+    ],
+    "balances": {
+      "amount": "Flow"
+    },
+    "messages": {
+      "en": "Send {amount} Flow to {name}.find"
+    }
+  },
   "80d2db442db9930bf05c27590c06c540ed57e99ed3ab23dae802c38fd88dc125": {
     "arguments": [
       "collectionID",
@@ -1407,6 +1420,19 @@
     },
     "messages": {
       "en": "Purchase THiNG.FUND NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "b3988ff7454738a703724a64f80df92a263cade2c65671d17a6192f27a68c5da": {
+    "arguments": [
+      "name",
+      "amount",
+      "message"
+    ],
+    "balances": {
+      "amount": "FUSD"
+    },
+    "messages": {
+      "en": "Send {amount} FUSD to {name}.find"
     }
   },
   "b40b941d0dc64793fff03ffe0614c56f6c9ffea8fd610d957296f547b575cab5": {
