@@ -8,6 +8,6 @@
 		"en": "Send {amount} Flow to {name}.find"
 	},
 	"balances": {
-		"amount": "Flow"
+		"amount": "FLOW"
 	}
 }
