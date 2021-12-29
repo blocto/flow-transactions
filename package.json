@@ -1,6 +1,6 @@
 {
   "name": "@blocto/flow-transactions",
-  "version": "0.1.25",
+  "version": "0.1.26",
   "description": "Audited Flow transactions.",
   "license": "MIT",
   "author": "portto <dev@portto.io>",
