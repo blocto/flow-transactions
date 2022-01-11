@@ -179,6 +179,10 @@
     "mainnet": "0x5b82f21c0edf76e3",
     "testnet": "0x697d72a988a77070"
   },
+  "0xSTARLY_TOKEN_ADDRESS": {
+    "mainnet": "0x142fa6570b62fd97",
+    "testnet": "0xf63219072aaddd50"
+  },
   "0xTELEPORTED_USDT_ADDRESS": {
     "mainnet": "0xcfdd90d4a00f7b5b",
     "testnet": "0xab26e0a07d770ec1"
