@@ -1,0 +1,13 @@
+{
+    "arguments": [
+        "itemID",
+        "price",
+        "beneficiaryAddress",
+        "beneficiaryCutPercent",
+        "creatorAddress",
+        "creatorCutPercent"
+    ],
+    "messages": {
+        "en": "Place Starly NFT #{itemID} for sale for {price} FLOW"
+    }
+}
