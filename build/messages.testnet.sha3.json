@@ -738,6 +738,17 @@
       "en": "List Everbloom NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "59e625dfb21d1317f05e014ddaec1a903aacf7038d92605ff4ff7856a80130e7": {
+    "arguments": [
+      "Uuid",
+      "RepayAmount"
+    ],
+    "messages": {
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+  },
   "5ab116d03f1a56f4ed62e8829497293edfab614f1e398829df1df42d613c8a90": {
     "arguments": [
       "listingResourceID",
@@ -986,6 +997,19 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "75ce07849a41be03f69b1152ed7e2c1b4c8c45ec4f548826ac8912eecf8efa2a": {
+    "arguments": [
+      "BorrowerAddress",
+      "LenderAddress",
+      "Uuid",
+      "LendAmount"
+    ],
+    "messages": {
+      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
+      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
+      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
+    }
+  },
   "7acb464c9d8420522fc2a7740a695b3c312b64d2797df8ae786146a4aacad275": {
     "arguments": [
       "packId"
@@ -1041,6 +1065,17 @@
       "en": "Set Flobit Accessory {accessory} for Flovatar {flovatarId}"
     }
   },
+  "80f2f5a602edd1223d809ec2c322f24c067524eac1334b06220e4b2f505cba02": {
+    "arguments": [
+      "Uuid",
+      "BorrowerAddress"
+    ],
+    "messages": {
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+  },
   "817266c34917c889e7902ebfd69441abd6d9abf0426a9f86cfcf7a98d20363fc": {
     "arguments": [
       "listingResourceID",
@@ -1074,6 +1109,16 @@
     ],
     "messages": {
       "en": "List xtingles NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "88a66525c50604ff57fe9de784cd44d42281399bedd2fe316f22035b02706032": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
     }
   },
   "8ae9bd103f984d7a021451caf384446b850fe96a3c977d91d1eab5b5b7095062": {
@@ -1684,6 +1729,19 @@
     ],
     "messages": {
       "en": "Set Flobit Eyeglasses {eyeglasses} for Flovatar {flovatarId}"
+    }
+  },
+  "d0b17142df649803e38dac996924a7ff5f12533d758a8e9292ec1e8a86f62ee6": {
+    "arguments": [
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
+    ],
+    "messages": {
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
   "d319404ff85681772c1cf9dc7081787d7d202ab5a09e2733d2add4b55d2be246": {
