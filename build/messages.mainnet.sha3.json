@@ -1036,6 +1036,19 @@
       "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
     }
   },
+  "58514ef770e55b4bcdbd9fad91c9af3d5f33b6bd4663b6ec55d72736888bab8c": {
+    "arguments": [
+      "BorrowerAddress",
+      "LenderAddress",
+      "Uuid",
+      "LendAmount"
+    ],
+    "messages": {
+      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
+      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
+      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
+    }
+  },
   "58643073de8fc88b0b64bdbf46f31b0eb0ebd832f9aa8f93c75ca560d2149456": {
     "arguments": [
       "itemID",
@@ -2365,19 +2378,6 @@
       "en": "List TopShot NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
-  "d4713cb68b94826bb5d97fbf54a565e57145b128677f73bebe20817f97cd4532": {
-    "arguments": [
-      "BorrowerAddress",
-      "LenderAddress",
-      "Uuid",
-      "LendAmount"
-    ],
-    "messages": {
-      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
-      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
-      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
-    }
-  },
   "d49ccd60a0d24cd895a8d2125a5d8d1dee20865470391d4ffc6f5826bc1a49bc": {
     "arguments": [
       "name",
@@ -2607,6 +2607,19 @@
     ],
     "messages": {
       "en": "List OVO NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "ea1ceef43777632e48c6f701cc542261b6175efbde08180d22e48ec5b219a6a1": {
+    "arguments": [
+      "BorrowerAddress",
+      "LenderAddress",
+      "Uuid",
+      "LendAmount"
+    ],
+    "messages": {
+      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
+      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
+      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
     }
   },
   "ea2a84dc02138c6de4d981f8a896565d4ec7903f355ce9bd1740063c2d40b452": {

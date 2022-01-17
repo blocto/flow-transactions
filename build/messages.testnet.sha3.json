@@ -1335,19 +1335,6 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
-  "75ce07849a41be03f69b1152ed7e2c1b4c8c45ec4f548826ac8912eecf8efa2a": {
-    "arguments": [
-      "BorrowerAddress",
-      "LenderAddress",
-      "Uuid",
-      "LendAmount"
-    ],
-    "messages": {
-      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
-      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
-      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
-    }
-  },
   "797547ed7a1d462e92d0a0f7cb878ee47ec662543b00283d1d0fc3616d44bf6e": {
     "arguments": [
       "id",
@@ -2541,6 +2528,19 @@
       "zh_TW": "下架 {Uuid}"
     }
   },
+  "e4d11311fbecd942773f4e9ab27b6fce3544fdfe48e3b1be365685166e03cc6b": {
+    "arguments": [
+      "BorrowerAddress",
+      "LenderAddress",
+      "Uuid",
+      "LendAmount"
+    ],
+    "messages": {
+      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
+      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
+      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
+    }
+  },
   "e6e9785a44755be4a11711e70c2fafd3bb081a9ac5e86cfae9c9686ac9b6d8d2": {
     "arguments": [
       "amount",
@@ -2550,6 +2550,19 @@
       "en": "Send {amount} FLOW to {to}",
       "zh_CN": "发送 {amount} FLOW 代币至 {to}",
       "zh_TW": "發送 {amount} FLOW 代幣至 {to}"
+    }
+  },
+  "e770091e1f66e4002bef42cfae31b373f78cb93607fea93335d688cd4122c381": {
+    "arguments": [
+      "BorrowerAddress",
+      "LenderAddress",
+      "Uuid",
+      "LendAmount"
+    ],
+    "messages": {
+      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
+      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
+      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
     }
   },
   "e8c78ee1e4456a6b054b802810cae73087e4d829bb4ebde856722609363eab0c": {

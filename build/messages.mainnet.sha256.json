@@ -507,6 +507,19 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NBA Top Shot NFT"
     }
   },
+  "2ba56708fb7416faa43c7c652e501908ef81bee69e24e9ee61f3b67c6f61d389": {
+    "arguments": [
+      "BorrowerAddress",
+      "LenderAddress",
+      "Uuid",
+      "LendAmount"
+    ],
+    "messages": {
+      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
+      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
+      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
+    }
+  },
   "2bbcbf1b745e32a264281c5167657aa25e92c6ab582da614fc4f973d97947a6e": {
     "arguments": [
       "listingResourceID",
@@ -556,19 +569,6 @@
       "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
       "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
       "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
-    }
-  },
-  "2f81a9ebe54bfc35380d8e4804ee0de0e267656f08e85fa3606b5da9cfce4185": {
-    "arguments": [
-      "BorrowerAddress",
-      "LenderAddress",
-      "Uuid",
-      "LendAmount"
-    ],
-    "messages": {
-      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
-      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
-      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
     }
   },
   "31428eaff61b13dceb611e2e99c6d2b0562902d940ac860dc301339986844a72": {
@@ -1287,6 +1287,19 @@
     ],
     "messages": {
       "en": "List White Matrix NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "691305eb8d34271b52e166c77fdee7120c77663f53693c0dd24de1a21ec6c461": {
+    "arguments": [
+      "BorrowerAddress",
+      "LenderAddress",
+      "Uuid",
+      "LendAmount"
+    ],
+    "messages": {
+      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
+      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
+      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
     }
   },
   "6adf3542abc4f2927d64aaacc11dba074d8c3b43fe617e3ef0e9533183a38152": {

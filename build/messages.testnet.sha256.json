@@ -143,19 +143,6 @@
       "en": "Send {amount} FUSD to {name}.find"
     }
   },
-  "0e537f6b1321bffe14b5a1f970deff607ab78c9c448d4ea1b3d8df1f6b04e2d0": {
-    "arguments": [
-      "BorrowerAddress",
-      "LenderAddress",
-      "Uuid",
-      "LendAmount"
-    ],
-    "messages": {
-      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
-      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
-      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
-    }
-  },
   "0fec330f5d72abc768610278c0f23c1030d340fd7bfbacd912eeb43773add8d0": {
     "arguments": [
       "collectionID",
@@ -1227,6 +1214,19 @@
       "en": "Place NFT item #{saleItemID} for sale for {saleItemPrice} FUSD"
     }
   },
+  "71a4090cfe28c6856a69ea01ad705bfc857debf6b7734f54ecd75389d77a94cd": {
+    "arguments": [
+      "BorrowerAddress",
+      "LenderAddress",
+      "Uuid",
+      "LendAmount"
+    ],
+    "messages": {
+      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
+      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
+      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
+    }
+  },
   "72007af68f8ac36b81f57d0a560032575e315c84eb89335b7a536edcad7157b9": {
     "arguments": [
       "listingResourceID",
@@ -1880,6 +1880,19 @@
     ],
     "messages": {
       "en": "Update the sale offer price on the Marketplace for Flobit component {componentId} to {price} FLOW"
+    }
+  },
+  "b2145635757f43f948366b9d6407615f6c8784cab38d71958b33763ec9aa7531": {
+    "arguments": [
+      "BorrowerAddress",
+      "LenderAddress",
+      "Uuid",
+      "LendAmount"
+    ],
+    "messages": {
+      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
+      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
+      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
     }
   },
   "b4f221ec16b4a6eba5b6e7b80037cd6fabb4ba54f01c55e48331c999ede2949b": {

@@ -33,6 +33,6 @@ transaction(BorrowerAddress: Address, LenderAddress: Address, Uuid: UInt64, Lend
             .borrow()
             ?? panic("Could not borrow borrower's NFT Lending Place recource")
 
-        lendingPlaceRef.lend(uuid: Uuid, recipient: LenderAddress, lendAmount: <-self.temporaryVault, ticket:  self.ticketRef)
+        lendingPlaceRef.lendOut(uuid: Uuid, recipient: LenderAddress, lendAmount: <-self.temporaryVault, ticket:  self.ticketRef)
     }
 }

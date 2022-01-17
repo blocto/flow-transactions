@@ -26,13 +26,12 @@ transaction(BorrowerAddress: Address, LenderAddress: Address, Uuid: UInt64, Lend
     }
 
     execute {
-
         let borrower = getAccount(BorrowerAddress)
 
         let lendingPlaceRef = borrower.getCapability<&AnyResource{NFTLendingPlace.LendingPublic}>(/public/NFTLendingPlace)
             .borrow()
             ?? panic("Could not borrow borrower's NFT Lending Place recource")
 
-        lendingPlaceRef.lend(uuid: Uuid, recipient: LenderAddress, lendAmount: <-self.temporaryVault, ticket:  self.ticketRef)
+        lendingPlaceRef.lendOut(uuid: Uuid, recipient: LenderAddress, lendAmount: <-self.temporaryVault, ticket:  self.ticketRef)
     }
 }
