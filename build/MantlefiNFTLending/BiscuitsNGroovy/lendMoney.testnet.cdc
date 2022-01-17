@@ -1,4 +1,4 @@
-import NFTLendingPlace from 0xMANTLEFI_NFTLENDINGPLACE
+import NFTLendingPlace from 0xca4ee530dafff8ad
 import FlowToken from 0x7e60df042a9c0868
 
 // Let the lender lend FLOW to borrower

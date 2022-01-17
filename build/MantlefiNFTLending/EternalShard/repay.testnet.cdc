@@ -1,5 +1,5 @@
 import NonFungibleToken from 0x631e88ae7f1d7c20
-import NFTLendingPlace from 0xMANTLEFI_NFTLENDINGPLACE
+import NFTLendingPlace from 0xca4ee530dafff8ad
 import FlowToken from 0x7e60df042a9c0868
 
 // Let the borrower to repay FLOW

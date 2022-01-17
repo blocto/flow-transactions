@@ -1,5 +1,5 @@
 import NonFungibleToken from 0x631e88ae7f1d7c20
-import NFTLendingPlace from 0xMANTLEFI_NFTLENDINGPLACE
+import NFTLendingPlace from 0xca4ee530dafff8ad
 
 // Let the lender get borrower's NFT by force
 transaction(Uuid: UInt64, BorrowerAddress: Address) {

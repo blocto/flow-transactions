@@ -1,5 +1,5 @@
 import NonFungibleToken from 0x1d7e57aa55817448
-import NFTLendingPlace from 0xMANTLEFI_NFTLENDINGPLACE
+import NFTLendingPlace from 0x0
 
 // Let the NFT owner unlist NFT from NFTLendingPlace's resource
 transaction(Uuid: UInt64) {
