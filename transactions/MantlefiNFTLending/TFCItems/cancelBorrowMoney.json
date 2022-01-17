@@ -1,0 +1,10 @@
+{
+    "arguments": [
+        "Uuid"
+    ],
+    "messages": {
+        "en": "Unlist {Uuid}.",
+        "zh_CN": "下架 {Uuid}",
+        "zh_TW": "下架 {Uuid}"
+    }
+}

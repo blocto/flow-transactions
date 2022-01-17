@@ -1,0 +1,13 @@
+{
+    "arguments": [
+        "id",
+        "baseAmount",
+        "interest",
+        "duration"
+    ],
+    "messages": {
+        "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+        "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+        "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
+    }
+}
