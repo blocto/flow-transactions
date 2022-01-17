@@ -1,0 +1,38 @@
+import NFTLendingPlace from 0xMANTLEFI_NFTLENDINGPLACE
+import FlowToken from 0x7e60df042a9c0868
+
+// Let the lender lend FLOW to borrower
+transaction(BorrowerAddress: Address, LenderAddress: Address, Uuid: UInt64, LendAmount: UFix64) {
+
+    let temporaryVault: @FlowToken.Vault
+
+    let ticketRef:  &NFTLendingPlace.LenderTicket
+
+    prepare(acct: AuthAccount) {
+
+        // Init
+        if acct.borrow<&NFTLendingPlace.LenderTicket>(from: /storage/NFTLendingPlaceLenderTicket) == nil {
+            let lendingTicket <- NFTLendingPlace.createLenderTicket()
+            acct.save(<-lendingTicket, to: /storage/NFTLendingPlaceLenderTicket)
+        }
+
+        self.ticketRef = acct.borrow<&NFTLendingPlace.LenderTicket>(from: /storage/NFTLendingPlaceLenderTicket)
+            ?? panic("Could not borrow lender's LenderTicket reference")
+
+        let vaultRef = acct.borrow<&FlowToken.Vault>(from: /storage/flowTokenVault)
+            ?? panic("Could not borrow lender's vault reference")
+
+        self.temporaryVault <- vaultRef.withdraw(amount: LendAmount) as! @FlowToken.Vault
+    }
+
+    execute {
+
+        let borrower = getAccount(BorrowerAddress)
+
+        let lendingPlaceRef = borrower.getCapability<&AnyResource{NFTLendingPlace.LendingPublic}>(/public/NFTLendingPlace)
+            .borrow()
+            ?? panic("Could not borrow borrower's NFT Lending Place recource")
+
+        lendingPlaceRef.lend(uuid: Uuid, recipient: LenderAddress, lendAmount: <-self.temporaryVault, ticket:  self.ticketRef)
+    }
+}
