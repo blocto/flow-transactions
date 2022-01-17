@@ -1,4 +1,4 @@
-import NFTLendingPlace from 0xca4ee530dafff8ad
+import NFTLendingPlace from 0x615a6bf3445b9c61
 import FlowToken from 0x7e60df042a9c0868
 
 // Let the lender lend FLOW to borrower
