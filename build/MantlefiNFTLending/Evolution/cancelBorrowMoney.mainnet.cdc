@@ -10,7 +10,7 @@ transaction(Uuid: UInt64) {
             ?? panic("Could not borrow borrower's vault resource")
 
         // Borrow a reference to the NFTCollection in storage
-        let collectionRef = acct.borrow<&NonFungibleToken.Collection>(from: /storage/EvolutionCollection2)
+        let collectionRef = acct.borrow<&NonFungibleToken.Collection>(from: /storage/EvolutionCollection)
             ?? panic("Could not borrow borrower's NFT collection resource")
 
         let NFTtoken <- lending.withdraw(uuid: Uuid)

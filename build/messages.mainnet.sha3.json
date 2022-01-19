@@ -225,6 +225,16 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "1159929e9c26d00bcbaf070de832c2f083df864f99dd1703042b64c732cf3915": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
+    }
+  },
   "12371c252ab1f7b6cc5d4fe9eee1403e28860f47b4a51a7d478ddaaa367f38ab": {
     "arguments": [
       "saleItemID",
@@ -657,16 +667,6 @@
       "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
       "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
       "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
-    }
-  },
-  "3b319a494c039ed0bee64f60fc1680025665f10f762e60885e7bb06ccc5fc3e4": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
     }
   },
   "3b8fc86f1928851297959fc6e7549363e54ceb85f7a562a6e7e79ee3aa5dabc6": {

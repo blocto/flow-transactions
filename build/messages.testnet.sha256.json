@@ -1592,6 +1592,16 @@
       "en": "Set Flobit Background {background} for Flovatar {flovatarId}"
     }
   },
+  "92a93f5b839fa10e20c3cb1fb1237e946168575f634cd90cb85b23b4b4244c33": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
+    }
+  },
   "934691df8de48e58c617f3197cc5534424dfbf6ca5e893711f8a4399ffa60fce": {
     "arguments": [
       "name"
@@ -2865,16 +2875,6 @@
     ],
     "messages": {
       "en": "Cancel and delist on ongoing auction for  {name}"
-    }
-  },
-  "fd69e726bfb6477122e68389109d3a9ec8f9c3744d0b3ac2ae0626f5548bc619": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
     }
   }
 }

@@ -201,16 +201,6 @@
       "en": "Remove NFT listing from sale"
     }
   },
-  "0dcf84bb40ca0b6c0a44d6513af00c65a2ac15063e81e10b848a32f468af9a5b": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
-    }
-  },
   "0e6b37e398c797b21ebc97caa20b4b78ad3c40938364176fead0b293d7cde312": {
     "arguments": [
       "Uuid"
@@ -1521,6 +1511,16 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "893f32a8eb7e110ac8a90fc33fab2857af9d052bcbb7e340cc85ee8ce2fcc1d2": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
     }
   },
   "89992bb308da34cff7bb3aca9cb2f4b3fc268747d36cc654a3ac986cb658df19": {
