@@ -8,11 +8,11 @@ transaction(Uuid: UInt64, BorrowerAddress: Address) {
 
         let borrower = getAccount(BorrowerAddress)
 
-        let lendingPlace = borrower.getCapability<&AnyResource{NFTLendingPlace.LendingPublic}>(/public/NFTLendingPlace2)
+        let lendingPlace = borrower.getCapability<&AnyResource{NFTLendingPlace.LendingPublic}>(/public/NFTLendingPlaceCollection)
             .borrow()
             ?? panic("Could not borrow borrower's NFT Lending Place resource")
 
-        let ticketRef =  acct.borrow<&NFTLendingPlace.LenderTicket>(from: /storage/NFTLendingPlaceLenderTicket2)
+        let ticketRef =  acct.borrow<&NFTLendingPlace.LenderTicket>(from: /storage/NFTLendingPlaceCollectionLenderTicket)
             ?? panic("Could not borrow lender's LenderTicket resource")
 
         let returnNft <- lendingPlace.forcedRedeem(uuid: Uuid, lendticket: ticketRef)

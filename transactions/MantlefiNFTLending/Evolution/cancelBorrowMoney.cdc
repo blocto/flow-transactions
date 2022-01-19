@@ -6,7 +6,7 @@ transaction(Uuid: UInt64) {
 
     prepare(acct: AuthAccount) {
 
-        let lending = acct.borrow<&NFTLendingPlace.LendingCollection>(from: /storage/NFTLendingPlace2)
+        let lending = acct.borrow<&NFTLendingPlace.LendingCollection>(from: /storage/NFTLendingPlaceCollection)
             ?? panic("Could not borrow borrower's vault resource")
 
         // Borrow a reference to the NFTCollection in storage

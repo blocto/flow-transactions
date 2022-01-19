@@ -11,12 +11,12 @@ transaction(BorrowerAddress: Address, LenderAddress: Address, Uuid: UInt64, Lend
     prepare(acct: AuthAccount) {
 
         // Init
-        if acct.borrow<&NFTLendingPlace.LenderTicket>(from: /storage/NFTLendingPlaceLenderTicket2) == nil {
+        if acct.borrow<&NFTLendingPlace.LenderTicket>(from: /storage/NFTLendingPlaceCollectionLenderTicket) == nil {
             let lendingTicket <- NFTLendingPlace.createLenderTicket()
-            acct.save(<-lendingTicket, to: /storage/NFTLendingPlaceLenderTicket2)
+            acct.save(<-lendingTicket, to: /storage/NFTLendingPlaceCollectionLenderTicket)
         }
 
-        self.ticketRef = acct.borrow<&NFTLendingPlace.LenderTicket>(from: /storage/NFTLendingPlaceLenderTicket2)
+        self.ticketRef = acct.borrow<&NFTLendingPlace.LenderTicket>(from: /storage/NFTLendingPlaceCollectionLenderTicket)
             ?? panic("Could not borrow lender's LenderTicket reference")
 
         let vaultRef = acct.borrow<&FlowToken.Vault>(from: /storage/flowTokenVault)
@@ -29,7 +29,7 @@ transaction(BorrowerAddress: Address, LenderAddress: Address, Uuid: UInt64, Lend
 
         let borrower = getAccount(BorrowerAddress)
 
-        let lendingPlaceRef = borrower.getCapability<&AnyResource{NFTLendingPlace.LendingPublic}>(/public/NFTLendingPlace2)
+        let lendingPlaceRef = borrower.getCapability<&AnyResource{NFTLendingPlace.LendingPublic}>(/public/NFTLendingPlaceCollection)
             .borrow()
             ?? panic("Could not borrow borrower's NFT Lending Place recource")
 
