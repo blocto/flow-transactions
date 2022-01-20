@@ -19,7 +19,7 @@ transaction(Uuid: UInt64, RepayAmount: UFix64) {
         self.collectionRef = acct.borrow<&NonFungibleToken.Collection>(from: /storage/MatrixWorldFlowFestNFTCollection)
             ?? panic("Could not borrow borrower's NFT collection reference")
 
-         self.landingPlaceRef =  acct.borrow<&NFTLendingPlace.LendingCollection>(from: /storage/NFTLendingPlace)
+        self.landingPlaceRef =  acct.borrow<&NFTLendingPlace.LendingCollection>(from: /storage/NFTLendingPlaceCollection)
             ?? panic("Could not borrow borrower's LenderTicket reference")
     }
 

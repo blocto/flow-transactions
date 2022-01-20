@@ -1,5 +1,38 @@
 {
-  "00a6abb7f32009f7cdb9379743b0b4ff13ef1b5efe191644e490b344b64f3473": {
+  "028f2529fab31ee2faa11bbfba7a14ab2d60dbe8617cd5fd0dbee9547c923493": {
+    "arguments": [
+      "amount",
+      "target"
+    ],
+    "messages": {
+      "en": "Teleport {amount} tUSDT to {target} on Ethereum",
+      "zh_CN": "将 {amount} tUSDT 跨链传送至以太坊上的 {target}",
+      "zh_TW": "將 {amount} tUSDT 跨鏈傳送至以太坊上的 {target}"
+    }
+  },
+  "028f9c764075d9830f6f6d8edd1cac088afb17e1e9692fb4a9fdf2af1dddef57": {
+    "arguments": [
+      "Uuid",
+      "BorrowerAddress"
+    ],
+    "messages": {
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+  },
+  "02d902679cc749b4411ae8beb11761cb94254049ac8e1f787458562bab3bc729": {
+    "arguments": [
+      "Uuid",
+      "BorrowerAddress"
+    ],
+    "messages": {
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+  },
+  "03b667b9eb48ca086b777f7580b9c25fbb4076e9cd5f88f253113ff8e1b3d96d": {
     "arguments": [
       "id",
       "baseAmount",
@@ -12,26 +45,14 @@
       "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
-  "01f4ae5c06ddae351902e04058d8629f82897fd6ccfebb8c7b7402d6836c955e": {
+  "03f36b7f9000e728c30228e6b82fae40af33702eb410acbf5141bd254182ed29": {
     "arguments": [
-      "Uuid",
-      "RepayAmount"
+      "Uuid"
     ],
     "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
-    }
-  },
-  "028f2529fab31ee2faa11bbfba7a14ab2d60dbe8617cd5fd0dbee9547c923493": {
-    "arguments": [
-      "amount",
-      "target"
-    ],
-    "messages": {
-      "en": "Teleport {amount} tUSDT to {target} on Ethereum",
-      "zh_CN": "将 {amount} tUSDT 跨链传送至以太坊上的 {target}",
-      "zh_TW": "將 {amount} tUSDT 跨鏈傳送至以太坊上的 {target}"
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
     }
   },
   "0433d7ae6d9d0732156ba9bd9129b88eade03a0416df4a08449ebe73bcef3419": {
@@ -60,6 +81,16 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 CNN NFT"
     }
   },
+  "050d60cf9b70e0de0a1a3e3cb34239ebd758ed86ed238893e96adbd0084acd61": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
+    }
+  },
   "0640862dcc5d6247575d1aa8691d4f5496f9ae24bb434ebfad007e062de65850": {
     "arguments": [
       "saleItemID",
@@ -68,6 +99,19 @@
     ],
     "messages": {
       "en": "List RCRDSHP NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "07130323e0f817492ae8b7048bfbd88ca70356e5d9b2e3ae7bb918cb446da44c": {
+    "arguments": [
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
+    ],
+    "messages": {
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
   "0743239907aa569f346c7b28777abdac255794f5025b516b154d11cd331101d6": {
@@ -120,6 +164,16 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "0cceb8fca6eb166dad1bebc4491ea806fc93495dca9ef208143a33b3c0c03b81": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
+    }
+  },
   "0d54d5faa482572513696bbca2ce88823cd3c170b7206efe0c7dae05a9529aa1": {
     "arguments": [
       "flowAmount",
@@ -134,20 +188,7 @@
       "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在 {recipient}"
     }
   },
-  "0ea44dabf90f22bbce1b8ee7e1ca369c6b41df03798fd9fc09a3fbb0082de353": {
-    "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
-    ],
-    "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
-    }
-  },
-  "0ed9f4db2b99e29f848c5b51164ef67d652529266fb96b69311914aebd7c1b14": {
+  "0f095a18bc985b5c46338b914002c7300201019ac80ca5d764a463f3b99d1b22": {
     "arguments": [
       "Uuid"
     ],
@@ -187,16 +228,6 @@
       "zh_TW": "以 {amount} FLOW 購買 Versus #{tokenId} 藝術品"
     }
   },
-  "1083a8903067b6491ac4650bba1ca0e3a8c1c8f7fcc78d153fb962ffb8a570f2": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
-    }
-  },
   "109e11db0b664d52b3aad1d9a450b2fd198cbd8bb6af8cdd512736decb83fbb3": {
     "arguments": [
       "listingResourceID",
@@ -225,14 +256,15 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
-  "1159929e9c26d00bcbaf070de832c2f083df864f99dd1703042b64c732cf3915": {
+  "11e6c666125e3d590209b2ecff008111c6be5ed1e65422ca3890c8b6efefda3d": {
     "arguments": [
-      "Uuid"
+      "Uuid",
+      "RepayAmount"
     ],
     "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
     }
   },
   "12371c252ab1f7b6cc5d4fe9eee1403e28860f47b4a51a7d478ddaaa367f38ab": {
@@ -260,6 +292,27 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "127ee3b682dc66bd859bd6689154b623b4c3010f6e30c7898191420acaa48d77": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
+    }
+  },
+  "1303b11398684dfbc1309a9e3a2bf979c98cbee21dce981b5089a39ae5694bfe": {
+    "arguments": [
+      "Uuid",
+      "RepayAmount"
+    ],
+    "messages": {
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+  },
   "13148f795a6a55ccbfd872bb9d465aabe5f3c9db47b498a509d472fa918b458f": {
     "arguments": [
       "saleItemID",
@@ -268,6 +321,26 @@
     ],
     "messages": {
       "en": "List Fright Club NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "132e7b1c84a37ed11c04b30568fa99621de87c0cdbf15d52bd2ee2a447cf591f": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
+    }
+  },
+  "150d3a09e98377db38d925e85b84f93d31e2aefdb47d60362a046e846f4bcff9": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
     }
   },
   "15dfa12bbd0695f38c8d03b22654f6e49a2fd7a27fa0cd8497d352d760c6e4ce": {
@@ -281,6 +354,39 @@
       "zh_TW": "發送 {amount} tUSDT 代幣至 {to}"
     }
   },
+  "164efdf6ced5aee60222b594cf8fb700d7e1d136a46e17df8fe8183a04dd7c78": {
+    "arguments": [
+      "Uuid",
+      "RepayAmount"
+    ],
+    "messages": {
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+  },
+  "16b51b61d95645e0c9dbcd953e1aeb4ed781a67612af57847c3ee14560db79ef": {
+    "arguments": [
+      "Uuid",
+      "RepayAmount"
+    ],
+    "messages": {
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+  },
+  "17ff8d9be758aca87d96cba1cf59c25ddf4c82acb72f0cc2f55a6e587239dc9c": {
+    "arguments": [
+      "Uuid",
+      "RepayAmount"
+    ],
+    "messages": {
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+  },
   "181c216ae7c21ec5567bc76872666d5d92680a7c0ba9e77c7899b6b2704897b3": {
     "arguments": [
       "saleItemID",
@@ -292,17 +398,30 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NBA Top Shot NFT"
     }
   },
-  "1a7b9d7f4db2c0563925bd894a536878d9e430538e39298d72bb5a9e3b096b1c": {
+  "18891ef8a441ef233768503b5aef191aa7d66e78024ef9b95cc069f30a8a9a50": {
     "arguments": [
-      "BorrowerAddress",
-      "LenderAddress",
-      "Uuid",
-      "LendAmount"
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
     ],
     "messages": {
-      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
-      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
-      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
+    }
+  },
+  "1a6096bef2e7c8e98d3eecef1da3d790d994c50bb7c4a021ef0b6368fa66748f": {
+    "arguments": [
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
+    ],
+    "messages": {
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
   "1aa4db0a759d47a540c6df588fd236fa261c89ee982c46f66183c0538a47b286": {
@@ -363,15 +482,14 @@
       "en": "List King of The Dot NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
-  "210a7b7f8f04e84d8806f8f9f5e404774a4c4e441d19ed42e0bf5a8e837b0b65": {
+  "227ffe0b80548bdac4e91fbf0d29f9dc5d53ec6cb6aede5522a9095e4053f2c6": {
     "arguments": [
-      "Uuid",
-      "BorrowerAddress"
+      "Uuid"
     ],
     "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
     }
   },
   "228be2533c4476da923502ea72fbb8fe84e52028ee475438c5c2e999630b01a5": {
@@ -381,16 +499,6 @@
     ],
     "messages": {
       "en": "Set Flobit Eyeglasses {eyeglasses} for Flovatar {flovatarId}"
-    }
-  },
-  "2308358c9f60a1512d485467f220d27bed8e8086c213e6a92b89dc11942a638a": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
     }
   },
   "245d5a0b5ee7666da2aee31eec7a15d9c6bd12f78841a9b3eff840aed0c19226": {
@@ -422,17 +530,17 @@
       "en": "Create a profile with the name {name}"
     }
   },
-  "2809aff7cf069102817a6e891c0afe693ae1f4207bb603527a26725a4bcd9a9d": {
+  "29fe8fd77ac119226749fa066724b25dacf429a3f1ce851e6e61b03c2689e337": {
     "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
+      "BorrowerAddress",
+      "LenderAddress",
+      "Uuid",
+      "LendAmount"
     ],
     "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
+      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
+      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
+      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
     }
   },
   "2b77a684efd7a901fc9d09df900179d3e20b54d5f1626eb205f6b0111dd23708": {
@@ -472,6 +580,28 @@
       "en": "Purchase King of The Dot NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "2cd32b6d33396427efa3ada99a996c7f0738ce8809dabc4b45148dcf217a012d": {
+    "arguments": [
+      "Uuid",
+      "RepayAmount"
+    ],
+    "messages": {
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+  },
+  "2df093fa79fa1377a825340421d4656bc85adf18f21a9923005a16e5b8a7118e": {
+    "arguments": [
+      "Uuid",
+      "RepayAmount"
+    ],
+    "messages": {
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+  },
   "2e5b1c979980e0d95162479e3851cd8585d4c255e9012268c293ecfd73f53fb9": {
     "arguments": [
       "saleItemID",
@@ -493,17 +623,6 @@
       "en": "List SportsIcon NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
-  "2f1ebe18a267949a341bb0a89131d09529c4d91564a3aef3c7a68f6c24e8ff98": {
-    "arguments": [
-      "Uuid",
-      "RepayAmount"
-    ],
-    "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
-    }
-  },
   "2f5f476a6a502d9be1e72eec8fb574cae1f807ff5ed058348754492b18debe84": {
     "arguments": [
       "saleItemID",
@@ -522,6 +641,17 @@
     ],
     "messages": {
       "en": "List Starly NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "3011f8b654d2d8a678ee4c8fd9fe6ee1fdd4344d613eb57d78dea7901e8d2c14": {
+    "arguments": [
+      "Uuid",
+      "BorrowerAddress"
+    ],
+    "messages": {
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
     }
   },
   "307aaaf4b57cb879f24b67eefe5a65bed3cd2a7f7a6cad6d3859b4e137a40d0e": {
@@ -548,6 +678,17 @@
       "en": "Buy new nft mint for {flowAmount} FLOW and store in a new account",
       "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在新帐户中",
       "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在新帳戶中"
+    }
+  },
+  "3124346d9a53615316b06db08b063f9326c8aa49cdd9dfba589e88ac87f2eeb4": {
+    "arguments": [
+      "Uuid",
+      "RepayAmount"
+    ],
+    "messages": {
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
     }
   },
   "328309488c7695b5bc60ca4928e03b62dd490465f5c0d61e7a079c76813040fb": {
@@ -624,15 +765,17 @@
       "en": "Generate a new Flovatar with the selected combination by burning a Spark and the necessary Rarity Boosters"
     }
   },
-  "355e1e8db76f2df5dd054e2ce2ca4017d572d2a1280123fe53ae2f37ba2b4a55": {
+  "347748c2db0c606efef1745009ba3b46226d3bebe2e44ceb2a66fc3f27a82b7e": {
     "arguments": [
-      "Uuid",
-      "RepayAmount"
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
     ],
     "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
   "359baefc1e83c2e99cf7a8e79eb7fabbb602bd198aa674b3933bc526045b68ed": {
@@ -656,27 +799,15 @@
       "en": "Purchase KLKTN NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "38038bf9777ed3a1f8575682303043da83a4b83afc50aa4eb67f724b80d32ee7": {
+  "3b4812f93caf89c9d5e9ede9828c3fcf23a96d073c4d8496a41939312432541d": {
     "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
+      "Uuid",
+      "BorrowerAddress"
     ],
     "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
-    }
-  },
-  "3b8fc86f1928851297959fc6e7549363e54ceb85f7a562a6e7e79ee3aa5dabc6": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
     }
   },
   "3b93ab5a2be5d6ecdcfd81fca81012c6271f62d88cdad43f7535f858eec2a022": {
@@ -698,25 +829,15 @@
       "en": "Set Flobit Accessory {accessory} for Flovatar {flovatarId}"
     }
   },
-  "3d61699a28fdc8daead44fb062fb7fea25be57a50198d83e0b3795d54a2fca37": {
+  "3fced2fc656259831cad9fba983854b93ea1a7ea47de82ee796aaa3a33ad80a1": {
     "arguments": [
       "Uuid",
-      "BorrowerAddress"
+      "RepayAmount"
     ],
     "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
-    }
-  },
-  "3fd0a4d8cddf03028f70f44f3adaf35ef08ae9b91264fd0c4d56be8be202b752": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
     }
   },
   "402dd3ae2026f0eb05dc4f5d020d1d9f4b6f9d0f06fdb5e12046987f8fb99ae4": {
@@ -781,6 +902,28 @@
       "en": "Give the Flovatar {flovatarId} the name {name}"
     }
   },
+  "480215e4e39290325cd8e58511e454ef5e161d8c102bb0bd2e132ec3849f4853": {
+    "arguments": [
+      "Uuid",
+      "RepayAmount"
+    ],
+    "messages": {
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+  },
+  "482f4947e7e4e154e7c461b55f50d02a3d8344408484849b9ec1c62f9d7a1249": {
+    "arguments": [
+      "Uuid",
+      "BorrowerAddress"
+    ],
+    "messages": {
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+  },
   "483c5ac9a35a9bc609f345cc2a86fff05ac84585eaaf7ccbbc60b0f362fc7c9c": {
     "arguments": [
       "listingResourceID",
@@ -811,19 +954,6 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
-  "4926c4d07787ee979a6f1abbe769a1082bb74d7273c406561e682f80e1c48a25": {
-    "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
-    ],
-    "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
-    }
-  },
   "4968c04a50b78bd78bcec7d29a7fc2fe429052a150d0da5f9016383a93be8ca9": {
     "arguments": [
       "listingResourceID",
@@ -837,6 +967,17 @@
       "en": "Buy NFT with {buyPrice} FUSD from {storefrontAddress}"
     }
   },
+  "49853b02a8b3b0f80d68a793b589f7010af0b0c40dd0079ceee42383bd91c4e4": {
+    "arguments": [
+      "Uuid",
+      "BorrowerAddress"
+    ],
+    "messages": {
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+  },
   "4a217438704cc57e273410ea825f92c6c7db961547f81d694e83996680655168": {
     "arguments": [
       "saleItemID",
@@ -846,17 +987,6 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
-    }
-  },
-  "4b0663175180477278b28340dba529a20639814046f99621ed1a991f4cb982e7": {
-    "arguments": [
-      "Uuid",
-      "RepayAmount"
-    ],
-    "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
     }
   },
   "4b612dfcf1c94c5c9e669717d6bf8218e9e69eeba595a2b3b58b1f933b222ff0": {
@@ -872,25 +1002,17 @@
       "en": "Purchase OVO NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "4bfde616a8676456cb15a62d0a80419f5d6719e6c9d0dc4117e0f8d2cc42cba2": {
+  "4ea87af5dd97cfd953dc5fa1e992a3338a99bd1613b391250493d0ce746d08cf": {
     "arguments": [
-      "Uuid"
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
     ],
     "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
-    }
-  },
-  "4daff74bf2dff2473c6383132158caaaed2026cb68d90c09f981464c9f6e3c38": {
-    "arguments": [
-      "Uuid",
-      "RepayAmount"
-    ],
-    "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
   "4eff268ad97029a43ebb3061ec4240a7bc5f16ef83720192992ee94940ca13d8": {
@@ -910,6 +1032,16 @@
     ],
     "messages": {
       "en": "Update the sale offer price on the Marketplace for Flobit component {componentId} to {price} FLOW"
+    }
+  },
+  "4fb8bdbd5aea8ae27c33fa6e91e67aac5729d641228252d63c8377709bfc8566": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
     }
   },
   "4fdfb000cae6223bdb230ac043e3bb4f0127782e1825ced35d19433e9bef21c4": {
@@ -940,30 +1072,6 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
-  "51a79568e0d32d56627ccd3dc7ed4d998eb40b043aaa3b60abe295e600a4ff6f": {
-    "arguments": [
-      "Uuid",
-      "BorrowerAddress"
-    ],
-    "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
-    }
-  },
-  "51a969376ed70f66d2a07abd089ba2985df7d2c9e5dc52b08af39c1fcde40f92": {
-    "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
-    ],
-    "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
-    }
-  },
   "522ad1924ca912c1bf23d00239d9413a5fc2c718d4e6fb067d54cbc46b324e05": {
     "arguments": [
       "listingResourceID",
@@ -977,30 +1085,6 @@
       "en": "Buy NBA Top Shot NFT with {buyPrice} FLOW from {storefrontAddress}",
       "zh_CN": "使用 {buyPrice} FLOW 向 {storefrontAddress} 购买 NBA Top Shot NFT",
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NBA Top Shot NFT"
-    }
-  },
-  "52fa2139002fbb3e4e3081d2035314600bc53da415862775c9e5e07226178860": {
-    "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
-    ],
-    "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
-    }
-  },
-  "57f86fc3f8de64c78975200c5823cd522e7c8bd84a5a1e7c2dcc591da5eb2daf": {
-    "arguments": [
-      "Uuid",
-      "BorrowerAddress"
-    ],
-    "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
     }
   },
   "58643073de8fc88b0b64bdbf46f31b0eb0ebd832f9aa8f93c75ca560d2149456": {
@@ -1028,27 +1112,6 @@
       "en": "List name {name} for auction with startPrice {auctionStartPrice} and reserve price {auctionReservePrice}"
     }
   },
-  "5974e0eb5a8707626b2f1698677ad31cecd4e4157cb733a0318b39c788e20203": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
-    }
-  },
-  "5a1111c777ffb21bfeff8e9ae84591621f49c71e81bf805701c1b63e88566080": {
-    "arguments": [
-      "Uuid",
-      "RepayAmount"
-    ],
-    "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
-    }
-  },
   "5ac09fc79b2c8e6af7f406b75c87209a3a4d1001bf794995489e029e23749647": {
     "arguments": [
       "saleItemID",
@@ -1070,6 +1133,19 @@
     ],
     "messages": {
       "en": "Edit the profile of {name}"
+    }
+  },
+  "5bc6fca03d6e71cf4f7fd0c2beb72f87135665c4398f1fa37f3aadd9fe0d66dc": {
+    "arguments": [
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
+    ],
+    "messages": {
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
   "5d42d33d58857bb39100425900195e296810784febc841a7783b26b9e1d1a32c": {
@@ -1135,6 +1211,26 @@
       "zh_TW": "下架 NFT"
     }
   },
+  "6222475aaab8167204445e01feed084f37d42e85183541f599819863ac2ffa8b": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
+    }
+  },
+  "63a2f030da62345c3e99cff9e7073019556220f5314bc3ab54db14ec51f35d20": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
+    }
+  },
   "64398f127f508066202fb0c02c848d3ae0365022e45fed344896fc32c44581b8": {
     "arguments": [
       "name",
@@ -1147,7 +1243,7 @@
       "en": "Renew the lease of name {name} in FIND for {amount} FUSD"
     }
   },
-  "65b9120f5b979f77ebbfc737d27a0967caaa42a7c34a6e20a56dead4e4ec45c0": {
+  "6648b3af3413283cb7523c196b0a688599a0223ae0a38c378e73ebdccb1a4e9b": {
     "arguments": [
       "id",
       "baseAmount",
@@ -1175,6 +1271,16 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "68e62c320513676c4b09d974d778698021203ca359191d8a207dd016fca31ea0": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
+    }
+  },
   "69486ef0d278425de20e2a95a1119d3c3ef56bcf1e09bc6e10d4beb85ef3abbb": {
     "arguments": [
       "marketplace",
@@ -1189,6 +1295,17 @@
       "en": "Bid {bidAmount} FLOW on versus drop {dropId}",
       "zh_CN": "以 {bidAmount} FLOW 竞标 Versus 销售代号 {dropId}",
       "zh_TW": "以 {bidAmount} FLOW 競標 Versus 銷售代號 {dropId}"
+    }
+  },
+  "694f1cb823f3be94263213f58bab100036cfa73092449263308175525de4fefd": {
+    "arguments": [
+      "Uuid",
+      "RepayAmount"
+    ],
+    "messages": {
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
     }
   },
   "69662d31f3f77dcc8c4e6a70f7b5fecc920b773755a186ed570d73bf4298a541": {
@@ -1261,30 +1378,37 @@
       "en": "Purchase The Fabricant NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "6d3d54fb28a287fb441346dac427b62bbc336090a352d5f0b29ec58930df8832": {
+  "6c013c5d2dd37b15999abb95722ccb28628a5ca8816a9f45677706679f90fb32": {
     "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
+      "Uuid",
+      "RepayAmount"
     ],
     "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
     }
   },
-  "70136eb11b972ab28c77ac504f78f493e5841f9ae38762d3468e7726c3184f16": {
+  "6c7276fe435e75c57d3ec7fbe6bb3ede867be69ca5b4a46cb86ea26cb78b70c3": {
     "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
+      "Uuid",
+      "RepayAmount"
     ],
     "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+  },
+  "6cc44ee1b2814bbbc00e7e3552b9a4d4bcaa3d9a0821d9dbe2829063753cf38e": {
+    "arguments": [
+      "Uuid",
+      "BorrowerAddress"
+    ],
+    "messages": {
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
     }
   },
   "719a1aaa662af66fbd6be0a38f3d7a19def8a6d818a6ac1024f7d9f2c5b34db0": {
@@ -1298,17 +1422,6 @@
     },
     "messages": {
       "en": "Buy Flovatar {tokenId} for {amount} FLOW from {saleAddress}"
-    }
-  },
-  "72629a9f71caccf3a48bbe0f201bdf94141fc6aece6a53696772be7a9f571b02": {
-    "arguments": [
-      "Uuid",
-      "BorrowerAddress"
-    ],
-    "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
     }
   },
   "72786a87fe5b5249e8457c137f685389b4045f0135132b5a0a5dd4cefe59f12c": {
@@ -1381,14 +1494,39 @@
       "en": "Register the name {name} in FIND for {amount} FUSD"
     }
   },
-  "76833968ed675c3888149e73b430d0c092a4da72ed8a105c5fdbb446e8a6bfe0": {
+  "76d3d249c5d3b9ff76d6164444a071862dd2454b9c8a7c7f2ff84894a12e2735": {
     "arguments": [
-      "Uuid"
+      "Uuid",
+      "BorrowerAddress"
     ],
     "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+  },
+  "76d5d59459c20b1ded91f4292ffd21f669aa0fc3765dd374bf3c250af4c1e24f": {
+    "arguments": [
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
+    ],
+    "messages": {
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
+    }
+  },
+  "7997118435358eb4dab8e6ae8ee730e6f15128f5618b4b1980d4348dd90f8258": {
+    "arguments": [
+      "Uuid",
+      "RepayAmount"
+    ],
+    "messages": {
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
     }
   },
   "799d1b9d83d1efd2653cfca6a1212a7624543771b1c6222e8be584648a0bfd54": {
@@ -1404,17 +1542,15 @@
       "en": "Purchase Chainmonsters Rewards NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "7bcf3144d47cad8be92315576203c38e1359f3281b24cf0175648c915443edf8": {
+  "7bd8609a53f3806dc995c6a0287c38b8bc596d77be1e5b69200949219909f11f": {
     "arguments": [
-      "BorrowerAddress",
-      "LenderAddress",
       "Uuid",
-      "LendAmount"
+      "BorrowerAddress"
     ],
     "messages": {
-      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
-      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
-      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
     }
   },
   "7bf46942dadd93ee299e5e8519382df9387c325130aab683d9e863e925c4c63e": {
@@ -1437,14 +1573,17 @@
       "en": "Place Jambb Voucher NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
-  "7d55447f95634bdca260a7d441a0c027b0a28d8ae4427f5256c5135cc9c3683c": {
+  "7cc47c196088bad8e10aef0719436982c70ddfe12b7a169c3d2060c775f72af4": {
     "arguments": [
-      "Uuid"
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
     ],
     "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
   "80d2db442db9930bf05c27590c06c540ed57e99ed3ab23dae802c38fd88dc125": {
@@ -1478,17 +1617,6 @@
     ],
     "messages": {
       "en": "Reject the offer received on {name}"
-    }
-  },
-  "8319e16806da3bece5d8a19b2bbfb63aafe7bc5f3336e4500e5a599eb3d856c2": {
-    "arguments": [
-      "Uuid",
-      "RepayAmount"
-    ],
-    "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
     }
   },
   "837f57df88a32f3424fce961d7eb75b75101347cc081b8c7cc61bb119c091add": {
@@ -1528,6 +1656,19 @@
       "en": "Purchase Tune Go NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "851583f158db9e1144b67540676d3d406a2b4bb20177d103f4d2f42bb328b21f": {
+    "arguments": [
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
+    ],
+    "messages": {
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
+    }
+  },
   "85c616b983d15bd1dea6e2931bf6b54c418ce7ce7da61361cec10583f797d022": {
     "arguments": [
       "flovatarId",
@@ -1535,16 +1676,6 @@
     ],
     "messages": {
       "en": "Set Flobit Background {background} for Flovatar {flovatarId}"
-    }
-  },
-  "85cdee7d62fdd0a22b1af4d88a4c834ebb71c1546783d7348702167c99063192": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
     }
   },
   "87134166e2d7cc2124d0ac2a7bcf4e70c46370ef1a2c7a29bc3ee0e41d8e96f2": {
@@ -1584,15 +1715,17 @@
       "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在 {recipient}"
     }
   },
-  "882d683d653965b6f4cc6b561c56ad8325b928cef8f9d4e4b6c3ab44bfc2d6a6": {
+  "8951b71ce738dc18d8b1a4e4cd576bcd587859207782a3944b8e312c5e23f437": {
     "arguments": [
-      "Uuid",
-      "RepayAmount"
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
     ],
     "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
   "8961f122c878ebf18e72f776ba1677b3a3a1a24b58b30b22f14e15420e50b4cf": {
@@ -1623,17 +1756,6 @@
       "en": "Purchase White Matrix NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "8b692bc25faf4c70dfb35907cee6d47ead6204f5d2d9a5dd140cc9da57681ff4": {
-    "arguments": [
-      "Uuid",
-      "BorrowerAddress"
-    ],
-    "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
-    }
-  },
   "8c23df4744f3b24c8f19c4d9738515ec83b8d44792589f6369b4cbe9ba0f7c12": {
     "arguments": [
       "saleItemID",
@@ -1650,31 +1772,20 @@
       "en": "Initialize your account to buy, sell and receive NFTs"
     }
   },
-  "8e00ac6ef1b8b92c8c029050d366804b9e28c40d65e740033388ebab27f8270a": {
-    "arguments": [
-      "Uuid",
-      "RepayAmount"
-    ],
-    "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
-    }
-  },
-  "8e260867a5543437596b66807ad02bcdd139ff646c6ae561b9b967c26718aa8d": {
-    "arguments": [
-      "Uuid",
-      "RepayAmount"
-    ],
-    "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
-    }
-  },
   "8f6cd804d667ec1ff1c124ddf76ff514cefff3293c3087ccce48bde9d2bdf8f0": {
     "messages": {
       "en": "Please initialize your Account to be able to interact with the Flovatar smart contract"
+    }
+  },
+  "9085a1c2281c6f1d0b8415b5102722583585381f8412f959562cd889141b92ea": {
+    "arguments": [
+      "Uuid",
+      "BorrowerAddress"
+    ],
+    "messages": {
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
     }
   },
   "9286416ea718ad16d27a23d06cd139ea6288573bbe05f3f8433d7d5dc360b36f": {
@@ -1726,51 +1837,6 @@
       "en": "Initialize your account for Mystery Pack NFTs"
     }
   },
-  "94f303bf5afa1114a7da7933379b8d89b70cb429fc42b442c8cef97646057b08": {
-    "arguments": [
-      "Uuid",
-      "BorrowerAddress"
-    ],
-    "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
-    }
-  },
-  "9624f7518a0e8e507bccef97f9232168ae57b83f0700cb9fb4ffd8078383fe13": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
-    }
-  },
-  "9826ebf305fee150db2c3abb637f35a79a2bbacb3cb5d0d5806fb98305fcd958": {
-    "arguments": [
-      "Uuid",
-      "BorrowerAddress"
-    ],
-    "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
-    }
-  },
-  "9a2a657ab7f42d75fe7f5b82df7d68e03fd3ca6006297a66558d5499b4101f67": {
-    "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
-    ],
-    "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
-    }
-  },
   "9b2e2f7910a302954f0dafb08127b62fdf43ac54e2fcfef4ca21d6a3a5d98b62": {
     "arguments": [
       "collectionID",
@@ -1819,19 +1885,6 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
-  "9dd3ca7ad4a1d0c01d79362482bf066f195e998836b2f7a296c67c4e31a893dc": {
-    "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
-    ],
-    "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
-    }
-  },
   "9e4c75ad2322bf6ad4657ae9743aa22a6817c31be5ad87092284f7864bdee50b": {
     "arguments": [
       "listingResourceID",
@@ -1847,30 +1900,7 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
-  "9e57fe967cfbf513b352e34af83be07b7a48747875fbd100dfaafdc5edcb51fd": {
-    "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
-    ],
-    "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
-    }
-  },
-  "9ed959929017b6db05557b3e22e46662cb169df4ab5fdc5409dc956b8e30e211": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
-    }
-  },
-  "9f0ffa086ad16f45f1f01cc46f305488db25ab869fa5243a40c4e92e5049fdd0": {
+  "a024808d20955b5caf78f0666d4a1b080cc5e06716d2d2e10513ab902a9d291c": {
     "arguments": [
       "Uuid",
       "RepayAmount"
@@ -1879,6 +1909,17 @@
       "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
       "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
       "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+  },
+  "a0d5dfbd71936048e4935d85b2d126092bcd39dd247dc7a9420fbfd818dd17d2": {
+    "arguments": [
+      "Uuid",
+      "BorrowerAddress"
+    ],
+    "messages": {
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
     }
   },
   "a17ce9a30bc59550be0b28d90b50f08a5a866121bc44f9e86b52c9cb8ce55d2d": {
@@ -1930,17 +1971,14 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
-  "a9819413412d14af667fdcde5351cdabf31f68297c9c556cacb7510181a296bd": {
+  "acbd04bd4653823ce43e1de774a1d7ec8b860c46195f6e39a9150ad7baa7a848": {
     "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
+      "Uuid"
     ],
     "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
     }
   },
   "aec7bafccb959924dc4b0b5bc8fd54319a314c79bb079564d10dde31afe8ad9d": {
@@ -1956,17 +1994,6 @@
       "en": "Purchase Fantastec SWAP NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "af79bb8322df6364c7b6e32d9e34dd36b5ee27a653e5be369e3706864fc87eb1": {
-    "arguments": [
-      "Uuid",
-      "RepayAmount"
-    ],
-    "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
-    }
-  },
   "af859b1c47c579f04ba9b1ea708702f3d748d68e3943aae39cd20a8c12b742cf": {
     "arguments": [
       "listingResourceID",
@@ -1978,30 +2005,6 @@
     },
     "messages": {
       "en": "Purchase THiNG.FUND NFT for {buyPrice} FLOW from {storefrontAddress}"
-    }
-  },
-  "affa74677221f9cba2cec1ea5446c27a9545491372a573cd6a526bc230f828da": {
-    "arguments": [
-      "Uuid",
-      "RepayAmount"
-    ],
-    "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
-    }
-  },
-  "b16ade65c2782397ffe127bcf452642259f766ffcac2c53236d42a0ac351a3c8": {
-    "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
-    ],
-    "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
   "b3988ff7454738a703724a64f80df92a263cade2c65671d17a6192f27a68c5da": {
@@ -2030,20 +2033,7 @@
       "en": "Purchase SportsIcon NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "b488869fc9135d1ce372e97a4befce9bc1aadbd686ccf6f8144ddb90205fb2cf": {
-    "arguments": [
-      "listingResourceID",
-      "storefrontAddress",
-      "buyPrice"
-    ],
-    "balances": {
-      "buyPrice": "FLOW"
-    },
-    "messages": {
-      "en": "Purchase RaceDay NFT for {buyPrice} FLOW from {storefrontAddress}"
-    }
-  },
-  "b4d6c7df2026dcd8e18d936edb8f91c4397e3fed74dddea64a929da2ec88029d": {
+  "b453e328aedf7a21df1f9a3cf2138d7f68aba77665e577c3bcf3731be7f45d9b": {
     "arguments": [
       "id",
       "baseAmount",
@@ -2056,15 +2046,17 @@
       "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
-  "b5c4a2fff32d312266ef7025228e423ae3e5b9879d1edc55d6762b5e9eaa2368": {
+  "b488869fc9135d1ce372e97a4befce9bc1aadbd686ccf6f8144ddb90205fb2cf": {
     "arguments": [
-      "Uuid",
-      "BorrowerAddress"
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
     ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
     "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+      "en": "Purchase RaceDay NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
   "b64202e268c42f2360c32b0cd24e6058a09fb9f345a7389b3f623752637c03cb": {
@@ -2079,6 +2071,17 @@
       "en": "Increase your bid on name {name} in FIND with {amount} FUSD"
     }
   },
+  "b6e350ac07ebfe516d0fb92d8d1dbdab0cbb0443b21d45b6b6a65a5562077f88": {
+    "arguments": [
+      "Uuid",
+      "BorrowerAddress"
+    ],
+    "messages": {
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+  },
   "b72c3260774eb32119f75081559d363eec8b97414ab32b41c471c5ab0cf77216": {
     "arguments": [
       "saleItemID",
@@ -2087,41 +2090,6 @@
     ],
     "messages": {
       "en": "List Faze NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
-    }
-  },
-  "b7424bc86e4d05e26fb9e7b998fd04e7908a4a30a92fc27affd5cdaaf830b4b0": {
-    "arguments": [
-      "Uuid",
-      "RepayAmount"
-    ],
-    "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
-    }
-  },
-  "b7749acd2fed361b80dda4bed8edd117c2667134e126771765a6b65a3adf372a": {
-    "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
-    ],
-    "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
-    }
-  },
-  "b83b72fd96efdf8100bb122f659b61945a6db04f780dee8e0b837a96e0a7e237": {
-    "arguments": [
-      "Uuid",
-      "RepayAmount"
-    ],
-    "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
     }
   },
   "b8adab04e138cb027bfcc1f0b4d9c4c02e9be3a0d0aa4e5a6bf97ca37ccf3d8e": {
@@ -2137,15 +2105,14 @@
       "en": "Purchase RCRDSHP NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "bbb230e97fc2a1e141e0aec1a4e99102bee636e1a6b5fb3f6425aebed73309ac": {
+  "bd06950b019f2e8f439b4dfa701495e878cd71d92bd42fa582e6f384f4eb352b": {
     "arguments": [
-      "Uuid",
-      "BorrowerAddress"
+      "Uuid"
     ],
     "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
     }
   },
   "bd8c1e741cd92cfa3fc65212ca8f73a80c42ff8aee3c553f881def744ec0a9a9": {
@@ -2179,37 +2146,15 @@
       "en": "List RareRooms NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
-  "bff046610b79de1a7c15656574fcb9e96920e394878fda5ac9e7e3d7f9453b6d": {
+  "bf815b291fec3b82c4acabca77af3a2a11b1e432118bbc05cd99f473bc6e19ef": {
     "arguments": [
-      "id",
-      "baseAmount",
-      "interest",
-      "duration"
+      "Uuid",
+      "BorrowerAddress"
     ],
     "messages": {
-      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
-      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
-      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
-    }
-  },
-  "c09bf35ca60f78e0bb53673fac85d4f24b1ea2fba857893f6dc65a9ff08ac92f": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
-    }
-  },
-  "c12782c2e820ff9a686aa647226380f13e810e592d6cd1794736e90daf8002c4": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
     }
   },
   "c18e5880e9c0d09eed96adbf8c39b68bc0aa3c0b74fa2ff3ef53b53a652c3abe": {
@@ -2242,73 +2187,6 @@
       "en": "List Everbloom NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
-  "c2e7cd885bba545d5de19944e6bdce7dee8bd21ae5015073e04ed6278735c05e": {
-    "arguments": [
-      "Uuid",
-      "BorrowerAddress"
-    ],
-    "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
-    }
-  },
-  "c3834277113b541feab3374432d2b8365c86d054e290ec02186dfaf1b816c6dd": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
-    }
-  },
-  "c8691368ec3e26016b75b5e4e7daf5a65463f0c4061b82960142eb57adff0f8a": {
-    "arguments": [
-      "Uuid",
-      "BorrowerAddress"
-    ],
-    "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
-    }
-  },
-  "c8aac26ef52c608b683d244c3abe46dc48f160c309c62ee4b47b981ab2a3c1d2": {
-    "arguments": [
-      "Uuid",
-      "BorrowerAddress"
-    ],
-    "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
-    }
-  },
-  "c96eb821b1b2afec0d37c86466dd6d616dd80be45f51e8ddf8cce4e25c02e42f": {
-    "arguments": [
-      "BorrowerAddress",
-      "LenderAddress",
-      "Uuid",
-      "LendAmount"
-    ],
-    "messages": {
-      "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
-      "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
-      "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
-    }
-  },
-  "c9be7c1ac2e0c608e9e885c61cca554a2e92e79a2a2246c4b80e449b5b6d5298": {
-    "arguments": [
-      "Uuid",
-      "BorrowerAddress"
-    ],
-    "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
-    }
-  },
   "ca37e0cf8f77eb2479fe8738f058b8e6cd27ffd5436a846862ed1a61ed75cebc": {
     "arguments": [
       "saleItemID",
@@ -2331,16 +2209,6 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
-  "cc201c8cd115bb5804c5d2af3264be569503e255c839e656dd33e6f1018d59f3": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
-    }
-  },
   "cd697d9108805fd7db41fd98f715ba6d3ba1e48661c9340858235d4bdb198e2c": {
     "arguments": [
       "listingResourceID",
@@ -2354,6 +2222,30 @@
       "en": "Purchase Melos Studio NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "cd9067d788d6e5fe17a04777e8904bbc13f8586d84cb43553457f4e3ab0b4d3c": {
+    "arguments": [
+      "Uuid",
+      "RepayAmount"
+    ],
+    "messages": {
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+  },
+  "cdad6c7e42798a2ecfadec5436d885c763416ddd38a07f4db167a73aa315ed2f": {
+    "arguments": [
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
+    ],
+    "messages": {
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
+    }
+  },
   "cf6bdc075749934720ccf0d26133a18eb9fe2af315bd50b34d536ebe9f240c90": {
     "arguments": [
       "itemID",
@@ -2365,6 +2257,19 @@
     ],
     "messages": {
       "en": "Place Starly NFT #{itemID} for sale for {price} FUSD"
+    }
+  },
+  "cf9854c7f39436e1feeb6a14d0b9502ff5d3276d6eb7784ce1de137ef71f28f4": {
+    "arguments": [
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
+    ],
+    "messages": {
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
   "cfa02135566aa3d0ed704f295076b5503d20766e6de35c40367f36b0fdc20055": {
@@ -2396,6 +2301,16 @@
       "en": "Bid on a name {name} in FIND for {amount} FUSD"
     }
   },
+  "d354c5e1f51c98ce0203b9634d54690d9a37ee0de659019fe6ac0417aac744cd": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
+    }
+  },
   "d44d5b088303ae944ee41ba9d1a862daaceaba4237567e69895991879bbffaf6": {
     "arguments": [
       "saleItemID",
@@ -2423,17 +2338,6 @@
       "en": "Initialize your account in order to buy and sell Starly NFTs"
     }
   },
-  "d4c43c8ed61fb4d5eefe8c2fbb92c7579000f6752135ebc475e1c3c9667f2016": {
-    "arguments": [
-      "Uuid",
-      "RepayAmount"
-    ],
-    "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
-    }
-  },
   "d4ff1c0865f8a5fe92152ce967cf6af6efb2ad595201d74e3e0c5918f7b91139": {
     "arguments": [
       "saleItemID",
@@ -2445,15 +2349,14 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
-  "d6053144e589e93201e7a458ba69f684d87a437a652f0a6c78fe5d9be0afee8c": {
+  "d5c0cb921386b63ec7c349ca45dda8dd77e23e9018b173c069fc791cc97ca1b2": {
     "arguments": [
-      "Uuid",
-      "BorrowerAddress"
+      "Uuid"
     ],
     "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
     }
   },
   "d627d51ff982f3f92c6c2003be4fa678f56c55776d1dccc246a63d66cb840f44": {
@@ -2462,16 +2365,6 @@
     ],
     "messages": {
       "en": "Remove NFT listing from sale"
-    }
-  },
-  "d6d9f53e2aa31dd5fcd3e53df4339cdcadca072a4e075777e135827ce1c9121a": {
-    "arguments": [
-      "Uuid"
-    ],
-    "messages": {
-      "en": "Unlist {Uuid}.",
-      "zh_CN": "下架 {Uuid}",
-      "zh_TW": "下架 {Uuid}"
     }
   },
   "d78a990f91560f2ae330ac976ac2e79aa9042f32b469d57039797b19c9407c6d": {
@@ -2488,17 +2381,6 @@
       "zh_TW": "將 {amountIn} FUSD 兌換成至少 {minAmountOut} FLOW"
     }
   },
-  "d7a1f0a8e62e2083ac126c8b3815af7d67b0a12b1092b3e39d262d24ef92aa16": {
-    "arguments": [
-      "Uuid",
-      "BorrowerAddress"
-    ],
-    "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
-    }
-  },
   "d7af73ae948fffa31052fae09b512d2f3cbcb38091d381f518e4424519703a1c": {
     "arguments": [
       "saleItemID",
@@ -2509,7 +2391,7 @@
       "en": "List BALLERZ NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
-  "d7e7e68810516d1a3f52dbf8c828644f7b9872510b2c528a4a301f8c79c6295c": {
+  "d7e6eda1018d270cbf9836fe162d2ac2f794ae9ba0c9fdf13ca0068552e3058b": {
     "arguments": [
       "Uuid",
       "BorrowerAddress"
@@ -2563,6 +2445,27 @@
       "zh_TW": "發送 {amount} FLOW 代幣至 {to}"
     }
   },
+  "de8f42a2944d912223f393b7c5488d09614f0b95e57ee0c822ab8910c129206d": {
+    "arguments": [
+      "Uuid",
+      "BorrowerAddress"
+    ],
+    "messages": {
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+  },
+  "df511b16f859775693dcddf3d0d3bd9d9d88ce824cd76a87ca0d4ceedb7e2a6e": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
+    }
+  },
   "e40a1c1527c249900716c190642b8c225cbf79cac19af3305cba1372e81e1638": {
     "arguments": [
       "listingResourceID",
@@ -2596,15 +2499,15 @@
       "en": "Purchase Starly pack(s) for {price} FLOW"
     }
   },
-  "e59e4f5a42313c623a5f9eeeb83cfc7f9a28b52db4a84b565425a40be49ab8df": {
+  "e5cc2149522d0a7292ce440456ed515f23f7cf4256f6ad2443108daa3aaff1ca": {
     "arguments": [
       "Uuid",
-      "RepayAmount"
+      "BorrowerAddress"
     ],
     "messages": {
-      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
-      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
-      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
     }
   },
   "e6fb95f2918236436c233736c87fbb3a838e6ad91be5dffd552645af13f9e327": {
@@ -2615,17 +2518,6 @@
     ],
     "messages": {
       "en": "List xtingles NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
-    }
-  },
-  "e703ca7d56281e06204ccbb21ff407609f78c77377704391de0d8a85832273d9": {
-    "arguments": [
-      "Uuid",
-      "BorrowerAddress"
-    ],
-    "messages": {
-      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
-      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
-      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
     }
   },
   "e78cd76c136c8a0dd0e13165f93a88fd2d012239d30b539fd7dc239b8d2d45ad": {
@@ -2688,6 +2580,19 @@
       "en": "Cancel and delist on ongoing auction for  {name}"
     }
   },
+  "edf7309905599252b360638c9ca99a32a16385fd6dc0d3ff025083f34cf1d2f0": {
+    "arguments": [
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
+    ],
+    "messages": {
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
+    }
+  },
   "ee151e979b99b5b096bfba83431e7a37d9c2e759ef6fddb53370d43c815298fd": {
     "arguments": [
       "saleItemID",
@@ -2727,6 +2632,19 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "ef677720b6f6cd33a845f09b0e37d7ee45ab1feb10bbf65405518dd03e973d7a": {
+    "arguments": [
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
+    ],
+    "messages": {
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
+    }
+  },
   "ef8806c599ae05cfee041f14a6ac5bb6ba07a81c29d4037bf1ff1bad81df27ea": {
     "arguments": [
       "saleItemID",
@@ -2736,6 +2654,17 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "f13162b9c0de23b5d45e100f8075e3b3a9f4d0d5378ef114302fabd4fbe4082c": {
+    "arguments": [
+      "Uuid",
+      "BorrowerAddress"
+    ],
+    "messages": {
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
     }
   },
   "f17189c4f29c7d9fb0f9e4e91e233d93fae1a035b0671cd9b5a693944cc58a09": {
@@ -2749,6 +2678,17 @@
     },
     "messages": {
       "en": "Buy Flobit Component {tokenId} for {amount} FLOW from {saleAddress}"
+    }
+  },
+  "f24626bd13298a72b5eeaa55c3ec9e53ea88fcd28792cba8613eb78bccc9c84e": {
+    "arguments": [
+      "Uuid",
+      "RepayAmount"
+    ],
+    "messages": {
+      "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+      "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+      "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
     }
   },
   "f38695b8fa1d11cef082ce609148602c91c23ce6c9c5b11fc6d89d47e0b55505": {
@@ -2786,6 +2726,19 @@
       "en": "Purchase Crave Critics NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "f662d06d0d8a2774073867df456c48287bddd68e0a97577e100d1bc7567cef17": {
+    "arguments": [
+      "id",
+      "baseAmount",
+      "interest",
+      "duration"
+    ],
+    "messages": {
+      "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
+      "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
+      "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
+    }
+  },
   "f783df60be366b50c40c1593ed9aad5b7bdf049cd3e1cade17bde067dd1d8721": {
     "arguments": [
       "saleItemID",
@@ -2795,6 +2748,16 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "f84dbebf44dcc1b28d817a0d70ea36d66918793aa5e8b8d3df454316fe31cd51": {
+    "arguments": [
+      "Uuid"
+    ],
+    "messages": {
+      "en": "Unlist {Uuid}.",
+      "zh_CN": "下架 {Uuid}",
+      "zh_TW": "下架 {Uuid}"
     }
   },
   "f865765434a8b810671ca0d4b9485de41ebf00416a1a629e3a1acaee1f31956d": {
@@ -2835,6 +2798,17 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "fa98b945a2eb0e92ccc6a50e262db82dc279685925353564a8f84a837e2b004e": {
+    "arguments": [
+      "Uuid",
+      "BorrowerAddress"
+    ],
+    "messages": {
+      "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+      "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+      "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+  },
   "fa99c52cef248d384fafaa3e079d143ee499235f0650cec8d68003172fbde4a2": {
     "arguments": [
       "listingResourceID"
@@ -2858,15 +2832,7 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
-  "fee52acb47153c9a740089653e6ebc5a08084c266a5f76c29c0fc91e205d459c": {
-    "arguments": [
-      "itemID"
-    ],
-    "messages": {
-      "en": "Remove Starly NFT #{itemID} from sale"
-    }
-  },
-  "ff2ce81602bcb26c20e5ca09336a71fe670bc8c16e3c2961c956769a7ee36996": {
+  "fe10e6e32b1a876ea42e4903793a85fc46cfdf7613f2dd87354e2b5783445250": {
     "arguments": [
       "Uuid",
       "RepayAmount"
@@ -2875,6 +2841,14 @@
       "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
       "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
       "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+  },
+  "fee52acb47153c9a740089653e6ebc5a08084c266a5f76c29c0fc91e205d459c": {
+    "arguments": [
+      "itemID"
+    ],
+    "messages": {
+      "en": "Remove Starly NFT #{itemID} from sale"
     }
   }
 }

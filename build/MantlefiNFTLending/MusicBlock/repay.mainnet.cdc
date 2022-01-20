@@ -1,5 +1,5 @@
 import NonFungibleToken from 0x1d7e57aa55817448
-import NFTLendingPlace from 0x0
+import NFTLendingPlace from 0xa0035d8e04880578
 import FlowToken from 0x1654653399040a61
 
 // Let the borrower to repay FLOW
@@ -19,7 +19,7 @@ transaction(Uuid: UInt64, RepayAmount: UFix64) {
         self.collectionRef = acct.borrow<&NonFungibleToken.Collection>(from: /storage/MusicBlockCollection)
             ?? panic("Could not borrow borrower's NFT collection reference")
 
-         self.landingPlaceRef =  acct.borrow<&NFTLendingPlace.LendingCollection>(from: /storage/NFTLendingPlace)
+        self.landingPlaceRef =  acct.borrow<&NFTLendingPlace.LendingCollection>(from: /storage/NFTLendingPlaceCollection)
             ?? panic("Could not borrow borrower's LenderTicket reference")
     }
 

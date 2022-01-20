@@ -1,12 +1,12 @@
 import NonFungibleToken from 0x1d7e57aa55817448
-import NFTLendingPlace from 0x0
+import NFTLendingPlace from 0xa0035d8e04880578
 
 // Let the NFT owner unlist NFT from NFTLendingPlace's resource
 transaction(Uuid: UInt64) {
 
     prepare(acct: AuthAccount) {
 
-        let lending = acct.borrow<&NFTLendingPlace.LendingCollection>(from: /storage/NFTLendingPlace2)
+        let lending = acct.borrow<&NFTLendingPlace.LendingCollection>(from: /storage/NFTLendingPlaceCollection)
             ?? panic("Could not borrow borrower's vault resource")
 
         // Borrow a reference to the NFTCollection in storage
