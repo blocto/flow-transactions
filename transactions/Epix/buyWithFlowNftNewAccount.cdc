@@ -1,7 +1,7 @@
 import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
 import FlowToken from 0xFLOW_TOKEN_ADDRESS
 import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
-import EnemyMetal from 0xENEMY_METAL_ADDRESS
+import Epix from 0xEPIX_ADDRESS
 
 pub fun trySetupFlow(acct: AuthAccount) {
     // setup account to use flow tokens
@@ -24,14 +24,14 @@ pub fun trySetupFlow(acct: AuthAccount) {
 }
 
 pub fun trySetupNft(acct: AuthAccount) {
-    // setup account to receive nfts from enemymetal collection
-    if acct.borrow<&EnemyMetal.Collection>(from: EnemyMetal.CollectionStoragePath) == nil {
+    // setup account to receive nfts from epix collection
+    if acct.borrow<&Epix.Collection>(from: Epix.CollectionStoragePath) == nil {
         // Create a new empty collection
-        let collection <- EnemyMetal.createEmptyCollection()
+        let collection <- Epix.createEmptyCollection()
         // save it to the account
-        acct.save(<-collection, to: EnemyMetal.CollectionStoragePath)
+        acct.save(<-collection, to: Epix.CollectionStoragePath)
         // create a public capability for the collection
-        acct.link<&EnemyMetal.Collection{NonFungibleToken.CollectionPublic, EnemyMetal.EnemyMetalCollectionPublic}>(EnemyMetal.CollectionPublicPath as! CapabilityPath, target: EnemyMetal.CollectionStoragePath)
+        acct.link<&Epix.Collection{NonFungibleToken.CollectionPublic, Epix.EpixCollectionPublic}>(Epix.CollectionPublicPath as! CapabilityPath, target: Epix.CollectionStoragePath)
     }
 }
 
@@ -45,17 +45,15 @@ pub fun createAccount(pubKeys: [String], payer: AuthAccount): AuthAccount {
     return acct
 }
 
-// This transaction is for buying a NFT mint using flow tokens
-transaction(flowAmount: UFix64, payees: [Address], payeesShares: [UFix64], recipientKeys: [String], metadataArray: [String], claimMetadatasArray: [[String]]) {
+// This transaction is for buying a NFT using flow tokens to a recipient account
+transaction(flowAmount: UFix64, payees: [Address], payeesShares: [UFix64], recipientKeys: [String], nft_id: UInt64) {
 
-    let minter: &EnemyMetal.NFTMinter
-    let recipient: AuthAccount
+    let sellerCollectionRef: &Epix.Collection
     let buyerVault: &FlowToken.Vault{FungibleToken.Provider}
-    var nfts: [EnemyMetal.NFTData]
+    let recipient: AuthAccount
 
-    prepare(minter: AuthAccount, custodian: AuthAccount, buyer: AuthAccount) {
+    prepare(seller: AuthAccount, custodian: AuthAccount, buyer: AuthAccount) {
         pre {
-            metadataArray.length == claimMetadatasArray.length : "metadata array must be same size of claim metadatas array"
             payees.length > 0 : "need to provide atleast one payee"
             payees.length == payeesShares.length : "need to define each payee share"
             recipientKeys.length > 0 : "need to define atleast one public key"
@@ -73,26 +71,11 @@ transaction(flowAmount: UFix64, payees: [Address], payeesShares: [UFix64], recip
             panic("payees shares need to be equal to 100%")
         }
 
-        // borrow a reference to the NFTMinter resource in storage
-        self.minter = minter.borrow<&EnemyMetal.NFTMinter>(from: EnemyMetal.MinterStoragePath)
-            ?? panic("Could not borrow a reference to the NFT minter")
-
-        // build nfts data struct
-        self.nfts = [];
-        x = 0;
-        while x < metadataArray.length {
-            var claims: [EnemyMetal.NFTData] = [];
-            var currClaims: [String] = claimMetadatasArray[x];
-            var y = 0;
-            while y < currClaims.length {
-                claims.append(EnemyMetal.NFTData(editionID: 0, metadata: currClaims[y], components: [], claims: []));
-                y = y + 1;
-            }
-            self.nfts.append(EnemyMetal.NFTData(editionID: 0, metadata: metadataArray[x], components: [], claims: claims));
-            x = x + 1;
-        }
-
         self.buyerVault = buyer.borrow<&FlowToken.Vault{FungibleToken.Provider}>(from: /storage/flowTokenVault)!
+
+        // borrow a reference to the sellers NFT collection
+        self.sellerCollectionRef = seller.borrow<&Epix.Collection>(from: Epix.CollectionStoragePath)
+            ?? panic("Could not borrow a reference to the seller's collection")
     }
 
     execute {
@@ -108,17 +91,13 @@ transaction(flowAmount: UFix64, payees: [Address], payeesShares: [UFix64], recip
             x = x + 1
         }
 
-        // Borrow the recipient's public NFT collection reference
-        let receiver = self.recipient
-            .getCapability(EnemyMetal.CollectionPublicPath)!
-            .borrow<&{NonFungibleToken.CollectionPublic}>()
-            ?? panic("Could not get receiver reference to the NFT Collection")
+        // withdraw the NFT from the owner's collection
+        let nft <- self.sellerCollectionRef.withdraw(withdrawID: nft_id)
 
-        x = 0;
-        while x < self.nfts.length {
-            // Mint the NFT and deposit it to the recipient's collection
-            self.minter.mintNFT(recipient: receiver, data: self.nfts[x]);
-            x = x + 1;
-        }
+        // borrow a public reference to the receivers collection
+        let depositRef = self.recipient.getCapability(Epix.CollectionPublicPath)!.borrow<&{NonFungibleToken.CollectionPublic}>()!
+
+        // Deposit the NFT in the recipient's collection
+        depositRef.deposit(token: <-nft)
     }
 }
