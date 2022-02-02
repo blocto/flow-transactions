@@ -1,0 +1,12 @@
+{
+    "arguments": [
+        "nftIds",
+        "metadataArray",
+        "claimMetadatasArray"
+    ],
+    "messages": {
+        "en": "Craft new nft(s) mint(s) and burn required nft(s)",
+        "zh_CN": "制作新的 nft(s) mint(s) 并燃烧所需的 nft(s)",
+        "zh_TW": "製作新的 nft(s) mint(s) 並燃燒所需的 nft(s)"
+    }
+}
