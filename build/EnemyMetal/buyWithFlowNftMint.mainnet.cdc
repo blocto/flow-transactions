@@ -4,15 +4,15 @@ import NonFungibleToken from 0x1d7e57aa55817448
 import EnemyMetal from 0xa38d9dda1d06fdea
 
 // This transaction is for buying a NFT mint using flow tokens
-transaction(flowAmount: UFix64, payees: [Address], payeesShares: [UFix64], recipient: Address, editionID: UInt64, metadata: String, components: [UInt64], claimEditions: [UInt64], claimMetadatas: [String]) {
+transaction(flowAmount: UFix64, payees: [Address], payeesShares: [UFix64], recipient: Address, metadataArray: [String], claimMetadatasArray: [[String]]) {
 
     let minter: &EnemyMetal.NFTMinter
     let buyerVault: &FlowToken.Vault{FungibleToken.Provider}
-    var data: EnemyMetal.NFTData
+    var nfts: [EnemyMetal.NFTData]
 
     prepare(minter: AuthAccount, buyer: AuthAccount) {
         pre {
-            claimEditions.length == claimMetadatas.length : "claim editions must be same size of claim metadatas"
+            metadataArray.length == claimMetadatasArray.length : "metadata array must be same size of claim metadatas array"
             payees.length > 0 : "need to provide atleast one payee"
             payees.length == payeesShares.length : "need to define each payee share"
         }
@@ -31,13 +31,21 @@ transaction(flowAmount: UFix64, payees: [Address], payeesShares: [UFix64], recip
         self.minter = minter.borrow<&EnemyMetal.NFTMinter>(from: EnemyMetal.MinterStoragePath)
             ?? panic("Could not borrow a reference to the NFT minter")
 
-        var claims: [EnemyMetal.NFTData] = [];
-        x = 0
-        while x < claimEditions.length {
-            claims.append(EnemyMetal.NFTData(editionID: claimEditions[x], metadata: claimMetadatas[x], components: [], claims: []))
-            x = x + 1
+        // build nfts data struct
+        self.nfts = [];
+        x = 0;
+        while x < metadataArray.length {
+            var claims: [EnemyMetal.NFTData] = [];
+            var currClaims: [String] = claimMetadatasArray[x];
+            var y = 0;
+            while y < currClaims.length {
+                claims.append(EnemyMetal.NFTData(editionID: 0, metadata: currClaims[y], components: [], claims: []));
+                y = y + 1;
+            }
+            self.nfts.append(EnemyMetal.NFTData(editionID: 0, metadata: metadataArray[x], components: [], claims: claims));
+            x = x + 1;
         }
-        self.data = EnemyMetal.NFTData(editionID: editionID, metadata: metadata, components: components, claims: claims)
+
         self.buyerVault = buyer.borrow<&FlowToken.Vault{FungibleToken.Provider}>(from: /storage/flowTokenVault)!
     }
 
@@ -63,7 +71,11 @@ transaction(flowAmount: UFix64, payees: [Address], payeesShares: [UFix64], recip
             .borrow<&{NonFungibleToken.CollectionPublic}>()
             ?? panic("Could not get receiver reference to the NFT Collection")
 
-        // Mint the NFT and deposit it to the recipient's collection
-        self.minter.mintNFT(recipient: receiver, data: self.data)
+        x = 0;
+        while x < self.nfts.length {
+            // Mint the NFT and deposit it to the recipient's collection
+            self.minter.mintNFT(recipient: receiver, data: self.nfts[x]);
+            x = x + 1;
+        }
     }
 }
