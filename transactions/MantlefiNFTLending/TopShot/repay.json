@@ -1,0 +1,11 @@
+{
+    "arguments": [
+        "Uuid",
+        "RepayAmount"
+    ],
+    "messages": {
+        "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
+        "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
+        "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+}
