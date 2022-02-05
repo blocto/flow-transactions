@@ -1,0 +1,14 @@
+{
+    "arguments": [
+        "flowAmount",
+        "payees",
+        "payeesShares",
+        "recipient",
+        "nft_id"
+    ],
+    "messages": {
+        "en": "Buy nft {nft_id} for {flowAmount} FLOW and store in {recipient}",
+        "zh_CN": "为 {flowAmount} FLOW 购买 nft {nft_id} 并存储在 {recipient}",
+        "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在 {recipient}"
+    }
+}

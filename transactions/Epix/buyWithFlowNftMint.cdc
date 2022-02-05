@@ -1,14 +1,14 @@
 import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
 import FlowToken from 0xFLOW_TOKEN_ADDRESS
 import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
-import EnemyMetal from 0xENEMY_METAL_ADDRESS
+import Epix from 0xEPIX_ADDRESS
 
 // This transaction is for buying a NFT mint using flow tokens
 transaction(flowAmount: UFix64, payees: [Address], payeesShares: [UFix64], recipient: Address, metadataArray: [String], claimMetadatasArray: [[String]]) {
 
-    let minter: &EnemyMetal.NFTMinter
+    let minter: &Epix.NFTMinter
     let buyerVault: &FlowToken.Vault{FungibleToken.Provider}
-    var nfts: [EnemyMetal.NFTData]
+    var nfts: [Epix.NFTData]
 
     prepare(minter: AuthAccount, buyer: AuthAccount) {
         pre {
@@ -28,21 +28,21 @@ transaction(flowAmount: UFix64, payees: [Address], payeesShares: [UFix64], recip
         }
 
         // borrow a reference to the NFTMinter resource in storage
-        self.minter = minter.borrow<&EnemyMetal.NFTMinter>(from: EnemyMetal.MinterStoragePath)
+        self.minter = minter.borrow<&Epix.NFTMinter>(from: Epix.MinterStoragePath)
             ?? panic("Could not borrow a reference to the NFT minter")
 
         // build nfts data struct
         self.nfts = [];
         x = 0;
         while x < metadataArray.length {
-            var claims: [EnemyMetal.NFTData] = [];
+            var claims: [Epix.NFTData] = [];
             var currClaims: [String] = claimMetadatasArray[x];
             var y = 0;
             while y < currClaims.length {
-                claims.append(EnemyMetal.NFTData(editionID: 0, metadata: currClaims[y], components: [], claims: []));
+                claims.append(Epix.NFTData(metadata: currClaims[y], claims: []));
                 y = y + 1;
             }
-            self.nfts.append(EnemyMetal.NFTData(editionID: 0, metadata: metadataArray[x], components: [], claims: claims));
+            self.nfts.append(Epix.NFTData(metadata: metadataArray[x], claims: claims));
             x = x + 1;
         }
 
@@ -67,7 +67,7 @@ transaction(flowAmount: UFix64, payees: [Address], payeesShares: [UFix64], recip
 
         // Borrow the recipient's public NFT collection reference
         let receiver = recipient
-            .getCapability(EnemyMetal.CollectionPublicPath)!
+            .getCapability(Epix.CollectionPublicPath)!
             .borrow<&{NonFungibleToken.CollectionPublic}>()
             ?? panic("Could not get receiver reference to the NFT Collection")
 
