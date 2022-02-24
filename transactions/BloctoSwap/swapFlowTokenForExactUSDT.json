@@ -1,0 +1,14 @@
+{
+    "arguments": [
+        "maxAmountIn",
+        "amountOut"
+    ],
+    "messages": {
+        "en": "Swap at most {maxAmountIn} FLOW for {amountOut} tUSDT",
+        "zh_CN": "将至多 {maxAmountIn} FLOW 兑换成 {amountOut} tUSDT",
+        "zh_TW": "將至多 {maxAmountIn} FLOW 兌換成 {amountOut} tUSDT"
+    },
+    "balances": {
+        "maxAmountIn": "FLOW"
+    }
+}

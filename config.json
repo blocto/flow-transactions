@@ -99,6 +99,14 @@
     "mainnet": "0x3c5959b568896393",
     "testnet": "0xe223d8a629e49c68"
   },
+  "0xBLOCTO_TOKEN_ADDRESS": {
+    "mainnet": "0x0f9df91c9121c460",
+    "testnet": "0x6e0797ac987005f5"
+  },
+  "0xBLT_USDT_SWAP_PAIR_ADDRESS": {
+    "mainnet": "0xfcb06a5ae5b21a2d",
+    "testnet": "0xc59604d4e65f14b3"
+  },
   "0xFUSD_USDT_SWAP_ADDRESS": {
     "mainnet": "0x87f3f233f34b0733",
     "testnet": "0x3502a5dacaf350bb"

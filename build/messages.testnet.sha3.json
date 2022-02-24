@@ -25,6 +25,20 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "023def7cb3198bccf352313e4beb067fe0ce70fa89d0830b15ccdaf66cdb3599": {
+    "arguments": [
+      "amountIn",
+      "minAmountOut"
+    ],
+    "balances": {
+      "amountIn": "BLT"
+    },
+    "messages": {
+      "en": "Swap {amountIn} BLT for at least {minAmountOut} tUSDT",
+      "zh_CN": "将 {amountIn} BLT 兑换成至少 {minAmountOut} tUSDT",
+      "zh_TW": "將 {amountIn} BLT 兌換成至少 {minAmountOut} tUSDT"
+    }
+  },
   "02b023b1ea721dc78323d9e05754c2a7a8d1c9285cd31a9826cddb5f85ed851f": {
     "arguments": [
       "Uuid",
@@ -158,6 +172,20 @@
       "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
     }
   },
+  "09dfde1871f79b1d2a6bdb4d0e855d99d6d3d0cc091c3aedecc466795d674cdb": {
+    "arguments": [
+      "maxAmountIn",
+      "amountOut"
+    ],
+    "balances": {
+      "maxAmountIn": "BLT"
+    },
+    "messages": {
+      "en": "Swap {maxAmountIn} BLT for at least {amountOut} FUSD",
+      "zh_CN": "将最多 {maxAmountIn} BLT 兑换成 {amountOut} FUSD",
+      "zh_TW": "將最多 {maxAmountIn} BLT 兌換成 {amountOut} FUSD"
+    }
+  },
   "0a9e864c7fbf70afc7db3bd55f3d7923f025ece8d195a98c7ea27e765f69ff81": {
     "arguments": [
       "Uuid"
@@ -200,6 +228,20 @@
       "en": "Unlist {Uuid}.",
       "zh_CN": "下架 {Uuid}",
       "zh_TW": "下架 {Uuid}"
+    }
+  },
+  "0d844ca871f1599de8a703803f7d9cea6bd1e89f44ce013ba8d18592b50cc0d5": {
+    "arguments": [
+      "maxAmountIn",
+      "amountOut"
+    ],
+    "balances": {
+      "maxAmountIn": "FLOW"
+    },
+    "messages": {
+      "en": "Swap at most {maxAmountIn} FLOW for {amountOut} BLT",
+      "zh_CN": "将最多 {maxAmountIn} FLOW 兑换成 {amountOut} BLT",
+      "zh_TW": "將最多 {maxAmountIn} FLOW 兌換成 {amountOut} BLT"
     }
   },
   "0de7bb2bbd91a9b6da1089c2a97a7192a2158f8bdcedf6c7212bd532757a85cc": {
@@ -283,6 +325,20 @@
     ],
     "messages": {
       "en": "List White Matrix NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "1374b3ca53927c9f834039134a418d5a6262c91d0ebe413771a5e02acccea6b6": {
+    "arguments": [
+      "amountIn",
+      "minAmountOut"
+    ],
+    "balances": {
+      "amountIn": "tUSDT"
+    },
+    "messages": {
+      "en": "Swap {amountIn} tUSDT for at least {minAmountOut} BLT",
+      "zh_CN": "将 {amountIn} tUSDT 兑换成至少 {minAmountOut} BLT",
+      "zh_TW": "將 {amountIn} tUSDT 兌換成至少 {minAmountOut} BLT"
     }
   },
   "144fc6fe7f2eed1196a141ef3d6e6e5f94b733479d48aad2c4cb718e85b1ca73": {
@@ -408,6 +464,20 @@
       "en": "Cancel and delist on ongoing auction for  {name}"
     }
   },
+  "21eaee466db5a39c4f3e3da25b0fc8cad617206836a08326167750e7e684b5cc": {
+    "arguments": [
+      "amountIn",
+      "minAmountOut"
+    ],
+    "balances": {
+      "amountIn": "FLOW"
+    },
+    "messages": {
+      "en": "Swap {amountIn} FLOW for at least {minAmountOut} FUSD",
+      "zh_CN": "将 {amountIn} FLOW 兑换成至少 {minAmountOut} FUSD",
+      "zh_TW": "將 {amountIn} FLOW 兌換成至少 {minAmountOut} FUSD"
+    }
+  },
   "21ecea0990681bde6584ab72cea590d809cb69a8afc8159a5a0e93e12bf6f8a1": {
     "arguments": [
       "saleItemID",
@@ -504,6 +574,20 @@
       "zh_TW": "下架 {Uuid}"
     }
   },
+  "29b5a0f4d84333b86cd7e55207dca13e6ffda0027e5070c640c21d68a0b31941": {
+    "arguments": [
+      "maxAmountIn",
+      "amountOut"
+    ],
+    "balances": {
+      "maxAmountIn": "tUSDT"
+    },
+    "messages": {
+      "en": "Swap at most {maxAmountIn} tUSDT for {amountOut} BLT",
+      "zh_CN": "将最多 {maxAmountIn} tUSDT 兑换成 {amountOut} BLT",
+      "zh_TW": "將最多 {maxAmountIn} tUSDT 兌換成 {amountOut} BLT"
+    }
+  },
   "2aca311384e028af0b18328287d849b016008699bda34e3c3e448c3fe7bcdc6c": {
     "arguments": [
       "saleItemID",
@@ -536,6 +620,20 @@
     ],
     "messages": {
       "en": "List TopShot NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "2cb83834052d59f9ca46f759f2af906d25b5b6aee10bc75cbb0ad344b8c69ace": {
+    "arguments": [
+      "amountIn",
+      "minAmountOut"
+    ],
+    "balances": {
+      "amountIn": "FLOW"
+    },
+    "messages": {
+      "en": "Swap {amountIn} FLOW for at least {minAmountOut} BLT",
+      "zh_CN": "将 {amountIn} FLOW 兑换成至少 {minAmountOut} BLT",
+      "zh_TW": "將 {amountIn} FLOW 兌換成至少 {minAmountOut} BLT"
     }
   },
   "2ccb80e2a210eb45e5704a555ba809d2a5b2c6c1720415b3021acf762172cf5d": {
@@ -817,6 +915,20 @@
       "en": "Purchase RareRooms NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "4588a9dde4ac911106ec0f95fe007c4b7c5424de75b6eff883ccb014aa22a68a": {
+    "arguments": [
+      "amountIn",
+      "minAmountOut"
+    ],
+    "balances": {
+      "amountIn": "BLT"
+    },
+    "messages": {
+      "en": "Swap {amountIn} BLT for at least {minAmountOut} FLOW",
+      "zh_CN": "将 {amountIn} BLT 兑换成至少 {minAmountOut} FLOW",
+      "zh_TW": "將 {amountIn} BLT 兌換成至少 {minAmountOut} FLOW"
+    }
+  },
   "468a8abac0df2550c56d205cad7f9cdb128068bf24418c59c8c73bb7aa02cb8e": {
     "arguments": [
       "listingResourceID",
@@ -998,6 +1110,20 @@
       "en": "Initialize your account for Mystery Pack NFTs"
     }
   },
+  "579ecfae9278fd8a9a5372f65b99ad5957c015c097fe8c6aeefc991cc07225ec": {
+    "arguments": [
+      "maxAmountIn",
+      "amountOut"
+    ],
+    "balances": {
+      "maxAmountIn": "FUSD"
+    },
+    "messages": {
+      "en": "Swap at most {maxAmountIn} FUSD for {amountOut} USDT",
+      "zh_CN": "将最多 {maxAmountIn} FUSD 兑换成 {amountOut} USDT",
+      "zh_TW": "將最多 {maxAmountIn} FUSD 兌換成 {amountOut} USDT"
+    }
+  },
   "5836bc170f821aa7aa15f56cfa443652bf1ddb2e1de58fc6989705675b8570f5": {
     "arguments": [
       "saleItemID",
@@ -1176,6 +1302,20 @@
       "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
+  "65b52c5c1f83b0bc0a940bf735d4a0d2aaa4d7a58abf3a626d84e1ea20bf0209": {
+    "arguments": [
+      "amountIn",
+      "minAmountOut"
+    ],
+    "balances": {
+      "amountIn": "FUSD"
+    },
+    "messages": {
+      "en": "Swap {amountIn} FUSD for at least {minAmountOut} BLT",
+      "zh_CN": "将 {amountIn} FUSD 兑换成至少 {minAmountOut} BLT",
+      "zh_TW": "將 {amountIn} FUSD 兌換成至少 {minAmountOut} BLT"
+    }
+  },
   "664dbb961a0ccc259f6bef072432f120113653b76b9d189fc7c1329ca1753f65": {
     "arguments": [
       "saleItemID",
@@ -1330,6 +1470,34 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "714c07a60aee7cf46883d409258d283b87b1ab562d71fed7461fa8d22b1d5283": {
+    "arguments": [
+      "maxAmountIn",
+      "amountOut"
+    ],
+    "balances": {
+      "maxAmountIn": "BLT"
+    },
+    "messages": {
+      "en": "Swap {maxAmountIn} BLT for at least {amountOut} FLOW",
+      "zh_CN": "将最多 {maxAmountIn} BLT 兑换成 {amountOut} FLOW",
+      "zh_TW": "將最多 {maxAmountIn} BLT 兌換成 {amountOut} FLOW"
+    }
+  },
+  "722d0eb0d543b99f9c690c940afa08e134afea788e04b530bbcb1b555691f627": {
+    "arguments": [
+      "amountIn",
+      "minAmountOut"
+    ],
+    "balances": {
+      "amountIn": "FLOW"
+    },
+    "messages": {
+      "en": "Swap {amountIn} FLOW for at least {minAmountOut} tUSDT",
+      "zh_CN": "将 {amountIn} FLOW 兑换成至少 {minAmountOut} tUSDT",
+      "zh_TW": "將 {amountIn} FLOW 兌換成至少 {minAmountOut} tUSDT"
+    }
+  },
   "73af5564574944fe4a436ebc32504b43866f3433dd6f425ee75e53525d72f4dd": {
     "arguments": [
       "id",
@@ -1478,6 +1646,20 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "7ebc12a3e85b43b8ab68cfc813cc61bf567e4b4491b0881c093321e2ca300dfb": {
+    "arguments": [
+      "amountIn",
+      "minAmountOut"
+    ],
+    "balances": {
+      "amountIn": "BLT"
+    },
+    "messages": {
+      "en": "Swap {amountIn} BLT for at least {minAmountOut} FUSD",
+      "zh_CN": "将 {amountIn} BLT 兑换成至少 {minAmountOut} FUSD",
+      "zh_TW": "將 {amountIn} BLT 兌換成至少 {minAmountOut} FUSD"
+    }
+  },
   "80b402711331d185b9048076ef49408f8c242b90f52162aaa308b2d25fd39705": {
     "arguments": [
       "flovatarId",
@@ -1502,6 +1684,20 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "82584326f45452d8bc687c364740778051e24c29fd0da0c0dcfe22e7e2818745": {
+    "arguments": [
+      "maxAmountIn",
+      "amountOut"
+    ],
+    "balances": {
+      "maxAmountIn": "FUSD"
+    },
+    "messages": {
+      "en": "Swap at most {maxAmountIn} FUSD for {amountOut} BLT",
+      "zh_CN": "将最多 {maxAmountIn} FUSD 兑换成 {amountOut} BLT",
+      "zh_TW": "將最多 {maxAmountIn} FUSD 兌換成 {amountOut} BLT"
+    }
+  },
   "8432c641c125ab3acdc87188f30033118acba9a183dbaa6342259a8a92ff3ab3": {
     "arguments": [
       "Uuid",
@@ -1511,6 +1707,20 @@
       "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
       "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
       "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+  },
+  "85619ed4bc834bd019d016f037eca9b16cd536512a22a5db98b551309dddb690": {
+    "arguments": [
+      "maxAmountIn",
+      "amountOut"
+    ],
+    "balances": {
+      "maxAmountIn": "tUSDT"
+    },
+    "messages": {
+      "en": "Swap at most {maxAmountIn} tUSDT for {amountOut} FUSD",
+      "zh_CN": "将最多 {maxAmountIn} tUSDT 兑换成 {amountOut} FUSD",
+      "zh_TW": "將最多 {maxAmountIn} tUSDT 兌換成 {amountOut} FUSD"
     }
   },
   "86665949064a7a472a10949541445d71d918b20f0c59a4ecb4a3db6db5d3e955": {
@@ -1598,6 +1808,20 @@
       "en": "Purchase Blocklete Games NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "8e32b54956758155ba14378d44a55115e20a079c2cb83135892fe5b6ba2c21df": {
+    "arguments": [
+      "maxAmountIn",
+      "amountOut"
+    ],
+    "balances": {
+      "maxAmountIn": "BLT"
+    },
+    "messages": {
+      "en": "Swap {maxAmountIn} BLT for at least {amountOut} tUSDT",
+      "zh_CN": "将最多 {maxAmountIn} BLT 兑换成 {amountOut} tUSDT",
+      "zh_TW": "將最多 {maxAmountIn} BLT 兌換成 {amountOut} tUSDT"
+    }
+  },
   "8e587498447c2e780ab61eb00751c7509882856f94f4acb6eb4a5a44656ac36e": {
     "arguments": [
       "saleItemID",
@@ -1660,6 +1884,20 @@
       "en": "Buy nft {nft_id} for {flowAmount} FLOW and store in a new account",
       "zh_CN": "为 {flowAmount} FLOW 购买 nft {nft_id} 并存储在新帐户中",
       "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在新帳戶中"
+    }
+  },
+  "90d23780b64f113c571da013e235e5572d1b6632a7918f5a958fd0ed9f9f7403": {
+    "arguments": [
+      "maxAmountIn",
+      "amountOut"
+    ],
+    "balances": {
+      "maxAmountIn": "FUSD"
+    },
+    "messages": {
+      "en": "Swap at most {maxAmountIn} FUSD for {amountOut} FLOW",
+      "zh_CN": "将至多 {maxAmountIn} FUSD 兑换成 {amountOut} FLOW",
+      "zh_TW": "將至多 {maxAmountIn} FUSD 兌換成 {amountOut} FLOW"
     }
   },
   "913b544b59c28e86119024d1d1db4794be7928aaa7136f53b86810172d5da4a5": {
@@ -1869,6 +2107,20 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 DarkCountry NFT"
     }
   },
+  "a6587e691d1f00f179fc121625607a6c146083e805d92bd85c194a1d228c0fca": {
+    "arguments": [
+      "maxAmountIn",
+      "amountOut"
+    ],
+    "balances": {
+      "maxAmountIn": "FLOW"
+    },
+    "messages": {
+      "en": "Swap at most {maxAmountIn} FLOW for {amountOut} FUSD",
+      "zh_CN": "将至多 {maxAmountIn} FLOW 兑换成 {amountOut} FUSD",
+      "zh_TW": "將至多 {maxAmountIn} FLOW 兌換成 {amountOut} FUSD"
+    }
+  },
   "a861821ecf4789184e5513aa08e7491c29fb41c6a94080fbd7ec7a6c91053640": {
     "arguments": [
       "listingResourceID",
@@ -1951,6 +2203,20 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "ab8b8bfeea8599ea47a37921309da0dbc6677430138749494c33b77a08f71b30": {
+    "arguments": [
+      "amountIn",
+      "minAmountOut"
+    ],
+    "balances": {
+      "amountIn": "FUSD"
+    },
+    "messages": {
+      "en": "Swap {amountIn} FUSD for at least {minAmountOut} FLOW",
+      "zh_CN": "将 {amountIn} FUSD 兑换成至少 {minAmountOut} FLOW",
+      "zh_TW": "將 {amountIn} FUSD 兌換成至少 {minAmountOut} FLOW"
     }
   },
   "abb011712cfdf543074a2a0b9084a0061abd43c07c14baf857d15398a1cbb3ff": {
@@ -2039,20 +2305,6 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
-    }
-  },
-  "b2295e735d18349e45dd85f9f45cc44751c4ca909dce7b89a895a89f6f999b10": {
-    "arguments": [
-      "amountIn",
-      "minAmountOut"
-    ],
-    "balances": {
-      "amountIn": "FUSD"
-    },
-    "messages": {
-      "en": "Swap {amountIn} FUSD for at least {minAmountOut} FLOW",
-      "zh_CN": "将 {amountIn} FUSD 兑换成至少 {minAmountOut} FLOW",
-      "zh_TW": "將 {amountIn} FUSD 兌換成至少 {minAmountOut} FLOW"
     }
   },
   "b2e31567dc923503cbf2ab0479dbf72650a6fc7b2868c3693a3803e173e42069": {
@@ -2200,6 +2452,20 @@
       "en": "Purchase Starly pack(s) for {price} FUSD"
     }
   },
+  "c0ea976e6ad99e19e2ba026c328a5a55585e433d5855993ece4636890499df20": {
+    "arguments": [
+      "amountIn",
+      "minAmountOut"
+    ],
+    "balances": {
+      "amountIn": "FUSD"
+    },
+    "messages": {
+      "en": "Swap {amountIn} FUSD for at least {minAmountOut} tUSDT",
+      "zh_CN": "将 {amountIn} FUSD 兑换成至少 {minAmountOut} tUSDT",
+      "zh_TW": "將 {amountIn} FUSD 兌換成至少 {minAmountOut} tUSDT"
+    }
+  },
   "c38ebf993944c9b74fd9701115f85aa8c9cce9e9a98f377b4c64dd3ef9267fdd": {
     "arguments": [
       "flowAmount",
@@ -2250,6 +2516,20 @@
       "en": "Send {amount} FUSD to {name}.find"
     }
   },
+  "c7ce165ad7ef5ee2db1ce86097e9738c5d5013e4bc975ea8e8a8791781b27e0f": {
+    "arguments": [
+      "maxAmountIn",
+      "amountOut"
+    ],
+    "balances": {
+      "maxAmountIn": "FLOW"
+    },
+    "messages": {
+      "en": "Swap at most {maxAmountIn} FLOW for {amountOut} tUSDT",
+      "zh_CN": "将至多 {maxAmountIn} FLOW 兑换成 {amountOut} tUSDT",
+      "zh_TW": "將至多 {maxAmountIn} FLOW 兌換成 {amountOut} tUSDT"
+    }
+  },
   "cad8d151aef1c8182b5bc3795bc57524c9a5a20206aeb7a8c5d2d63f36b885b4": {
     "arguments": [
       "saleItemID",
@@ -2259,6 +2539,20 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
+  "cb31b88532677ed0cbb3b2b0c0f43a5447489f5ef82854c4d4428afc1c35db21": {
+    "arguments": [
+      "maxAmountIn",
+      "amountOut"
+    ],
+    "balances": {
+      "maxAmountIn": "tUSDT"
+    },
+    "messages": {
+      "en": "Swap at most {maxAmountIn} tUSDT for {amountOut} FLOW",
+      "zh_CN": "将最多 {maxAmountIn} tUSDT 兑换成 {amountOut} FLOW",
+      "zh_TW": "將最多 {maxAmountIn} tUSDT 兌換成 {amountOut} FLOW"
     }
   },
   "cc7b2f34c7c833d4633946b629610b73622efc8cc76479fd68a8919da87a8982": {
@@ -2344,6 +2638,20 @@
     ],
     "messages": {
       "en": "Set Flobit Eyeglasses {eyeglasses} for Flovatar {flovatarId}"
+    }
+  },
+  "d118435c872938b6f5443f19a457cf4f780caa9f4ed1a1baec16f832e5137c15": {
+    "arguments": [
+      "amountIn",
+      "minAmountOut"
+    ],
+    "balances": {
+      "amountIn": "tUSDT"
+    },
+    "messages": {
+      "en": "Swap {amountIn} tUSDT for at least {minAmountOut} FLOW",
+      "zh_CN": "将 {amountIn} tUSDT 兑换成至少 {minAmountOut} FLOW",
+      "zh_TW": "將 {amountIn} tUSDT 兌換成至少 {minAmountOut} FLOW"
     }
   },
   "d1670346dd6a90d32dce35ac58039553440280d338b049831266b12baf0010e2": {
@@ -2880,20 +3188,6 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
-    }
-  },
-  "fca2edf0e7bc8ff11373994b7d59bdb438c6827e397a502c95be52d722dea6b8": {
-    "arguments": [
-      "maxAmountIn",
-      "amountOut"
-    ],
-    "balances": {
-      "maxAmountIn": "FUSD"
-    },
-    "messages": {
-      "en": "Swap at most {maxAmountIn} FUSD for {amountOut} FLOW",
-      "zh_CN": "将至多 {maxAmountIn} FUSD 兑换成 {amountOut} FLOW",
-      "zh_TW": "將至多 {maxAmountIn} FUSD 兌換成 {amountOut} FLOW"
     }
   },
   "fd586db45429b2211311c7358a2483f639c4b208b023251c04e80cbf5aea883b": {

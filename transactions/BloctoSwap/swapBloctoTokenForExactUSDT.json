@@ -1,0 +1,14 @@
+{
+    "arguments": [
+        "maxAmountIn",
+        "amountOut"
+    ],
+    "messages": {
+        "en": "Swap {maxAmountIn} BLT for at least {amountOut} tUSDT",
+        "zh_CN": "将最多 {maxAmountIn} BLT 兑换成 {amountOut} tUSDT",
+        "zh_TW": "將最多 {maxAmountIn} BLT 兌換成 {amountOut} tUSDT"
+    },
+    "balances": {
+        "maxAmountIn": "BLT"
+    }
+}
