@@ -1,0 +1,14 @@
+{
+    "arguments": [
+        "amount",
+        "to"
+    ],
+    "messages": {
+        "en": "Send {amount} BLT to {to}",
+        "zh_CN": "发送 {amount} BLT 代币至 {to}",
+        "zh_TW": "發送 {amount} BLT 代幣至 {to}"
+    },
+    "balances": {
+        "amount": "BLT"
+    }
+}
