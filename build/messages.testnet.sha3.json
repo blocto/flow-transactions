@@ -2001,6 +2001,20 @@
       "en": "Initialize your account to buy, sell and receive NFTs"
     }
   },
+  "9d5f886cc3765ab0d56904134257cec50fcf357c4f7ea3cbe3c9ff5c685fce2c": {
+    "arguments": [
+      "amount",
+      "to"
+    ],
+    "balances": {
+      "amount": "BLT"
+    },
+    "messages": {
+      "en": "Send {amount} BLT to {to}",
+      "zh_CN": "发送 {amount} BLT 代币至 {to}",
+      "zh_TW": "發送 {amount} BLT 代幣至 {to}"
+    }
+  },
   "9eade4fb34f5b7f8b088b29945c239066f6ae673aef8e157a65b30e78f5512ab": {
     "arguments": [
       "listingResourceID",
@@ -2913,6 +2927,9 @@
       "amount",
       "to"
     ],
+    "balances": {
+      "amount": "FLOW"
+    },
     "messages": {
       "en": "Send {amount} FLOW to {to}",
       "zh_CN": "发送 {amount} FLOW 代币至 {to}",

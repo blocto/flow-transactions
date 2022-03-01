@@ -1541,6 +1541,20 @@
       "en": "List BALLERZ NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "7aa66c76949472fbc73d9c81dcdd1bbc4d284b1ea1a13e6b42875d61e36d6b39": {
+    "arguments": [
+      "amount",
+      "to"
+    ],
+    "balances": {
+      "amount": "BLT"
+    },
+    "messages": {
+      "en": "Send {amount} BLT to {to}",
+      "zh_CN": "发送 {amount} BLT 代币至 {to}",
+      "zh_TW": "發送 {amount} BLT 代幣至 {to}"
+    }
+  },
   "7aeab87724f51ceb008640cec46d0c3610cd794161b1fbc84385ea8425fd7446": {
     "arguments": [
       "Uuid",
@@ -2317,6 +2331,9 @@
       "amount",
       "to"
     ],
+    "balances": {
+      "amount": "FLOW"
+    },
     "messages": {
       "en": "Send {amount} FLOW to {to}",
       "zh_CN": "发送 {amount} FLOW 代币至 {to}",

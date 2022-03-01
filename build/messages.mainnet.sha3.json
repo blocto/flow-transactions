@@ -1495,6 +1495,20 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "6b25f665ded4d2b76727e8307c968258afef67ead76cd7b9ef8ec58c859ab3e4": {
+    "arguments": [
+      "amount",
+      "to"
+    ],
+    "balances": {
+      "amount": "BLT"
+    },
+    "messages": {
+      "en": "Send {amount} BLT to {to}",
+      "zh_CN": "发送 {amount} BLT 代币至 {to}",
+      "zh_TW": "發送 {amount} BLT 代幣至 {to}"
+    }
+  },
   "6bea66e83034ba3887feb70e22156a45cd55b587c79f9e20fceb38f4cd1fe6ef": {
     "arguments": [
       "listingResourceID",
@@ -2805,6 +2819,9 @@
       "amount",
       "to"
     ],
+    "balances": {
+      "amount": "FLOW"
+    },
     "messages": {
       "en": "Send {amount} FLOW to {to}",
       "zh_CN": "发送 {amount} FLOW 代币至 {to}",
