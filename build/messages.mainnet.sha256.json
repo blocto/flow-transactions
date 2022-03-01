@@ -1678,6 +1678,9 @@
       "amount",
       "to"
     ],
+    "balances": {
+      "amount": "FLOW"
+    },
     "messages": {
       "en": "Send {amount} FLOW to {to}",
       "zh_CN": "发送 {amount} FLOW 代币至 {to}",
@@ -2780,6 +2783,20 @@
     ],
     "messages": {
       "en": "Generate a new Flovatar with the selected combination by burning a Spark and the necessary Rarity Boosters"
+    }
+  },
+  "d7b353c8b73ab9690f07ffa41e9284f1d9630babc6766793ca9002bfff998114": {
+    "arguments": [
+      "amount",
+      "to"
+    ],
+    "balances": {
+      "amount": "BLT"
+    },
+    "messages": {
+      "en": "Send {amount} BLT to {to}",
+      "zh_CN": "发送 {amount} BLT 代币至 {to}",
+      "zh_TW": "發送 {amount} BLT 代幣至 {to}"
     }
   },
   "d82fdd9e9cba4b9e59f3a5754a21e9e6163f8b44995ab42f5f1e61ad3ab14232": {
