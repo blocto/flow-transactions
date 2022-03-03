@@ -246,6 +246,17 @@
       "en": "Remove the sale offer from the Marketplace for Flovatar {flovatarId}"
     }
   },
+  "10db09106aa8d9750aad7ff858d38398dbe82ba92143b0ca1630352817139709": {
+    "arguments": [
+      "itemID",
+      "codeHash"
+    ],
+    "messages": {
+      "en": "Claim Gogoro NFT",
+      "zh_CN": "领取 Gogogo NFT",
+      "zh_TW": "領取 Gogogo NFT"
+    }
+  },
   "11f87165969ca68f0f630087e02c45c73a9cd0e1a95f5d9f0fda6ae9380917af": {
     "arguments": [
       "Uuid"

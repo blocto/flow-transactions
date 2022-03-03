@@ -15,6 +15,14 @@
     "mainnet": "0x1dfd1e5b87b847dc",
     "testnet": "0xe563b9f8c70ab608"
   },
+  "0xBLOCTO_TOKEN_ADDRESS": {
+    "mainnet": "0x0f9df91c9121c460",
+    "testnet": "0x6e0797ac987005f5"
+  },
+  "0xBLT_USDT_SWAP_PAIR_ADDRESS": {
+    "mainnet": "0xfcb06a5ae5b21a2d",
+    "testnet": "0xc59604d4e65f14b3"
+  },
   "0xCAA_ART_ADDRESS": {
     "mainnet": "0x98c9c2e548b84d31",
     "testnet": "0xa8b1239250f8d342"
@@ -103,14 +111,6 @@
     "mainnet": "0x3c5959b568896393",
     "testnet": "0xe223d8a629e49c68"
   },
-  "0xBLOCTO_TOKEN_ADDRESS": {
-    "mainnet": "0x0f9df91c9121c460",
-    "testnet": "0x6e0797ac987005f5"
-  },
-  "0xBLT_USDT_SWAP_PAIR_ADDRESS": {
-    "mainnet": "0xfcb06a5ae5b21a2d",
-    "testnet": "0xc59604d4e65f14b3"
-  },
   "0xFUSD_USDT_SWAP_ADDRESS": {
     "mainnet": "0x87f3f233f34b0733",
     "testnet": "0x3502a5dacaf350bb"
@@ -118,6 +118,10 @@
   "0xGAIA_ADDRESS": {
     "mainnet": "0x8b148183c28ff88f",
     "testnet": "0xc523a8bbf10fc4a3"
+  },
+  "0xGOGORO_COLLECTIBLE_ADDRESS": {
+    "mainnet": "0x8c9bbcdcd7514081",
+    "testnet": "0x5fc35f03a6f33561"
   },
   "0xJAMBB_COLLECTIBLES_ADDRESS": {
     "mainnet": "0x444f5ea22c6ea12c",

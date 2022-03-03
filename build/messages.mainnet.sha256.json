@@ -2275,6 +2275,17 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "b097af91d22bb9f790f5cac4c32733febd411c579493e77e5e4508c27fd6b5cc": {
+    "arguments": [
+      "itemID",
+      "codeHash"
+    ],
+    "messages": {
+      "en": "Claim Gogoro NFT",
+      "zh_CN": "领取 Gogogo NFT",
+      "zh_TW": "領取 Gogogo NFT"
+    }
+  },
   "b09c03fdfee368626cddc59e823c05ef895e271b217696cfbf7a912282af67ba": {
     "arguments": [
       "saleItemID",
