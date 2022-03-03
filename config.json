@@ -11,6 +11,10 @@
     "mainnet": "0xdc5127882cacf8d9",
     "testnet": "0xe1aa310cfe7750c4"
   },
+  "0xBLOCTO_STORAGE_RENT_ADDRESS": {
+    "mainnet": "0x1dfd1e5b87b847dc",
+    "testnet": "0xe563b9f8c70ab608"
+  },
   "0xCAA_ART_ADDRESS": {
     "mainnet": "0x98c9c2e548b84d31",
     "testnet": "0xa8b1239250f8d342"

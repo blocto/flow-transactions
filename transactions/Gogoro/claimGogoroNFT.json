@@ -1,0 +1,11 @@
+{
+    "arguments": [
+        "itemID",
+        "codeHash"
+    ],
+    "messages": {
+        "en": "Claim Gogoro NFT",
+        "zh_CN": "领取 Gogogo NFT",
+        "zh_TW": "領取 Gogogo NFT"
+    }
+}
