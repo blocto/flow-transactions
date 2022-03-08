@@ -47,6 +47,10 @@
     "mainnet": "0xed398881d9bf40fb",
     "testnet": "0xb45e7992680a0f7f"
   },
+  "0xCRYPTO_PIGGOS_ADDRESS": {
+    "mainnet": "0xd3df824bf81910a4",
+    "testnet": "0x57e1b27618c5bb69"
+  },
   "0xDARK_COUNTRY_ADDRESS": {
     "mainnet": "0xc8c340cebd11f690",
     "testnet": "0xe2759c7e9a894ff1"
@@ -87,6 +91,10 @@
     "mainnet": "0x921ea449dffec68a",
     "testnet": "0x0cf264811b95d465"
   },
+  "0xFLOVATAR_COMPONENT_ADDRESS": {
+    "mainnet": "0x921ea449dffec68a",
+    "testnet": "0x0cf264811b95d465"
+  },
   "0xFLOW_STORAGE_FEES_ADDRESS": {
     "mainnet": "0xe467b9dd11fa00df",
     "testnet": "0x8c5303eaa26202d6"
@@ -119,9 +127,17 @@
     "mainnet": "0x8b148183c28ff88f",
     "testnet": "0xc523a8bbf10fc4a3"
   },
+  "0xGENIACE_NFT_ADDRESS": {
+    "mainnet": "0xabda6627c70c7f52",
+    "testnet": "0x99eb28310626e56a"
+  },
   "0xGOGORO_COLLECTIBLE_ADDRESS": {
     "mainnet": "0x8c9bbcdcd7514081",
     "testnet": "0x5fc35f03a6f33561"
+  },
+  "0xGOOBER_X_ADDRESS": {
+    "mainnet": "0x34f2bf4a80bb0f69",
+    "testnet": "0x0"
   },
   "0xJAMBB_COLLECTIBLES_ADDRESS": {
     "mainnet": "0x444f5ea22c6ea12c",
@@ -182,6 +198,10 @@
   "0xNYATHEES_OVO_ADDRESS": {
     "mainnet": "0x75e0b6de94eb05d0",
     "testnet": "0xacf3dfa413e00f9f"
+  },
+  "0xONE_FOOTBALL_COLLECTIBLE_ADDRESS": {
+    "mainnet": "0x6831760534292098",
+    "testnet": "0x01984fb4ca279d9a"
   },
   "0xRACEDAY_NFT_ADDRESS": {
     "mainnet": "0x329feb3ab062d289",
@@ -254,6 +274,14 @@
   "0xXTINGLES_COLLECTIBLE_ADDRESS": {
     "mainnet": "0xf5b0eb433389ac3f",
     "testnet": "0x85080f371da20cc1"
+  },
+  "0xYOUTUBE_ART_NFT_ADDRESS": {
+    "mainnet": "0x329feb3ab062d289",
+    "testnet": "0x0"
+  },
+  "0xZEEDZ_INO_ADDRESS": {
+    "mainnet": "0x62b3063fbe672fc8",
+    "testnet": "0x2dda9145001182e0"
   },
   "0xMANTLEFI_NFTLENDINGPLACE": {
     "mainnet": "0xa0035d8e04880578",
