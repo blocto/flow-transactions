@@ -1,0 +1,10 @@
+timeout: 1800s
+steps:
+  - name: 'node'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        yarn install
+        yarn build
+
