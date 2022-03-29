@@ -311,6 +311,17 @@
       "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
     }
   },
+  "15fa935377e0a803525eb271fca8064640c09d5b8bb6fb2e63b995bb2e1f3183": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List NFT at {saleItemPrice} FLOW",
+      "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
+      "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
   "186baad7d428167840b75565cb5989baad89403913ad696efbf4c61c81f6b2da": {
     "arguments": [
       "Uuid"
@@ -555,6 +566,17 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "2db7d929e138324ec463defc96026d627016ece8718a73ecca5f53ccf0086f7b": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List NFT at {saleItemPrice} FLOW",
+      "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
+      "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
   "2ddeb768aa6010a3494c7abaa2fb9996614906e44f6c15ae05e29d403055c186": {
     "arguments": [
       "id",
@@ -714,6 +736,21 @@
       "en": "Redeem NFT {Uuid} with {RepayAmount} FLOW tokens.",
       "zh_CN": "用 {RepayAmount} FLOW 代币赎回 NFT {Uuid}",
       "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
+    }
+  },
+  "3949f963f5846fc3936a6466ddb86951f1959a5829d204b7fcc827764f13ae1f": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Buy NFT with {buyPrice} FLOW from {storefrontAddress}",
+      "zh_CN": "使用 {buyPrice} FLOW 向 {storefrontAddress} 购买 NFT",
+      "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
   "39a1499cfa94f997364f0811f9fb3d768a10bf2040861c241f7f07a39eb7966c": {
@@ -929,6 +966,21 @@
   "47faee7db27ca3d16439d35fa9715029a594aa96de82e38588c7a88d3b9f6768": {
     "messages": {
       "en": "Initialize your account in order to buy and sell Starly NFTs"
+    }
+  },
+  "4988b581f3e06222262a12f1d9b5691df4d285b31f5ac11dc022f3adc8806ab1": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Buy NFT with {buyPrice} FLOW from {storefrontAddress}",
+      "zh_CN": "使用 {buyPrice} FLOW 向 {storefrontAddress} 购买 NFT",
+      "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
   "49f35f8f3ab2a692d4a6fb7c1a1396a717d3c124f71ca54494abdaea2cdb384d": {
@@ -2639,6 +2691,17 @@
       "en": "List RCRDSHP NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "c09233c9c7df88902ced36c292b0bf003d87dd813027c47de71cb0eb5f533e82": {
+    "arguments": [
+      "saleItemID",
+      "saleItemPrice"
+    ],
+    "messages": {
+      "en": "List NFT at {saleItemPrice} FLOW",
+      "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
+      "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
+    }
+  },
   "c2108a3df52ad125d64e4582469893652ea504e1588d1913a4dd546520adadc1": {
     "arguments": [
       "amountIn",
@@ -2673,6 +2736,21 @@
       "en": "Unlist {Uuid}.",
       "zh_CN": "下架 {Uuid}",
       "zh_TW": "下架 {Uuid}"
+    }
+  },
+  "c3c98b0ca3bed2fa3676c7a94df2160812715d95f35e6eb211fa073586a3958d": {
+    "arguments": [
+      "listingResourceID",
+      "storefrontAddress",
+      "buyPrice"
+    ],
+    "balances": {
+      "buyPrice": "FLOW"
+    },
+    "messages": {
+      "en": "Buy NFT with {buyPrice} FLOW from {storefrontAddress}",
+      "zh_CN": "使用 {buyPrice} FLOW 向 {storefrontAddress} 购买 NFT",
+      "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
   "c430eb229f78f70e9b2168d7b59eb5ab9fbc8a224979492c71e6718289930c4d": {
