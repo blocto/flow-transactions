@@ -219,6 +219,14 @@
     "mainnet": "0x01ab36aaf654a13e",
     "testnet": "0x0"
   },
+  "0xSCMP_ARTIFACT_ADDRESS": {
+    "mainnet": "0x24de869c5e40b2eb",
+    "testnet": "0xd6b5d6d271a2b544"
+  },
+  "0xSCMP_ARTIFACTPACK_ADDRESS": {
+    "mainnet": "0x24de869c5e40b2eb",
+    "testnet": "0xd6b5d6d271a2b544"
+  },
   "0xSPORTS_ICON_COLLECTIBLE_ADDRESS": {
     "mainnet": "0x8de96244f54db422",
     "testnet": "0xc2824327396d3a39"
@@ -274,6 +282,10 @@
   "0xXTINGLES_COLLECTIBLE_ADDRESS": {
     "mainnet": "0xf5b0eb433389ac3f",
     "testnet": "0x85080f371da20cc1"
+  },
+  "0xYAHOO_COLLECTIBLE_ADDRESS": {
+    "mainnet": "0x758252ab932a3416",
+    "testnet": "0x5d50ce3fd080edce"
   },
   "0xYOUTUBE_ART_NFT_ADDRESS": {
     "mainnet": "0x329feb3ab062d289",
