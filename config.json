@@ -63,6 +63,10 @@
     "mainnet": "0x2e1ee1e7a96826ce",
     "testnet": "0x7b4fab78fbddc57e"
   },
+  "0xFIAT_TOKEN_ADDRESS": {
+    "mainnet": "0xb19436aae4d94622",
+    "testnet": "0xa983fecbed621163"
+  },
   "0xFIND_ADDRESS": {
     "mainnet": "0x097bafa4e0b48eef",
     "testnet": "0x37a05b1ecacc80f7"
@@ -131,6 +135,10 @@
     "mainnet": "0x2d2750f240198f91",
     "testnet": "0xe2f1b000e0203c1d"
   },
+  "0xMETADATA_VIEWS_ADDRESS": {
+    "mainnet": "0x1d7e57aa55817448",
+    "testnet": "0x631e88ae7f1d7c20"
+  },
   "0xMOTO_GP_CARD_ADDRESS": {
     "mainnet": "0xa49cc0ee46c54bfb",
     "testnet": "0x0"
@@ -198,6 +206,14 @@
   "0xSTARLY_TOKEN_ADDRESS": {
     "mainnet": "0x142fa6570b62fd97",
     "testnet": "0xf63219072aaddd50"
+  },
+  "0xSTARLY_TOKEN_STAKING_ADDRESS": {
+    "mainnet": "0x76a9b420a331b9f0",
+    "testnet": "0x8d1cf508d398c5c2"
+  },
+  "0xSTARLY_TOKEN_VESTING_ADDRESS": {
+    "mainnet": "0xee2f049f0ba04f0e",
+    "testnet": "0xd2af9f588d53759d"
   },
   "0xTELEPORTED_USDT_ADDRESS": {
     "mainnet": "0xcfdd90d4a00f7b5b",

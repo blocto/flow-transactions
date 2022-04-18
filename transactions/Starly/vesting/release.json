@@ -1,0 +1,8 @@
+{
+    "arguments": [
+        "vestingID"
+    ],
+    "messages": {
+        "en": "Release available tokens from vesting #{vestingID}"
+    }
+}
