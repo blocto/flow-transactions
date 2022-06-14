@@ -1,0 +1,14 @@
+{
+    "arguments": [
+        "maxAmountIn",
+        "amountOut"
+    ],
+    "messages": {
+        "en": "Swap at most {maxAmountIn} FUSD for {amountOut} USDT",
+        "zh_CN": "将最多 {maxAmountIn} FUSD 兑换成 {amountOut} USDT",
+        "zh_TW": "將最多 {maxAmountIn} FUSD 兌換成 {amountOut} USDT"
+    },
+    "balances": {
+        "maxAmountIn": "FUSD"
+    }
+}

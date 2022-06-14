@@ -1,0 +1,14 @@
+{
+    "arguments": [
+        "amountIn",
+        "minAmountOut"
+    ],
+    "messages": {
+        "en": "Swap {amountIn} tUSDT for at least {minAmountOut} BLT",
+        "zh_CN": "将 {amountIn} tUSDT 兑换成至少 {minAmountOut} BLT",
+        "zh_TW": "將 {amountIn} tUSDT 兌換成至少 {minAmountOut} BLT"
+    },
+    "balances": {
+        "amountIn": "tUSDT"
+    }
+}

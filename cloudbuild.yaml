@@ -1,0 +1,19 @@
+timeout: 1800s
+steps:
+  - name: 'node'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        yarn install
+        yarn build
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'gsutil'
+    args:
+      - '-m'
+      - "cp"
+      - '-r'
+      - "./build"
+      - "gs://tx-script.blocto.app"
+
+
