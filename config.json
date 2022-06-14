@@ -238,5 +238,9 @@
   "0xXTINGLES_COLLECTIBLE_ADDRESS": {
     "mainnet": "0xf5b0eb433389ac3f",
     "testnet": "0x85080f371da20cc1"
+  },
+  "0xMANTLEFI_NFTLENDINGPLACE": {
+    "mainnet": "0xa0035d8e04880578",
+    "testnet": "0x615a6bf3445b9c61"
   }
 }

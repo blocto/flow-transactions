@@ -1,0 +1,11 @@
+{
+    "arguments": [
+        "Uuid",
+        "BorrowerAddress"
+    ],
+    "messages": {
+        "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
+        "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
+        "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+}

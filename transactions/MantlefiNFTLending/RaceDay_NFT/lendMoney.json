@@ -1,0 +1,13 @@
+{
+    "arguments": [
+        "BorrowerAddress",
+        "LenderAddress",
+        "Uuid",
+        "LendAmount"
+    ],
+    "messages": {
+        "en": "Lend {LendAmount} FLOW tokens to {BorrowerAddress} borrower.",
+        "zh_CN": "将 {LendAmount} FLOW 代币借给 {BorrowerAddress} 借方",
+        "zh_TW": "將 {LendAmount} FLOW 代幣借給 {BorrowerAddress} 借方"
+    }
+}
