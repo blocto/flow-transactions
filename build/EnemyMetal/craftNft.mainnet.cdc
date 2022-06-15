@@ -34,10 +34,10 @@ transaction(nftIds: [UInt64], metadataArray: [String], claimMetadatasArray: [[St
             var currClaims: [String] = claimMetadatasArray[x];
             var y = 0;
             while y < currClaims.length {
-                claims.append(EnemyMetal.NFTData(editionID: 0, metadata: currClaims[y], components: [], claims: []));
+                claims.append(EnemyMetal.NFTData(metadata: currClaims[y], claims: []));
                 y = y + 1;
             }
-            self.nfts.append(EnemyMetal.NFTData(editionID: 0, metadata: metadataArray[x], components: [], claims: claims));
+            self.nfts.append(EnemyMetal.NFTData(metadata: metadataArray[x], claims: claims));
             x = x + 1;
         }
     }
