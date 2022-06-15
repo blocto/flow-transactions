@@ -1,0 +1,11 @@
+{
+    "arguments": [
+        "amount"
+    ],
+    "messages": {
+        "en": "Stake {amount} STARLY tokens"
+    },
+    "balances": {
+        "amount": "STARLY"
+    }
+}

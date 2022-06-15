@@ -1,0 +1,8 @@
+{
+    "arguments": [
+        "stakeID"
+    ],
+    "messages": {
+        "en": "Unstake stake #{stakeID}"
+    }
+}

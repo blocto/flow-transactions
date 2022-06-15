@@ -8,6 +8,6 @@
         "creatorCutPercent"
     ],
     "messages": {
-        "en": "Place Starly NFT #{itemID} for sale for {price} FLOW"
+        "en": "Place Starly NFT #{itemID} for sale for {price} FUSD"
     }
 }

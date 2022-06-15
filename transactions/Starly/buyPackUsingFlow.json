@@ -11,8 +11,5 @@
     ],
     "messages": {
         "en": "Purchase Starly pack(s) for {price} FLOW"
-    },
-    "balances": {
-        "price": "FLOW"
     }
 }
