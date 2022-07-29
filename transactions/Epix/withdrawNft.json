@@ -1,0 +1,10 @@
+{
+    "arguments": [
+        "nftIds",
+        "feeflowAmount",
+        "payee"
+    ],
+    "messages": {
+        "en": "Withdraw nft(s) and pay a flow fee"
+    }
+}

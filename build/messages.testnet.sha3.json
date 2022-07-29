@@ -1,19 +1,4 @@
 {
-  "0096d8ab1492d839c8210148c1d2aa53856419a2a1b46af9405ec003675210fd": {
-    "arguments": [
-      "flowAmount",
-      "payees",
-      "payeesShares",
-      "recipient",
-      "metadataArray",
-      "claimMetadatasArray"
-    ],
-    "messages": {
-      "en": "Buy new nft mint for {flowAmount} FLOW and store in {recipient}",
-      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在 {recipient}",
-      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在 {recipient}"
-    }
-  },
   "00a2b80fea76faef1f25b1c20550cf285b328f575f83c78029071d2f1fa39349": {
     "arguments": [
       "saleItemID",
@@ -235,6 +220,14 @@
       "en": "Unlist {Uuid}.",
       "zh_CN": "下架 {Uuid}",
       "zh_TW": "下架 {Uuid}"
+    }
+  },
+  "0aff492609fe5321601cd8c9156a655e89eab78a7bdf7429e4a705f4f6b100f1": {
+    "arguments": [
+      "stakeID"
+    ],
+    "messages": {
+      "en": "Unstake stake #{stakeID}"
     }
   },
   "0b12549eba040af411d5bd3265c4c12c21b4e03da2fc8e684d396a7442ebe543": {
@@ -501,6 +494,15 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "1be56d888aa03486396ce9b9adbd48b0e7d03335896cb7fbc368ecf5187c3d30": {
+    "arguments": [
+      "nftIds",
+      "userSafeRecipient"
+    ],
+    "messages": {
+      "en": "Desposit nft(s) into a safe account"
+    }
+  },
   "1e034f4a4d12398b9d10fdfc557ea356d14b6d9c53ebb18e22942c5c89055a3a": {
     "arguments": [
       "saleItemID",
@@ -595,6 +597,16 @@
     ],
     "messages": {
       "en": "List RareRooms NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "26565e2b170c2280264678b8bdffc8917196d15bc9c376e12932b93bd22c77f9": {
+    "arguments": [
+      "nftIds",
+      "feeflowAmount",
+      "payee"
+    ],
+    "messages": {
+      "en": "Withdraw nft(s) and pay a flow fee"
     }
   },
   "271583269c8a69a166daf32164bd1603c38884f7677b32fbc5f42157ac5e5640": {
@@ -800,6 +812,20 @@
       "en": "Purchase RCRDSHP NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "33d20438d73fb49989338ffecf43a27b490c8f835e448bc18bb0cf8a6a212ac7": {
+    "arguments": [
+      "templateIds",
+      "packTemplateId",
+      "price",
+      "receiptAddress"
+    ],
+    "balances": {
+      "price": "USDC"
+    },
+    "messages": {
+      "en": "Purchase AFL pack(s) for {price} USDC"
+    }
+  },
   "34387235f7d21ea2240025cc23713894d8b653373a464d58b920c186461d66f1": {
     "arguments": [
       "listingResourceID",
@@ -871,6 +897,21 @@
     ],
     "messages": {
       "en": "List RCRDSHP NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "3a683d37e5ad5f692c8ec793592e1fc4ebd9970190e311e51dedbadf900b2883": {
+    "arguments": [
+      "flowAmount",
+      "payees",
+      "payeesShares",
+      "recipientKeys",
+      "metadataArray",
+      "claimMetadatasArray"
+    ],
+    "messages": {
+      "en": "Buy new nft mint for {flowAmount} FLOW and store in a new account",
+      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在新帐户中",
+      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在新帳戶中"
     }
   },
   "3bc1b9bef19fb03b0097865160153d854202b3e3ecceb43663d768def4ff068d": {
@@ -1299,6 +1340,16 @@
       "zh_TW": "下架 {Uuid}"
     }
   },
+  "605dd36e6408e45612b835be52fbd096b42e021b2ad4e5f7fe3a7555936879c1": {
+    "arguments": [
+      "nftIds",
+      "feeflowAmount",
+      "payee"
+    ],
+    "messages": {
+      "en": "Withdraw nft(s) and pay a flow fee"
+    }
+  },
   "60aa76b7bce776305e7459a1146a38d29f83ad93755533eb26daa35876fa51df": {
     "arguments": [
       "listingResourceID"
@@ -1339,19 +1390,13 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
-  "630263fa964be63a1ac7032f9588d91894e05f55768099fa1e678f31441176a0": {
+  "6376d37cf15e0f454e39afb6cf115bb0fe7b37e7a1ab61924ea19615127d788d": {
     "arguments": [
-      "flowAmount",
-      "payees",
-      "payeesShares",
-      "recipientKeys",
-      "metadataArray",
-      "claimMetadatasArray"
+      "nftIds",
+      "userSafeRecipient"
     ],
     "messages": {
-      "en": "Buy new nft mint for {flowAmount} FLOW and store in a new account",
-      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在新帐户中",
-      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在新帳戶中"
+      "en": "Desposit nft(s) into a safe account"
     }
   },
   "63fc8ff6ea5f7e685557f47784d336022a46f5c7f996206dd933b5d4f543f118": {
@@ -1380,9 +1425,6 @@
       "creatorCutPercent",
       "additionalSaleCutsPercents"
     ],
-    "balances": {
-      "price": "FLOW"
-    },
     "messages": {
       "en": "Purchase Starly pack(s) for {price} FLOW"
     }
@@ -1455,6 +1497,21 @@
     ],
     "messages": {
       "en": "Purchase Starly NFT #{itemID} from {marketCollectionAddress}"
+    }
+  },
+  "672bfd7125b8087fc6d080c07786bce4ac46773578433ac48b9eafd29bd13951": {
+    "arguments": [
+      "flowAmount",
+      "payees",
+      "payeesShares",
+      "recipient",
+      "metadataArray",
+      "claimMetadatasArray"
+    ],
+    "messages": {
+      "en": "Buy new nft mint for {flowAmount} FLOW and store in {recipient}",
+      "zh_CN": "为 {flowAmount} FLOW 购买新的 nft mint 并存储在 {recipient}",
+      "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在 {recipient}"
     }
   },
   "6745b9ff356a4a26b1701ee633afab503928887831843aa40b4fa70bb270407c": {
@@ -1633,6 +1690,18 @@
       "en": "Swap {amountIn} FLOW for at least {minAmountOut} tUSDT",
       "zh_CN": "将 {amountIn} FLOW 兑换成至少 {minAmountOut} tUSDT",
       "zh_TW": "將 {amountIn} FLOW 兌換成至少 {minAmountOut} tUSDT"
+    }
+  },
+  "73271a4a4c4b58885d959544ed8245c363e568f8d9b25688a9ecccd0cb77039b": {
+    "arguments": [
+      "nftIds",
+      "metadataArray",
+      "claimMetadatasArray"
+    ],
+    "messages": {
+      "en": "Craft new nft(s) mint(s) and burn required nft(s)",
+      "zh_CN": "制作新的 nft(s) mint(s) 并燃烧所需的 nft(s)",
+      "zh_TW": "製作新的 nft(s) mint(s) 並燃燒所需的 nft(s)"
     }
   },
   "73af5564574944fe4a436ebc32504b43866f3433dd6f425ee75e53525d72f4dd": {
@@ -2138,6 +2207,11 @@
       "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在 {recipient}"
     }
   },
+  "9770d8a817e992c53e736f8c2803d3b42f2ecf89a9fc4dcd29acbec25e075284": {
+    "messages": {
+      "en": "Initialize your account in order to buy and sell Starly NFTs"
+    }
+  },
   "9814a4726d13da19cbb73966d027ccc22c3ebc41ede51bc034f2f1ffae8af563": {
     "arguments": [
       "saleItemID",
@@ -2572,7 +2646,7 @@
       "creatorCutPercent"
     ],
     "messages": {
-      "en": "Place Starly NFT #{itemID} for sale for {price} FLOW"
+      "en": "Place Starly NFT #{itemID} for sale for {price} FUSD"
     }
   },
   "b357a7e957d9f54b1345ec9be2fb8d88cf77b0df6683a29a41aaaf352a764b06": {
@@ -2689,6 +2763,17 @@
     ],
     "messages": {
       "en": "List BALLERZ NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "bb3c6ebda14c5e39dad8e44902de31f26d1817511f75bf3c6a4180e4eb98cf22": {
+    "arguments": [
+      "amount"
+    ],
+    "balances": {
+      "amount": "STARLY"
+    },
+    "messages": {
+      "en": "Stake {amount} STARLY tokens"
     }
   },
   "bbdc4233415e60fbe92a62a03be92edc7780579570b9b0f7b05e59c94ab59b8e": {
@@ -2928,6 +3013,14 @@
       "en": "Set Flobit Eyeglasses {eyeglasses} for Flovatar {flovatarId}"
     }
   },
+  "d0767798701c6da6a22884db6a2ffcff307314c027f53e077e7fae42151c5053": {
+    "arguments": [
+      "vestingID"
+    ],
+    "messages": {
+      "en": "Release available tokens from vesting #{vestingID}"
+    }
+  },
   "d118435c872938b6f5443f19a457cf4f780caa9f4ed1a1baec16f832e5137c15": {
     "arguments": [
       "amountIn",
@@ -3052,18 +3145,6 @@
       "en": "List Fright Club NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
-  "d6216aaf3f8d9df10854679f954b6d40d684c2add5ad6619736e5747a1a04e70": {
-    "arguments": [
-      "nftIds",
-      "metadataArray",
-      "claimMetadatasArray"
-    ],
-    "messages": {
-      "en": "Craft new nft(s) mint(s) and burn required nft(s)",
-      "zh_CN": "制作新的 nft(s) mint(s) 并燃烧所需的 nft(s)",
-      "zh_TW": "製作新的 nft(s) mint(s) 並燃燒所需的 nft(s)"
-    }
-  },
   "d677e1d146b59edb55b365566ae3281ed4cdd509b28b64d154dbf954723facb2": {
     "arguments": [
       "saleItemID",
@@ -3128,10 +3209,12 @@
       "beneficiaryAddress",
       "beneficiaryCutPercent",
       "creatorAddress",
-      "creatorCutPercent"
+      "creatorCutPercent",
+      "minterAddress",
+      "minterCutPercent"
     ],
     "messages": {
-      "en": "Place Starly NFT #{itemID} for sale for {price} FLOW"
+      "en": "Place Starly NFT #{itemID} for sale for {price} FUSD"
     }
   },
   "ddd5e2da94aecb32c914430b53da0c5212cf50e675da35735920dfcb60ef64d9": {
@@ -3284,6 +3367,11 @@
       "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
       "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
       "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+  },
+  "e9532028ee04b2c043d4d845bc7e2d49c8a3fa0d4b6bae0fd9bd9307dabafb1a": {
+    "messages": {
+      "en": "Initialize your account in order to receive Starly vesting NFTs"
     }
   },
   "ea575094e945c8ec5eade071537cd33a1ba2e9307450b49f4e8366adc06d39cb": {

@@ -1,0 +1,9 @@
+{
+    "arguments": [
+        "nftIds",
+        "userSafeRecipient"
+    ],
+    "messages": {
+        "en": "Desposit nft(s) into a safe account"
+    }
+}
