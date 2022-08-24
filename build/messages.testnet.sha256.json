@@ -326,6 +326,20 @@
       "zh_TW": "下架 {Uuid}"
     }
   },
+  "12f2e6c321c50196c56b5b13182c3b8917015f03509d50c5956456fd45f572cc": {
+    "arguments": [
+      "amount",
+      "index"
+    ],
+    "balances": {
+      "amount": "BLT"
+    },
+    "messages": {
+      "en": "Request to re-stake unstaked tokens: {amount} BLT",
+      "zh_CN": "请求重新质押解除质押的代币: {amount} BLT 代币",
+      "zh_TW": "請求重新質押解除質押的代幣: {amount} BLT 代幣"
+    }
+  },
   "13ef0eabb7364beb649212143ddd73612f3150970c6b782d859d58bdfa0f4329": {
     "arguments": [
       "listingResourceID",
@@ -598,6 +612,20 @@
       "en": "List Melos Studio NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "2718a44d22bf0f6ddd2a9f64fa2befba180d1e3a8ee799aa58871b24cca9cbb8": {
+    "arguments": [
+      "amount",
+      "index"
+    ],
+    "balances": {
+      "amount": "BLT"
+    },
+    "messages": {
+      "en": "Request to stake: {amount} BLT",
+      "zh_CN": "请求质押: {amount} BLT 代币",
+      "zh_TW": "請求質押: {amount} BLT 代幣"
+    }
+  },
   "28c32ded2a6520c80f535414862ab714b93b9f42f4d0f400177586cd4a865b7e": {
     "arguments": [
       "listingResourceID",
@@ -805,6 +833,19 @@
       "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在 {recipient}"
     }
   },
+  "38f1e792cac27d450770772272aef9d0cf68d6dfc6763f75506ab61a1b3305bd": {
+    "arguments": [
+      "amount"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Request to stake: {amount} FLOW",
+      "zh_CN": "请求质押: {amount} FLOW 代币",
+      "zh_TW": "請求質押: {amount} FLOW 代幣"
+    }
+  },
   "3913217fee38d4efe275a5f429bc31e4a38592a4601337d8f025f23a28af81d0": {
     "arguments": [
       "saleItemID",
@@ -925,6 +966,20 @@
       "en": "Swap {maxAmountIn} BLT for at least {amountOut} FLOW",
       "zh_CN": "将最多 {maxAmountIn} BLT 兑换成 {amountOut} FLOW",
       "zh_TW": "將最多 {maxAmountIn} BLT 兌換成 {amountOut} FLOW"
+    }
+  },
+  "4136c555289b3b21dc2b30ddbabe759bb2c5a459108c5d0bb4ab3ac0221302e6": {
+    "arguments": [
+      "amount",
+      "index"
+    ],
+    "balances": {
+      "amount": "BLT"
+    },
+    "messages": {
+      "en": "Enable staking: {amount} BLT",
+      "zh_CN": "启用质押: {amount} BLT 代币",
+      "zh_TW": "啟用質押: {amount} BLT 代幣"
     }
   },
   "4196a42eed468247f69d2d7446e9b83f71ae2206df304832eff521ffed74bdc9": {
@@ -1863,6 +1918,20 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "8220be5f6c4bb0aa4cd70a9aae3102b0b530e986339911e873b302075c03e68d": {
+    "arguments": [
+      "amount",
+      "index"
+    ],
+    "balances": {
+      "amount": "BLT"
+    },
+    "messages": {
+      "en": "Claim unstaked tokens: {amount} BLT",
+      "zh_CN": "領取解除质押的代币: {amount} BLT 代币",
+      "zh_TW": "領取解除質押的代幣: {amount} BLT 代幣"
+    }
+  },
   "82d6c3a790a2419c6c7fdd7880b55d38f424f7de4a2414d78e42e4923524912a": {
     "arguments": [
       "saleItemID",
@@ -1880,6 +1949,19 @@
     ],
     "messages": {
       "en": "Purchase Starly NFT #{itemID} from {marketCollectionAddress}"
+    }
+  },
+  "844a3e3fc80011608251e22fb1dae5196406890ec0740771aff0fd0fd5c27828": {
+    "arguments": [
+      "amount"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Claim unstaked tokens: {amount} FLOW",
+      "zh_CN": "領取解除质押的代币: {amount} FLOW 代币",
+      "zh_TW": "領取解除質押的代幣: {amount} FLOW 代幣"
     }
   },
   "846c9d4d8a3a19c2ff7b5ecab5da6e1074b31b6578fbfc6ca5bbc8ffac6fbb7d": {
@@ -1986,6 +2068,19 @@
       "en": "Initialize your account in order to buy and sell Starly NFTs"
     }
   },
+  "8f4554e1bfbe312d2a412cc21a157e0703a7b82a1fd7548a10d2862bc2d261af": {
+    "arguments": [
+      "amount"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Claim staking reward: {amount} FLOW",
+      "zh_CN": "领取质押奖励: {amount} FLOW 代币",
+      "zh_TW": "領取質押獎勵: {amount} FLOW 代幣"
+    }
+  },
   "904b0aa9847c6ed0630eaa8f610def4d9a7dcbf33707b57fb6914c4837a8261f": {
     "arguments": [
       "listingResourceID",
@@ -2041,6 +2136,20 @@
     ],
     "messages": {
       "en": "Set Flobit Background {background} for Flovatar {flovatarId}"
+    }
+  },
+  "92bd601bbfb1af371957ac52b470521e703f233794b7becd5b3cc6e1c0345d60": {
+    "arguments": [
+      "amount",
+      "index"
+    ],
+    "balances": {
+      "amount": "BLT"
+    },
+    "messages": {
+      "en": "Claim staking reward: {amount} BLT",
+      "zh_CN": "领取质押奖励: {amount} BLT 代币",
+      "zh_TW": "領取質押獎勵: {amount} BLT 代幣"
     }
   },
   "934691df8de48e58c617f3197cc5534424dfbf6ca5e893711f8a4399ffa60fce": {
@@ -2184,6 +2293,20 @@
       "en": "Swap {amountIn} BLT for at least {minAmountOut} FLOW",
       "zh_CN": "将 {amountIn} BLT 兑换成至少 {minAmountOut} FLOW",
       "zh_TW": "將 {amountIn} BLT 兌換成至少 {minAmountOut} FLOW"
+    }
+  },
+  "a14bfbad812dd526d79f6b5edd0b77d1c278d4ef3565c22a9e7e46966d066049": {
+    "arguments": [
+      "amount",
+      "index"
+    ],
+    "balances": {
+      "amount": "BLT"
+    },
+    "messages": {
+      "en": "Request to unstake: {amount} BLT",
+      "zh_CN": "请求解除质押: {amount} BLT 代币",
+      "zh_TW": "請求解除質押: {amount} BLT 代幣"
     }
   },
   "a1cd3923a0e0c7366ab2d6888329700ad60586ec9b3a1dc140802e367fb2eaba": {
@@ -2591,6 +2714,19 @@
       "en": "Initialize your account for Mystery Pack NFTs"
     }
   },
+  "b976f34a0f7c37e5b82dd03fadb74cfae2696f70e12f9282e3d62a55140a6a34": {
+    "arguments": [
+      "amount"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Request to unstake: {amount} FLOW",
+      "zh_CN": "请求解除质押: {amount} FLOW 代币",
+      "zh_TW": "請求解除質押: {amount} FLOW 代幣"
+    }
+  },
   "bb4e33c4d5acb4fd6c311b79c9969e36d4b5d9d491ff46ea9ae82c7ba9b8ade5": {
     "arguments": [
       "listingResourceID",
@@ -2960,6 +3096,19 @@
     },
     "messages": {
       "en": "Purchase RareRooms NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "cff48b1bbb146e9f9c9e883d3249a519455aa13123d6ac74f9bfaefe239736f6": {
+    "arguments": [
+      "amount"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Request to re-stake unstaked tokens: {amount} FLOW",
+      "zh_CN": "请求重新质押解除质押的代币: {amount} FLOW 代币",
+      "zh_TW": "請求重新質押解除質押的代幣: {amount} FLOW 代幣"
     }
   },
   "d130cc1b3de3e6da1c40f6e4c681e137eafbd222d50fcb5a7f4cffe9fdfb927f": {
@@ -3345,6 +3494,21 @@
     ],
     "messages": {
       "en": "Remove the sale offer from the Marketplace for Flobit component {componentId}"
+    }
+  },
+  "eb029d8b377779f6abb81d175d315ee5bce4969f7eee414e805648b71e5d11c0": {
+    "arguments": [
+      "id",
+      "amount",
+      "cosignerPubKey"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Enable staking: {amount} FLOW",
+      "zh_CN": "启用质押: {amount} FLOW 代币",
+      "zh_TW": "啟用質押: {amount} FLOW 代幣"
     }
   },
   "ec795d11f230cc4364dfb62c8e3eeefcc298d750235ef824da98d1e325a58b92": {

@@ -1,0 +1,13 @@
+{
+    "arguments": [
+        "amount"
+    ],
+    "messages": {
+        "en": "Claim unstaked tokens: {amount} FLOW",
+        "zh_CN": "領取解除质押的代币: {amount} FLOW 代币",
+        "zh_TW": "領取解除質押的代幣: {amount} FLOW 代幣"
+    },
+    "balances": {
+        "amount": "FLOW"
+    }
+}
