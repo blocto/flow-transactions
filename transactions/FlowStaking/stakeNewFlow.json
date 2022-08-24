@@ -1,0 +1,13 @@
+{
+    "arguments": [
+        "amount"
+    ],
+    "messages": {
+        "en": "Request to stake: {amount} FLOW",
+        "zh_CN": "请求质押: {amount} FLOW 代币",
+        "zh_TW": "請求質押: {amount} FLOW 代幣"
+    },
+    "balances": {
+        "amount": "FLOW"
+    }
+}

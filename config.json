@@ -23,6 +23,10 @@
     "mainnet": "0x0f9df91c9121c460",
     "testnet": "0x6e0797ac987005f5"
   },
+  "0xBLOCTO_PASS_ADDRESS": {
+    "mainnet": "0x0f9df91c9121c460",
+    "testnet": "0x7deafdfc288e422d"
+  },
   "0xBLT_USDT_SWAP_PAIR_ADDRESS": {
     "mainnet": "0xfcb06a5ae5b21a2d",
     "testnet": "0xc59604d4e65f14b3"
@@ -318,5 +322,9 @@
   "0xMANTLEFI_NFTLENDINGPLACE": {
     "mainnet": "0xa0035d8e04880578",
     "testnet": "0x615a6bf3445b9c61"
+  },
+  "0xLOCKED_TOKEN_ADDRESS": {
+    "mainnet": "0x8d0e87b65159ae63",
+    "testnet": "0x95e019a17d0e23d7"
   }
 }

@@ -1,0 +1,14 @@
+{
+    "arguments": [
+        "amount",
+        "index"
+    ],
+    "messages": {
+        "en": "Request to unstake: {amount} BLT",
+        "zh_CN": "请求解除质押: {amount} BLT 代币",
+        "zh_TW": "請求解除質押: {amount} BLT 代幣"
+    },
+    "balances": {
+        "amount": "BLT"
+    }
+}
