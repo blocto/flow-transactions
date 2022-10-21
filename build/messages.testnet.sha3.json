@@ -306,9 +306,6 @@
       "amount",
       "index"
     ],
-    "balances": {
-      "amount": "BLT"
-    },
     "messages": {
       "en": "Claim staking reward: {amount} BLT",
       "zh_CN": "领取质押奖励: {amount} BLT 代币",
@@ -1260,9 +1257,6 @@
       "amount",
       "index"
     ],
-    "balances": {
-      "amount": "BLT"
-    },
     "messages": {
       "en": "Request to unstake: {amount} BLT",
       "zh_CN": "请求解除质押: {amount} BLT 代币",
@@ -1935,9 +1929,6 @@
     "arguments": [
       "amount"
     ],
-    "balances": {
-      "amount": "FLOW"
-    },
     "messages": {
       "en": "Claim unstaked tokens: {amount} FLOW",
       "zh_CN": "領取解除质押的代币: {amount} FLOW 代币",
@@ -2254,9 +2245,6 @@
     "arguments": [
       "amount"
     ],
-    "balances": {
-      "amount": "FLOW"
-    },
     "messages": {
       "en": "Request to re-stake unstaked tokens: {amount} FLOW",
       "zh_CN": "请求重新质押解除质押的代币: {amount} FLOW 代币",
@@ -2865,9 +2853,6 @@
     "arguments": [
       "amount"
     ],
-    "balances": {
-      "amount": "FLOW"
-    },
     "messages": {
       "en": "Claim staking reward: {amount} FLOW",
       "zh_CN": "领取质押奖励: {amount} FLOW 代币",
@@ -3099,9 +3084,6 @@
       "amount",
       "index"
     ],
-    "balances": {
-      "amount": "BLT"
-    },
     "messages": {
       "en": "Claim unstaked tokens: {amount} BLT",
       "zh_CN": "領取解除质押的代币: {amount} BLT 代币",
@@ -3649,9 +3631,6 @@
     "arguments": [
       "amount"
     ],
-    "balances": {
-      "amount": "FLOW"
-    },
     "messages": {
       "en": "Request to unstake: {amount} FLOW",
       "zh_CN": "请求解除质押: {amount} FLOW 代币",
@@ -3765,9 +3744,6 @@
       "amount",
       "index"
     ],
-    "balances": {
-      "amount": "BLT"
-    },
     "messages": {
       "en": "Request to re-stake unstaked tokens: {amount} BLT",
       "zh_CN": "请求重新质押解除质押的代币: {amount} BLT 代币",

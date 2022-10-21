@@ -6,8 +6,5 @@
         "en": "Claim staking reward: {amount} FLOW",
         "zh_CN": "领取质押奖励: {amount} FLOW 代币",
         "zh_TW": "領取質押獎勵: {amount} FLOW 代幣"
-    },
-    "balances": {
-        "amount": "FLOW"
     }
 }

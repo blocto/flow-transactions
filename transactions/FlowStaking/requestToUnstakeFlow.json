@@ -6,8 +6,5 @@
         "en": "Request to unstake: {amount} FLOW",
         "zh_CN": "请求解除质押: {amount} FLOW 代币",
         "zh_TW": "請求解除質押: {amount} FLOW 代幣"
-    },
-    "balances": {
-        "amount": "FLOW"
     }
 }
