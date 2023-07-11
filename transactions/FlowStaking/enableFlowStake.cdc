@@ -3,6 +3,7 @@ import LockedTokens from 0xLOCKED_TOKEN_ADDRESS
 import FlowToken from 0xFLOW_TOKEN_ADDRESS
 import FlowStorageFees from 0xFLOW_STORAGE_FEES_ADDRESS
 import BloctoStorageRent from 0xBLOCTO_STORAGE_RENT_ADDRESS
+import FlowIDTableStaking from 0xFLOW_ID_TABLE_STAKING_ADDRESS
 
 transaction(id: String, amount: UFix64, cosignerPubKey: String) {
 
@@ -93,18 +94,19 @@ transaction(id: String, amount: UFix64, cosignerPubKey: String) {
   }
 
   execute {
+    let lockedBalance = self.holderRef.getLockedAccountBalance()
+
+    if amount <= lockedBalance {
       self.holderRef.createNodeDelegator(nodeID: id)
-
-      let delegatorProxy = self.holderRef.borrowDelegator()
-      let lockedBalance = self.holderRef.getLockedAccountBalance()
-
-      if amount <= lockedBalance {
-          delegatorProxy.delegateNewTokens(amount: amount)
-      } else if ((amount - lockedBalance) <= self.vaultRef.balance - FlowStorageFees.minimumStorageReservation) {
-          self.holderRef.deposit(from: <-self.vaultRef.withdraw(amount: amount - lockedBalance))
-          delegatorProxy.delegateNewTokens(amount: amount)
-      } else {
-          panic("Not enough tokens to stake!")
-      }
+      let stakerProxy = self.holderRef.borrowDelegator()
+      stakerProxy.delegateNewTokens(amount: amount - FlowIDTableStaking.getDelegatorMinimumStakeRequirement())
+    } else if ((amount - lockedBalance) <= (self.vaultRef.balance - FlowStorageFees.minimumStorageReservation)) {
+      self.holderRef.deposit(from: <-self.vaultRef.withdraw(amount: amount - lockedBalance))
+      self.holderRef.createNodeDelegator(nodeID: id)
+      let stakerProxy = self.holderRef.borrowDelegator()
+      stakerProxy.delegateNewTokens(amount: amount - FlowIDTableStaking.getDelegatorMinimumStakeRequirement())
+    } else {
+      panic("Not enough tokens to stake!")
+    }
   }
 }

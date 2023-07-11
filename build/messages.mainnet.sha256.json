@@ -173,21 +173,6 @@
       "en": "Purchase Starly NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
-  "0a9d29fa0c2d1ee3091de4c0f9a70ab7e672fdb94646073168cebf11d2287c04": {
-    "arguments": [
-      "id",
-      "amount",
-      "cosignerPubKey"
-    ],
-    "balances": {
-      "amount": "FLOW"
-    },
-    "messages": {
-      "en": "Enable staking: {amount} FLOW",
-      "zh_CN": "启用质押: {amount} FLOW 代币",
-      "zh_TW": "啟用質押: {amount} FLOW 代幣"
-    }
-  },
   "0b45772dd5a831e66498a1e0cd27d57fa971836cf0e33fda6d9014c56964e0c8": {
     "arguments": [
       "listingResourceID",
@@ -292,6 +277,21 @@
       "en": "Unlist {Uuid}.",
       "zh_CN": "下架 {Uuid}",
       "zh_TW": "下架 {Uuid}"
+    }
+  },
+  "101e829a30a0ce766b30711ed1b680884cd831b9838e86213173d90cde302717": {
+    "arguments": [
+      "id",
+      "amount",
+      "cosignerPubKey"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Enable staking: {amount} FLOW",
+      "zh_CN": "启用质押: {amount} FLOW 代币",
+      "zh_TW": "啟用質押: {amount} FLOW 代幣"
     }
   },
   "10c4b3d155ca7c6c1388a23897c27b410de5318b9670adf4eeb54435fac711d4": {

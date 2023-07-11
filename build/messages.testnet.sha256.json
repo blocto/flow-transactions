@@ -2399,6 +2399,21 @@
       "zh_TW": "下架 {Uuid}"
     }
   },
+  "a4588593efb6aa1b1179d1f7cd3c6dc01ff0f84cf68224df4c72ad78363285cd": {
+    "arguments": [
+      "id",
+      "amount",
+      "cosignerPubKey"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Enable staking: {amount} FLOW",
+      "zh_CN": "启用质押: {amount} FLOW 代币",
+      "zh_TW": "啟用質押: {amount} FLOW 代幣"
+    }
+  },
   "a4b8fa59efacf5430748c2ce13e2b20eee3a965fec0f32838f2bb481340e694d": {
     "arguments": [
       "saleItemID",
@@ -3470,21 +3485,6 @@
     ],
     "messages": {
       "en": "Remove the sale offer from the Marketplace for Flobit component {componentId}"
-    }
-  },
-  "eb029d8b377779f6abb81d175d315ee5bce4969f7eee414e805648b71e5d11c0": {
-    "arguments": [
-      "id",
-      "amount",
-      "cosignerPubKey"
-    ],
-    "balances": {
-      "amount": "FLOW"
-    },
-    "messages": {
-      "en": "Enable staking: {amount} FLOW",
-      "zh_CN": "启用质押: {amount} FLOW 代币",
-      "zh_TW": "啟用質押: {amount} FLOW 代幣"
     }
   },
   "ec795d11f230cc4364dfb62c8e3eeefcc298d750235ef824da98d1e325a58b92": {

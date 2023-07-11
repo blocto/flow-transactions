@@ -111,6 +111,10 @@
     "mainnet": "0xe467b9dd11fa00df",
     "testnet": "0x8c5303eaa26202d6"
   },
+  "0xFLOW_ID_TABLE_STAKING_ADDRESS": {
+    "mainnet": "0x8624b52f9ddcd04a",
+    "testnet": "0x9eca2b38b18b5dfe"
+  },
   "0xFLOW_TOKEN_ADDRESS": {
     "mainnet": "0x1654653399040a61",
     "testnet": "0x7e60df042a9c0868"

@@ -1928,6 +1928,21 @@
       "en": "Purchase Chainmonsters Rewards NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "7a8ceeaaebce74df8c1ca8fa54f0752fad4b9e4eb50d00245b6d5534d357850b": {
+    "arguments": [
+      "id",
+      "amount",
+      "cosignerPubKey"
+    ],
+    "balances": {
+      "amount": "FLOW"
+    },
+    "messages": {
+      "en": "Enable staking: {amount} FLOW",
+      "zh_CN": "启用质押: {amount} FLOW 代币",
+      "zh_TW": "啟用質押: {amount} FLOW 代幣"
+    }
+  },
   "7b86cd3faf57daa4216c8ee1c3ffec8ad60cf578ee6709a6986a84ba7e8c589c": {
     "arguments": [
       "maxAmountIn",
@@ -2393,21 +2408,6 @@
       "en": "List NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
-    }
-  },
-  "9da493b08361c97b73fb57236cffbe07a1da86d3ba6fc7bd82c9c6a85a72270b": {
-    "arguments": [
-      "id",
-      "amount",
-      "cosignerPubKey"
-    ],
-    "balances": {
-      "amount": "FLOW"
-    },
-    "messages": {
-      "en": "Enable staking: {amount} FLOW",
-      "zh_CN": "启用质押: {amount} FLOW 代币",
-      "zh_TW": "啟用質押: {amount} FLOW 代幣"
     }
   },
   "9e4c75ad2322bf6ad4657ae9743aa22a6817c31be5ad87092284f7864bdee50b": {
