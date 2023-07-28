@@ -330,5 +330,9 @@
   "0xLOCKED_TOKEN_ADDRESS": {
     "mainnet": "0x8d0e87b65159ae63",
     "testnet": "0x95e019a17d0e23d7"
+  },
+  "0xFANTOP_ADDRESS": {
+    "mainnet": "0x86185fba578bc773",
+    "testnet": "0xb668e8c9726ef26b"
   }
 }
