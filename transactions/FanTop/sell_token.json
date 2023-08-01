@@ -1,0 +1,16 @@
+{
+  "arguments": [
+    "agent",
+    "orderId",
+    "refId",
+    "nftId",
+    "version",
+    "metadata",
+    "signature",
+    "keyIndex"
+  ],
+  "messages": {
+    "en": "List FanTop token.",
+    "ja": "FanTopトークンを出品します"
+  }
+}

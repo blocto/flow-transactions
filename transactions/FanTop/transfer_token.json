@@ -1,0 +1,10 @@
+{
+  "arguments": [
+    "id",
+    "to"
+  ],
+  "messages": {
+    "en": "Transfer FanTop token.",
+    "ja": "FanTopトークンをギフトします"
+  }
+}
