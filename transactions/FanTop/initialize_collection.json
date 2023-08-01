@@ -1,1 +1,7 @@
-{}
+{
+  "arguments": ["acct"],
+  "messages": {
+    "en": "I will create a storage vault to store FanTop's items.",
+    "ja": "FanTopのアイテムを格納するための保管庫を作成します"
+  }
+}
