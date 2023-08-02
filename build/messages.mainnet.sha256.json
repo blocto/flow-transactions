@@ -76,6 +76,16 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "03cd9e8be8ea7333ec82d2d1f719370c06c0b239c6c7f57d7e763e9233de8c6c": {
+    "arguments": [
+      "id",
+      "to"
+    ],
+    "messages": {
+      "en": "Transfer FanTop token.",
+      "ja": "FanTopトークンをギフトします"
+    }
+  },
   "056e4b5d78319e203842a8916972cc8ce1cf41bc03b367a7e6d23d3a3b3cc52b": {
     "arguments": [
       "listingResourceID",
@@ -118,6 +128,15 @@
       "en": "Delist NFT",
       "zh_CN": "下架 NFT",
       "zh_TW": "下架 NFT"
+    }
+  },
+  "090b747fb4ea402203186f3c01fd4363b851a3eb4f8e090850e8239cb2910d76": {
+    "arguments": [
+      "acct"
+    ],
+    "messages": {
+      "en": "Create a storage vault to store FanTop's items.",
+      "ja": "FanTopのアイテムを格納するための保管庫を作成します"
     }
   },
   "09621ae3af9098dfbfd6dfbd33209b20bbd8d3bef9f3fc0ec1a317f2d96d377c": {
@@ -2342,6 +2361,22 @@
     ],
     "messages": {
       "en": "Purchase Starly NFT #{itemID} from {marketCollectionAddress}"
+    }
+  },
+  "96c5a1c56bd091d93affc2d139f5ee92fe1ca7595511454148827f8762895b1b": {
+    "arguments": [
+      "agent",
+      "orderId",
+      "refId",
+      "nftId",
+      "version",
+      "metadata",
+      "signature",
+      "keyIndex"
+    ],
+    "messages": {
+      "en": "List FanTop token.",
+      "ja": "FanTopトークンを出品します"
     }
   },
   "975e26abaedff48da670806f4e1ae1a51aa300aeacd0d8ea78fda55a5526dcf5": {

@@ -1049,6 +1049,16 @@
       "en": "List TopShot NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "47528fe85d1c69dd9ecd7b78cb307e69e4e4e7ebf75e5b2db926d5102b19ea0e": {
+    "arguments": [
+      "id",
+      "to"
+    ],
+    "messages": {
+      "en": "Transfer FanTop token.",
+      "ja": "FanTopトークンをギフトします"
+    }
+  },
   "4852cc29a2ed59b3a25aadfa798baeb746679d00d957729a9cb3da8cd7c8ae64": {
     "arguments": [
       "Uuid",
@@ -1538,6 +1548,22 @@
   "685bd79377de3ef12c3df6b1af0c5e32860956acf296d67558d8023d03044dd8": {
     "messages": {
       "en": "Initialize your account for Mystery Pack NFTs"
+    }
+  },
+  "69d74819de7895b90fda068a1c3d4f5f6569e6f7ab810981bd90c509136aa2bf": {
+    "arguments": [
+      "agent",
+      "orderId",
+      "refId",
+      "nftId",
+      "version",
+      "metadata",
+      "signature",
+      "keyIndex"
+    ],
+    "messages": {
+      "en": "List FanTop token.",
+      "ja": "FanTopトークンを出品します"
     }
   },
   "6b206ad9abc64450926d07bc2c700aad6098abdefb6957b774e3969bfac6d6fe": {
@@ -3779,6 +3805,15 @@
     ],
     "messages": {
       "en": "List Starly NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "fa3dfcbe75d626cd076b8ed51a44ee9eead398d2b6bd098f9208fc118ec0b3b7": {
+    "arguments": [
+      "acct"
+    ],
+    "messages": {
+      "en": "Create a storage vault to store FanTop's items.",
+      "ja": "FanTopのアイテムを格納するための保管庫を作成します"
     }
   },
   "fa96099c14c611f1e84ef325d5b1df15c5d59966ff8a92e6843cae3656a0ee65": {

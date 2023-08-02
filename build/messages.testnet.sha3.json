@@ -902,6 +902,22 @@
       "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
+  "363bd00863afd8d389643e77d19541fc86e87c586bac668634dd714512d25dc0": {
+    "arguments": [
+      "agent",
+      "orderId",
+      "refId",
+      "nftId",
+      "version",
+      "metadata",
+      "signature",
+      "keyIndex"
+    ],
+    "messages": {
+      "en": "List FanTop token.",
+      "ja": "FanTopトークンを出品します"
+    }
+  },
   "37159d9040e25c2e763803512cec3fa8b79323bf32d463b884298102524c442b": {
     "arguments": [
       "saleItemID",
@@ -2136,6 +2152,16 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "8e64fcae4e8214b0e293e4a4c0a251068b1e5793f5d66688847e547ebb81b7f9": {
+    "arguments": [
+      "id",
+      "to"
+    ],
+    "messages": {
+      "en": "Transfer FanTop token.",
+      "ja": "FanTopトークンをギフトします"
+    }
+  },
   "8ef59ab295ba8b0d833c0e3b58cd73b8272cf331d6fecabda0ed907213618b8c": {
     "arguments": [
       "Uuid",
@@ -2995,6 +3021,15 @@
       "en": "Swap at most {maxAmountIn} FLOW for {amountOut} tUSDT",
       "zh_CN": "将至多 {maxAmountIn} FLOW 兑换成 {amountOut} tUSDT",
       "zh_TW": "將至多 {maxAmountIn} FLOW 兌換成 {amountOut} tUSDT"
+    }
+  },
+  "c8ce7bf89fd9e22c835ea18e3626e08e40f4ae892d89ef7c2c232e1248321ca4": {
+    "arguments": [
+      "acct"
+    ],
+    "messages": {
+      "en": "Create a storage vault to store FanTop's items.",
+      "ja": "FanTopのアイテムを格納するための保管庫を作成します"
     }
   },
   "c997f1f115cf3313295f7d37464bbc7f4339c3412a17730f54f08cd7a9780455": {
