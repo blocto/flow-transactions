@@ -1,5 +1,5 @@
 // adminCreateRevenueRequest v1
-import MikoSeaMarketHistoryV2 from "../../contracts/MikoSeaMarketHistoryV2.cdc"
+import MikoSeaMarketHistoryV2 from 0xMIKOSEA_MARKET_ADDRESS
 
 transaction(
         address: Address,

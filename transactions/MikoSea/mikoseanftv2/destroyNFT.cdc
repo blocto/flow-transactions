@@ -1,4 +1,4 @@
- import MIKOSEANFTV2 from "../../contracts/MIKOSEANFTV2.cdc"
+ import MIKOSEANFTV2 from 0xMIKOSEA_MIKOSEANFTV2_ADDRESS
 
 transaction(nftID: UInt64) {
     let holder: &MIKOSEANFTV2.Collection

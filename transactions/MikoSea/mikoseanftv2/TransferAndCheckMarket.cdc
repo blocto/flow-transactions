@@ -1,6 +1,6 @@
-import MIKOSEANFTV2 from "../../contracts/MIKOSEANFTV2.cdc"
-import NonFungibleToken from "../../contracts/NonFungibleToken.cdc"
-import MikoSeaMarket from "../../contracts/MikoSeaMarket.cdc"
+import MIKOSEANFTV2 from 0xMIKOSEA_MIKOSEANFTV2_ADDRESS
+import MikoSeaMarket from 0xMIKOSEA_MARKET_ADDRESS
+import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
 
 pub fun checkMarket(acct: AuthAccount, nftID: UInt64) {
     if let storefrontRef = acct.borrow<&MikoSeaMarket.Storefront>(from: MikoSeaMarket.MarketStoragePath) {

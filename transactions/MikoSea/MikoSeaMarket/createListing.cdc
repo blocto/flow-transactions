@@ -1,10 +1,10 @@
 // createListingV1.1
-import MikoSeaMarket from "../../contracts/MikoSeaMarket.cdc"
-import MIKOSEANFT from "../../contracts/MiKoSeaNFT.cdc"
-import MIKOSEANFTV2 from "../../contracts/MIKOSEANFTV2.cdc"
-import FungibleToken from "../../contracts/FungibleToken.cdc"
-import NonFungibleToken from "../../contracts/NonFungibleToken.cdc"
-import MetadataViews from "../../contracts/MetadataViews.cdc"
+import MikoSeaMarket from 0xMIKOSEA_MARKET_ADDRESS
+import MIKOSEANFT from 0xMIKOSEA_MIKOSEANFT_ADDRESS
+import MIKOSEANFTV2 from 0xMIKOSEA_MIKOSEANFTV2_ADDRESS
+import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
+import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
+import MetadataViews from 0xMETADATA_VIEWS_ADDRESS
 
 pub fun getNftV2Metadata(addr: Address, nftID: UInt64): {String:String} {
     let account = getAccount(addr)
