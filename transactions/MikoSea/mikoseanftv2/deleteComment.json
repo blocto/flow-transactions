@@ -1,0 +1,9 @@
+{
+  "arguments": [
+    "commentId"
+  ],
+  "messages": {
+      "en": "Delete comment",
+      "ja": "Delete comment"
+  }
+}

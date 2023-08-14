@@ -1,0 +1,11 @@
+{
+  "arguments": [
+    "address",
+    "amount",
+    "metadata"
+  ],
+  "messages": {
+      "en": "Create request revenue",
+      "ja": "Create request revenue"
+  }
+}

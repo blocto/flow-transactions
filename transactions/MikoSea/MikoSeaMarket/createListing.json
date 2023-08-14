@@ -1,0 +1,11 @@
+{
+  "arguments": [
+    "nftID",
+    "salePrice",
+    "nftversion"
+  ],
+  "messages": {
+      "en": "Create listing",
+      "ja": "Create listing"
+  }
+}

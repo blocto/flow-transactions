@@ -1,0 +1,9 @@
+{
+  "arguments": [
+    "listingID"
+  ],
+  "messages": {
+      "en": "Remove listing",
+      "ja": "Remove listing"
+  }
+}

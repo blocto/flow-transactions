@@ -1,0 +1,10 @@
+{
+  "arguments": [
+    "commentId",
+    "recipient"
+  ],
+  "messages": {
+      "en": "Transfer NFT",
+      "ja": "Transfer NFT"
+  }
+}

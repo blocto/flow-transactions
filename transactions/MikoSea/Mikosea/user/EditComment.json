@@ -1,0 +1,10 @@
+{
+  "arguments": [
+    "commentId",
+    "comment"
+  ],
+  "messages": {
+      "en": "Edit Comment",
+      "ja": "Edit Comment"
+  }
+}
