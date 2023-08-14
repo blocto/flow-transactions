@@ -1,0 +1,10 @@
+{
+  "arguments": [
+    "nftIDs",
+    "comment"
+  ],
+  "messages": {
+      "en": "Comment",
+      "ja": "Comment"
+  }
+}

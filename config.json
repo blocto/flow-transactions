@@ -334,5 +334,13 @@
   "0xFANTOP_ADDRESS": {
     "mainnet": "0x86185fba578bc773",
     "testnet": "0x0"
+  },
+  "0xMIKOSEA_MIKOSEANFT_ADDRESS": {
+    "mainnet": "0x0b80e42aaab305f0",
+    "testnet": "0x713306ac51ac7ddb"
+  },
+  "0xMIKOSEA_MIKOSEANFTV2_ADDRESS": {
+    "mainnet": "0x0b80e42aaab305f0",
+    "testnet": "0x713306ac51ac7ddb"
   }
 }

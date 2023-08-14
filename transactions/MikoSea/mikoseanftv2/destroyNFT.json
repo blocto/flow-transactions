@@ -1,0 +1,9 @@
+{
+  "arguments": [
+    "nftID"
+  ],
+  "messages": {
+      "en": "Destroy NFT",
+      "ja": "Destroy NFT"
+  }
+}
