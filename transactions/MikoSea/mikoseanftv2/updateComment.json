@@ -1,7 +1,7 @@
 {
   "arguments": [
     "commentId",
-    "recipient"
+    "comment"
   ],
   "messages": {
       "en": "Update comment"

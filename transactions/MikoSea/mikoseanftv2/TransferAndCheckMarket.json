@@ -1,7 +1,7 @@
 {
   "arguments": [
     "nftID",
-    "comment"
+    "recipient"
   ],
   "messages": {
       "en": "Transfer NFT"
