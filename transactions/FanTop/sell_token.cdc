@@ -18,7 +18,7 @@ transaction(
     self.user = FanTopPermissionV2a.User()
     var capability = account.getCapability<&FanTopToken.Collection>(/private/FanTopTokenCollection)
     if !capability.check() {
-      capability = account.link<&FanTopToken.Collection>(/private/FanTopTokenCollection, target:/storage/FanTopTokenCollection) ?? panic("Link failed")
+      capability = account.link<&FanTopToken.Collection>(/private/FanTopTokenCollection, target:FanTopToken.collectionStoragePath) ?? panic("Link failed")
     }
     self.capability = capability
   }
