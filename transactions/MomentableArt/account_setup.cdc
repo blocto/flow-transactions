@@ -1,8 +1,8 @@
-import NonFungibleToken from 0xMETADATA_VIEWS_ADDRESS
+import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
 import MetadataViews from 0xMETADATA_VIEWS_ADDRESS
-import NiftoryNonFungibleToken from 0xMomentableArt_Token_ADDRESS
-import NiftoryNFTRegistry from 0xMomentableArt_Token_ADDRESS
-import MomentableArt from 0xMomentableArt_ADDRESS
+import NiftoryNonFungibleToken from 0xNIFTORY_NON_FUNGIBLE_TOKEN_ADDRESS
+import NiftoryNFTRegistry from 0xNIFTORY_NFT_REGISTRY_ADDRESS
+import MomentableArt from 0xMOMENTABLE_ART_ADDRESS
 
 transaction(storageAddress: Address,clientInfo: String) {
     prepare(acct: AuthAccount) {
