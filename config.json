@@ -334,5 +334,17 @@
   "0xFANTOP_ADDRESS": {
     "mainnet": "0x86185fba578bc773",
     "testnet": "0x0"
+  },
+  "0xMOMENTABLE_ART_ADDRESS": {
+    "mainnet": "0x6b91adebfde2bec2",
+    "testnet": "0x2d44e28d37b3468d"
+  },
+  "0xNIFTORY_NFT_REGISTRY_ADDRESS": {
+    "mainnet": "0x7ec1f607f0872a9e",
+    "testnet": "0x04f74f0252479aed"
+  },
+  "0xNIFTORY_NON_FUNGIBLE_TOKEN_ADDRESS": {
+    "mainnet": "0x7ec1f607f0872a9e",
+    "testnet": "0x04f74f0252479aed"
   }
 }

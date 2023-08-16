@@ -1,0 +1,9 @@
+{
+    "arguments": [
+        "storageAddress",
+        "clientInfo"
+    ],
+    "messages": {
+        "en": "Configure Your Address To Accept NFT"
+    }
+}
