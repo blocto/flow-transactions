@@ -3808,9 +3808,6 @@
     }
   },
   "fa3dfcbe75d626cd076b8ed51a44ee9eead398d2b6bd098f9208fc118ec0b3b7": {
-    "arguments": [
-      "acct"
-    ],
     "messages": {
       "en": "Create a storage vault to store FanTop's items.",
       "ja": "FanTopのアイテムを格納するための保管庫を作成します"
