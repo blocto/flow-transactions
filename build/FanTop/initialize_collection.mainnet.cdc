@@ -3,9 +3,9 @@ import FanTopToken from 0x86185fba578bc773
 transaction {
   prepare(acct: AuthAccount) {
     if acct.borrow<&FanTopToken.Collection>(from: FanTopToken.collectionStoragePath) != nil {
-    if (!getAccount(acct.address).getCapability<&{FanTopToken.CollectionPublic}>(FanTopToken.collectionPublicPath).check()) {
-      panic("Collection check failed.")
-    }
+      if (!getAccount(acct.address).getCapability<&{FanTopToken.CollectionPublic}>(FanTopToken.collectionPublicPath).check()) {
+        panic("Collection check failed.")
+      }
     return;
     }
 
