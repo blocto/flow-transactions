@@ -1,0 +1,9 @@
+{
+  "arguments": [
+    "commentId",
+    "comment"
+  ],
+  "messages": {
+      "en": "Edit comment"
+  }
+}
