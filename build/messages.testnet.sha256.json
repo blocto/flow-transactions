@@ -363,6 +363,15 @@
       "en": "Purchase OVO NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "16bf7f1e1a7f43480b47d32fcea349390a14e8dbb0efab193fd325a753c0707e": {
+    "arguments": [
+      "nftIDs",
+      "comment"
+    ],
+    "messages": {
+      "en": "Create comment"
+    }
+  },
   "16ff7fea61e7c3d75543bcd97c92e82fe015a499ab092b8d02b8a47aba3af976": {
     "arguments": [
       "listingResourceID"
@@ -717,6 +726,15 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 NFT"
     }
   },
+  "30b76b406d83c1c89bde24c4c69bcd41e446d745511b51f15e4c1fd06498b561": {
+    "arguments": [
+      "commentId",
+      "comment"
+    ],
+    "messages": {
+      "en": "Update comment"
+    }
+  },
   "314f400ae626c7964c07c814040f03b7da2bb1a2ee40be37814b2cb54888c8b8": {
     "arguments": [
       "saleItemID",
@@ -993,6 +1011,22 @@
       "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在新帳戶中"
     }
   },
+  "426dfe378c8151ebeb0e4df2121a1ba786a5a0a3772d58bd7bbc0482d484c230": {
+    "arguments": [
+      "agent",
+      "orderId",
+      "refId",
+      "nftId",
+      "version",
+      "metadata",
+      "signature",
+      "keyIndex"
+    ],
+    "messages": {
+      "en": "List FanTop token.",
+      "ja": "FanTopトークンを出品します"
+    }
+  },
   "42adef653fcfe38292f6da0685ee0c1eb9b90043c8b63603b190c4cd8e0ce9cd": {
     "arguments": [
       "name",
@@ -1047,6 +1081,16 @@
     ],
     "messages": {
       "en": "List TopShot NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "47528fe85d1c69dd9ecd7b78cb307e69e4e4e7ebf75e5b2db926d5102b19ea0e": {
+    "arguments": [
+      "id",
+      "to"
+    ],
+    "messages": {
+      "en": "Transfer FanTop token.",
+      "ja": "FanTopトークンをギフトします"
     }
   },
   "4852cc29a2ed59b3a25aadfa798baeb746679d00d957729a9cb3da8cd7c8ae64": {
@@ -1208,6 +1252,16 @@
       "en": "List CNN NFT at {saleItemPrice} FLOW",
       "zh_CN": "以 {saleItemPrice} FLOW 上架 CNN NFT",
       "zh_TW": "以 {saleItemPrice} FLOW 上架 CNN NFT"
+    }
+  },
+  "4e0f4af8e95b010bddf4e4874e203b12a1b095e348c9dc48448abdb09e6eebc3": {
+    "arguments": [
+      "nftID",
+      "salePrice",
+      "nftversion"
+    ],
+    "messages": {
+      "en": "Create listing"
     }
   },
   "4e4e9ee48ad28d420ba7aea9fa4327e2007fe222e824b5d4cec05afcb849c975": {
@@ -1805,6 +1859,14 @@
       "zh_TW": "用 {RepayAmount} FLOW 代幣贖回 NFT {Uuid}"
     }
   },
+  "7afb798d61227cefb55ff65628efb57438642c76aa32c4bbda462d607c153ff1": {
+    "arguments": [
+      "listingID"
+    ],
+    "messages": {
+      "en": "Remove listing"
+    }
+  },
   "7bd1f2494995c48eef7d60636a8c6947eb6fc14b0725cecb965e2c42ab69cf99": {
     "messages": {
       "en": "Initialize your account to buy, sell and receive NFTs"
@@ -1936,6 +1998,14 @@
       "en": "List RCRDSHP NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "83c2aeee7663482cf5dacba01ed0cfd7a9aed82ca9b336a2b45b8c9ec23cb8c9": {
+    "arguments": [
+      "commentId"
+    ],
+    "messages": {
+      "en": "Delete comment"
+    }
+  },
   "83cac98f837532a750bd6e17666d2d8c51dc5da0d7eb91e8308b0fe8d39bf5b3": {
     "arguments": [
       "itemID",
@@ -1962,6 +2032,14 @@
     ],
     "messages": {
       "en": "Update the sale offer price on the Marketplace for Flovatar {flovatarId} to {price} FLOW"
+    }
+  },
+  "847665d06e44f4aa2ae3770f5e41567bb0972b26444baf9f832322b11d3c47b8": {
+    "arguments": [
+      "nftID"
+    ],
+    "messages": {
+      "en": "Destroy NFT"
     }
   },
   "84d7279d4f25600d0e81efc36ab8c5590e8e379f0b6175ad8e2c5d392049dd25": {
@@ -2206,6 +2284,16 @@
     ],
     "messages": {
       "en": "List THiNG.FUND NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "9f7e0b9c2e0be6f54ed6213507a92856fed9f37c7b665971c109b9a2c43b9a98": {
+    "arguments": [
+      "address",
+      "amount",
+      "metadata"
+    ],
+    "messages": {
+      "en": "Create request revenue"
     }
   },
   "9f99b42d4ec10cabdab54bb7346eacaaaab966f4313012dabc9b90017ded72fd": {
@@ -2493,6 +2581,15 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "aa673f08948b0927ddc6f8934716437339dbc130def0be2288f284821368e77b": {
+    "arguments": [
+      "commentId",
+      "comment"
+    ],
+    "messages": {
+      "en": "Edit comment"
+    }
+  },
   "ab1d6074e5a10db78a781e5d9123dbe3afc7508337c631a6e0b3f7af45128aa3": {
     "arguments": [
       "listingResourceID",
@@ -2591,6 +2688,15 @@
     ],
     "messages": {
       "en": "Update the sale offer price on the Marketplace for Flobit component {componentId} to {price} FLOW"
+    }
+  },
+  "b17a22a39a213d70af0cd82b36ad30908bc5f8652d158cbb290365950e5c5286": {
+    "arguments": [
+      "nftID",
+      "recipient"
+    ],
+    "messages": {
+      "en": "Transfer NFT"
     }
   },
   "b25884f008ba3a8f65050bb396a5ac00fc3cd25568786bb1540e7c0c699e1b73": {
@@ -2804,6 +2910,12 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "bd05625538ab48af9b82d956f6749c5b256a643ef62b98c816b7551d06fa087b": {
+    "messages": {
+      "en": "Create a storage vault to store FanTop's items.",
+      "ja": "FanTopのアイテムを格納するための保管庫を作成します"
+    }
+  },
   "bde7036421778613cd0a2a4d3e243469edcd26f125ea4e7ebc1d546859ba3a31": {
     "arguments": [
       "Uuid",
@@ -2841,6 +2953,11 @@
       "en": "Lend NFT {id} in {baseAmount} FLOW tokens.",
       "zh_CN": "以 {baseAmount} FLOW 代币出借 NFT {id}",
       "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
+    }
+  },
+  "bf56d679caadc03a2bb949e09d29015373ea59b27550754d26f02c5ef01b16f9": {
+    "messages": {
+      "en": "Setup up your collection"
     }
   },
   "bfb5dfb885333bb422ca828df9534c67f7b63cc437d4f3c7689ee9fd1116cc49": {
@@ -2922,6 +3039,15 @@
     ],
     "messages": {
       "en": "Place Starly NFT #{itemID} for sale for {price} FUSD"
+    }
+  },
+  "c32db891139234930ee1dc04fcd1cabd3d6b21bfd4133620a4b6ccdd3db518bf": {
+    "arguments": [
+      "storageAddress",
+      "clientInfo"
+    ],
+    "messages": {
+      "en": "Configure Your Address To Accept NFT"
     }
   },
   "c3fb7ca55a5159cbd0dcda9e792d8fa84fde221cd2bad472bde47adc66fcbaa6": {
@@ -3623,6 +3749,14 @@
       "en": "Purchase Tune Go NFT for {buyPrice} FLOW from {storefrontAddress}"
     }
   },
+  "f34b7e361f1dce1f9ee4119f1baedb826abecf308d344345e801fa3750c93a00": {
+    "arguments": [
+      "commentIds"
+    ],
+    "messages": {
+      "en": "Delete comment"
+    }
+  },
   "f4822b0ae1b4f5857e659c7fc49dfb7c40b10f1edc8b5686b39069fe5ba4569e": {
     "arguments": [
       "Uuid",
@@ -3758,6 +3892,15 @@
     ],
     "messages": {
       "en": "Create a profile with the name {name}"
+    }
+  },
+  "f9d0766fa349c1adb190d0fed73dda5cc9406f8112a3713addb9dbf28b0a2e55": {
+    "arguments": [
+      "nftIDs",
+      "comment"
+    ],
+    "messages": {
+      "en": "Create comment"
     }
   },
   "fa11d6b40330716eb47c7f51d18b1a08816b0fba71970f3d9a268fdac866fdf6": {

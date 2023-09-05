@@ -1,0 +1,9 @@
+{
+  "arguments": [
+    "nftID",
+    "recipient"
+  ],
+  "messages": {
+      "en": "Transfer NFT"
+  }
+}
