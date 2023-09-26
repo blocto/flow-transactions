@@ -2910,12 +2910,6 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
-  "bd05625538ab48af9b82d956f6749c5b256a643ef62b98c816b7551d06fa087b": {
-    "messages": {
-      "en": "Create a storage vault to store FanTop's items.",
-      "ja": "FanTopのアイテムを格納するための保管庫を作成します"
-    }
-  },
   "bde7036421778613cd0a2a4d3e243469edcd26f125ea4e7ebc1d546859ba3a31": {
     "arguments": [
       "Uuid",
@@ -3572,6 +3566,12 @@
     },
     "messages": {
       "en": "Purchase Everbloom NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "e6a0b7882bc4742c48bb78ea1455514a783188d6542cd0b072f9b08d6551816a": {
+    "messages": {
+      "en": "Create a storage vault to store FanTop's items.",
+      "ja": "FanTopのアイテムを格納するための保管庫を作成します"
     }
   },
   "e8c2ba9ee7a93006e14a5e5c4d87b5e33e11f16a33a7c2f7bd566e2f69033be9": {

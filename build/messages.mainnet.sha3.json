@@ -119,6 +119,12 @@
       "en": "List RCRDSHP NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
     }
   },
+  "06cefb500ef86261960f0cee75959734e0ed951068984f2deb13227fd270b7fa": {
+    "messages": {
+      "en": "Create a storage vault to store FanTop's items.",
+      "ja": "FanTopのアイテムを格納するための保管庫を作成します"
+    }
+  },
   "07130323e0f817492ae8b7048bfbd88ca70356e5d9b2e3ae7bb918cb446da44c": {
     "arguments": [
       "id",
@@ -2663,12 +2669,6 @@
       "en": "Swap {amountIn} FUSD for at least {minAmountOut} BLT",
       "zh_CN": "将 {amountIn} FUSD 兑换成至少 {minAmountOut} BLT",
       "zh_TW": "將 {amountIn} FUSD 兌換成至少 {minAmountOut} BLT"
-    }
-  },
-  "a5ff0a6b4d22a461ed7200c614d5c5ddbe4b674a2544eed3ea01775e5dc0faea": {
-    "messages": {
-      "en": "Create a storage vault to store FanTop's items.",
-      "ja": "FanTopのアイテムを格納するための保管庫を作成します"
     }
   },
   "a681b7c601a7cd8ebaa2fd96103d82ed1ba04aafe728e3576bd6e8922cc6cddc": {

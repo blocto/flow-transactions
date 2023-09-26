@@ -6,7 +6,7 @@ transaction {
       if (!getAccount(acct.address).getCapability<&{FanTopToken.CollectionPublic}>(FanTopToken.collectionPublicPath).check()) {
         panic("Collection check failed.")
       }
-    return;
+      return;
     }
 
     let collection <- FanTopToken.createEmptyCollection() as! @FanTopToken.Collection

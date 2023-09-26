@@ -1500,6 +1500,12 @@
       "en": "Desposit nft(s) into a safe account"
     }
   },
+  "63e040f4a215a195a599510dc3006d18729cf451daf0c38701d3532f1e927cd5": {
+    "messages": {
+      "en": "Create a storage vault to store FanTop's items.",
+      "ja": "FanTopのアイテムを格納するための保管庫を作成します"
+    }
+  },
   "63fc8ff6ea5f7e685557f47784d336022a46f5c7f996206dd933b5d4f543f118": {
     "arguments": [
       "listingResourceID",
@@ -2121,12 +2127,6 @@
       "en": "Unlist {Uuid}.",
       "zh_CN": "下架 {Uuid}",
       "zh_TW": "下架 {Uuid}"
-    }
-  },
-  "88ed2728ea5077b32be0984ced0f4bfba0afee1ac54ae24ff67163953728b4ea": {
-    "messages": {
-      "en": "Create a storage vault to store FanTop's items.",
-      "ja": "FanTopのアイテムを格納するための保管庫を作成します"
     }
   },
   "8a958fc339f4c1c38985c9044179098b7b4d92ff0ae0b6074ff33e005a397897": {
