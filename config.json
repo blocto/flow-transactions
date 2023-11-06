@@ -359,8 +359,8 @@
     "mainnet": "0x0b80e42aaab305f0",
     "testnet": "0x713306ac51ac7ddb"
   },
-  "0xMINT_ADDRESS": {
-    "mainnet": "0xdac587e8f257a6f2",
-    "testnet": "0x8c0c210d007efa25"
+  "0xMUMGJ_ADDRESS": {
+    "mainnet": "0x20187093790b9aef",
+    "testnet": "0x985d410b577fd4a1"
   }
 }
