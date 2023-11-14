@@ -14,8 +14,7 @@
   },
   "devDependencies": {
     "sha2": "^1.0.2",
-    "sha3": "^2.1.3",
-    "axios": "^0.24.0"
+    "sha3": "^2.1.3"
   },
   "scripts": {
     "build": "node ./internal/processAll",
