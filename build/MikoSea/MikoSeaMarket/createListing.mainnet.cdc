@@ -74,7 +74,7 @@ pub fun getRoyaltiesV1(address: Address, nftID: UInt64): MetadataViews.Royalties
 pub fun getRoyaltiesV2(address: Address, nftID: UInt64): MetadataViews.Royalties {
     let collectionRef = getAccount(address).getCapability<&{MIKOSEANFTV2.CollectionPublic}>(MIKOSEANFTV2.CollectionPublicPath).borrow() ?? panic("ACCOUNT_NOT_SETUP")
     let nft = collectionRef.borrowMIKOSEANFTV2(id: nftID) ?? panic("NFT_NOT_FOUND")
-    return nft.getRoyalties()
+    return nft.getRoyaltiesMarket()
 }
 
 transaction(nftID: UInt64, salePrice: UFix64, nftversion: String) {

@@ -130,6 +130,16 @@
       "zh_TW": "下架 NFT"
     }
   },
+  "09359129390e7625b7e0751e9ad010850312e3d487de2daedba6148daab206f9": {
+    "arguments": [
+      "nftID",
+      "salePrice",
+      "nftversion"
+    ],
+    "messages": {
+      "en": "Create listing"
+    }
+  },
   "09621ae3af9098dfbfd6dfbd33209b20bbd8d3bef9f3fc0ec1a317f2d96d377c": {
     "arguments": [
       "name",
@@ -1225,6 +1235,12 @@
       "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
       "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
       "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+  },
+  "4e6edf8da216f78fa453ea70508eae5dfbd41b9d07a306e6cb798a865b6e9e4d": {
+    "messages": {
+      "en": "Setup your account",
+      "ja": "アカウントをセットアップする"
     }
   },
   "4e8687f64dd0978bdb84cbbe7a77ca9323f1763aee3151805b663fccc66ba41e": {
@@ -3619,16 +3635,6 @@
     ],
     "messages": {
       "en": "List name {name} for auction with startPrice {auctionStartPrice} and reserve price {auctionReservePrice}"
-    }
-  },
-  "ec95f579f681181ba51a05a3b68decd0f24cc54d7c5d6d55343a1128b82c1095": {
-    "arguments": [
-      "nftID",
-      "salePrice",
-      "nftversion"
-    ],
-    "messages": {
-      "en": "Create listing"
     }
   },
   "ecbec47ce81baee293d3141d53eb0e3f84174a70f114ad04e39ec28d7a58b7ea": {

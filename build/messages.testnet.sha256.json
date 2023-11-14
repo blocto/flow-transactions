@@ -1254,16 +1254,6 @@
       "zh_TW": "以 {saleItemPrice} FLOW 上架 CNN NFT"
     }
   },
-  "4e0f4af8e95b010bddf4e4874e203b12a1b095e348c9dc48448abdb09e6eebc3": {
-    "arguments": [
-      "nftID",
-      "salePrice",
-      "nftversion"
-    ],
-    "messages": {
-      "en": "Create listing"
-    }
-  },
   "4e4e9ee48ad28d420ba7aea9fa4327e2007fe222e824b5d4cec05afcb849c975": {
     "arguments": [
       "Uuid",
@@ -1273,6 +1263,12 @@
       "en": "Forced redeem of NFT {Uuid} on {BorrowerAddress} debit.",
       "zh_CN": "对 {BorrowerAddress} 借方强制清算 NFT {Uuid}",
       "zh_TW": "對 {BorrowerAddress} 借方強制清算 NFT {Uuid}"
+    }
+  },
+  "4e6edf8da216f78fa453ea70508eae5dfbd41b9d07a306e6cb798a865b6e9e4d": {
+    "messages": {
+      "en": "Setup your account",
+      "ja": "アカウントをセットアップする"
     }
   },
   "4f2fafb43e9ad6872f87459b0b5ec522547c639bbaa035fa8d1d5217b4749d03": {
@@ -2231,6 +2227,16 @@
       "en": "Unlist {Uuid}.",
       "zh_CN": "下架 {Uuid}",
       "zh_TW": "下架 {Uuid}"
+    }
+  },
+  "9721981bf288af7eed8cd790e695fb694b0f111999db7ca196255a3d651e0b21": {
+    "arguments": [
+      "nftID",
+      "salePrice",
+      "nftversion"
+    ],
+    "messages": {
+      "en": "Create listing"
     }
   },
   "9869da773c5c09c776d063c99a12128de5cb5330dfb21714f0bcd4e942524a2c": {
