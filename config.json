@@ -358,5 +358,9 @@
   "0xMIKOSEA_MARKET_ADDRESS": {
     "mainnet": "0x0b80e42aaab305f0",
     "testnet": "0x713306ac51ac7ddb"
+  },
+  "0xMUMGJ_ADDRESS": {
+    "mainnet": "0x20187093790b9aef",
+    "testnet": "0x985d410b577fd4a1"
   }
 }
