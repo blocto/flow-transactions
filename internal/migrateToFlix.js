@@ -3,12 +3,23 @@ const path = require('path');
 const {
     listFiles
 } = require('./utils/file');
+const {CadenceParser} = require("@onflow/cadence-parser");
+const decamelize = require("decamelize");
 
 process();
 
 async function process() {
-    const cadencePaths = await getAllCadenceFilePaths();
-    const cadenceAndMetadataPaths = await Promise.all(
+    const cadenceParserWasm = await fs.readFile(
+        path.join(__dirname, "..", "node_modules", "@onflow", "cadence-parser", "dist", "cadence-parser.wasm")
+    )
+    const parser = await CadenceParser.create(cadenceParserWasm)
+
+    let cadencePaths = await getAllCadenceFilePaths();
+
+    // Temporary
+    cadencePaths = [cadencePaths[0]]
+
+    const flixTemplates = await Promise.all(
         cadencePaths.map(async cadencePath => {
             const metadataPath = cadencePath.replace(".cdc", ".json");
 
@@ -17,13 +28,91 @@ async function process() {
                 fs.readFile(metadataPath),
             ]);
 
+            const cadence = cadenceBuffer.toString("utf-8");
+            const metadata = JSON.parse(metadataBuffer.toString("utf-8"));
+            const ast = parser.parse(removeImports(cadence));
+
+            const descriptions = Object.entries(metadata.messages)
+                .map(entry => {
+                    const keyRemappingLookup = new Map([
+                        ["en", "en-US"]
+                    ])
+                    const reMappedKey = (keyRemappingLookup.get(entry[0]) ?? entry[0]).replace("_", "-");
+                    return {
+                        [reMappedKey]: entry[1]
+                    }
+                })
+                .reduce((union, entry) => ({...union, ...entry}), {});
+
+            const cadencePathParts = cadencePath.split("/");
+            const transactionName = capitalize(decamelize(cadencePathParts.at(-1).replace(".cdc", ""), {separator: " "}));
+            const projectName = cadencePathParts.at(-2)
+            const generatedTitle = `${transactionName} (${projectName})`;
+
             return {
-                cadence: cadenceBuffer.toString("utf-8"),
-                metadata: JSON.parse(metadataBuffer.toString("utf-8"))
+                "f_type": "InteractionTemplate",
+                "f_version": "1.0.0",
+                "id": "c8cb7cc7a1c2a329de65d83455016bc3a9b53f9668c74ef555032804bac0b25b",
+                "data": {
+                    "type": "transaction",
+                    "interface": "",
+                    "messages": {
+                        "title": {
+                          "i18n": {
+                              "en-US": generatedTitle
+                          }
+                        },
+                        "description": {
+                            "i18n": descriptions
+                        }
+                    },
+                    "cadence": cadence,
+                    "dependencies": {
+                        "0xEMERALDIDENTITYLILICO": {
+                            "EmeraldIdentityLilico": {
+                                "mainnet": {
+                                    "address": "0x39e42c67cc851cfb",
+                                    "contract": "EmeraldIdentityLilico",
+                                    "fq_address": "A.0x39e42c67cc851cfb.EmeraldIdentityLilico",
+                                    "pin": "83c9e3d61d3b5ebf24356a9f17b5b57b12d6d56547abc73e05f820a0ae7d9cf5",
+                                    "pin_block_height": 42017084
+                                }
+                            }
+                        }
+                    },
+                    "arguments": getFlixArguments(ast)
+                }
             }
         })
     );
 
+    console.log(JSON.stringify(flixTemplates[0], null, 4))
+
+}
+
+function getFlixArguments(ast) {
+    const parameters = ast.program.Declarations[0].ParameterList.Parameters;
+
+    const flixParameters = parameters.map(parameter => {
+
+        return {
+            [parameter.Identifier.Identifier]: {
+                "index": 0,
+                "type": parameter.TypeAnnotation.AnnotatedType.ElementType?.Identifier?.Identifier ?? parameter.TypeAnnotation.AnnotatedType?.Identifier?.Identifier,
+                "messages": {}
+            }
+        }
+    });
+
+    return flixParameters.reduce((union, parameter) => ({...union, ...parameter}), {})
+}
+
+function removeImports(cadence) {
+    return cadence.split("\n").filter(line => !line.startsWith("import")).join("\n")
+}
+
+function capitalize(text) {
+    return text.slice(0, 1).toUpperCase() + text.slice(1)
 }
 
 async function getAllCadenceFilePaths() {

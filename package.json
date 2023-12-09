@@ -19,5 +19,9 @@
   "scripts": {
     "build": "node ./internal/processAll",
     "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "@onflow/cadence-parser": "^0.42.1",
+    "decamelize": "v5.0.1"
   }
 }
