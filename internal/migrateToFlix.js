@@ -4,6 +4,8 @@ const {
     listFiles
 } = require('./utils/file');
 const {CadenceParser} = require("@onflow/cadence-parser");
+const fcl = require("@onflow/fcl");
+const Flix = require("@onflow/interaction-template-generators")
 const decamelize = require("decamelize");
 
 process();
@@ -21,6 +23,12 @@ async function process() {
     // Temporary
     cadencePaths = [cadencePaths[0]]
 
+
+    fcl.config({
+        "accessNode.api": "https://rest-testnet.onflow.org"
+    })
+
+
     const flixTemplates = await Promise.all(
         cadencePaths.map(async cadencePath => {
             const metadataPath = cadencePath.replace(".cdc", ".json");
@@ -32,30 +40,20 @@ async function process() {
 
             const cadence = cadenceBuffer.toString("utf-8");
             const metadata = JSON.parse(metadataBuffer.toString("utf-8"));
+            // Parsing will fail if we don't remove the imports with replacement characters.
             const ast = parser.parse(removeImports(cadence));
 
-            return {
-                "f_type": "InteractionTemplate",
-                "f_version": "1.0.0",
-                "id": "c8cb7cc7a1c2a329de65d83455016bc3a9b53f9668c74ef555032804bac0b25b",
-                "data": {
-                    "type": "transaction",
-                    "interface": "",
-                    "messages": {
-                        "title": {
-                            "i18n": {
-                                "en-US": generateTitle(cadencePath)
-                            }
-                        },
-                        "description": {
-                            "i18n": generateI18nDescriptions(metadata.messages)
-                        }
-                    },
-                    "cadence": cadence,
-                    "dependencies": getDependencies(cadence, addressConfigByReplacementPattern),
-                    "arguments": getFlixArguments(ast)
-                }
-            }
+            return Flix.template({
+                type: "InteractionTemplate",
+                iface: "",
+                messages: [
+                    generateTitleMessage(cadencePath),
+                    generateDescriptionMessage(metadata.messages)
+                ],
+                dependencies: generateDependencies(cadence, addressConfigByReplacementPattern),
+                args: generateArguments(ast),
+                cadence,
+            })
         })
     );
 
@@ -63,85 +61,97 @@ async function process() {
 
 }
 
-function getFlixArguments(ast) {
+function generateArguments(ast) {
     const parameters = ast.program.Declarations[0].ParameterList.Parameters;
 
-    const flixParameters = parameters.map(parameter => {
+    return parameters.map((parameter, index) => {
 
-        return {
-            [parameter.Identifier.Identifier]: {
-                "index": 0,
-                "type": parameter.TypeAnnotation.AnnotatedType.ElementType?.Identifier?.Identifier ?? parameter.TypeAnnotation.AnnotatedType?.Identifier?.Identifier,
-                "messages": {}
-            }
-        }
+        return Flix.arg({
+            tag: parameter.Identifier.Identifier,
+            type: parameter.TypeAnnotation.AnnotatedType.ElementType?.Identifier?.Identifier ?? parameter.TypeAnnotation.AnnotatedType?.Identifier?.Identifier,
+            index,
+            messages: [],
+        })
     });
-
-    return flixParameters.reduce((union, parameter) => ({...union, ...parameter}), {})
 }
 
 function removeImports(cadence) {
     return cadence.split("\n").filter(line => !line.startsWith("import")).join("\n")
 }
 
-function getDependencies(cadence, addressConfigByReplacementPattern) {
+function generateDependencies(cadence, addressConfigByReplacementPattern) {
     return cadence
         .split("\n")
         .filter(line => line.trim().startsWith("import"))
         .map(importLine => {
 
-            const [contractName, replacementPattern] = importLine.replace("import", "").split("from").map(part => part.trim());
+            const [contractName, placeholder] = importLine.replace("import", "").split("from").map(part => part.trim());
 
             function buildForNetwork(network) {
-                const address = addressConfigByReplacementPattern[replacementPattern]?.[network];
+                const address = addressConfigByReplacementPattern[placeholder]?.[network];
 
                 const existsOnNetwork = address && address !== "0x0";
                 if (!existsOnNetwork) {
-                    return {};
+                    return undefined;
                 }
 
-                return {
-                    [network]: {
-                        "address": address,
-                        "contract": contractName,
-                        "fq_address": `A.${address}.${contractName}`,
-                        "pin": "",
-                        "pin_block_height": -1
-                    }
-                }
+                return Flix.dependencyContractByNetwork({
+                    network,
+                    contractName,
+                    address,
+                    fqAddress: `A.${address}.${contractName}`,
+                    pin: "",
+                    pinBlockHeight: 0,
+                })
             }
 
-            return {
-                [replacementPattern]: {
-                    [contractName]: {
-                        ...buildForNetwork("mainnet"),
-                        ...buildForNetwork("testnet"),
-                    }
-                }
-            }
+            return Flix.dependency({
+                addressPlaceholder: placeholder,
+                contracts: [
+                    Flix.dependencyContract({
+                        contractName,
+                        networks: [
+                            buildForNetwork("mainnet"),
+                            buildForNetwork("testnet"),
+                        ].filter(Boolean),
+                    }),
+                ],
+            })
         })
-        .reduce((union, replacementConfig) => ({...union, ...replacementConfig}), {})
 }
 
-function generateI18nDescriptions(bloctoMessages) {
-    return Object.entries(bloctoMessages)
-        .map(entry => {
-            const keyRemappingLookup = new Map([
-                ["en", "en-US"]
-            ])
-            const reMappedKey = (keyRemappingLookup.get(entry[0]) ?? entry[0]).replace("_", "-");
-            return {
-                [reMappedKey]: entry[1]
-            }
-        })
-        .reduce((union, entry) => ({...union, ...entry}), {});
+function generateDescriptionMessage(bloctoMessages) {
+    return Flix.message({
+        tag: "description",
+        translations: Object.entries(bloctoMessages)
+            .map(entry => {
+                const keyRemappingLookup = new Map([
+                    ["en", "en-US"]
+                ])
+                const reMappedKey = (keyRemappingLookup.get(entry[0]) ?? entry[0]).replace("_", "-");
+
+                return Flix.messageTranslation({
+                    bcp47tag: reMappedKey,
+                    translation: entry[1]
+                })
+            })
+    })
 }
 
-function generateTitle(cadencePath) {
+function generateTitleMessage(cadencePath) {
     const cadencePathParts = cadencePath.split("/");
     const transactionName = capitalize(decamelize(cadencePathParts.at(-1).replace(".cdc", ""), {separator: " "}));
     const projectName = cadencePathParts.at(-2)
-    return `${transactionName} (${projectName})`;
+
+    return Flix.message({
+        tag: "title",
+        translations: [
+            Flix.messageTranslation({
+                bcp47tag: "en-US",
+                translation: `${transactionName} (${projectName})`,
+            })
+        ]
+    })
 }
 
 function capitalize(text) {
