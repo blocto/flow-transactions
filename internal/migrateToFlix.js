@@ -12,7 +12,9 @@ async function process() {
     const cadenceParserWasm = await fs.readFile(
         path.join(__dirname, "..", "node_modules", "@onflow", "cadence-parser", "dist", "cadence-parser.wasm")
     )
-    const parser = await CadenceParser.create(cadenceParserWasm)
+    const parser = await CadenceParser.create(cadenceParserWasm);
+
+    const addressConfigByReplacementPattern = JSON.parse((await fs.readFile(path.join(__dirname, "..", "config.json"))).toString("utf-8"));
 
     let cadencePaths = await getAllCadenceFilePaths();
 
@@ -58,28 +60,16 @@ async function process() {
                     "interface": "",
                     "messages": {
                         "title": {
-                          "i18n": {
-                              "en-US": generatedTitle
-                          }
+                            "i18n": {
+                                "en-US": generatedTitle
+                            }
                         },
                         "description": {
                             "i18n": descriptions
                         }
                     },
                     "cadence": cadence,
-                    "dependencies": {
-                        "0xEMERALDIDENTITYLILICO": {
-                            "EmeraldIdentityLilico": {
-                                "mainnet": {
-                                    "address": "0x39e42c67cc851cfb",
-                                    "contract": "EmeraldIdentityLilico",
-                                    "fq_address": "A.0x39e42c67cc851cfb.EmeraldIdentityLilico",
-                                    "pin": "83c9e3d61d3b5ebf24356a9f17b5b57b12d6d56547abc73e05f820a0ae7d9cf5",
-                                    "pin_block_height": 42017084
-                                }
-                            }
-                        }
-                    },
+                    "dependencies": getDependencies(cadence, addressConfigByReplacementPattern),
                     "arguments": getFlixArguments(ast)
                 }
             }
@@ -109,6 +99,45 @@ function getFlixArguments(ast) {
 
 function removeImports(cadence) {
     return cadence.split("\n").filter(line => !line.startsWith("import")).join("\n")
+}
+
+function getDependencies(cadence, addressConfigByReplacementPattern) {
+    return cadence
+        .split("\n")
+        .filter(line => line.trim().startsWith("import"))
+        .map(importLine => {
+
+            const [contractName, replacementPattern] = importLine.replace("import", "").split("from").map(part => part.trim());
+
+            function buildForNetwork(network) {
+                const address = addressConfigByReplacementPattern[replacementPattern]?.[network];
+
+                const existsOnNetwork = address && address !== "0x0";
+                if (!existsOnNetwork) {
+                    return {};
+                }
+
+                return {
+                    [network]: {
+                        "address": address,
+                        "contract": contractName,
+                        "fq_address": `A.${address}.${contractName}`,
+                        "pin": "",
+                        "pin_block_height": -1
+                    }
+                }
+            }
+
+            return {
+                [replacementPattern]: {
+                    [contractName]: {
+                        ...buildForNetwork("mainnet"),
+                        ...buildForNetwork("testnet"),
+                    }
+                }
+            }
+        })
+        .reduce((union, replacementConfig) => ({...union, ...replacementConfig}), {})
 }
 
 function capitalize(text) {
