@@ -34,23 +34,6 @@ async function process() {
             const metadata = JSON.parse(metadataBuffer.toString("utf-8"));
             const ast = parser.parse(removeImports(cadence));
 
-            const descriptions = Object.entries(metadata.messages)
-                .map(entry => {
-                    const keyRemappingLookup = new Map([
-                        ["en", "en-US"]
-                    ])
-                    const reMappedKey = (keyRemappingLookup.get(entry[0]) ?? entry[0]).replace("_", "-");
-                    return {
-                        [reMappedKey]: entry[1]
-                    }
-                })
-                .reduce((union, entry) => ({...union, ...entry}), {});
-
-            const cadencePathParts = cadencePath.split("/");
-            const transactionName = capitalize(decamelize(cadencePathParts.at(-1).replace(".cdc", ""), {separator: " "}));
-            const projectName = cadencePathParts.at(-2)
-            const generatedTitle = `${transactionName} (${projectName})`;
-
             return {
                 "f_type": "InteractionTemplate",
                 "f_version": "1.0.0",
@@ -61,11 +44,11 @@ async function process() {
                     "messages": {
                         "title": {
                             "i18n": {
-                                "en-US": generatedTitle
+                                "en-US": generateTitle(cadencePath)
                             }
                         },
                         "description": {
-                            "i18n": descriptions
+                            "i18n": generateI18nDescriptions(metadata.messages)
                         }
                     },
                     "cadence": cadence,
@@ -138,6 +121,27 @@ function getDependencies(cadence, addressConfigByReplacementPattern) {
             }
         })
         .reduce((union, replacementConfig) => ({...union, ...replacementConfig}), {})
+}
+
+function generateI18nDescriptions(bloctoMessages) {
+    return Object.entries(bloctoMessages)
+        .map(entry => {
+            const keyRemappingLookup = new Map([
+                ["en", "en-US"]
+            ])
+            const reMappedKey = (keyRemappingLookup.get(entry[0]) ?? entry[0]).replace("_", "-");
+            return {
+                [reMappedKey]: entry[1]
+            }
+        })
+        .reduce((union, entry) => ({...union, ...entry}), {});
+}
+
+function generateTitle(cadencePath) {
+    const cadencePathParts = cadencePath.split("/");
+    const transactionName = capitalize(decamelize(cadencePathParts.at(-1).replace(".cdc", ""), {separator: " "}));
+    const projectName = cadencePathParts.at(-2)
+    return `${transactionName} (${projectName})`;
 }
 
 function capitalize(text) {
