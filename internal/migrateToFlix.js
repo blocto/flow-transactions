@@ -20,16 +20,13 @@ async function process() {
 
     let cadencePaths = await getAllCadenceFilePaths();
 
-    // Temporary
-    cadencePaths = [cadencePaths[0]]
-
 
     fcl.config({
         "accessNode.api": "https://rest-testnet.onflow.org"
     })
 
 
-    const flixTemplates = await Promise.all(
+    const generationResults = await Promise.allSettled(
         cadencePaths.map(async cadencePath => {
             const metadataPath = cadencePath.replace(".cdc", ".json");
 
@@ -61,16 +58,25 @@ async function process() {
 
     const flixDirPath = path.join(__dirname, "..", "flix");
 
-    await fs.mkdir(flixDirPath, { recursive: true });
+    await fs.mkdir(flixDirPath, {recursive: true});
 
     await Promise.all(
-        flixTemplates.map(template =>
-            fs.writeFile(
-                path.join(flixDirPath, generateFileName(template)),
-                JSON.stringify(template, null, 4)
+        generationResults
+            .filter(result => result.status === "fulfilled")
+            .map(result => result.value)
+            .map(template =>
+                fs.writeFile(
+                    path.join(flixDirPath, generateFileName(template)),
+                    JSON.stringify(template, null, 4)
+                )
             )
-        )
-    )
+    );
+
+    const errors = generationResults
+        .filter(result => result.status === "rejected")
+        .map(result => result.reason)
+
+    console.log(`Failed to generate ${errors.length} templates`, JSON.stringify(errors, null, 4))
 
 }
 
@@ -80,7 +86,11 @@ function generateFileName(flixTemplate) {
 }
 
 function generateArguments(ast) {
-    const parameters = ast.program.Declarations[0].ParameterList.Parameters;
+    const parameters = ast.program.Declarations?.[0]?.ParameterList?.Parameters;
+
+    if (!parameters) {
+        throw new Error(`Failed to generate arguments for AST: ${JSON.stringify(ast, null, 4)}`)
+    }
 
     return parameters.map((parameter, index) => {
 
