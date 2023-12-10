@@ -57,8 +57,26 @@ async function process() {
         })
     );
 
+    const flixDirPath = path.join(__dirname, "..", "flix");
+
+    await fs.mkdir(flixDirPath, { recursive: true });
+
+    await Promise.all(
+        flixTemplates.map(template =>
+            fs.writeFile(
+                path.join(flixDirPath, generateFileName(template)),
+                JSON.stringify(template, null, 4)
+            )
+        )
+    )
+
     console.log(JSON.stringify(flixTemplates[0], null, 4))
 
+}
+
+function generateFileName(flixTemplate) {
+    const title = flixTemplate.data.messages.title.i18n["en-US"];
+    return `${title.toLowerCase().replaceAll(" ", "-")}.json`
 }
 
 function generateArguments(ast) {
@@ -148,7 +166,7 @@ function generateTitleMessage(cadencePath) {
         translations: [
             Flix.messageTranslation({
                 bcp47tag: "en-US",
-                translation: `${transactionName} (${projectName})`,
+                translation: `${projectName} ${transactionName}`,
             })
         ]
     })
