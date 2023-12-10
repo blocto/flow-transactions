@@ -43,6 +43,8 @@ async function process() {
             // Parsing will fail if we don't remove the imports with replacement characters.
             const ast = parser.parse(removeImports(cadence));
 
+            // This call currently takes quite some time to complete.
+            // See: https://github.com/onflow/flow-interaction-template-tools/issues/6
             return Flix.template({
                 type: "InteractionTemplate",
                 iface: "",
@@ -69,8 +71,6 @@ async function process() {
             )
         )
     )
-
-    console.log(JSON.stringify(flixTemplates[0], null, 4))
 
 }
 
@@ -128,8 +128,10 @@ function generateDependencies(cadence, addressConfigByReplacementPattern) {
                 contracts: [
                     Flix.dependencyContract({
                         contractName,
+                        // For now, it only works to generate template for a single network at the time.
+                        // See: https://github.com/onflow/flow-interaction-template-tools/issues/13
                         networks: [
-                            buildForNetwork("mainnet"),
+                            // buildForNetwork("mainnet"),
                             buildForNetwork("testnet"),
                         ].filter(Boolean),
                     }),
