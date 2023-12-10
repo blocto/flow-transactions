@@ -20,10 +20,15 @@ async function process() {
     )
     const parser = await CadenceParser.create(cadenceParserWasm);
 
-    const addressConfigByReplacementPattern = JSON.parse((await fs.readFile(path.join(__dirname, "..", "config.json"))).toString("utf-8"));
+    const addressConfigByReplacementPattern = JSON.parse(
+        (await fs.readFile(path.join(__dirname, "..", "config.json"))).toString("utf-8")
+    );
+
+    const flixDirPath = path.join(__dirname, "..", "flix");
+
+    await fs.mkdir(flixDirPath, {recursive: true});
 
     let cadencePaths = await getAllCadenceFilePaths();
-
 
     fcl.config({
         "accessNode.api": "https://rest-testnet.onflow.org"
@@ -44,7 +49,7 @@ async function process() {
 
         // This call currently takes quite some time to complete.
         // See: https://github.com/onflow/flow-interaction-template-tools/issues/6
-        return Flix.template({
+        const flixTemplate = await Flix.template({
             type: "InteractionTemplate",
             iface: "",
             messages: [
@@ -54,7 +59,12 @@ async function process() {
             dependencies: generateDependencies(cadence, addressConfigByReplacementPattern),
             args: generateArguments(ast),
             cadence,
-        })
+        });
+
+        await fs.writeFile(
+            path.join(flixDirPath, generateFileName(flixTemplate)),
+            JSON.stringify(flixTemplate, null, 4)
+        )
     }
 
     async function mapper(cadencePath) {
@@ -66,22 +76,7 @@ async function process() {
         }
     }
 
-    const generatedTemplates = await pMap.default(cadencePaths, mapper, {concurrency: 5})
-
-    const flixDirPath = path.join(__dirname, "..", "flix");
-
-    await fs.mkdir(flixDirPath, {recursive: true});
-
-    await Promise.all(
-        generatedTemplates
-            .map(template =>
-                fs.writeFile(
-                    path.join(flixDirPath, generateFileName(template)),
-                    JSON.stringify(template, null, 4)
-                )
-            )
-    );
-
+    await pMap.default(cadencePaths, mapper, {concurrency: 5})
 }
 
 function generateFileName(flixTemplate) {
