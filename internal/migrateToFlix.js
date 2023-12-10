@@ -11,6 +11,10 @@ const decamelize = require("decamelize");
 process();
 
 async function process() {
+    // p-map lib only works with ESM modules,
+    // but using the dynamic import syntax works in Common JS.
+    const pMap = await import("p-map");
+
     const cadenceParserWasm = await fs.readFile(
         path.join(__dirname, "..", "node_modules", "@onflow", "cadence-parser", "dist", "cadence-parser.wasm")
     )
@@ -23,47 +27,53 @@ async function process() {
 
     fcl.config({
         "accessNode.api": "https://rest-testnet.onflow.org"
-    })
+    });
 
+    async function processCadencePath(cadencePath) {
+        const metadataPath = cadencePath.replace(".cdc", ".json");
 
-    const generationResults = await Promise.allSettled(
-        cadencePaths.map(async cadencePath => {
-            const metadataPath = cadencePath.replace(".cdc", ".json");
+        const [cadenceBuffer, metadataBuffer] = await Promise.all([
+            fs.readFile(cadencePath),
+            fs.readFile(metadataPath),
+        ]);
 
-            const [cadenceBuffer, metadataBuffer] = await Promise.all([
-                fs.readFile(cadencePath),
-                fs.readFile(metadataPath),
-            ]);
+        const cadence = cadenceBuffer.toString("utf-8");
+        const metadata = JSON.parse(metadataBuffer.toString("utf-8"));
+        // Parsing will fail if we don't remove the imports with replacement characters.
+        const ast = parser.parse(removeImports(cadence));
 
-            const cadence = cadenceBuffer.toString("utf-8");
-            const metadata = JSON.parse(metadataBuffer.toString("utf-8"));
-            // Parsing will fail if we don't remove the imports with replacement characters.
-            const ast = parser.parse(removeImports(cadence));
-
-            // This call currently takes quite some time to complete.
-            // See: https://github.com/onflow/flow-interaction-template-tools/issues/6
-            return Flix.template({
-                type: "InteractionTemplate",
-                iface: "",
-                messages: [
-                    generateTitleMessage(cadencePath),
-                    generateDescriptionMessage(metadata.messages)
-                ],
-                dependencies: generateDependencies(cadence, addressConfigByReplacementPattern),
-                args: generateArguments(ast),
-                cadence,
-            })
+        // This call currently takes quite some time to complete.
+        // See: https://github.com/onflow/flow-interaction-template-tools/issues/6
+        return Flix.template({
+            type: "InteractionTemplate",
+            iface: "",
+            messages: [
+                generateTitleMessage(cadencePath),
+                generateDescriptionMessage(metadata.messages)
+            ],
+            dependencies: generateDependencies(cadence, addressConfigByReplacementPattern),
+            args: generateArguments(ast),
+            cadence,
         })
-    );
+    }
+
+    async function mapper(cadencePath) {
+        try {
+            await processCadencePath(cadencePath)
+        } catch (error) {
+            console.error(`Error for ${cadencePath}:`, error)
+            return pMap.pMapSkip;
+        }
+    }
+
+    const generatedTemplates = await pMap.default(cadencePaths, mapper, {concurrency: 5})
 
     const flixDirPath = path.join(__dirname, "..", "flix");
 
     await fs.mkdir(flixDirPath, {recursive: true});
 
     await Promise.all(
-        generationResults
-            .filter(result => result.status === "fulfilled")
-            .map(result => result.value)
+        generatedTemplates
             .map(template =>
                 fs.writeFile(
                     path.join(flixDirPath, generateFileName(template)),
@@ -71,12 +81,6 @@ async function process() {
                 )
             )
     );
-
-    const errors = generationResults
-        .filter(result => result.status === "rejected")
-        .map(result => result.reason)
-
-    console.log(`Failed to generate ${errors.length} templates`, JSON.stringify(errors, null, 4))
 
 }
 
