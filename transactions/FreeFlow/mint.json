@@ -1,0 +1,10 @@
+{
+  "arguments": [
+    "amount"
+  ],
+  "messages": {
+    "en": "Minting {amount} inscriptions from free-flow.xyz",
+    "zh_CN": "从 free-flow.xyz 铸造数量为 {amount} 的铭文",
+    "zh_TW": "從 free-flow.xyz 鑄造數量為 {amount} 的銘文"
+  }
+}
