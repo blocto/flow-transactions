@@ -1,0 +1,9 @@
+{
+    "arguments": [
+        "recpAccount",
+        "tokenIds"
+    ],
+    "messages": {
+        "en": "Token Transfer"
+    }
+}

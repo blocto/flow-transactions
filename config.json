@@ -362,5 +362,9 @@
   "0xMUMGJ_ADDRESS": {
     "mainnet": "0x20187093790b9aef",
     "testnet": "0x985d410b577fd4a1"
+  },
+  "0xDISRUPTART_ADDRESS": {
+    "mainnet": "0xcd946ef9b13804c6",
+    "testnet": "0x439c2b49c0b2f62b"
   }
 }
