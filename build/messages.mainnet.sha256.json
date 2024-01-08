@@ -2211,6 +2211,16 @@
       "zh_TW": "使用 {buyPrice} FLOW 向 {storefrontAddress} 購買 NFT"
     }
   },
+  "8802be9dd72b1d25688ceb639dbb1485f68b57775f3ae6852018d786e13d79e5": {
+    "arguments": [
+      "amount"
+    ],
+    "messages": {
+      "en": "Minting {amount} inscriptions from free-flow.xyz",
+      "zh_CN": "从 free-flow.xyz 铸造数量为 {amount} 的铭文",
+      "zh_TW": "從 free-flow.xyz 鑄造數量為 {amount} 的銘文"
+    }
+  },
   "88697a4905df6a88fb2906426c146299be9d4292f3abe2ed10e357a1d097cc8f": {
     "arguments": [
       "saleItemID",
@@ -3344,6 +3354,17 @@
     ],
     "messages": {
       "en": "List Tune Go NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "d4be6a3f31770c2c46afc23462ff7dabb90b329cd6f06b14a7428701f346c9c6": {
+    "arguments": [
+      "publicKey",
+      "amount"
+    ],
+    "messages": {
+      "en": "Create a new account and deposit {amount} Flow native token from free-flow.xyz",
+      "zh_CN": "从 free-flow.xyz 创建一个新帐号并充值 {amount} Flow 原生代币",
+      "zh_TW": "從 free-flow.xyz 建立一個新帳號並儲值 {amount} Flow 原生代幣"
     }
   },
   "d4cdebd9e3ce1c102ca17ac282ead88925489488578e2b20d1cfc6aad40f2bfe": {

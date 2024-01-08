@@ -2080,6 +2080,16 @@
       "zh_TW": "為 {flowAmount} FLOW 購買新的 nft mint 並存儲在新帳戶中"
     }
   },
+  "8802be9dd72b1d25688ceb639dbb1485f68b57775f3ae6852018d786e13d79e5": {
+    "arguments": [
+      "amount"
+    ],
+    "messages": {
+      "en": "Minting {amount} inscriptions from free-flow.xyz",
+      "zh_CN": "从 free-flow.xyz 铸造数量为 {amount} 的铭文",
+      "zh_TW": "從 free-flow.xyz 鑄造數量為 {amount} 的銘文"
+    }
+  },
   "8adefe2a7a57260d7520cf6d9d2d9e10c50d9d6f28f23ca4578f62c38999ccda": {
     "arguments": [
       "amount"
@@ -3348,6 +3358,17 @@
     },
     "messages": {
       "en": "Purchase Fright Club NFT for {buyPrice} FLOW from {storefrontAddress}"
+    }
+  },
+  "db29cc97be31f5d734aa9504a9aca22dd043a6ee40b339fd2d41cb20470b4711": {
+    "arguments": [
+      "publicKey",
+      "amount"
+    ],
+    "messages": {
+      "en": "Create a new account and deposit {amount} Flow native token from free-flow.xyz",
+      "zh_CN": "从 free-flow.xyz 创建一个新帐号并充值 {amount} Flow 原生代币",
+      "zh_TW": "從 free-flow.xyz 建立一個新帳號並儲值 {amount} Flow 原生代幣"
     }
   },
   "dc16df1b18022f5ac5ea00a86aeebdc0e64fe276745e5f406a9bccb65494a3b3": {

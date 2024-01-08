@@ -461,6 +461,17 @@
       "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
+  "1971c559ce8a95e7bb6c87b67026c0a934f0b51891fd87eac0a45d953e3481a4": {
+    "arguments": [
+      "publicKey",
+      "amount"
+    ],
+    "messages": {
+      "en": "Create a new account and deposit {amount} Flow native token from free-flow.xyz",
+      "zh_CN": "从 free-flow.xyz 创建一个新帐号并充值 {amount} Flow 原生代币",
+      "zh_TW": "從 free-flow.xyz 建立一個新帳號並儲值 {amount} Flow 原生代幣"
+    }
+  },
   "1a6096bef2e7c8e98d3eecef1da3d790d994c50bb7c4a021ef0b6368fa66748f": {
     "arguments": [
       "id",
@@ -1087,6 +1098,16 @@
     ],
     "messages": {
       "en": "List THiNG.FUND NFT #{saleItemID} for sale for {saleItemPrice} FLOW"
+    }
+  },
+  "40c2b48421913988aaeb410e28e83e5f8a35646e4e818d99453ca8a41ae6f1fb": {
+    "arguments": [
+      "amount"
+    ],
+    "messages": {
+      "en": "Minting {amount} inscriptions from free-flow.xyz",
+      "zh_CN": "从 free-flow.xyz 铸造数量为 {amount} 的铭文",
+      "zh_TW": "從 free-flow.xyz 鑄造數量為 {amount} 的銘文"
     }
   },
   "44451d6cc62ae3a4fa719ec19c67dbf2c4486d69efb0aeb37ddb0a16291df4cd": {
