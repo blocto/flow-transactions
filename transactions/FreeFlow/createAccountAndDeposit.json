@@ -1,0 +1,11 @@
+{
+  "arguments": [
+    "publicKey",
+    "amount"
+  ],
+  "messages": {
+    "en": "Create a new account and deposit {amount} Flow native token from free-flow.xyz",
+    "zh_CN": "从 free-flow.xyz 创建一个新帐号并充值 {amount} Flow 原生代币",
+    "zh_TW": "從 free-flow.xyz 建立一個新帳號並儲值 {amount} Flow 原生代幣"
+  }
+}
