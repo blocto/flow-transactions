@@ -1,16 +1,14 @@
-import FanTopToken from 0xFANTOP_ADDRESS
+import FanTopToken from 0x86185fba578bc773
 
 transaction {
-  prepare(acct: AuthAccount) {
-    if acct.borrow<&FanTopToken.Collection>(from: FanTopToken.collectionStoragePath) != nil {
-      if (!getAccount(acct.address).getCapability<&{FanTopToken.CollectionPublic}>(FanTopToken.collectionPublicPath).check()) {
-        panic("Collection check failed.")
-      }
-      return;
+  prepare(acct: auth(Storage, Capabilities) &Account) {
+    if acct.storage.borrow<&FanTopToken.Collection>(from: FanTopToken.collectionStoragePath) != nil {
+        panic("The account has already been initialized.")
     }
 
-    let collection <- FanTopToken.createEmptyCollection() as! @FanTopToken.Collection
-    acct.save(<-collection, to: FanTopToken.collectionStoragePath)
-    acct.link<&{FanTopToken.CollectionPublic}>(FanTopToken.collectionPublicPath, target: FanTopToken.collectionStoragePath)
+    let collection <- FanTopToken.createEmptyDefaultTypeCollection() as! @FanTopToken.Collection
+    acct.storage.save(<-collection, to: FanTopToken.collectionStoragePath)
+    let capability = acct.capabilities.storage.issue<&{FanTopToken.CollectionPublic}>(FanTopToken.collectionStoragePath)
+    acct.capabilities.publish(capability, at: FanTopToken.collectionPublicPath)
   }
 }
