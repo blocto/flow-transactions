@@ -1,3 +1,5 @@
+- Arguments: [95935, 0xd38c1fc1e906ffd0]
+
 import NonFungibleToken from 0x1d7e57aa55817448
 import FanTopToken from 0x86185fba578bc773
 

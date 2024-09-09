@@ -1,3 +1,5 @@
+- Arguments: []
+
 import FanTopToken from 0x86185fba578bc773
 
 transaction {
