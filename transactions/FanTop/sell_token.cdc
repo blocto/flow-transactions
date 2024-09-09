@@ -1,6 +1,6 @@
-import NonFungibleToken from 0x1d7e57aa55817448
-import FanTopToken from 0x86185fba578bc773
-import FanTopPermissionV2a from 0x86185fba578bc773
+import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
+import FanTopToken from 0xFANTOP_ADDRESS
+import FanTopPermissionV2a from 0xFANTOP_ADDRESS
 
 transaction(
   agent: Address,
