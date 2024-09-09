@@ -1,4 +1,4 @@
-import FanTopToken from 0x86185fba578bc773
+import FanTopToken from 0xFANTOP_ADDRESS
 
 transaction {
   prepare(acct: auth(Storage, Capabilities) &Account) {
