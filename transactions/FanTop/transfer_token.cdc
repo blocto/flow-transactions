@@ -1,5 +1,5 @@
-import NonFungibleToken from 0x1d7e57aa55817448
-import FanTopToken from 0x86185fba578bc773
+import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
+import FanTopToken from 0xFANTOP_ADDRESS
 
 transaction(id: UInt64, to: Address) {
   let transferToken: @FanTopToken.NFT
