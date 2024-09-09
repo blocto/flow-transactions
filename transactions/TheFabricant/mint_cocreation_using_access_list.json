@@ -1,0 +1,13 @@
+{
+  "arguments": [
+    "publicMinterAddress",
+    "publicMinterPathString",
+    "garmentId",
+    "materialId",
+    "primaryColorId",
+    "secondaryColorId"
+  ],
+  "messages": {
+    "en": "Mint cocreation NFT."
+  }
+}
