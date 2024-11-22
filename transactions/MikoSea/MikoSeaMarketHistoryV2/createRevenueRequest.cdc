@@ -1,4 +1,4 @@
-// adminCreateRevenueRequest v1
+// adminCreateRevenueRequest v3.0
 import MikoSeaMarketHistoryV2 from 0xMIKOSEA_MARKET_ADDRESS
 
 transaction(
@@ -7,8 +7,8 @@ transaction(
         metadata: {String:String}
     ) {
     let adminRef: &MikoSeaMarketHistoryV2.Admin
-    prepare(admin: AuthAccount) {
-        self.adminRef = admin.borrow<&MikoSeaMarketHistoryV2.Admin>(from: MikoSeaMarketHistoryV2.AdminStoragePath) ?? panic("NOT_ADMIN")
+    prepare(admin: auth(BorrowValue) &Account) {
+        self.adminRef = admin.storage.borrow<&MikoSeaMarketHistoryV2.Admin>(from: MikoSeaMarketHistoryV2.AdminStoragePath) ?? panic("NOT_ADMIN")
     }
 
     execute {

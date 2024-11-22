@@ -1,14 +1,14 @@
-// createListingV1.1
-import MikoSeaMarket from 0xMIKOSEA_MARKET_ADDRESS
+// createListing v3.0
+import MetadataViews from 0xMETADATA_VIEWS_ADDRESS
+import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
 import MIKOSEANFT from 0xMIKOSEA_MIKOSEANFT_ADDRESS
 import MIKOSEANFTV2 from 0xMIKOSEA_MIKOSEANFTV2_ADDRESS
-import FungibleToken from 0xFUNGIBLE_TOKEN_ADDRESS
+import MikoSeaMarket from 0xMIKOSEA_MARKET_ADDRESS
 import NonFungibleToken from 0xNON_FUNGIBLE_TOKEN_ADDRESS
-import MetadataViews from 0xMETADATA_VIEWS_ADDRESS
 
-pub fun getNftV2Metadata(addr: Address, nftID: UInt64): {String:String} {
+access(all) fun getNftV2Metadata(addr: Address, nftID: UInt64): {String:String} {
     let account = getAccount(addr)
-    let collectioncap = account.getCapability<&{MIKOSEANFTV2.CollectionPublic}>(MIKOSEANFTV2.CollectionPublicPath)
+    let collectioncap = account.capabilities.get<&{MIKOSEANFTV2.CollectionPublic}>(MIKOSEANFTV2.CollectionPublicPath)
     let collectionRef = collectioncap.borrow() ?? panic("Could not borrow collection capability")
 
     let nft = collectionRef.borrowMIKOSEANFTV2(id: nftID)
@@ -19,7 +19,7 @@ pub fun getNftV2Metadata(addr: Address, nftID: UInt64): {String:String} {
     return nftAs.getMetadata()
 }
 
-pub fun validateNftExpeiredDate(nftType: String, address: Address, nftID: UInt64) {
+access(all) fun validateNftExpeiredDate(nftType: String, address: Address, nftID: UInt64) {
     if nftType == "mikoseav2" {
         let metadata = getNftV2Metadata(addr: address, nftID: nftID)
         let start_at_unix = UInt64.fromString(metadata["start_at"] ?? "")
@@ -45,7 +45,7 @@ pub fun validateNftExpeiredDate(nftType: String, address: Address, nftID: UInt64
     }
 }
 
-pub fun getRoyaltiesV1(address: Address, nftID: UInt64): MetadataViews.Royalties {
+access(all) fun getRoyaltiesV1(address: Address, nftID: UInt64): MetadataViews.Royalties {
     if !MIKOSEANFT.checkCollection(address) {
         panic("ACCOUNT_NOT_SETUP")
     }
@@ -59,64 +59,86 @@ pub fun getRoyaltiesV1(address: Address, nftID: UInt64): MetadataViews.Royalties
     let platfromFee = MIKOSEANFT.getProjectPlatformFee(projectId: projectId) ?? 0.05
     return MetadataViews.Royalties([
         MetadataViews.Royalty(
-            receiver: getAccount(projectCreatorAddress).getCapability<&AnyResource{FungibleToken.Receiver}>(MIKOSEANFT.CollectionPublicPath),
+            receiver: getAccount(projectCreatorAddress).capabilities.get<&{FungibleToken.Receiver}>(MIKOSEANFT.CollectionPublicPath),
             cut: projectCreatorFee,
             description: "Creator fee"
         ),
         MetadataViews.Royalty(
-            receiver: getAccount(MikoSeaMarket.getAdminAddress()).getCapability<&AnyResource{FungibleToken.Receiver}>(MIKOSEANFT.CollectionPublicPath),
+            receiver: getAccount(MikoSeaMarket.getAdminAddress()).capabilities.get<&{FungibleToken.Receiver}>(MIKOSEANFT.CollectionPublicPath),
             cut: platfromFee,
             description: "Platform fee"
         )
     ])
 }
 
-pub fun getRoyaltiesV2(address: Address, nftID: UInt64): MetadataViews.Royalties {
-    let collectionRef = getAccount(address).getCapability<&{MIKOSEANFTV2.CollectionPublic}>(MIKOSEANFTV2.CollectionPublicPath).borrow() ?? panic("ACCOUNT_NOT_SETUP")
+access(all) fun getRoyaltiesV2(address: Address, nftID: UInt64): MetadataViews.Royalties {
+    let collectionRef = getAccount(address).capabilities.get<&{MIKOSEANFTV2.CollectionPublic}>(MIKOSEANFTV2.CollectionPublicPath).borrow() ?? panic("ACCOUNT_NOT_SETUP")
     let nft = collectionRef.borrowMIKOSEANFTV2(id: nftID) ?? panic("NFT_NOT_FOUND")
     return nft.getRoyaltiesMarket()
 }
 
 transaction(nftID: UInt64, salePrice: UFix64, nftversion: String) {
-    let holderCap: Capability<&AnyResource{NonFungibleToken.Provider, NonFungibleToken.CollectionPublic}>
+    let holderCap: Capability<auth(NonFungibleToken.Withdraw) &{NonFungibleToken.Provider, NonFungibleToken.CollectionPublic}>
     let storefrontRef: &MikoSeaMarket.Storefront
     let royalties: MetadataViews.Royalties
     let nftType: Type
 
-    prepare(account: AuthAccount) {
+    prepare(account: auth(BorrowValue, IssueStorageCapabilityController, PublishCapability, SaveValue, UnpublishCapability) &Account) {
         pre {
             nftversion == "mikosea" || nftversion == "mikoseav2": "nftversion must be mikosea or mikoseav2".concat(", got ").concat(nftversion)
         }
 
         // setup account
-        // for MIKOSAENFTV2
-        if account.borrow<&MIKOSEANFTV2.Collection>(from: MIKOSEANFTV2.CollectionStoragePath) == nil {
-            let collection <- MIKOSEANFTV2.createEmptyCollection()
-            account.save(<-collection, to: MIKOSEANFTV2.CollectionStoragePath)
-        }
-        if (account.getCapability<&MIKOSEANFTV2.Collection{MIKOSEANFTV2.CollectionPublic,NonFungibleToken.CollectionPublic,NonFungibleToken.Receiver,MetadataViews.ResolverCollection}>(MIKOSEANFTV2.CollectionPublicPath).borrow() == nil) {
-            account.unlink(MIKOSEANFTV2.CollectionPublicPath)
-            account.link<&MIKOSEANFTV2.Collection{MIKOSEANFTV2.CollectionPublic,NonFungibleToken.CollectionPublic,NonFungibleToken.Receiver,MetadataViews.ResolverCollection}>(MIKOSEANFTV2.CollectionPublicPath, target: MIKOSEANFTV2.CollectionStoragePath)
-        }
         // for MIKOSAENFT
-        if account.borrow<&MIKOSEANFT.Collection>(from: MIKOSEANFT.CollectionStoragePath) == nil {
-            let collection <- MIKOSEANFT.createEmptyCollection()
-            account.save(<-collection, to: MIKOSEANFT.CollectionStoragePath)
-        }
-        if (account.getCapability<&MIKOSEANFT.Collection{MIKOSEANFT.MikoSeaCollectionPublic,NonFungibleToken.CollectionPublic,NonFungibleToken.Receiver,MetadataViews.ResolverCollection}>(MIKOSEANFT.CollectionPublicPath).borrow() == nil) {
-            account.unlink(MIKOSEANFT.CollectionPublicPath)
-            account.link<&MIKOSEANFT.Collection{MIKOSEANFT.MikoSeaCollectionPublic,NonFungibleToken.CollectionPublic,NonFungibleToken.Receiver,MetadataViews.ResolverCollection}>(MIKOSEANFT.CollectionPublicPath, target: MIKOSEANFT.CollectionStoragePath)
+        let mikoseaCollectionData = MIKOSEANFT.resolveContractView(resourceType: nil, viewType: Type<MetadataViews.NFTCollectionData>()) as! MetadataViews.NFTCollectionData?
+            ?? panic("ViewResolver does not resolve NFTCollectionData view")
+        // Return early if the account already has a collection
+        if account.storage.borrow<&MIKOSEANFT.Collection>(from: mikoseaCollectionData.storagePath) == nil {
+            // Create a new empty collection
+            let collection <- MIKOSEANFT.createEmptyCollection(nftType: Type<@MIKOSEANFT.NFT>())
+
+            // save it to the account
+            account.storage.save(<-collection, to: mikoseaCollectionData.storagePath)
+
+            // create a public capability for the collection
+            account.capabilities.unpublish(mikoseaCollectionData.publicPath)
+            let collectionCap = account.capabilities.storage.issue<&MIKOSEANFT.Collection>(mikoseaCollectionData.storagePath)
+            account.capabilities.publish(collectionCap, at: mikoseaCollectionData.publicPath)
         }
 
-        // check and create storefront
-        if let storefrontRef = account.borrow<&MikoSeaMarket.Storefront>(from: MikoSeaMarket.MarketStoragePath) {
+        // for MIKOSAENFTV2
+        let mikoseav2CollectionData = MIKOSEANFTV2.resolveContractView(resourceType: nil, viewType: Type<MetadataViews.NFTCollectionData>()) as! MetadataViews.NFTCollectionData?
+            ?? panic("ViewResolver does not resolve NFTCollectionData view")
+        // Return early if the account already has a collection
+        if account.storage.borrow<&MIKOSEANFTV2.Collection>(from: mikoseav2CollectionData.storagePath) == nil {
+            // Create a new empty collection
+            let collection <- MIKOSEANFTV2.createEmptyCollection(nftType: Type<@MIKOSEANFTV2.NFT>())
+
+            // save it to the account
+            account.storage.save(<-collection, to: mikoseav2CollectionData.storagePath)
+
+            // create a public capability for the collection
+            account.capabilities.unpublish(mikoseav2CollectionData.publicPath)
+            let collectionCap = account.capabilities.storage.issue<&MIKOSEANFTV2.Collection>(mikoseav2CollectionData.storagePath)
+            account.capabilities.publish(collectionCap, at: mikoseav2CollectionData.publicPath)
+        }
+
+        // for storefont
+        if account.storage.borrow<&MikoSeaMarket.Storefront>(from: MikoSeaMarket.MarketStoragePath) == nil {
+            // Create a new empty collection
+            let storefront <- MikoSeaMarket.createStorefront()
+
+            // save it to the account
+            account.storage.save(<-storefront, to: MikoSeaMarket.MarketStoragePath)
+
+            // create a public capability for the collection
+            account.capabilities.unpublish(MikoSeaMarket.MarketPublicPath)
+            account.capabilities.publish(account.capabilities.storage.issue<&MikoSeaMarket.Storefront>(MikoSeaMarket.MarketStoragePath), at: MikoSeaMarket.MarketPublicPath)
+        }
+        if let storefrontRef = account.storage.borrow<&MikoSeaMarket.Storefront>(from: MikoSeaMarket.MarketStoragePath) {
             self.storefrontRef = storefrontRef
         } else {
-            let storefront <- MikoSeaMarket.createStorefront()
-            let storefrontRef = &storefront as &MikoSeaMarket.Storefront
-            account.save(<-storefront, to: MikoSeaMarket.MarketStoragePath)
-            account.link<&MikoSeaMarket.Storefront{MikoSeaMarket.StorefrontPublic}>(MikoSeaMarket.MarketPublicPath, target: MikoSeaMarket.MarketStoragePath)
-            self.storefrontRef = storefrontRef
+            panic("Something went wrong!")
         }
 
         // validate nft
@@ -127,12 +149,11 @@ transaction(nftID: UInt64, salePrice: UFix64, nftversion: String) {
             self.royalties = getRoyaltiesV1(address: account.address, nftID: nftID)
 
             // link private collection
-            let MIKOSEANFTPrivatePath = /private/MIKOSEANFTCollection
-            if !account.getCapability<&MIKOSEANFT.Collection{NonFungibleToken.Provider, NonFungibleToken.CollectionPublic}>(MIKOSEANFTPrivatePath).check() {
-                account.link<&MIKOSEANFT.Collection{NonFungibleToken.Provider, NonFungibleToken.CollectionPublic}>(MIKOSEANFTPrivatePath, target: MIKOSEANFT.CollectionStoragePath)
-            }
-            self.holderCap = account.getCapability<&MIKOSEANFT.Collection{NonFungibleToken.Provider, NonFungibleToken.CollectionPublic}>(MIKOSEANFTPrivatePath)
-
+            // let MIKOSEANFTPrivatePath = /private/MIKOSEANFTCollection
+            // if !account.capabilities.get<&MIKOSEANFT.Collection>(MIKOSEANFTPrivatePath).check() {
+            //     account.link<&MIKOSEANFT.Collection>(MIKOSEANFTPrivatePath, target: MIKOSEANFT.CollectionStoragePath)
+            // }
+            self.holderCap = account.capabilities.storage.issue<auth(NonFungibleToken.Withdraw) &{NonFungibleToken.Provider, NonFungibleToken.CollectionPublic}>(MIKOSEANFT.CollectionStoragePath)
 
             // get nft type
             self.nftType = Type<@MIKOSEANFT.NFT>()
@@ -141,17 +162,17 @@ transaction(nftID: UInt64, salePrice: UFix64, nftversion: String) {
             self.royalties = getRoyaltiesV2(address: account.address, nftID: nftID)
 
             // link private collection
-            let MIKOSEANFTV2PrivatePath = /private/MIKOSEANFTV2Collection
-            if !account.getCapability<&MIKOSEANFTV2.Collection{NonFungibleToken.Provider, NonFungibleToken.CollectionPublic}>(MIKOSEANFTV2PrivatePath).check() {
-                account.link<&MIKOSEANFTV2.Collection{NonFungibleToken.Provider, NonFungibleToken.CollectionPublic}>(MIKOSEANFTV2PrivatePath, target: MIKOSEANFTV2.CollectionStoragePath)
-            }
-            self.holderCap = account.getCapability<&MIKOSEANFTV2.Collection{NonFungibleToken.Provider, NonFungibleToken.CollectionPublic}>(MIKOSEANFTV2PrivatePath)
-
+            // let MIKOSEANFTV2PrivatePath = /private/MIKOSEANFTV2Collection
+            // if !account.capabilities.get<&MIKOSEANFTV2.Collection>(MIKOSEANFTV2PrivatePath).check() {
+            //     account.link<&MIKOSEANFTV2.Collection>(MIKOSEANFTV2PrivatePath, target: MIKOSEANFTV2.CollectionStoragePath)
+            // }
+            // self.holderCap = account.capabilities.get<&MIKOSEANFTV2.Collection>(MIKOSEANFTV2PrivatePath)
+            self.holderCap = account.capabilities.storage.issue<auth(NonFungibleToken.Withdraw) &{NonFungibleToken.Provider, NonFungibleToken.CollectionPublic}>(MIKOSEANFTV2.CollectionStoragePath)
 
             // get nft type
             self.nftType = Type<@MIKOSEANFTV2.NFT>()
 
-            let holder = account.borrow<&MIKOSEANFTV2.Collection>(from: MIKOSEANFTV2.CollectionStoragePath)!
+            let holder = account.storage.borrow<&MIKOSEANFTV2.Collection>(from: MIKOSEANFTV2.CollectionStoragePath)!
             holder.setInMarket(nftID: nftID, value: true)
         }
     }
