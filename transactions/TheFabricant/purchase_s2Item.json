@@ -1,0 +1,10 @@
+{
+  "arguments": [
+    "sellerAddress",
+    "listingID",
+    "amount"
+  ],
+  "messages": {
+    "en": "Purchase NFT."
+  }
+}

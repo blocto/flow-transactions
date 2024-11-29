@@ -1,0 +1,10 @@
+{
+  "arguments": [
+    "publicMinterAddress",
+    "publicMinterPathString",
+    "variantId"
+  ],
+  "messages": {
+    "en": "Mint NFT."
+  }
+}
