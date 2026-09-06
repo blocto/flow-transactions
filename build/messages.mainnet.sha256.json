@@ -1544,17 +1544,6 @@
       "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
-  "61566c573eda04d0249471c0c7e62ef1ebb59b3742f710f785650ab68566a5fb": {
-    "arguments": [
-      "amount",
-      "target"
-    ],
-    "messages": {
-      "en": "Teleport {amount} tUSDT to {target} on Ethereum",
-      "zh_CN": "将 {amount} tUSDT 跨链传送至以太坊上的 {target}",
-      "zh_TW": "將 {amount} tUSDT 跨鏈傳送至以太坊上的 {target}"
-    }
-  },
   "615a20caf4199d015716b79db1c781f088373ad62afa29e40b88c1312755d5df": {
     "arguments": [
       "listingResourceID",
@@ -1954,6 +1943,13 @@
     ],
     "messages": {
       "en": "Purchase Starly NFT #{itemID} from {marketCollectionAddress}"
+    }
+  },
+  "7c9bca46da5934ba5954a0254f3693bf9d489bc2ec67cfdfd6c0cb385b8b513b": {
+    "messages": {
+      "en": "Redeem all USDT",
+      "zh_CN": "赎回所有 USDT 代币",
+      "zh_TW": "贖回所有 USDT 代币"
     }
   },
   "7ce85c35572046f08100b3442c69399b1866f2edfa242040252ee1a654caab54": {
@@ -2747,13 +2743,6 @@
       "zh_TW": "為 {flowAmount} FLOW 購買 nft {nft_id} 並存儲在新帳戶中"
     }
   },
-  "ab24e07eda39dc6dffc1a62222b3a7b4785afc4d90899d272d3573cf92ead8dc": {
-    "messages": {
-      "en": "Redeem all USDT",
-      "zh_CN": "赎回所有 USDT 代币",
-      "zh_TW": "贖回所有 USDT 代币"
-    }
-  },
   "ab689849bc0b72cbd6acdf8e29897ea22f95001d3bd542db6f27a685ca5108ad": {
     "arguments": [
       "Uuid"
@@ -3171,6 +3160,17 @@
       "en": "Unlist {Uuid}.",
       "zh_CN": "下架 {Uuid}",
       "zh_TW": "下架 {Uuid}"
+    }
+  },
+  "c7abf78d7b24ea9c7adf5413856a8a2c34b2c2dfd0eeffd641cbb80c2750113c": {
+    "arguments": [
+      "amount",
+      "target"
+    ],
+    "messages": {
+      "en": "Teleport {amount} tUSDT to {target} on Ethereum",
+      "zh_CN": "将 {amount} tUSDT 跨链传送至以太坊上的 {target}",
+      "zh_TW": "將 {amount} tUSDT 跨鏈傳送至以太坊上的 {target}"
     }
   },
   "c9604e32bc219d8253f2f299f9a2a208320c974716b259e81e054517163f7af0": {

@@ -8,17 +8,6 @@
       "en": "Desposit nft(s) into a safe account"
     }
   },
-  "028f2529fab31ee2faa11bbfba7a14ab2d60dbe8617cd5fd0dbee9547c923493": {
-    "arguments": [
-      "amount",
-      "target"
-    ],
-    "messages": {
-      "en": "Teleport {amount} tUSDT to {target} on Ethereum",
-      "zh_CN": "将 {amount} tUSDT 跨链传送至以太坊上的 {target}",
-      "zh_TW": "將 {amount} tUSDT 跨鏈傳送至以太坊上的 {target}"
-    }
-  },
   "028f9c764075d9830f6f6d8edd1cac088afb17e1e9692fb4a9fdf2af1dddef57": {
     "arguments": [
       "Uuid",
@@ -1031,13 +1020,6 @@
     },
     "messages": {
       "en": "Purchase KLKTN NFT for {buyPrice} FLOW from {storefrontAddress}"
-    }
-  },
-  "39b4cec2c9083b8f5112436899c6c3cb694cca53b1aab88339d0fb9dcb0aeac7": {
-    "messages": {
-      "en": "Redeem all USDT",
-      "zh_CN": "赎回所有 USDT 代币",
-      "zh_TW": "贖回所有 USDT 代币"
     }
   },
   "3b4812f93caf89c9d5e9ede9828c3fcf23a96d073c4d8496a41939312432541d": {
@@ -2118,6 +2100,13 @@
       "zh_TW": "以 {baseAmount} FLOW 代幣出借 NFT {id}"
     }
   },
+  "80ca1fcd319ade1daf7e08b3c894a110e792a5ad4bf2fa2f7f35eadbbc7b0da0": {
+    "messages": {
+      "en": "Redeem all USDT",
+      "zh_CN": "赎回所有 USDT 代币",
+      "zh_TW": "贖回所有 USDT 代币"
+    }
+  },
   "80d2db442db9930bf05c27590c06c540ed57e99ed3ab23dae802c38fd88dc125": {
     "arguments": [
       "collectionID",
@@ -2786,6 +2775,17 @@
       "en": "Claim staking reward: {amount} BLT",
       "zh_CN": "领取质押奖励: {amount} BLT 代币",
       "zh_TW": "領取質押獎勵: {amount} BLT 代幣"
+    }
+  },
+  "aadeff70554cdb8280add163a6fbcd6c8ae58025948ccc065a469127d296e2d1": {
+    "arguments": [
+      "amount",
+      "target"
+    ],
+    "messages": {
+      "en": "Teleport {amount} tUSDT to {target} on Ethereum",
+      "zh_CN": "将 {amount} tUSDT 跨链传送至以太坊上的 {target}",
+      "zh_TW": "將 {amount} tUSDT 跨鏈傳送至以太坊上的 {target}"
     }
   },
   "ab872bfee08e57e97c820bf8257aa5dc23d2ea64133b3666cb48efe1270f6973": {

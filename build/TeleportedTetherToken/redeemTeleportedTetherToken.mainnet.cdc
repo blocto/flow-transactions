@@ -5,7 +5,7 @@ transaction() {
   prepare(signer: auth(BorrowValue) &Account) {
     let targetAddress: String = "0xffff....ffff" // NOTE: REPLACE with the target ethereum address
 
-    let teleportUserRef = getAccount(0x55ad22f01ef568a1).capabilities
+    let teleportUserRef = getAccount(0x78fea665a361cf0e).capabilities
         .borrow<&{TeleportedTetherToken.TeleportUser}>(/public/teleportedTetherTokenTeleportUser)
         ?? panic("Could not borrow a reference to TeleportUser")
 

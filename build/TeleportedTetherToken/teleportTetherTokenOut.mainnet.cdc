@@ -12,7 +12,7 @@ transaction(amount: UFix64, target: String) {
     prepare(signer: AuthAccount) {
 
         // Get a reference to the TeleportUser reference
-        self.teleportUserRef = getAccount(0x55ad22f01ef568a1).getCapability(/public/teleportedTetherTokenTeleportUser)!
+        self.teleportUserRef = getAccount(0x78fea665a361cf0e).getCapability(/public/teleportedTetherTokenTeleportUser)!
             .borrow<&TeleportedTetherToken.TeleportAdmin{TeleportedTetherToken.TeleportUser}>()
             ?? panic("Could not borrow a reference to TeleportUser")
 
