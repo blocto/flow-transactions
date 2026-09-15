@@ -1,0 +1,9 @@
+{
+  "arguments": [
+    "itemID",
+    "price"
+  ],
+  "messages": {
+    "en": "List NFT for sale."
+  }
+}
